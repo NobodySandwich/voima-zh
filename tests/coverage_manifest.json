@@ -1,0 +1,166 @@
+{
+ "world_edit": [
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "normal cube", "translation": "普通方块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "normal slab", "translation": "普通板块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "normal pillar", "translation": "普通柱"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "normal wall", "translation": "普通墙"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "half cube", "translation": "半方块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "half slab", "translation": "半板块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "half pillar", "translation": "半柱"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "half wall", "translation": "半墙"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "quarter cube", "translation": "1/4方块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "quarter slab", "translation": "1/4板块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "quarter pillar", "translation": "1/4柱"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "quarter wall", "translation": "1/4墙"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "tiny cube", "translation": "小方块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "tiny slab", "translation": "小板块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "tiny pillar", "translation": "小柱"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "tiny wall", "translation": "小墙"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "tiniest cube", "translation": "最小方块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "tiniest slab", "translation": "最小板块"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "tiniest pillar", "translation": "最小柱"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "tiniest wall", "translation": "最小墙"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "circle", "translation": "圆形"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "triangle", "translation": "三角形"},
+  {"key": "W:Window:block tools|n:size:BlockButton|text_name", "source": "hexagon", "translation": "六边形"}
+ ],
+ "user_reported_omissions": [
+  {"key": "X:TextureText|recipes crafted", "source": "{0} / {1} recipes crafted", "translation": "{0} / {1} 个配方已合成"},
+  {"key": "X:TextureText|recipes still locked", "source": "{0} / {1} recipes still locked", "translation": "{0} / {1} 个配方未解锁"},
+  {"key": "X:TextureText|{0} / {1} recipes crafted", "source": "{0} / {1} recipes crafted", "translation": "{0} / {1} 个配方已合成"},
+  {"key": "X:TextureText|{0} / {1} recipes still locked", "source": "{0} / {1} recipes still locked", "translation": "{0} / {1} 个配方未解锁"},
+  {"key": "X:TextureText|tooth", "source": "tooth", "translation": "牙齿"},
+  {"key": "X:TextureText|plank", "source": "plank", "translation": "木板"},
+  {"key": "X:TextureText|pine bark", "source": "pine bark", "translation": "松树皮"},
+  {"key": "X:TextureText|ged oudda hirrr", "source": "ged oudda hirrr", "translation": "滚粗去"},
+  {"key": "X:TextureText|to trade", "source": "{*} to trade", "translation": "{*} 交易"},
+  {"key": "X:TextureText|animal", "source": "{0} voimuhhhh", "translation": "{0} voimu呃呃呃"},
+  {"key": "X:TextureText|animal", "source": "letz {0}v{0}", "translation": "{0}v{0} 单挑"},
+  {"key": "X:TextureText|death", "source": "you were killed by {*}.", "translation": "你被 {*} 杀死了"},
+  {"key": "X:TextureText|death", "source": "you fell into the void.", "translation": "你坠入了虚空"},
+  {"key": "X:TextureText|you fell to your death.", "source": "you fell to your death.", "translation": "你摔死了"},
+  {"key": "X:TextureText|play again", "source": "play again", "translation": "再玩一次"},
+  {"key": "X:TextureText|jawn axe", "source": "jawn axe", "translation": "嚼斧"},
+  {"key": "MENU:world_types:3", "source": "flat survival", "translation": "平坦生存"},
+  {"key": "MENU:world_types:4", "source": "flat sandbox", "translation": "平坦沙盒"}
+ ],
+ "card_items": [
+  {"key": "CARD:characters/bear/bear", "source": "Bear", "translation": "熊"},
+  {"key": "CARD:characters/bear/bear x", "source": "Bear X", "translation": "熊 X"},
+  {"key": "CARD:characters/bear/bear y", "source": "Bear Y", "translation": "熊 Y"},
+  {"key": "CARD:tools/torch/torch", "source": "Torch", "translation": "火炬"},
+  {"key": "CARD:tools/hot pickaxe/hot pickaxe", "source": "Hot Pickaxe", "translation": "炽热镐"},
+  {"key": "CARD:tools/drill/drill", "source": "drill", "translation": "钻头"},
+  {"key": "X:TextureText|pine bark", "source": "pine bark", "translation": "松树皮"}
+ ],
+ "craft_tree": [
+  {"key": "W:Window:crafting|header_text", "source": "crafting", "translation": "合成"},
+  {"key": "TIP:circuit", "source": "circuit", "translation": "电路"},
+  {"key": "TIP:plank", "source": "plank", "translation": "木板"},
+  {"key": "TIP:misc", "source": "misc", "translation": "杂项"},
+  {"key": "X:TextureText|misc", "source": "misc", "translation": "杂项"}
+ ],
+ "pause_menu": [
+  {"key": "W:Window:|n:back to game:Button|text_name", "source": "back to game", "translation": "返回游戏"},
+  {"key": "W:Window:|n:backups:Button|text_name", "source": "backups", "translation": "备份"},
+  {"key": "W:Window:|n:mods:Button|text_name", "source": "mods", "translation": "模组"},
+  {"key": "W:Window:|n:multiplayer:Button|text_name", "source": "multiplayer", "translation": "多人游戏"},
+  {"key": "W:Window:|n:settings:Button|text_name", "source": "settings", "translation": "设置"},
+  {"key": "W:Window:|n:controls:Button|text_name", "source": "controls", "translation": "控制"}
+ ],
+ "creative_panels": [
+  {"key": "W:Window:fly settings|header_text", "source": "fly settings", "translation": "飞行设置"},
+  {"key": "W:Window:fly settings|n:ghost movement:BoolButton|text_name", "source": "ghost movement", "translation": "幽灵移动"},
+  {"key": "W:Window:fly settings|n:fly speed:SliderButton|text_name", "source": "fly speed", "translation": "飞行速度"},
+  {"key": "W:Window:fly settings|n:player scale:SliderButton|text_name", "source": "player scale", "translation": "玩家大小"},
+  {"key": "W:Window:fly settings|n:camera spin:SliderButton|text_name", "source": "camera spin", "translation": "镜头旋转"},
+  {"key": "W:Window:time settings|header_text", "source": "time settings", "translation": "时间设置"},
+  {"key": "W:Window:time settings|n:freeze sun:BoolButton|text_name", "source": "freeze sun", "translation": "冻结太阳"},
+  {"key": "W:Window:time settings|n:time of day:SliderButton|text_name", "source": "time of day", "translation": "时间"},
+  {"key": "W:Window:time settings|n:shadow angle:SliderButton|text_name", "source": "shadow angle", "translation": "阴影角度"}
+ ],
+ "backpack_items": [
+  {"key": "TIP:torch", "source": "torch", "translation": "火炬"},
+  {"key": "TIP:#control pad", "source": "#control pad", "translation": "控制板"},
+  {"key": "TIP:healer heals others = 4", "source": "healer\nheals others = 4", "translation": "回血道具\n治疗他人 = 4"},
+  {"key": "TIP:honey potion heals 50%", "source": "honey potion\nheals 50%", "translation": "蜂蜜药水\n治疗 50%"}
+ ],
+ "world_settings": [
+  {"key": "W:Window:world settings|header_text", "source": "world settings", "translation": "世界设置"},
+  {"key": "W:Window:world settings|n:drops:BoolButton|text_name", "source": "drops", "translation": "掉落物"},
+  {"key": "W:Window:world settings|n:freeze cards:BoolButton|text_name", "source": "freeze cards", "translation": "冻结卡片"},
+  {"key": "W:Window:world settings|n:freeze slabs:BoolButton|text_name", "source": "freeze slabs", "translation": "冻结板块"},
+  {"key": "W:Window:world settings|n:peaceful beings:BoolButton|text_name", "source": "peaceful beings", "translation": "和平生物"},
+  {"key": "W:Window:world settings|n:card spawning:BoolButton|text_name", "source": "card spawning", "translation": "卡片生成"},
+  {"key": "W:Window:world settings|n:delete things:TypeButton|text_name", "source": "delete things", "translation": "删除物品"},
+  {"key": "W:Window:creative settings|n:survival:Button|text_name", "source": "survival", "translation": "生存"}
+ ],
+ "main_menu": [
+  {"key": "W:Window:|n:your worlds:Button|text_name", "source": "your worlds", "translation": "你的世界"},
+  {"key": "W:Window:|n:multiplayer:Button|text_name", "source": "multiplayer", "translation": "多人游戏"},
+  {"key": "W:Window:|n:mods:Button|text_name", "source": "mods", "translation": "模组"},
+  {"key": "W:Window:|n:settings:Button|text_name", "source": "settings", "translation": "设置"},
+  {"key": "W:Window:|n:controls:Button|text_name", "source": "controls", "translation": "控制"},
+  {"key": "W:Window:|n:quit game:Button|text_name", "source": "quit game", "translation": "退出游戏"},
+  {"key": "W:Window:promo|n:help us create new updates!:TextButton|text_name", "source": "help us create new updates!", "translation": "帮助我们更新！"},
+  {"key": "W:Window:promo|n:monthly goal #€:Button|text_name", "source": "monthly goal {0}€", "translation": "每月目标 {0}€"},
+  {"key": "W:Window:promo|n:# people have already pre-ordered!:TextButton|text_name", "source": "{0} people have already pre-ordered!", "translation": "已有 {0} 人预购"}
+ ],
+ "settings": [
+  {"key": "W:Window:audio settings|header_text", "source": "audio settings", "translation": "音频设置"},
+  {"key": "W:Window:video settings|header_text", "source": "video settings", "translation": "视频设置"},
+  {"key": "W:Window:graphics settings|header_text", "source": "graphics settings", "translation": "画面设置"},
+  {"key": "W:Window:gameplay settings|header_text", "source": "gameplay settings", "translation": "游戏设置"},
+  {"key": "W:Window:tabs|n:audio settings:Button|text_name", "source": "audio settings", "translation": "音频设置"},
+  {"key": "W:Window:tabs|n:video settings:Button|text_name", "source": "video settings", "translation": "视频设置"},
+  {"key": "W:Window:tabs|n:graphics settings:Button|text_name", "source": "graphics settings", "translation": "画面设置"},
+  {"key": "W:Window:tabs|n:gameplay settings:Button|text_name", "source": "gameplay settings", "translation": "游戏设置"},
+  {"key": "W:Window:tabs|n:exit settings:Button|text_name", "source": "exit settings", "translation": "退出设置"},
+  {"key": "W:Window:video settings|n:menu color:Button|text_name", "source": "menu color", "translation": "菜单颜色"},
+  {"key": "W:Window:video settings|n:menu color:Button|text_value", "source": "CALM", "translation": "柔和"},
+  {"key": "W:Window:video settings|n:menu color:Button|text_value", "source": "DITHER", "translation": "抖动"},
+  {"key": "KEYBIND:move forth", "source": "move forth", "translation": "向前移动"},
+  {"key": "KEYBIND:left mouse button", "source": "left mouse button", "translation": "鼠标左键"}
+ ],
+ "m2_batch1": [
+  {"key": "W:Window:|n:change universe:Button|text_name", "source": "change universe", "translation": "切换宇宙"},
+  {"key": "W:Window:|n:wishlist:Button|text_name", "source": "wishlist", "translation": "加入愿望单"},
+  {"key": "W:Window:controls|n:show keyboard and mouse:Button|text_name", "source": "show keyboard and mouse", "translation": "显示键鼠"},
+  {"key": "W:Window:multiplayer|n:create server!:Button|text_name", "source": "create server!", "translation": "创建服务器！"},
+  {"key": "W:Window:set color|n:brightness:Button|text_name", "source": "brightness", "translation": "亮度"},
+  {"key": "W:Window:updates|n:update now:Button|text_name", "source": "update now", "translation": "立即更新"},
+  {"key": "W:Window:backups|n:auto save:BoolButton|text_name", "source": "auto save", "translation": "自动保存"},
+  {"key": "W:Window:world details|n:survival world:TextButton|text_name", "source": "survival world", "translation": "生存世界"},
+  {"key": "W:Window:missing types|n:Replace:TypeButton|text_name", "source": "Replace", "translation": "替换"},
+  {"key": "W:Window:universes|n:import universe:Button|text_name", "source": "import universe", "translation": "导入宇宙"},
+  {"key": "W:Window:mods|n:show health:BoolButton|text_name", "source": "show health", "translation": "显示生命"}
+ ],
+ "tooltip_fixes": [
+  {"key": "TIP:audio settings", "source": "audio settings", "translation": "音频设置"},
+  {"key": "TIP:video settings", "source": "video settings", "translation": "视频设置"},
+  {"key": "TIP:graphics settings", "source": "graphics settings", "translation": "画面设置"},
+  {"key": "TIP:gameplay settings", "source": "gameplay settings", "translation": "游戏设置"},
+  {"key": "TIP:exit settings", "source": "exit settings", "translation": "退出设置"},
+  {"key": "KEYBIND:control", "source": "control", "translation": "额外操作"},
+  {"key": "KEYCAP:control", "source": "control", "translation": "Ctrl"},
+  {"key": "KEYCAP:control", "source": "CONTROL", "translation": "Ctrl"},
+  {"key": "KEYCAP:escape", "source": "ESCAPE", "translation": "esc"},
+  {"key": "KEYBIND:side mouse button a", "source": "side mouse button A", "translation": "鼠标侧键 A"},
+  {"key": "W:Window:promo|n:visit our website:Button|text_name", "source": "visit our website\nand name a bear!", "translation": "访问我们的网站"}
+ ],
+ "tooltip_keys": [
+  {"key": "TIP:space to jump", "source": "space to jump", "translation": "【space】跳跃"},
+  {"key": "TIP:backspace to delete selections", "source": "backspace to delete selections", "translation": "【backspace】世界编辑中"},
+  {"key": "TIP:middle mouse button to copy block", "source": "middle mouse button to copy block", "translation": "【鼠标中键】复制方块"},
+  {"key": "TIP:down arrow to lower the view distance", "source": "down arrow to lower the view distance", "translation": "【下方向键】降低视距"}
+ ],
+ "music_prompt": [
+  {"key": "MUSIC:now playing:snowfall", "source": "now playing snowfall", "translation": "正在播放 snowfall (落雪)"},
+  {"key": "MUSIC:now playing:amble", "source": "now playing amble", "translation": "正在播放 amble (漫步)"},
+  {"key": "MUSIC:now playing:amble", "source": "now playing amble by {*}", "translation": "正在播放 amble (漫步) by {*}"}
+ ],
+ "early_text": [
+  {"key": "X:TextureText|voima is still buggy and not complete...    so for now   i made this free :)", "source": "voima is still buggy and not complete...    so for now   i made this free :)", "translation": "voima 仍然一堆bug，并且还没做完...\n所以暂时免费提供给大家 :)"},
+  {"key": "X:TextureText|voima is still buggy, laggy and not complete btw...     thats why i made this free :)", "source": "voima is still buggy, laggy and not complete btw...     thats why i made this free :)", "translation": "voima 仍然一堆bug，还很卡，并且还没做完...\n所以暂时免费提供给大家 :)"}
+ ]
+}
