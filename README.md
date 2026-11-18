@@ -19,11 +19,11 @@ AI声明：本项目代码借助LLM辅助生成。
 
 ## 版权与许可
 
-本项目采用 **GNU GPL v3.0** 发布原创代码、HTML 编辑器、文档和译文。
+本项目采用 **GNU GPL v3.0** 发布原创代码、文档和译文。
 
 | 组件 | 许可证 | 说明 |
 | :--- | :--- | :--- |
-| **原创代码、HTML 编辑器、文档及中文译文** | [GNU GPL v3.0](LICENSE) | 分发修改版时须遵守 GPL-3.0 |
+| **原创代码、文档及中文译文** | [GNU GPL v3.0](LICENSE) | 分发修改版时须遵守 GPL-3.0 |
 | **霞鹜文楷 Screen（LXGW WenKai Screen）** | [SIL OFL 1.1](assets/OFL.txt) | 字体版权归原作者所有 |
 | **MinHook** | [BSD 2-Clause](third_party/minhook/LICENSE.txt) | 第三方库版权归原作者所有 |
 | **VOIMA 英文原文、游戏素材** | **保留所有权利** | 归 VOIMA 开发者所有；本项目不授予再分发权，也不属于 GPL-3.0 授权范围 |
