@@ -17,6 +17,7 @@ public:
     void Force(void* self, void* font, size_t fontOffset);
     void Clear(void* self, size_t fontOffset);
     bool IsForced(void* self) const;
+    void* ForcedFont(void* self) const;
     int CreatedCount() const { return created_; }
     int PageCount() const { return (int)fonts_.size(); }
     void* FontForPage(int page) const { return page >= 0 && page < (int)fonts_.size() ? fonts_[page] : nullptr; }
@@ -39,5 +40,6 @@ private:
     std::vector<uint32_t> handles_;
     std::set<int> pending_;
     std::unordered_map<void*, void*> originalFont_;
+    std::unordered_map<void*, void*> forcedFont_;
     int created_ = 0;
 };

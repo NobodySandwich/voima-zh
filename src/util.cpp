@@ -160,6 +160,20 @@ void* StaticPtr(FieldInfo* field) {
     return value;
 }
 
+Il2CppClass* FindClassInNamespace(const char* ns, const char* name) {
+    Il2CppDomain* domain = g_api.domain_get();
+    if (!domain) return nullptr;
+    size_t count = 0;
+    const Il2CppAssembly** assemblies = g_api.domain_get_assemblies(domain, &count);
+    for (size_t i = 0; i < count; ++i) {
+        Il2CppImage* image = g_api.assembly_get_image(assemblies[i]);
+        if (!image) continue;
+        Il2CppClass* cls = g_api.class_from_name(image, ns, name);
+        if (cls) return cls;
+    }
+    return nullptr;
+}
+
 Il2CppClass* FindClass(const char* name) {
     Il2CppDomain* domain = g_api.domain_get();
     if (!domain) return nullptr;

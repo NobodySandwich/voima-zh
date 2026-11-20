@@ -1,7 +1,9 @@
 #include <windows.h>
+#include <shellapi.h>
 #include <string>
 #include <vector>
 #include <cstdio>
+#include "runtime_font_patch.h"
 
 static std::wstring Quote(const std::wstring& s) {
     std::wstring out = L"\"";
@@ -23,7 +25,9 @@ static bool HasArg(int argc, wchar_t** argv, const wchar_t* text) {
     return false;
 }
 
-int wmain(int argc, wchar_t** argv) {
+int WINAPI wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int) {
+    int argc = 0;
+    LPWSTR* argv = CommandLineToArgvW(GetCommandLineW(), &argc);
     wchar_t self[MAX_PATH * 2]{};
     GetModuleFileNameW(nullptr, self, MAX_PATH * 2);
     std::wstring selfPath = self;
@@ -69,6 +73,7 @@ int wmain(int argc, wchar_t** argv) {
         cmd += L" -screen-fullscreen 0 -screen-width 1280 -screen-height 720";
     }
 
+    bool fontInjected = rfp::Prepare(modDir);
     STARTUPINFOW si{};
     si.cb = sizeof(si);
     PROCESS_INFORMATION pi{};
@@ -108,6 +113,10 @@ int wmain(int argc, wchar_t** argv) {
     }
     ResumeThread(pi.hThread);
     CloseHandle(pi.hThread);
+    WaitForSingleObject(pi.hProcess, INFINITE);
+    if (fontInjected) rfp::Restore(modDir);
+    DWORD exitCode = 0;
+    GetExitCodeProcess(pi.hProcess, &exitCode);
     CloseHandle(pi.hProcess);
-    return 0;
+    return (int)exitCode;
 }

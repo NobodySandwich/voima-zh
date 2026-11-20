@@ -189,6 +189,7 @@ int KeyPriority(const std::string& key) {
 
 void TranslationDb::AssignPages(size_t pageCapacity) {
     pages_.clear();
+    exactPages_.clear();
     for (auto& e : entries_) e.page = -1;
     std::vector<size_t> order(entries_.size());
     for (size_t i = 0; i < order.size(); ++i) order[i] = i;
@@ -244,6 +245,129 @@ void TranslationDb::AssignPages(size_t pageCapacity) {
         page.entries.push_back(idx);
         e.page = found;
     }
+}
+
+int TranslationDb::FindPageForText(const std::string& text, size_t pageCapacity) const {
+    std::vector<uint16_t> chars = NonAsciiChars(text);
+    if (chars.empty() || chars.size() > pageCapacity) return -1;
+    for (size_t p = 0; p < pages_.size(); ++p) {
+        bool all = true;
+        for (uint16_t c : chars) {
+            if (std::find(pages_[p].chars.begin(), pages_[p].chars.end(), c) == pages_[p].chars.end()) {
+                all = false;
+                break;
+            }
+        }
+        if (all) return (int)p;
+    }
+    return -1;
+}
+
+int TranslationDb::EnsurePageForText(const std::string& text, size_t pageCapacity) {
+    std::vector<uint16_t> chars = NonAsciiChars(text);
+    if (chars.empty() || chars.size() > pageCapacity) return -1;
+    for (size_t p = 0; p < pages_.size(); ++p) {
+        bool all = true;
+        for (uint16_t c : chars) {
+            if (std::find(pages_[p].chars.begin(), pages_[p].chars.end(), c) == pages_[p].chars.end()) {
+                all = false;
+                break;
+            }
+        }
+        if (all) return (int)p;
+    }
+    pages_.push_back({});
+    for (uint16_t c : chars) pages_.back().chars.push_back(c);
+    return (int)pages_.size() - 1;
+}
+
+std::vector<int> TranslationDb::PrepareSpeechPages(size_t pageCapacity) {
+    std::vector<int> pages;
+    std::vector<uint16_t> current;
+    auto flush = [&]() {
+        if (current.empty()) return;
+        FontPage page;
+        page.chars = current;
+        pages_.push_back(page);
+        pages.push_back((int)pages_.size() - 1);
+        current.clear();
+    };
+    for (const auto& e : entries_) {
+        if (e.key.rfind("ANIMAL:", 0) != 0 && e.key.rfind("ITEM:", 0) != 0) continue;
+        std::vector<uint16_t> chars = NonAsciiChars(e.translation);
+        if (chars.empty() || chars.size() > pageCapacity) continue;
+        bool fits = chars.size() + current.size() <= pageCapacity;
+        if (fits) {
+            for (uint16_t c : chars) {
+                bool present = false;
+                for (uint16_t x : current) if (x == c) { present = true; break; }
+                if (!present) current.push_back(c);
+            }
+            if (current.size() > pageCapacity) { current.resize(pageCapacity); fits = false; }
+        }
+        if (!fits || current.size() > pageCapacity) {
+            flush();
+            current = chars;
+        }
+    }
+    flush();
+    // Messages with an item placeholder need the template chars and the
+    // substituted item chars on the SAME page. Build pages containing the
+    // union of all placeholder-template glyphs plus whole item-name glyph sets.
+    std::vector<uint16_t> templateChars;
+    std::vector<const TranslationEntry*> itemEntries;
+    auto addUnique = [](std::vector<uint16_t>& dst, const std::vector<uint16_t>& src) {
+        for (uint16_t c : src) {
+            bool present = false;
+            for (uint16_t x : dst) if (x == c) { present = true; break; }
+            if (!present) dst.push_back(c);
+        }
+    };
+    for (const auto& e : entries_) {
+        if (e.key.rfind("ANIMAL:", 0) == 0 && e.translation.find('{') != std::string::npos)
+            addUnique(templateChars, NonAsciiChars(e.translation));
+        else if (e.key.rfind("ITEM:", 0) == 0)
+            itemEntries.push_back(&e);
+    }
+    if (!templateChars.empty() && templateChars.size() < pageCapacity) {
+        std::vector<uint16_t> comb = templateChars;
+        auto flushCombo = [&]() {
+            if (comb.size() <= templateChars.size()) return;
+            FontPage page;
+            page.chars = comb;
+            pages_.push_back(page);
+            pages.push_back((int)pages_.size() - 1);
+            comb = templateChars;
+        };
+        for (const TranslationEntry* e : itemEntries) {
+            std::vector<uint16_t> chars = NonAsciiChars(e->translation);
+            if (chars.empty() || templateChars.size() + chars.size() > pageCapacity) continue;
+            std::vector<uint16_t> next = comb;
+            addUnique(next, chars);
+            if (next.size() > pageCapacity) {
+                flushCombo();
+                comb = templateChars;
+                addUnique(comb, chars);
+            } else {
+                comb.swap(next);
+            }
+        }
+        flushCombo();
+    }
+    speechPages_ = pages;
+    return pages;
+}
+
+int TranslationDb::CreatePageForText(const std::string& text, size_t pageCapacity) {
+    auto cached = exactPages_.find(text);
+    if (cached != exactPages_.end()) return cached->second;
+    std::vector<uint16_t> chars = NonAsciiChars(text);
+    if (chars.empty() || chars.size() > pageCapacity) return -1;
+    pages_.push_back({});
+    for (uint16_t c : chars) pages_.back().chars.push_back(c);
+    int page = (int)pages_.size() - 1;
+    exactPages_[text] = page;
+    return page;
 }
 
 bool TranslationDb::MatchEntry(const TranslationEntry& e, const std::string& normalized,
@@ -309,6 +433,26 @@ bool TranslationDb::MatchEntry(const TranslationEntry& e, const std::string& nor
     }
 }
 
+bool TranslationDb::LookupByPrefix(const std::string& prefix, const std::string& input,
+                                    std::string& output, std::string& matchedKey,
+                                    std::string& matchedSource, int* page) const {
+    std::string normalized = NormalizeMatch(input);
+    for (int pass = 0; pass < 2; ++pass) {
+        for (const TranslationEntry& e : entries_) {
+            if (e.key.rfind(prefix, 0) != 0) continue;
+            if ((pass == 0) == e.pattern) continue;
+            std::string translated;
+            if (!MatchEntry(e, normalized, translated)) continue;
+            output = ApplyWhitespace(input, translated);
+            matchedKey = e.key;
+            matchedSource = e.source;
+            if (page) *page = e.page;
+            return true;
+        }
+    }
+    return false;
+}
+
 bool TranslationDb::Lookup(const std::vector<std::string>& keys, const std::string& input,
                            std::string& output, std::string& matchedKey, std::string& matchedSource,
                            int* page) const {
@@ -330,6 +474,33 @@ bool TranslationDb::Lookup(const std::vector<std::string>& keys, const std::stri
                 return true;
             }
         }
+    }
+    // Tooltip counts use a dynamic key: TIP:<name> <N>x with source "<name>\n<N>x".
+    // Fall back to the base TIP entry and append the count so item tooltips are
+    // translated for every stack size without enumerating counts in the table.
+    for (const std::string& key : keys) {
+        if (key.rfind("TIP:", 0) != 0) continue;
+        size_t sp = key.rfind(' ');
+        if (sp == std::string::npos || sp + 2 >= key.size()) continue;
+        std::string suffix = key.substr(sp + 1);
+        if (suffix.back() != 'x') continue;
+        bool digits = suffix.size() > 1;
+        for (size_t i = 0; i + 1 < suffix.size(); ++i) {
+            if (!std::isdigit((unsigned char)suffix[i])) { digits = false; break; }
+        }
+        if (!digits) continue;
+        std::string marker = "\n" + suffix;
+        if (input.size() < marker.size() ||
+            input.compare(input.size() - marker.size(), marker.size(), marker) != 0) continue;
+        std::string baseInput = input.substr(0, input.size() - marker.size());
+        std::string baseOutput, baseKeyMatched, baseSourceMatched;
+        int basePage = -1;
+        if (!Lookup({key.substr(0, sp)}, baseInput, baseOutput, baseKeyMatched, baseSourceMatched, &basePage)) continue;
+        output = baseOutput + marker;
+        matchedKey = key;
+        matchedSource = baseSourceMatched;
+        if (page) *page = basePage;
+        return true;
     }
     return false;
 }

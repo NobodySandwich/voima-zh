@@ -19,7 +19,6 @@ void Logger::WriteFileLine(void* handle, const std::string& line) {
     DWORD w = 0;
     WriteFile(handle, line.data(), (DWORD)line.size(), &w, nullptr);
     WriteFile(handle, "\r\n", 2, &w, nullptr);
-    FlushFileBuffers(handle);
     LeaveCriticalSection(&g_lock);
 }
 

@@ -23,6 +23,7 @@ size_t FieldOffset(Il2CppClass* cls, const char* name);
 FieldInfo* FindField(Il2CppClass* cls, const char* name);
 void* StaticPtr(FieldInfo* field);
 Il2CppClass* FindClass(const char* name);
+Il2CppClass* FindClassInNamespace(const char* ns, const char* name);
 
 template <typename Fn>
 void ForEachManagedList(void* list, Fn&& fn) {

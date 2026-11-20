@@ -197,6 +197,7 @@ bool GameModel::Init() {
     btnWindow_ = FieldOffset(button_, "w");
     btnValueString_ = FieldOffset(button_, "value_string");
     btnTranslate_ = FieldOffset(button_, "translate");
+    btnConfirmable_ = FieldOffset(button_, "confirmable");
 
     ttTranslate_ = FieldOffset(textureText_, "translate");
     ttText_ = FieldOffset(textureText_, "text");
@@ -339,18 +340,8 @@ ObjectKeys GameModel::Describe(void* self, const std::string& input) const {
         add("X:TextureText|recipes still locked");
     if (firstLine.find(" to trade") != std::string::npos)
         add("X:TextureText|to trade");
-    if (firstLine.rfind("you ", 0) == 0 &&
-        (firstLine.find("were killed by ") != std::string::npos ||
-         firstLine.find("fell to your death") != std::string::npos ||
-         firstLine.find("fell to their death") != std::string::npos ||
-         firstLine.find("fell into the void") != std::string::npos ||
-         firstLine.find("drowned.") != std::string::npos ||
-         firstLine.find("exploded") != std::string::npos ||
-         firstLine.find("squished by a slab") != std::string::npos ||
-         firstLine.find("hit a wall too hard") != std::string::npos ||
-         firstLine.find("died from a falling") != std::string::npos ||
-         firstLine == "you died."))
-        add("X:TextureText|death");
+    // Death text is handled only through the Card death-context hook; never
+    // add an anonymous X:TextureText|death key here.
 
     auto processButton = [&](void* w, void* b, int index, int dupIndex, const std::string& listName) {
         if (!b) return;
@@ -374,7 +365,9 @@ ObjectKeys GameModel::Describe(void* self, const std::string& input) const {
         std::string bclass = ClassName(b);
 
         std::string namedKey = LowerAscii(Trim(input));
-        if (IsNamedKey(namedKey)) {
+        if (IsNamedKey(namedKey) &&
+            bclass.find("CategoryButton") == std::string::npos &&
+            bclass.find("BoolButton") == std::string::npos) {
             add("KEYCAP:" + KeybindText(input));
             out.translatable = true;
             out.userContent = false;
@@ -396,15 +389,57 @@ ObjectKeys GameModel::Describe(void* self, const std::string& input) const {
 
         std::string full = "W:Window:" + header + "|n:" + keyName + ":" + bclass + "|" + which;
         setPrimary(full);
+        // World-detail windows are titled with the user's world name.  Emit a
+        // stable structural key as an alternate so custom world names do not
+        // lose translations.
+        {
+            // Identify the window by object identity, not by its English text.
+            // Menu.w_world_details is the same Window instance for played and
+            // never-opened worlds.
+            void* menu = StaticPtr(FindField(FindClass("Lord"), "menu"));
+            void* details = nullptr;
+            if (menu) ReadObjectPtr(menu, FieldOffset(FindClass("Menu"), "w_world_details"), &details);
+            if (details && details == w)
+                add("W:Window:world details|n:" + keyName + ":" + bclass + "|" + which);
+        }
         out.owned = true;
+        out.confirm = btnConfirmable_ != SIZE_MAX && ReadObjectInt(b, btnConfirmable_) != 0 &&
+                       LowerAscii(Trim(input)).rfind("are you sure", 0) == 0;
         out.translatable = btnTranslate_ == SIZE_MAX || ReadObjectInt(b, btnTranslate_) != 0;
         if (!out.translatable) out.userContent = true;
-        // The promo counters are static UI even though their value buttons are
-        // marked non-translatable by the game.  Translate only these known keys.
-        if (header == "promo" && (keyName == "# people have already pre-ordered!" ||
-                                  keyName == "#€ raised" || keyName == "#% this months rent")) {
+        // World-size buttons are identified by membership in Menu.b_world_size,
+        // not by the visible letter.
+        bool worldSizeButton = false;
+        {
+            void* menu = StaticPtr(FindField(FindClass("Lord"), "menu"));
+            void* arr = nullptr;
+            if (menu) ReadObjectPtr(menu, FieldOffset(FindClass("Menu"), "b_world_size"), &arr);
+            int n = arr ? ReadObjectInt(arr, 0x18) : 0;
+            void** items = arr ? reinterpret_cast<void**>(reinterpret_cast<char*>(arr) + 0x20) : nullptr;
+            for (int i = 0; i < n && items; ++i) {
+                if (items[i] == b) { worldSizeButton = true; break; }
+            }
+        }
+        // They are marked non-translatable by the game but are static UI.
+        if (worldSizeButton) {
             out.translatable = true;
             out.userContent = false;
+        }
+        // The promo window is identified by its Menu pointer, not its header
+        // text.  Its counters are static UI even though the value buttons are
+        // marked non-translatable by the game.
+        {
+            void* menu = StaticPtr(FindField(FindClass("Lord"), "menu"));
+            void* promo = nullptr;
+            if (menu) ReadObjectPtr(menu, FieldOffset(FindClass("Menu"), "w_promo"), &promo);
+            if (promo && promo == w) {
+                add("W:Window:promo|n:" + keyName + ":" + bclass + "|" + which);
+                if (keyName == "# people have already pre-ordered!" ||
+                    keyName == "#€ raised" || keyName == "#% this months rent") {
+                    out.translatable = true;
+                    out.userContent = false;
+                }
+            }
         }
         out.detail = "list=" + listName + " window=" + std::to_string(reinterpret_cast<uintptr_t>(w)) +
                      " button=" + std::to_string(reinterpret_cast<uintptr_t>(b)) + " btnclass=" + bclass +
@@ -425,8 +460,9 @@ ObjectKeys GameModel::Describe(void* self, const std::string& input) const {
         }
 
         // Keybind context.
-        bool keybind = bclass.find("Keybind") != std::string::npos ||
-                       ReadObjectInt(self, ttKeybindChecks_) != 0;
+        bool keybind = !worldSizeButton &&
+                       (bclass.find("Keybind") != std::string::npos ||
+                        ReadObjectInt(self, ttKeybindChecks_) != 0);
         if (keybind) {
             std::string keycapName = LowerAscii(Trim(input));
             bool namedKey = IsNamedKey(keycapName);

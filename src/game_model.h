@@ -10,6 +10,7 @@ struct ObjectKeys {
     bool owned = false;
     bool userContent = false;
     bool loading = false;
+    bool confirm = false;
     bool translatable = true;
 };
 
@@ -62,6 +63,7 @@ private:
     size_t btnName_ = SIZE_MAX, btnTextName_ = SIZE_MAX, btnTextValue_ = SIZE_MAX, btnTooltip_ = SIZE_MAX, btnWindow_ = SIZE_MAX;
     size_t btnValueString_ = SIZE_MAX;
     size_t btnTranslate_ = SIZE_MAX;
+    size_t btnConfirmable_ = SIZE_MAX;
     size_t ttTranslate_ = SIZE_MAX, ttText_ = SIZE_MAX, ttFont_ = SIZE_MAX, ttFontSize_ = SIZE_MAX;
     size_t ttLanguageId_ = SIZE_MAX, ttUniverseFont_ = SIZE_MAX, ttKeybindChecks_ = SIZE_MAX;
     size_t tbType_ = SIZE_MAX;

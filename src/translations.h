@@ -23,6 +23,13 @@ class TranslationDb {
 public:
     bool Load(const std::string& path);
     void AssignPages(size_t pageCapacity);
+    std::vector<int> PrepareSpeechPages(size_t pageCapacity);
+    int EnsurePageForText(const std::string& text, size_t pageCapacity);
+    int FindPageForText(const std::string& text, size_t pageCapacity) const;
+    int CreatePageForText(const std::string& text, size_t pageCapacity);
+    bool LookupByPrefix(const std::string& prefix, const std::string& input,
+                        std::string& output, std::string& matchedKey, std::string& matchedSource,
+                        int* page) const;
     bool Lookup(const std::vector<std::string>& keys, const std::string& input,
                 std::string& output, std::string& matchedKey, std::string& matchedSource,
                 int* page = nullptr) const;
@@ -40,5 +47,7 @@ private:
     std::vector<TranslationEntry> entries_;
     std::unordered_map<std::string, std::vector<size_t>> index_;
     std::vector<FontPage> pages_;
+    std::unordered_map<std::string, int> exactPages_;
+    std::vector<int> speechPages_;
     std::string lastError_;
 };

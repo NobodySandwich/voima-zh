@@ -124,7 +124,11 @@ bool FontPages::IsPageReady(int page) const {
 }
 
 int FontPages::EnsurePage(int page) {
-    if (page < 0 || page >= (int)fonts_.size()) return -1;
+    if (page < 0 || page >= (int)db_->pageCount()) return -1;
+    if (page >= (int)fonts_.size()) {
+        fonts_.resize((size_t)page + 1, nullptr);
+        handles_.resize((size_t)page + 1, 0);
+    }
     if (!fonts_[page]) CreatePageFont(page);
     return fonts_[page] ? page : -1;
 }
@@ -149,6 +153,7 @@ void FontPages::Force(void* self, void* font, size_t fontOffset) {
     if (it == originalFont_.end()) {
         originalFont_[self] = *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + fontOffset);
     }
+    forcedFont_[self] = font;
     *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + fontOffset) = font;
 }
 
@@ -158,6 +163,12 @@ void FontPages::Clear(void* self, size_t fontOffset) {
     if (it == originalFont_.end()) return;
     *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + fontOffset) = it->second;
     originalFont_.erase(it);
+    forcedFont_.erase(self);
+}
+
+void* FontPages::ForcedFont(void* self) const {
+    auto it = forcedFont_.find(self);
+    return it == forcedFont_.end() ? nullptr : it->second;
 }
 
 bool FontPages::IsForced(void* self) const {
