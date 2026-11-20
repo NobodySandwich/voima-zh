@@ -1,0 +1,162 @@
+{
+ "all_methods": 69823,
+ "ui_methods": 126,
+ "records": 231,
+ "matches": {
+  "EXISTING": 141,
+  "NEW": 59,
+  "SOURCE_KNOWN": 20,
+  "PATTERN_MATCH": 11
+ },
+ "confidence": {
+  "HIGH": 183,
+  "MEDIUM": 45,
+  "LOW": 3
+ },
+ "top_owners": [
+  [
+   "Menu.UpdateControlIcons",
+   19
+  ],
+  [
+   "Menu.Menu_Settings_Graphics",
+   19
+  ],
+  [
+   "Menu.Menu_Promo",
+   14
+  ],
+  [
+   "Menu.Menu_PrinterSettings",
+   14
+  ],
+  [
+   "Menu.Menu_WorldDetails",
+   13
+  ],
+  [
+   "Menu.Menu_Main",
+   11
+  ],
+  [
+   "Menu.Menu_Printer",
+   11
+  ],
+  [
+   "Menu.Menu_Universes",
+   10
+  ],
+  [
+   "Menu.Menu_Controls",
+   9
+  ],
+  [
+   "Menu.Menu_Settings_Video",
+   9
+  ],
+  [
+   "Menu.Menu_Backups",
+   9
+  ],
+  [
+   "Menu.Menu_NewWorld",
+   8
+  ],
+  [
+   "Menu.Menu_Updates",
+   7
+  ],
+  [
+   "ModdingWindow..ctor",
+   6
+  ],
+  [
+   "Menu.Menu_Mods",
+   6
+  ],
+  [
+   "Menu.Menu_MissingTypes",
+   6
+  ],
+  [
+   "Menu.Menu_WorldsMain",
+   6
+  ],
+  [
+   "Menu.Menu_Quit",
+   5
+  ],
+  [
+   "Menu.Menu_Settings",
+   5
+  ],
+  [
+   "Menu.Menu_Settings_Gameplay",
+   5
+  ],
+  [
+   "ModdingWindow.Render",
+   4
+  ],
+  [
+   "Menu.Menu_Pause",
+   4
+  ],
+  [
+   "Menu.Menu_Settings_Audio",
+   4
+  ],
+  [
+   "ColorWindow..ctor",
+   3
+  ],
+  [
+   "CrafterWindow.RenderInfo",
+   3
+  ],
+  [
+   "PlayerWindow.Render",
+   3
+  ],
+  [
+   "Menu.Menu_PrinterActions",
+   3
+  ],
+  [
+   "Menu.Menu_UniverseDetails",
+   3
+  ],
+  [
+   "Menu.Menu_Worlds",
+   3
+  ],
+  [
+   "Menu.Menu_Multiplayer",
+   2
+  ]
+ ],
+ "headers": {
+  "printer": 28,
+  "": 27,
+  "KEYBIND": 19,
+  "graphics settings": 19,
+  "mods": 17,
+  "promo": 14,
+  "world details": 13,
+  "universes": 10,
+  "controls": 9,
+  "video settings": 9,
+  "backups": 9,
+  "world buttons": 9,
+  "your new world...": 8,
+  "updates": 7,
+  "missing types": 6,
+  "tabs": 5,
+  "gameplay settings": 5,
+  "crafter": 4,
+  "player": 4,
+  "audio settings": 4,
+  "set color": 3,
+  "multiplayer": 2
+ }
+}

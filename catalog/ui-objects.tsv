@@ -1,0 +1,232 @@
+owner_class	owner_method	window_header	button_name	button_class	field	source_text	static_key	confidence	match	header_reason
+ColorWindow	.ctor	set color	saturation	SliderButton	text_name	saturation	W:Window:set color|n:saturation:SliderButton|text_name	HIGH	EXISTING	class-alias
+ColorWindow	.ctor	set color	brightness	Button	text_name	brightness	W:Window:set color|n:brightness:Button|text_name	HIGH	EXISTING	class-alias
+ColorWindow	.ctor	set color	color	Button	text_name	color	W:Window:set color|n:color:Button|text_name	HIGH	EXISTING	class-alias
+CrafterWindow	ResetRecipes	crafter	misc	Button	text_name	misc	W:Window:crafter|n:misc:Button|text_name	MEDIUM	NEW	class-alias
+CrafterWindow	RenderInfo	crafter	recipes still locked	Button	text_name	 recipes still locked	W:Window:crafter|n:recipes still locked:Button|text_name	MEDIUM	NEW	class-alias
+CrafterWindow	RenderInfo	crafter	recipes crafted	Button	text_name	 recipes crafted	W:Window:crafter|n:recipes crafted:Button|text_name	MEDIUM	NEW	class-alias
+CrafterWindow	RenderInfo	crafter	# recipe still locked	Button	text_name	1 recipe still locked	W:Window:crafter|n:# recipe still locked:Button|text_name	MEDIUM	NEW	class-alias
+ModdingWindow	.ctor	mods	show health	BoolButton	text_name	show health	W:Window:mods|n:show health:BoolButton|text_name	HIGH	EXISTING	class-alias
+ModdingWindow	.ctor	mods	show touch area	BoolButton	text_name	show touch area	W:Window:mods|n:show touch area:BoolButton|text_name	HIGH	EXISTING	class-alias
+ModdingWindow	.ctor	mods	show eye level	BoolButton	text_name	show eye level	W:Window:mods|n:show eye level:BoolButton|text_name	HIGH	EXISTING	class-alias
+ModdingWindow	.ctor	mods	apply changes	Button	text_name	apply changes	W:Window:mods|n:apply changes:Button|text_name	HIGH	EXISTING	class-alias
+ModdingWindow	.ctor	mods	create mod	Button	text_name	create mod	W:Window:mods|n:create mod:Button|text_name	HIGH	EXISTING	class-alias
+ModdingWindow	.ctor	mods	delete mod	Button	text_name	delete mod	W:Window:mods|n:delete mod:Button|text_name	HIGH	EXISTING	class-alias
+ModdingWindow	Live	mods	save mod	Button	text_name	save mod	W:Window:mods|n:save mod:Button|text_name	HIGH	EXISTING	class-alias
+ModdingWindow	Render	mods	fluid	Button	text_name	fluid	W:Window:mods|n:fluid:Button|text_name	MEDIUM	NEW	class-alias
+ModdingWindow	Render	mods	slab type	Button	text_name	slab type	W:Window:mods|n:slab type:Button|text_name	MEDIUM	NEW	class-alias
+ModdingWindow	Render	mods	pilot	Button	text_name	pilot	W:Window:mods|n:pilot:Button|text_name	MEDIUM	NEW	class-alias
+ModdingWindow	Render	mods	type	Button	text_name	type	W:Window:mods|n:type:Button|text_name	MEDIUM	NEW	class-alias
+PlayerWindow	.ctor	player	color	Button	text_name	color	W:Window:player|n:color:Button|text_name	MEDIUM	SOURCE_KNOWN	class-stem
+PlayerWindow	Render	player	hat	Button	text_name	hat	W:Window:player|n:hat:Button|text_name	LOW	NEW	class-stem
+PlayerWindow	Render	player	color	Button	text_name	 color	W:Window:player|n:color:Button|text_name	LOW	NEW	class-stem
+PlayerWindow	Render	player	extra hearts	Button	text_name	extra hearts	W:Window:player|n:extra hearts:Button|text_name	LOW	NEW	class-stem
+Menu	UpdateControlIcons	KEYBIND	move left	KeybindButton	text_name	move left	KEYBIND:move left	HIGH	EXISTING	control-icons
+Menu	UpdateControlIcons	KEYBIND	point and click	KeybindButton	text_name	point and click	KEYBIND:point and click	HIGH	EXISTING	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 4	KEYBIND:hotbar 4	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 7	KEYBIND:hotbar 7	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 2	KEYBIND:hotbar 2	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 9	KEYBIND:hotbar 9	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	move forth	KeybindButton	text_name	move forth	KEYBIND:move forth	HIGH	EXISTING	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 5	KEYBIND:hotbar 5	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	fullscreen	KeybindButton	text_name	fullscreen	KEYBIND:fullscreen	HIGH	EXISTING	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 8	KEYBIND:hotbar 8	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	third person	KeybindButton	text_name	third person	KEYBIND:third person	HIGH	EXISTING	control-icons
+Menu	UpdateControlIcons	KEYBIND	hide menus	KeybindButton	text_name	hide menus	KEYBIND:hide menus	HIGH	EXISTING	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 3	KEYBIND:hotbar 3	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 10	KEYBIND:hotbar 10	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 1	KEYBIND:hotbar 1	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	hotbar #	KeybindButton	text_name	hotbar 6	KEYBIND:hotbar 6	MEDIUM	PATTERN_MATCH	control-icons
+Menu	UpdateControlIcons	KEYBIND	edit menu	KeybindButton	text_name	edit menu	KEYBIND:edit menu	HIGH	EXISTING	control-icons
+Menu	UpdateControlIcons	KEYBIND	move right	KeybindButton	text_name	move right	KEYBIND:move right	HIGH	EXISTING	control-icons
+Menu	UpdateControlIcons	KEYBIND	move back	KeybindButton	text_name	move back	KEYBIND:move back	HIGH	EXISTING	control-icons
+Menu	Menu_Controls	controls	show keyboard and mouse	Button	text_name	show keyboard and mouse	W:Window:controls|n:show keyboard and mouse:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Controls	controls	show simple controls list	Button	text_name	show simple controls list	W:Window:controls|n:show simple controls list:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Controls	controls	reverse y	BoolButton	text_name	reverse y	W:Window:controls|n:reverse y:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Controls	controls	controls list	Button	text_name	controls list	W:Window:controls|n:controls list:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Controls	controls	look speed	SliderButton	text_name	look speed	W:Window:controls|n:look speed:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Controls	controls	reset controls	Button	text_name	reset controls	W:Window:controls|n:reset controls:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Controls	controls	preview	BallButton	text_name	preview\nlook speed	W:Window:controls|n:preview:BallButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Controls	controls	back to menu	Button	text_name	back to menu	W:Window:controls|n:back to menu:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Controls	controls	reverse x	BoolButton	text_name	reverse x	W:Window:controls|n:reverse x:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		discord blog	Button	text_name	discord blog	W:Window:|n:discord blog:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		youtube	Button	text_name	youtube	W:Window:|n:youtube:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Main		patreon	Button	text_name	patreon	W:Window:|n:patreon:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Main		wishlist	Button	text_name	wishlist	W:Window:|n:wishlist:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		controls	Button	text_name	controls	W:Window:|n:controls:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		your worlds	Button	text_name	your worlds	W:Window:|n:your worlds:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		settings	Button	text_name	settings	W:Window:|n:settings:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		mods	Button	text_name	mods	W:Window:|n:mods:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		quit game	Button	text_name	quit game	W:Window:|n:quit game:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		multiplayer	Button	text_name	multiplayer	W:Window:|n:multiplayer:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Main		change universe	Button	text_name	change universe	W:Window:|n:change universe:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Names		names	TextButton	text_name	names	W:Window:|n:names:TextButton|text_name	HIGH	NEW	class-alias
+Menu	Menu_Funded		voima is #% community funded.	Button	text_name	voima is 100% community funded.	W:Window:|n:voima is #% community funded.:Button|text_name	MEDIUM	SOURCE_KNOWN	class-alias
+Menu	Menu_Promo	promo	as one of the first	TextButton	text_name	  as one of the first	W:Window:promo|n:as one of the first:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	or rushing an unfinished paid release,	TextButton	text_name	or rushing an unfinished paid release,	W:Window:promo|n:or rushing an unfinished paid release,:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	Instead of adding microtransactions,	TextButton	text_name	Instead of adding microtransactions,	W:Window:promo|n:Instead of adding microtransactions,:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	we are funding voima with pre-orders 	):TextButton	text_name	we are funding voima with pre-orders :)	W:Window:promo|n:we are funding voima with pre-orders :):TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	and...	TextButton	text_name	and...	W:Window:promo|n:and...:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	with a pre-order!	TextButton	text_name	  with a pre-order!  	W:Window:promo|n:with a pre-order!:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	by naming a bear	TextButton	text_name	  by naming a bear	W:Window:promo|n:by naming a bear:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	visit our website	Button	text_name	visit our website\nand name a bear!	W:Window:promo|n:visit our website:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	help us create new updates!	TextButton	text_name	help us create new updates!	W:Window:promo|n:help us create new updates!:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	bear	Button	text_name	bear	W:Window:promo|n:bear:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_Promo	promo	we also have a patreon	Button	text_name	we also have a patreon	W:Window:promo|n:we also have a patreon:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	believers in VOIMA	TextButton	text_name	  believers in VOIMA 	W:Window:promo|n:believers in VOIMA:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	Be forever remembered..	TextButton	text_name	  Be forever remembered..	W:Window:promo|n:Be forever remembered..:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Promo	promo	voima is #% community funded.	Button	text_name	voima is 100% community funded.	W:Window:promo|n:voima is #% community funded.:Button|text_name	MEDIUM	SOURCE_KNOWN	known-method
+Menu	Menu_Quit		instagram	ImageButton	text_name	instagram	W:Window:|n:instagram:ImageButton|text_name	HIGH	NEW	known-method
+Menu	Menu_Quit		credits	Button	text_name	credits	W:Window:|n:credits:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Quit		youtube	ImageButton	text_name	youtube	W:Window:|n:youtube:ImageButton|text_name	HIGH	NEW	known-method
+Menu	Menu_Quit		discord	ImageButton	text_name	discord	W:Window:|n:discord:ImageButton|text_name	HIGH	NEW	known-method
+Menu	Menu_Quit		thanks for playing voima!	TextButton	text_name	thanks for playing voima!	W:Window:|n:thanks for playing voima!:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Multiplayer	multiplayer	create server!	Button	text_name	create server!	W:Window:multiplayer|n:create server!:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Multiplayer	multiplayer	back to menu	Button	text_name	back to menu	W:Window:multiplayer|n:back to menu:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Updates	updates	Removed	TextButton	text_name	Removed 	W:Window:updates|n:Removed:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Updates	updates	Added	BoolButton	text_name	Added 	W:Window:updates|n:Added:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Updates	updates	no updates needed	Button	text_name	no updates needed	W:Window:updates|n:no updates needed:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Updates	updates	Modified	TextButton	text_name	Modified 	W:Window:updates|n:Modified:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Updates	updates	update now	Button	text_name	update now	W:Window:updates|n:update now:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Updates	updates	Moved	TextButton	text_name	Moved 	W:Window:updates|n:Moved:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Updates	updates	updates included!	TextButton	text_name	updates included!	W:Window:updates|n:updates included!:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Printer	printer	txt	Button	text_name	txt	W:Window:printer|n:txt:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Printer	printer	load texture	TextButton	text_name	load texture	W:Window:printer|n:load texture:TextButton|text_name	HIGH	NEW	known-method
+Menu	Menu_Printer	printer	load settings	Button	text_name	load settings	W:Window:printer|n:load settings:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_Printer	printer	png	Button	text_name	png	W:Window:printer|n:png:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Printer	printer	load models	Button	text_name	load models	W:Window:printer|n:load models:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_Printer	printer	obj	Button	text_name	obj	W:Window:printer|n:obj:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Printer	printer	Select Models	Button	text_name	Select Models	W:Window:printer|n:Select Models:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Printer	printer	models:	Button	text_name	models:	W:Window:printer|n:models::Button|text_name	HIGH	NEW	known-method
+Menu	Menu_Printer	printer	Select Settings	Button	text_name	Select Settings	W:Window:printer|n:Select Settings:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Printer	printer	save settings	Button	text_name	save settings	W:Window:printer|n:save settings:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Printer	printer	Select Texture	Button	text_name	Select Texture	W:Window:printer|n:Select Texture:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_PrinterActions	printer	slice spritesheet	Button	text_name	slice spritesheet	W:Window:printer|n:slice spritesheet:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterActions	printer	exit printer	Button	text_name	exit printer	W:Window:printer|n:exit printer:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterActions	printer	render spritesheet	Button	text_name	render spritesheet	W:Window:printer|n:render spritesheet:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	shadows	SliderButton	text_name	shadows	W:Window:printer|n:shadows:SliderButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	pivot z	AdjusterButton	text_name	pivot z	W:Window:printer|n:pivot z:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	resolution width	StringButton	text_name	resolution width	W:Window:printer|n:resolution width:StringButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	pivot x	AdjusterButton	text_name	pivot x	W:Window:printer|n:pivot x:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	rotation y	AdjusterButton	text_name	rotation y	W:Window:printer|n:rotation y:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	height	AdjusterButton	text_name	height	W:Window:printer|n:height:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	pivot y	AdjusterButton	text_name	pivot y	W:Window:printer|n:pivot y:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	rotation x	AdjusterButton	text_name	rotation x	W:Window:printer|n:rotation x:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	resolution height	StringButton	text_name	resolution height	W:Window:printer|n:resolution height:StringButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	distance	AdjusterButton	text_name	distance	W:Window:printer|n:distance:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	rotation z	AdjusterButton	text_name	rotation z	W:Window:printer|n:rotation z:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	fov	SliderButton	text_name	fov	W:Window:printer|n:fov:SliderButton|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_PrinterSettings	printer	sides	SliderButton	text_name	sides	W:Window:printer|n:sides:SliderButton|text_name	HIGH	NEW	known-method
+Menu	Menu_PrinterSettings	printer	angle	AdjusterButton	text_name	angle	W:Window:printer|n:angle:AdjusterButton|text_name	HIGH	NEW	known-method
+Menu	Menu_Pause		enable cheats	Button	text_name	enable cheats	W:Window:|n:enable cheats:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Pause		back to game	Button	text_name	back to game	W:Window:|n:back to game:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Pause		backups	Button	text_name	backups	W:Window:|n:backups:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Pause		save and exit	Button	text_name	save and exit	W:Window:|n:save and exit:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings	tabs	video settings	Button	text_name	video settings	W:Window:tabs|n:video settings:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings	tabs	exit settings	Button	text_name	exit settings	W:Window:tabs|n:exit settings:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings	tabs	audio settings	Button	text_name	audio settings	W:Window:tabs|n:audio settings:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings	tabs	graphics settings	Button	text_name	graphics settings	W:Window:tabs|n:graphics settings:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings	tabs	gameplay settings	Button	text_name	gameplay settings	W:Window:tabs|n:gameplay settings:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Audio	audio settings	#d sound	BoolButton	text_name	3d sound\nfor headphones	W:Window:audio settings|n:#d sound:BoolButton|text_name	MEDIUM	PATTERN_MATCH	known-method
+Menu	Menu_Settings_Audio	audio settings	reverbs	BoolButton	text_name	reverbs	W:Window:audio settings|n:reverbs:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Audio	audio settings	sound volume	SliderButton	text_name	sound volume	W:Window:audio settings|n:sound volume:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Audio	audio settings	music volume	SliderButton	text_name	music volume	W:Window:audio settings|n:music volume:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Gameplay	gameplay settings	view bobbing	BoolButton	text_name	view bobbing	W:Window:gameplay settings|n:view bobbing:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Gameplay	gameplay settings	toggle run	BoolButton	text_name	toggle run	W:Window:gameplay settings|n:toggle run:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Gameplay	gameplay settings	show tooltips	BoolButton	text_name	show tooltips\nfor controls	W:Window:gameplay settings|n:show tooltips:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Gameplay	gameplay settings	haze effect	BoolButton	text_name	haze effect	W:Window:gameplay settings|n:haze effect:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Gameplay	gameplay settings	right click	BoolButton	text_name	right click\nto build blocks	W:Window:gameplay settings|n:right click:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	shadow quality	SliderButton	text_name	shadow quality	W:Window:graphics settings|n:shadow quality:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	texture distance	SliderButton	text_name	texture distance	W:Window:graphics settings|n:texture distance:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	smooth textures	BoolButton	text_name	smooth textures	W:Window:graphics settings|n:smooth textures:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	thick cards	BoolButton	text_name	thick cards	W:Window:graphics settings|n:thick cards:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	disable reflections and waves	BoolButton	text_name	disable reflections\nand waves	W:Window:graphics settings|n:disable reflections and waves:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	texture resolution	SliderButton	text_name	texture resolution	W:Window:graphics settings|n:texture resolution:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	layered cards	BoolButton	text_name	layered cards	W:Window:graphics settings|n:layered cards:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	disable clouds	BoolButton	text_name	disable clouds	W:Window:graphics settings|n:disable clouds:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	particles	SliderButton	text_name	particles	W:Window:graphics settings|n:particles:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	view distance	SliderButton	text_name	view distance	W:Window:graphics settings|n:view distance:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	toggle run	BoolButton	text_name	toggle run	W:Window:graphics settings|n:toggle run:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	shadow distance	SliderButton	text_name	shadow distance	W:Window:graphics settings|n:shadow distance:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	fadeout amount	SliderButton	text_name	fadeout amount	W:Window:graphics settings|n:fadeout amount:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	extra shadows	BoolButton	text_name	extra shadows	W:Window:graphics settings|n:extra shadows:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	fog amount	SliderButton	text_name	fog amount	W:Window:graphics settings|n:fog amount:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	bloom	BoolButton	text_name	bloom	W:Window:graphics settings|n:bloom:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	fov	SliderButton	text_name	fov	W:Window:graphics settings|n:fov:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	disable layers in blocks	BoolButton	text_name	disable layers in blocks	W:Window:graphics settings|n:disable layers in blocks:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Graphics	graphics settings	texture depth	BoolButton	text_name	texture depth	W:Window:graphics settings|n:texture depth:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	color dithering	BoolButton	text_name	color dithering	W:Window:video settings|n:color dithering:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	menu scale	SliderButton	text_name	menu scale	W:Window:video settings|n:menu scale:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	fps limit	SliderButton	text_name	fps limit	W:Window:video settings|n:fps limit:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	vsync	BoolButton	text_name	vsync	W:Window:video settings|n:vsync:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	menu color	Button	text_name	menu color	W:Window:video settings|n:menu color:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	menu pixels	SliderButton	text_name	menu pixels	W:Window:video settings|n:menu pixels:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	fullscreen	BoolButton	text_name	fullscreen	W:Window:video settings|n:fullscreen:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	resolution	SliderButton	text_name	resolution	W:Window:video settings|n:resolution:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Settings_Video	video settings	game pixels	SliderButton	text_name	game pixels	W:Window:video settings|n:game pixels:SliderButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Universes	universes	youtube	Button	text_name	youtube	W:Window:universes|n:youtube:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_Universes	universes	patreon	Button	text_name	patreon	W:Window:universes|n:patreon:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_Universes	universes	wishlist	Button	text_name	wishlist	W:Window:universes|n:wishlist:Button|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_Universes	universes	import universe	Button	text_name	import universe	W:Window:universes|n:import universe:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Universes	universes	controls	Button	text_name	controls	W:Window:universes|n:controls:Button|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_Universes	universes	printer	Button	text_name	printer	W:Window:universes|n:printer:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_Universes	universes	settings	Button	text_name	settings	W:Window:universes|n:settings:Button|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_Universes	universes	Select Universe	Button	text_name	Select Universe	W:Window:universes|n:Select Universe:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Universes	universes	quit game	Button	text_name	quit game	W:Window:universes|n:quit game:Button|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_Universes	universes	discord	Button	text_name	discord	W:Window:universes|n:discord:Button|text_name	HIGH	NEW	known-method
+Menu	Menu_UniverseDetails		delete	Button	text_name	delete	W:Window:|n:delete:Button|text_name	HIGH	SOURCE_KNOWN	class-alias
+Menu	Menu_UniverseDetails		play	Button	text_name	play	W:Window:|n:play:Button|text_name	HIGH	SOURCE_KNOWN	class-alias
+Menu	Menu_UniverseDetails		duplicate	Button	text_name	duplicate	W:Window:|n:duplicate:Button|text_name	HIGH	SOURCE_KNOWN	class-alias
+Menu	Menu_Mods	mods	Select Mods	Button	text_name	Select Mods	W:Window:mods|n:Select Mods:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Mods	mods	enter modding mode	Button	text_name	enter modding mode	W:Window:mods|n:enter modding mode:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Mods	mods	import mods	Button	text_name	import mods	W:Window:mods|n:import mods:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Mods	mods	zip	Button	text_name	zip	W:Window:mods|n:zip:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Mods	mods	no mods in this universe yet	TextButton	text_name	no mods in this universe yet	W:Window:mods|n:no mods in this universe yet:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Mods	mods	back to menu	Button	text_name	back to menu	W:Window:mods|n:back to menu:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldDetails	world details	delete	Button	text_name	delete	W:Window:world details|n:delete:Button|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_WorldDetails	world details	Select Mods	Button	text_name	Select Mods	W:Window:world details|n:Select Mods:Button|text_name	MEDIUM	SOURCE_KNOWN	known-method
+Menu	Menu_WorldDetails	world details	survival world	TextButton	text_name	survival world	W:Window:world details|n:survival world:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldDetails	world details	play	TextButton	text_name	play	W:Window:world details|n:play:TextButton|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_WorldDetails	world details	clear stats	Button	text_name	clear stats	W:Window:world details|n:clear stats:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldDetails	world details	play as	Button	text_name	play as\nmultiplayer	W:Window:world details|n:play as:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldDetails	world details	done editing	Button	text_name	done editing	W:Window:world details|n:done editing:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldDetails	world details	duplicate	Button	text_name	duplicate	W:Window:world details|n:duplicate:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldDetails	world details	export	Button	text_name	export	W:Window:world details|n:export:Button|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_WorldDetails	world details	edit	Button	text_name	edit	W:Window:world details|n:edit:Button|text_name	HIGH	SOURCE_KNOWN	known-method
+Menu	Menu_WorldDetails	world details	zip	Button	text_name	zip	W:Window:world details|n:zip:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_WorldDetails	world details	cheats enabled	Button	text_name	cheats enabled	W:Window:world details|n:cheats enabled:Button|text_name	MEDIUM	SOURCE_KNOWN	known-method
+Menu	Menu_WorldDetails	world details	rename	StringButton	text_name	rename	W:Window:world details|n:rename:StringButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_NewWorld	your new world...	blocky	BoolButton	text_name	blocky	W:Window:your new world...|n:blocky:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_NewWorld	your new world...	cheats	BoolButton	text_name	cheats	W:Window:your new world...|n:cheats:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_NewWorld	your new world...	world name	StringButton	text_name	world name	W:Window:your new world...|n:world name:StringButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_NewWorld	your new world...	play now!	Button	text_name	play now!	W:Window:your new world...|n:play now!:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_NewWorld	your new world...	world seed	StringButton	text_name	world seed	W:Window:your new world...|n:world seed:StringButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_NewWorld	your new world...	next	Button	text_name	next	W:Window:your new world...|n:next:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_NewWorld	your new world...	New World	Button	text_name	New World	W:Window:your new world...|n:New World:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_NewWorld	your new world...	this was possible #.#.#	Button	text_name	this was possible 30.10.24	W:Window:your new world...|n:this was possible #.#.#:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Backups	backups	world.save	Button	text_name	world.save	W:Window:backups|n:world.save:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Backups	backups	Souls	Button	text_name	Souls	W:Window:backups|n:Souls:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_Backups	backups	auto save	BoolButton	text_name	auto save	W:Window:backups|n:auto save:BoolButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Backups	backups	delete backups	Button	text_name	delete backups	W:Window:backups|n:delete backups:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Backups	backups	latest	Button	text_name	latest	W:Window:backups|n:latest:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Backups	backups	create new backup	StringButton	text_name	create new backup	W:Window:backups|n:create new backup:StringButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Backups	backups	done	Button	text_name	done	W:Window:backups|n:done:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Backups	backups	original	Button	text_name	original	W:Window:backups|n:original:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Backups	backups	clicking one of these backups	TextButton	text_name	clicking one of these backups\nwill replace the current save\nwith a copy of the backup	W:Window:backups|n:clicking one of these backups:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_MissingTypes	missing types	done and play world	Button	text_name	done and play world	W:Window:missing types|n:done and play world:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_MissingTypes	missing types	Replace	TypeButton	text_name	Replace 	W:Window:missing types|n:Replace:TypeButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_MissingTypes	missing types	Would you like to replace	TextButton	text_name	Would you like to replace\nthese missing slab types?	W:Window:missing types|n:Would you like to replace:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_MissingTypes	missing types	with	Button	text_name	 with	W:Window:missing types|n:with:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_MissingTypes	missing types	Would you like to replace	TextButton	text_name	Would you like to replace\nthese missing card types?	W:Window:missing types|n:Would you like to replace:TextButton|text_name	HIGH	EXISTING	known-method
+Menu	Menu_MissingTypes	missing types	cannot find these types in	Button	text_name	 cannot find these types in 	W:Window:missing types|n:cannot find these types in:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_WorldsMain	world buttons	new world	Button	text_name	new world	W:Window:world buttons|n:new world:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldsMain	world buttons	Worlds	Button	text_name	Worlds	W:Window:world buttons|n:Worlds:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldsMain	world buttons	Select Worlds	Button	text_name	Select Worlds	W:Window:world buttons|n:Select Worlds:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldsMain	world buttons	zip	Button	text_name	zip	W:Window:world buttons|n:zip:Button|text_name	MEDIUM	NEW	known-method
+Menu	Menu_WorldsMain	world buttons	back to menu	Button	text_name	back to menu	W:Window:world buttons|n:back to menu:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_WorldsMain	world buttons	import world	Button	text_name	import world	W:Window:world buttons|n:import world:Button|text_name	HIGH	EXISTING	known-method
+Menu	Menu_Worlds	world buttons	your worlds	Button	text_name	your worlds	W:Window:world buttons|n:your worlds:Button|text_name	MEDIUM	SOURCE_KNOWN	known-method
+Menu	Menu_Worlds	world buttons	your other worlds	Button	text_name	your other worlds	W:Window:world buttons|n:your other worlds:Button|text_name	MEDIUM	SOURCE_KNOWN	known-method
+Menu	Menu_Worlds	world buttons	continue playing...	WorldButton	text_name	continue playing...	W:Window:world buttons|n:continue playing...:WorldButton|text_name	HIGH	SOURCE_KNOWN	known-method
+MenuUniverse	.ctor		Content	Button	text_name	Content	W:Window:|n:Content:Button|text_name	MEDIUM	NEW	class-alias
+MenuUniverse	.ctor		universe icon	Button	text_name	universe icon	W:Window:|n:universe icon:Button|text_name	MEDIUM	NEW	class-alias

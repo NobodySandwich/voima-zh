@@ -1,0 +1,14 @@
+VOIMA game-derived material
+
+The following are not licensed under the MIT license of VOIMA_ZH:
+
+- VOIMA game executables, data, artwork and English source text;
+- assets/VOIMA_Game.ttf, generated from the game's bitmap glyphs;
+- VOIMA-themed reference images embedded in the HTML editor.
+
+They remain the property of the VOIMA authors and are included only so that
+this unofficial localization can interoperate with a legitimately owned copy
+of the game. Do not extract or redistribute them as standalone assets.
+
+VOIMA is a commercial game. This project is unofficial and is not affiliated
+with or endorsed by the VOIMA authors.

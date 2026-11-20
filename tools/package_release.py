@@ -11,17 +11,16 @@ import sys
 import zipfile
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = (ROOT / "VERSION").read_text(encoding="utf-8").strip()
 OUT_ROOT = Path(os.environ.get(
     "VOIMA_ZH_RELEASE_ROOT",
-    ROOT.parent / "VOIMA_ZH_release",
+    ROOT.parent.parent / "VOIMA 2.2x2 Windows - Release",
 ))
 OUT = OUT_ROOT / "VOIMA_ZH"
 DIST = Path(os.environ.get(
     "VOIMA_ZH_DIST_DIR",
-    ROOT.parent / "dist",
+    ROOT.parent.parent / "VOIMA_ZH_git" / "dist",
 ))
-ZIP = DIST / f"VOIMA_ZH-v{VERSION}-voima2.2x2.zip"
+ZIP = DIST / "VOIMA_ZH_release.zip"
 
 README = """VOIMA 简体中文插件（发行版）
 ================================
@@ -42,6 +41,10 @@ Chrome / Edge 可直接写回文件，不需要 build_all.bat，也不需要任�
 - MinHook：BSD 2-Clause，见 licenses/MINHOOK.txt。
 - VOIMA 游戏及其衍生字模/界面素材不属于 GPL；本发行版不包含游戏本体。
   游戏素材的商业使用仍需 VOIMA 权利方许可。
+
+GPL 源代码
+----------
+https://github.com/NobodySandwich/voima-zh
 
 注意
 ----
@@ -65,10 +68,10 @@ def main() -> int:
     for name in ("VOIMA_ZH.exe", "VOIMA_ZH.dll", "translations.tsv", "点我修改汉化.html"):
         copy_required(name, name)
 
-    for name in ("LICENSE", "VERSION"):
+    for name in ("LICENSE",):
         copy_required(name, name)
     (OUT / "licenses").mkdir()
-    shutil.copy2(ROOT / "third_party" / "minhook" / "LICENSE.txt", OUT / "licenses" / "MINHOOK.txt")
+    shutil.copy2(ROOT / "licenses" / "MINHOOK.txt", OUT / "licenses" / "MINHOOK.txt")
 
     # Font pages are data, not source; diagnostic logs must not ship.
     shutil.copytree(ROOT / "Font", OUT / "Font", ignore=shutil.ignore_patterns("*.log"))

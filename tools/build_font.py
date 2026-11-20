@@ -57,12 +57,15 @@ def main() -> int:
     ap.add_argument("--font", default=str(ROOT / "assets" / "LXGWWenKaiScreen.ttf"))
     ap.add_argument("--translations", default=str(ROOT / "translations" / "translations.tsv"))
     ap.add_argument("--out", default=str(ROOT / "Font"))
+    ap.add_argument("--all-cjk", action="store_true")
     args = ap.parse_args()
 
     chars = collect_chars(Path(args.translations))
     common = ROOT / "assets" / "common_chinese.txt"
     if common.exists():
         chars = sorted(set(chars) | {ch for ch in common.read_text(encoding="utf-8") if ord(ch) >= 128 and ch not in GAME_PROVIDED})
+    if args.all_cjk:
+        chars = sorted(set(chars) | {chr(c) for c in range(0x4E00, 0xA000)})
     out = Path(args.out)
     out.mkdir(parents=True, exist_ok=True)
     (out / "glyphs.txt").write_text("".join(chars), encoding="utf-8")

@@ -12,5 +12,5 @@ for %%F in (plugin game_model translations logger font_patch font_pages util il2
 g++ -shared -static -static-libgcc -static-libstdc++ -o VOIMA_ZH.dll ^
   build\obj\plugin.o build\obj\game_model.o build\obj\translations.o build\obj\logger.o ^
   build\obj\font_patch.o build\obj\font_pages.o build\obj\util.o build\obj\il2cpp_api.o ^
-  build\obj\hook.o build\obj\buffer.o build\obj\trampoline.o build\obj\hde64.o -luser32 || exit /b 1
+  build\obj\hook.o build\obj\buffer.o build\obj\trampoline.o build\obj\hde64.o -luser32 -lgdiplus -lgdi32 || exit /b 1
 echo BUILD PLUGIN OK

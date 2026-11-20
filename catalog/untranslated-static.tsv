@@ -1,0 +1,80 @@
+match	confidence	static_key	source_text	owner_class	owner_method	reason
+NEW	MEDIUM	W:Window:crafter|n:misc:Button|text_name	misc	CrafterWindow	ResetRecipes	no translation for object key
+NEW	MEDIUM	W:Window:crafter|n:recipes still locked:Button|text_name	 recipes still locked	CrafterWindow	RenderInfo	no translation for object key
+NEW	MEDIUM	W:Window:crafter|n:recipes crafted:Button|text_name	 recipes crafted	CrafterWindow	RenderInfo	no translation for object key
+NEW	MEDIUM	W:Window:crafter|n:# recipe still locked:Button|text_name	1 recipe still locked	CrafterWindow	RenderInfo	no translation for object key
+NEW	MEDIUM	W:Window:mods|n:fluid:Button|text_name	fluid	ModdingWindow	Render	no translation for object key
+NEW	MEDIUM	W:Window:mods|n:slab type:Button|text_name	slab type	ModdingWindow	Render	no translation for object key
+NEW	MEDIUM	W:Window:mods|n:pilot:Button|text_name	pilot	ModdingWindow	Render	no translation for object key
+NEW	MEDIUM	W:Window:mods|n:type:Button|text_name	type	ModdingWindow	Render	no translation for object key
+SOURCE_KNOWN	MEDIUM	W:Window:player|n:color:Button|text_name	color	PlayerWindow	.ctor	source exists under another object key
+NEW	LOW	W:Window:player|n:hat:Button|text_name	hat	PlayerWindow	Render	no translation for object key
+NEW	LOW	W:Window:player|n:color:Button|text_name	 color	PlayerWindow	Render	no translation for object key
+NEW	LOW	W:Window:player|n:extra hearts:Button|text_name	extra hearts	PlayerWindow	Render	no translation for object key
+NEW	MEDIUM	W:Window:|n:youtube:Button|text_name	youtube	Menu	Menu_Main	no translation for object key
+NEW	MEDIUM	W:Window:|n:patreon:Button|text_name	patreon	Menu	Menu_Main	no translation for object key
+NEW	HIGH	W:Window:|n:names:TextButton|text_name	names	Menu	Menu_Names	no translation for object key
+SOURCE_KNOWN	MEDIUM	W:Window:|n:voima is #% community funded.:Button|text_name	voima is 100% community funded.	Menu	Menu_Funded	source exists under another object key
+NEW	HIGH	W:Window:promo|n:bear:Button|text_name	bear	Menu	Menu_Promo	no translation for object key
+SOURCE_KNOWN	MEDIUM	W:Window:promo|n:voima is #% community funded.:Button|text_name	voima is 100% community funded.	Menu	Menu_Promo	source exists under another object key
+NEW	HIGH	W:Window:|n:instagram:ImageButton|text_name	instagram	Menu	Menu_Quit	no translation for object key
+NEW	HIGH	W:Window:|n:youtube:ImageButton|text_name	youtube	Menu	Menu_Quit	no translation for object key
+NEW	HIGH	W:Window:|n:discord:ImageButton|text_name	discord	Menu	Menu_Quit	no translation for object key
+NEW	MEDIUM	W:Window:printer|n:txt:Button|text_name	txt	Menu	Menu_Printer	no translation for object key
+NEW	HIGH	W:Window:printer|n:load texture:TextButton|text_name	load texture	Menu	Menu_Printer	no translation for object key
+NEW	HIGH	W:Window:printer|n:load settings:Button|text_name	load settings	Menu	Menu_Printer	no translation for object key
+NEW	MEDIUM	W:Window:printer|n:png:Button|text_name	png	Menu	Menu_Printer	no translation for object key
+NEW	HIGH	W:Window:printer|n:load models:Button|text_name	load models	Menu	Menu_Printer	no translation for object key
+NEW	MEDIUM	W:Window:printer|n:obj:Button|text_name	obj	Menu	Menu_Printer	no translation for object key
+NEW	MEDIUM	W:Window:printer|n:Select Models:Button|text_name	Select Models	Menu	Menu_Printer	no translation for object key
+NEW	HIGH	W:Window:printer|n:models::Button|text_name	models:	Menu	Menu_Printer	no translation for object key
+NEW	MEDIUM	W:Window:printer|n:Select Settings:Button|text_name	Select Settings	Menu	Menu_Printer	no translation for object key
+NEW	MEDIUM	W:Window:printer|n:save settings:Button|text_name	save settings	Menu	Menu_Printer	no translation for object key
+NEW	MEDIUM	W:Window:printer|n:Select Texture:Button|text_name	Select Texture	Menu	Menu_Printer	no translation for object key
+NEW	HIGH	W:Window:printer|n:slice spritesheet:Button|text_name	slice spritesheet	Menu	Menu_PrinterActions	no translation for object key
+NEW	HIGH	W:Window:printer|n:exit printer:Button|text_name	exit printer	Menu	Menu_PrinterActions	no translation for object key
+NEW	HIGH	W:Window:printer|n:render spritesheet:Button|text_name	render spritesheet	Menu	Menu_PrinterActions	no translation for object key
+NEW	HIGH	W:Window:printer|n:shadows:SliderButton|text_name	shadows	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:pivot z:AdjusterButton|text_name	pivot z	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:resolution width:StringButton|text_name	resolution width	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:pivot x:AdjusterButton|text_name	pivot x	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:rotation y:AdjusterButton|text_name	rotation y	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:height:AdjusterButton|text_name	height	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:pivot y:AdjusterButton|text_name	pivot y	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:rotation x:AdjusterButton|text_name	rotation x	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:resolution height:StringButton|text_name	resolution height	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:distance:AdjusterButton|text_name	distance	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:rotation z:AdjusterButton|text_name	rotation z	Menu	Menu_PrinterSettings	no translation for object key
+SOURCE_KNOWN	HIGH	W:Window:printer|n:fov:SliderButton|text_name	fov	Menu	Menu_PrinterSettings	source exists under another object key
+NEW	HIGH	W:Window:printer|n:sides:SliderButton|text_name	sides	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:printer|n:angle:AdjusterButton|text_name	angle	Menu	Menu_PrinterSettings	no translation for object key
+NEW	HIGH	W:Window:universes|n:youtube:Button|text_name	youtube	Menu	Menu_Universes	no translation for object key
+NEW	HIGH	W:Window:universes|n:patreon:Button|text_name	patreon	Menu	Menu_Universes	no translation for object key
+SOURCE_KNOWN	HIGH	W:Window:universes|n:wishlist:Button|text_name	wishlist	Menu	Menu_Universes	source exists under another object key
+SOURCE_KNOWN	HIGH	W:Window:universes|n:controls:Button|text_name	controls	Menu	Menu_Universes	source exists under another object key
+NEW	HIGH	W:Window:universes|n:printer:Button|text_name	printer	Menu	Menu_Universes	no translation for object key
+SOURCE_KNOWN	HIGH	W:Window:universes|n:settings:Button|text_name	settings	Menu	Menu_Universes	source exists under another object key
+SOURCE_KNOWN	HIGH	W:Window:universes|n:quit game:Button|text_name	quit game	Menu	Menu_Universes	source exists under another object key
+NEW	HIGH	W:Window:universes|n:discord:Button|text_name	discord	Menu	Menu_Universes	no translation for object key
+SOURCE_KNOWN	HIGH	W:Window:|n:delete:Button|text_name	delete	Menu	Menu_UniverseDetails	source exists under another object key
+SOURCE_KNOWN	HIGH	W:Window:|n:play:Button|text_name	play	Menu	Menu_UniverseDetails	source exists under another object key
+SOURCE_KNOWN	HIGH	W:Window:|n:duplicate:Button|text_name	duplicate	Menu	Menu_UniverseDetails	source exists under another object key
+NEW	MEDIUM	W:Window:mods|n:zip:Button|text_name	zip	Menu	Menu_Mods	no translation for object key
+SOURCE_KNOWN	HIGH	W:Window:world details|n:delete:Button|text_name	delete	Menu	Menu_WorldDetails	source exists under another object key
+SOURCE_KNOWN	MEDIUM	W:Window:world details|n:Select Mods:Button|text_name	Select Mods	Menu	Menu_WorldDetails	source exists under another object key
+SOURCE_KNOWN	HIGH	W:Window:world details|n:play:TextButton|text_name	play	Menu	Menu_WorldDetails	source exists under another object key
+SOURCE_KNOWN	HIGH	W:Window:world details|n:export:Button|text_name	export	Menu	Menu_WorldDetails	source exists under another object key
+SOURCE_KNOWN	HIGH	W:Window:world details|n:edit:Button|text_name	edit	Menu	Menu_WorldDetails	source exists under another object key
+NEW	MEDIUM	W:Window:world details|n:zip:Button|text_name	zip	Menu	Menu_WorldDetails	no translation for object key
+SOURCE_KNOWN	MEDIUM	W:Window:world details|n:cheats enabled:Button|text_name	cheats enabled	Menu	Menu_WorldDetails	source exists under another object key
+NEW	MEDIUM	W:Window:your new world...|n:this was possible #.#.#:Button|text_name	this was possible 30.10.24	Menu	Menu_NewWorld	no translation for object key
+NEW	MEDIUM	W:Window:backups|n:world.save:Button|text_name	world.save	Menu	Menu_Backups	no translation for object key
+NEW	MEDIUM	W:Window:backups|n:Souls:Button|text_name	Souls	Menu	Menu_Backups	no translation for object key
+NEW	MEDIUM	W:Window:missing types|n:with:Button|text_name	 with	Menu	Menu_MissingTypes	no translation for object key
+NEW	MEDIUM	W:Window:missing types|n:cannot find these types in:Button|text_name	 cannot find these types in 	Menu	Menu_MissingTypes	no translation for object key
+NEW	MEDIUM	W:Window:world buttons|n:zip:Button|text_name	zip	Menu	Menu_WorldsMain	no translation for object key
+SOURCE_KNOWN	MEDIUM	W:Window:world buttons|n:your worlds:Button|text_name	your worlds	Menu	Menu_Worlds	source exists under another object key
+SOURCE_KNOWN	MEDIUM	W:Window:world buttons|n:your other worlds:Button|text_name	your other worlds	Menu	Menu_Worlds	source exists under another object key
+SOURCE_KNOWN	HIGH	W:Window:world buttons|n:continue playing...:WorldButton|text_name	continue playing...	Menu	Menu_Worlds	source exists under another object key
+NEW	MEDIUM	W:Window:|n:Content:Button|text_name	Content	MenuUniverse	.ctor	no translation for object key
+NEW	MEDIUM	W:Window:|n:universe icon:Button|text_name	universe icon	MenuUniverse	.ctor	no translation for object key

@@ -27,7 +27,7 @@ class TranslationTableTest(unittest.TestCase):
 
     def test_columns_and_keys(self):
         prefixes = ("W:", "CARD:", "BIOME:", "ANIMAL:", "TIP:", "TIPD:",
-                    "KEYBIND:", "KEYCAP:", "HUD:", "LOAD:", "MUSIC:", "MENU:", "X:")
+                    "KEYBIND:", "KEYCAP:", "HUD:", "LOAD:", "MUSIC:", "MENU:", "X:", "DEATH:", "ITEM:")
         for key, source, translation in load_rows():
             self.assertTrue(key.startswith(prefixes), key)
             self.assertIn(":", key)

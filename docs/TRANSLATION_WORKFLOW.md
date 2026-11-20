@@ -19,14 +19,14 @@
 
 ## 1. 数据模型
 
-| 数据                  | 内容                       | 来源                                |
-| ------------------- | ------------------------ | --------------------------------- |
-| TranslationEntry    | 对象键、英文源模式、中文             | translations/translations.tsv     |
-| CaptureRecord       | 场景、对象键、原文、译文、页号、Build 次数 | logs/test_trace.tsv + plugin.log  |
-| Gap                 | 类型、对象键、原文、对象详情、首次场景、次数   | logs/untranslated.log             |
-| Exemption           | 用户内容/按键名/专有名词/技术文本，附理由   | tests/exemptions.tsv              |
-| CoverageRequirement | 场景、必须命中的对象键+原文、期望中文      | tests/coverage_manifest.json      |
-| FontPageReport      | 页号、字符数、创建结果、异常           | logs/plugin.log + Font/glyphs.txt |
+| 数据 | 内容 | 来源 |
+|---|---|---|
+| TranslationEntry | 对象键、英文源模式、中文 | translations/translations.tsv |
+| CaptureRecord | 场景、对象键、原文、译文、页号、Build 次数 | logs/test_trace.tsv + plugin.log |
+| Gap | 类型、对象键、原文、对象详情、首次场景、次数 | logs/untranslated.log |
+| Exemption | 用户内容/按键名/专有名词/技术文本，附理由 | tests/exemptions.tsv |
+| CoverageRequirement | 场景、必须命中的对象键+原文、期望中文 | tests/coverage_manifest.json |
+| FontPageReport | 页号、字符数、创建结果、异常 | logs/plugin.log + Font/glyphs.txt |
 
 建议在插件 trace 中增加场景列，由命令文件的 scenario <name> 设置；没有场景时记 unknown。这样同一句英文在不同界面的出现可以分开统计。
 
@@ -50,15 +50,11 @@
 B1. 静态对象目录（主渠道）
 
 - 从 global-metadata / dump.cs / stringliteral.json 提取 UI 字符串。
-
 - 扫描 Menu_*、Window/Button 子类、TextureText 构造/Build 调用点、CardType、tooltip、loading。
-
 - 对设置页，直接扫描 Menu_Settings* 方法里的字符串加载，得到标题、tab、标签的真实英文。
-
 - 输出 catalog/ui-objects.tsv，每行包含 owner_class、owner_method、window_header、button_name、button_class、field、source_text、static_key、confidence。
-
 - 按对象分类：
-  
+
     W:Window:<header>|header_text
     W:Window:<header>|n:<button>:<class>|text_name / text_value
     CARD:<path>
@@ -87,18 +83,18 @@ B2. 运行时对象图抽样（关键界面）
 
 每条差距必须归入下列一类，不能只写“未翻译”：
 
-| 类型               | 含义                       | 处理                |
-| ---------------- | ------------------------ | ----------------- |
-| MISSING_ENTRY    | 对象键正确，表里没有               | 补 TSV             |
-| KEY_MISMATCH     | 运行时键和表里的键不一致             | 修 resolver/键格式    |
-| PATTERN_MISMATCH | 键存在但源模式不匹配（大小写/换行/数字/句点） | 修源模式              |
-| UNOWNED          | 解析成 X:，没有对象上下文           | 增加对象探测，禁止裸文本兜底    |
-| USER_CONTENT     | 玩家名/世界名/预购者名单            | 写 exemption，不翻译   |
-| KEYCAP           | H/J/ENTER/F1 等按键名        | 写 exemption，不翻译   |
-| PROPER_NOUN      | 人名/歌名/开发者名               | 白名单，保留英文或音译       |
-| FONT_MISSING     | 有中文但 Font 没有 PNG/glyphs  | 重生成字形             |
-| PAGE_FAILED      | 页字体构造异常/超层               | 查重复标点、页预算、GC root |
-| LAYOUT           | 文字已翻译但溢出/重叠/截断           | 缩短/换行/调字号，不改键     |
+| 类型 | 含义 | 处理 |
+|---|---|---|
+| MISSING_ENTRY | 对象键正确，表里没有 | 补 TSV |
+| KEY_MISMATCH | 运行时键和表里的键不一致 | 修 resolver/键格式 |
+| PATTERN_MISMATCH | 键存在但源模式不匹配（大小写/换行/数字/句点） | 修源模式 |
+| UNOWNED | 解析成 X:，没有对象上下文 | 增加对象探测，禁止裸文本兜底 |
+| USER_CONTENT | 玩家名/世界名/预购者名单 | 写 exemption，不翻译 |
+| KEYCAP | H/J/ENTER/F1 等按键名 | 写 exemption，不翻译 |
+| PROPER_NOUN | 人名/歌名/开发者名 | 白名单，保留英文或音译 |
+| FONT_MISSING | 有中文但 Font 没有 PNG/glyphs | 重生成字形 |
+| PAGE_FAILED | 页字体构造异常/超层 | 查重复标点、页预算、GC root |
+| LAYOUT | 文字已翻译但溢出/重叠/截断 | 缩短/换行/调字号，不改键 |
 
 指标：
 
@@ -110,17 +106,12 @@ B2. 运行时对象图抽样（关键界面）
 ### 阶段 D：按对象翻译
 
 - 只改 translations/translations.tsv，不要直接在源码里写中文。
-
 - 同一个英文在不同对象下必须显式分条；如果确实同义，在注释里写“与 X 同义”，不要偷偷复用。
-
 - 动态数字用 {0}/{1}；动态名字用 {*}。
-
 - 长文本保留换行，按游戏按钮宽度手动断行。
-
 - 专有名词先查 glossary；用户内容写 exemption。
-
 - 每补完一批运行：
-  
+
     python tools/import_translations.py
     python tools/build_font.py
     cmd /c tools\build_all.bat
@@ -182,21 +173,21 @@ E4. 视觉检查
 
 ## 3. 场景清单（最低要求）
 
-| 场景     | 关键对象                   | 必查                           |
-| ------ | ---------------------- | ---------------------------- |
-| 主菜单    | 根 Window、promo         | 七个按钮、continue 动态存档名、promo 计数 |
-| 控制     | controls、KeybindButton | 动作名、键名、tooltip               |
-| 设置-音频  | tabs、audio settings    | tab、音量、混响、耳机                 |
-| 设置-视频  | video settings         | 菜单颜色/缩放/分辨率/像素/帧率/全屏         |
-| 设置-画面  | graphics settings      | 两页图形选项                       |
-| 设置-玩法  | gameplay settings      | 右键建造/奔跑/视角摇晃/雾/提示            |
-| 新世界    | your new world...      | 尺寸/风格/种子/难度                  |
-| 暂停/退出  | pause、quit             | 返回/保存/退出                     |
-| 模组     | mods                   | 导入/应用/编辑模式/空状态               |
-| 多人     | multiplayer            | Steam 错误、房间列表                |
-| 加载     | LOAD                   | 每个 loading 阶段                |
-| HUD/卡牌 | HUD、CARD               | 动作、物品名、tooltip               |
-| 制作人员   | credits                | 人名/角色名（白名单）                  |
+| 场景 | 关键对象 | 必查 |
+|---|---|---|
+| 主菜单 | 根 Window、promo | 七个按钮、continue 动态存档名、promo 计数 |
+| 控制 | controls、KeybindButton | 动作名、键名、tooltip |
+| 设置-音频 | tabs、audio settings | tab、音量、混响、耳机 |
+| 设置-视频 | video settings | 菜单颜色/缩放/分辨率/像素/帧率/全屏 |
+| 设置-画面 | graphics settings | 两页图形选项 |
+| 设置-玩法 | gameplay settings | 右键建造/奔跑/视角摇晃/雾/提示 |
+| 新世界 | your new world... | 尺寸/风格/种子/难度 |
+| 暂停/退出 | pause、quit | 返回/保存/退出 |
+| 模组 | mods | 导入/应用/编辑模式/空状态 |
+| 多人 | multiplayer | Steam 错误、房间列表 |
+| 加载 | LOAD | 每个 loading 阶段 |
+| HUD/卡牌 | HUD、CARD | 动作、物品名、tooltip |
+| 制作人员 | credits | 人名/角色名（白名单） |
 
 ---
 

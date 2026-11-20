@@ -219,18 +219,18 @@ ANIMAL:characters/bear/bear:hurt_messages:3	oucc	啊哟
 ANIMAL:characters/bear/bear:hurt_messages:4	sheezh	天那
 ANIMAL:characters/bear/bear:hurt_messages:5	da peyn iz unberabl	痛的嗖不了
 ANIMAL:characters/bear/bear:hurt_messages:6	uupz	呃呀
-ANIMAL:characters/bear/bear:hurt_messages:7	ma leg!!{0}!	窝滴腿！！{0}！
+ANIMAL:characters/bear/bear:hurt_messages:7	ma leg!!1!	窝滴腿!!1!
 ANIMAL:characters/bear/bear:hurt_messages:8	taht hurrt	豪痛
 ANIMAL:characters/bear/bear:hurt_messages:9	owwww	嗷呜
-ANIMAL:characters/bear/bear:hurt_messages:10	gud ting i hab helth insuranc!	害好窝有宜疗抱险！
+ANIMAL:characters/bear/bear:hurt_messages:10	gud ting i hab helth insuranc!	害好窝有宜疗抱险!
 ANIMAL:characters/bear/bear:hurt_messages:11	ackk	呃啊
-ANIMAL:characters/bear/bear:hurt_messages:12	shuuht	哔嘴！
+ANIMAL:characters/bear/bear:hurt_messages:12	shuuht	哔嘴!
 ANIMAL:characters/bear/bear:hurt_messages:13	breh	兄第
 ANIMAL:characters/bear/bear:hurt_messages:14	gahhh	呀啊啊
-ANIMAL:characters/bear/bear:hurt_messages:15	stapp	卒手！
-ANIMAL:characters/bear/bear:hurt_messages:16	uh o	造了！
+ANIMAL:characters/bear/bear:hurt_messages:15	stapp	卒手!
+ANIMAL:characters/bear/bear:hurt_messages:16	uh o	造了!
 ANIMAL:characters/bear/bear:hurt_messages:17	oopzy deysie	哎呀呀
-ANIMAL:characters/bear/bear:hurt_messages:18	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心！！！
+ANIMAL:characters/bear/bear:hurt_messages:18	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 ANIMAL:characters/bear/bear:hurt_messages:19	welp	号吧
 ANIMAL:characters/bear/bear:hurt_messages:20	dawgg	葛们
 ANIMAL:characters/bear/bear:hurt_messages:21	wers ma hony potiun	窝滴冯蜜药水捏？
@@ -246,10 +246,10 @@ ANIMAL:characters/bear/bear:attack_messages:0	boim boim	砰姆 砰姆
 ANIMAL:characters/bear/bear:attack_messages:1	bring in da berz	吧熊都叫莱
 ANIMAL:characters/bear/bear:attack_messages:2	wump womp	乌咚 乌咚
 ANIMAL:characters/bear/bear:attack_messages:3	itz voimin tieme	voimin时尖到
-ANIMAL:characters/bear/bear:attack_messages:4	{0} voimuhhhh	{0} voimu呃呃呃
-ANIMAL:characters/bear/bear:attack_messages:5	letz {0}v{0}	{0}v{0} 单挑
+ANIMAL:characters/bear/bear:attack_messages:4	4 voimuhhhh	4 voimu呃呃呃
+ANIMAL:characters/bear/bear:attack_messages:5	letz 1v1	莱 1v1 单朓
 ANIMAL:characters/bear/bear:attack_messages:6	diz al u got?	泥就贼点本司？
-ANIMAL:characters/bear/bear:attack_messages:7	{0} nozcop	{0}次盲狙
+ANIMAL:characters/bear/bear:attack_messages:7	360 nozcop	360杜盲狙
 ANIMAL:characters/bear/bear:attack_messages:8	ged oudda hirrr	滚粗去
 ANIMAL:characters/bear/bear:attack_messages:9	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
 ANIMAL:characters/bear/bear:attack_messages:10	git voimd	被voim了吧
@@ -263,7 +263,7 @@ ANIMAL:characters/bear/bear:flee_messages:1	ruhn runn run rrruun run	抛跑抛�
 ANIMAL:characters/bear/bear:flee_messages:2	glup	咕嘟
 ANIMAL:characters/bear/bear:flee_messages:3	gg	寄
 ANIMAL:characters/bear/bear:flee_messages:4	huuuhhlllpppp miiiiiii	救救窝哦哦哦
-ANIMAL:characters/bear/bear:flee_messages:5	i ned bakkup!	窝徐要兹援！
+ANIMAL:characters/bear/bear:flee_messages:5	i ned bakkup!	窝徐要兹援!
 ANIMAL:characters/bear/bear:flee_messages:6	i heyt runnin	窝套厌逃泡
 ANIMAL:characters/bear/bear:flee_messages:7	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
 ANIMAL:characters/bear/bear:flee_messages:8	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
@@ -305,7 +305,7 @@ MUSIC:melodic noise	melodic noise	噪声旋律
 MUSIC:meditate	meditate	冥想
 MUSIC:carousel	carousel	旋转木马
 MUSIC:icecream	icecream	冰淇淋
-W:Window:|n:continue playing...:TextButton|text_name	continue playing...\n{*}	继续游戏...\n进入世界:  {*}
+W:Window:|n:continue playing...:TextButton|text_name	continue playing...\n{*}	继续游戏...\n{*}
 W:Window:|n:your worlds:Button|text_name	your worlds	你的世界
 W:Window:|n:multiplayer:Button|text_name	multiplayer	多人游戏
 W:Window:|n:mods:Button|text_name	mods	模组
@@ -322,7 +322,7 @@ W:Window:promo|n:Be forever remembered..:TextButton|text_name	Be forever remembe
 W:Window:promo|n:as one of the first:TextButton|text_name	as one of the first	  作为第一批
 W:Window:promo|n:believers in VOIMA:TextButton|text_name	believers in VOIMA	信仰 VOIMA 的人
 W:Window:promo|n:by naming a bear:TextButton|text_name	by naming a bear	通过预购
-W:Window:promo|n:with a pre-order!:TextButton|text_name	with a pre-order!	为一只熊命名！
+W:Window:promo|n:with a pre-order!:TextButton|text_name	with a pre-order!	为一只熊命名!
 W:Window:promo|n:Instead of adding microtransactions,:TextButton|text_name	Instead of adding microtransactions,	我们没有加入微交易，
 W:Window:promo|n:or rushing an unfinished paid release,:TextButton|text_name	or rushing an unfinished paid release,	也没有仓促推出未完成的付费版，
 W:Window:promo|n:visit our website:Button|text_name	visit our website	访问我们的网站
@@ -346,7 +346,7 @@ W:Window:video settings|n:color dithering:BoolButton|text_name	color dithering	�
 W:Window:video settings|n:fps limit:SliderButton|text_name	fps limit	帧率上限
 W:Window:video settings|n:vsync:BoolButton|text_name	vsync	垂直同步
 W:Window:video settings|n:fullscreen:BoolButton|text_name	fullscreen	全屏
-W:Window:graphics settings|n:fov:SliderButton|text_name	fov	视野 (fov)
+W:Window:graphics settings|n:fov:SliderButton|text_name	fov	视场角 (fov)
 W:Window:graphics settings|n:view distance:SliderButton|text_name	view distance	视距
 W:Window:graphics settings|n:shadow quality:SliderButton|text_name	shadow quality	阴影质量
 W:Window:graphics settings|n:bloom:BoolButton|text_name	bloom	泛光
@@ -382,7 +382,7 @@ W:Window:your new world...|n:floating:CategoryButton|text_name	floating islands	
 W:Window:your new world...|n:sunken:CategoryButton|text_name	sunken ocean	沉没海洋
 W:Window:your new world...|n:next:Button|text_name	next	下一步
 W:Window:your new world...|n:blocky:BoolButton|text_name	blocky	方块风格
-W:Window:your new world...|n:cheats:BoolButton|text_name	cheats	允许作弊
+W:Window:your new world...|n:cheats:BoolButton|text_name	cheats	作弊模式
 W:Window:your new world...|n:world name:StringButton|text_name	world name	世界名称
 W:Window:your new world...|n:world seed:StringButton|text_name	world seed	世界种子
 W:Window:your new world...|n:world seed:WorldButton|text_name	world seed	世界种子
@@ -390,35 +390,35 @@ W:Window:your new world...|n:S:CategoryButton|text_name	S	小
 W:Window:your new world...|n:M:CategoryButton|text_name	M	中
 W:Window:your new world...|n:L:CategoryButton|text_name	L	大
 W:Window:your new world...|n:XL:CategoryButton|text_name	XL	特大
-W:Window:your new world...|n:XXL:CategoryButton|text_name	XXL	太大啦！
+W:Window:your new world...|n:XXL:CategoryButton|text_name	XXL	太大啦!
 W:Window:your new world...|n:S:BoolButton|text_name	S	小
 W:Window:your new world...|n:M:BoolButton|text_name	M	中
 W:Window:your new world...|n:L:BoolButton|text_name	L	大
 W:Window:your new world...|n:XL:BoolButton|text_name	XL	特大
-W:Window:your new world...|n:XXL:BoolButton|text_name	XXL	太大啦！
-W:Window:your new world...|n:play now!:Button|text_name	play now!	开始游戏！
-LOAD:loading main menu	loading main menu	正在加载主菜单...
-LOAD:loading universe	loading universe	正在加载宇宙...
-LOAD:loading world	loading world	正在加载世界...
-LOAD:loading karhula cards	loading karhula cards	正在加载熊之地卡片...
-LOAD:loading karhula sounds	loading karhula sounds	正在加载熊之地音效...
-LOAD:loading karhula characters	loading karhula characters	正在加载熊之地角色...
-LOAD:loading karhula furniture	loading karhula furniture	正在加载熊之地家具...
-LOAD:loading karhula plants	loading karhula plants	正在加载熊之地植物...
-LOAD:loading karhula slabs	loading karhula slabs	正在加载熊之地板块...
-LOAD:loading karhula tools	loading karhula tools	正在加载熊之地工具...
-LOAD:loading karhula textures	loading karhula textures	正在加载熊之地纹理...
-LOAD:loading karhula paintings	loading karhula paintings	正在加载熊之地画作...
-LOAD:loading karhula biomes	loading karhula biomes	正在加载熊之地生物群系...
-LOAD:loading karhula songs	loading karhula songs	正在加载熊之地歌曲...
-LOAD:loading karhula mods	loading karhula mods	正在加载熊之地模组...
-LOAD:loading karhula content	loading karhula content	正在加载熊之地内容...
-LOAD:loading karhula fonts	loading karhula fonts	正在加载熊之地字体...
-LOAD:loading karhula data	loading karhula data	正在加载熊之地数据...
-LOAD:loading karhula models	loading karhula models	正在加载熊之地模型...
-LOAD:loading karhula folders	loading karhula folders	正在加载熊之地文件夹...
-LOAD:loading mods	loading mods	正在加载模组...
-LOAD:loading content	loading content	正在加载内容...
+W:Window:your new world...|n:XXL:BoolButton|text_name	XXL	太大啦!
+W:Window:your new world...|n:play now!:Button|text_name	play now!	开始游戏!
+LOAD:loading main menu	loading main menu	正在加载主菜单
+LOAD:loading universe	loading universe	正在加载宇宙
+LOAD:loading world	loading world	正在加载世界
+LOAD:loading karhula cards	loading karhula cards	正在加载熊之地卡片
+LOAD:loading karhula sounds	loading karhula sounds	正在加载熊之地音效
+LOAD:loading karhula characters	loading karhula characters	正在加载熊之地角色
+LOAD:loading karhula furniture	loading karhula furniture	正在加载熊之地家具
+LOAD:loading karhula plants	loading karhula plants	正在加载熊之地植物
+LOAD:loading karhula slabs	loading karhula slabs	正在加载熊之地板块
+LOAD:loading karhula tools	loading karhula tools	正在加载熊之地工具
+LOAD:loading karhula textures	loading karhula textures	正在加载熊之地纹理
+LOAD:loading karhula paintings	loading karhula paintings	正在加载熊之地画作
+LOAD:loading karhula biomes	loading karhula biomes	正在加载熊之地生物群系
+LOAD:loading karhula songs	loading karhula songs	正在加载熊之地歌曲
+LOAD:loading karhula mods	loading karhula mods	正在加载熊之地模组
+LOAD:loading karhula content	loading karhula content	正在加载熊之地内容
+LOAD:loading karhula fonts	loading karhula fonts	正在加载熊之地字体
+LOAD:loading karhula data	loading karhula data	正在加载熊之地数据
+LOAD:loading karhula models	loading karhula models	正在加载熊之地模型
+LOAD:loading karhula folders	loading karhula folders	正在加载熊之地文件夹
+LOAD:loading mods	loading mods	正在加载模组
+LOAD:loading content	loading content	正在加载内容
 KEYBIND:back to menu	back to menu	返回菜单
 KEYBIND:control	control	额外操作
 KEYBIND:controls list	controls list	控制列表
@@ -464,6 +464,7 @@ KEYBIND:talk	talk	交谈
 KEYBIND:third	third	第三人称
 KEYBIND:third person	third person	第三人称
 KEYBIND:zoom	zoom	缩放
+HUD:launch	launch	发射
 HUD:attack	attack	攻击
 HUD:build	build	建造
 HUD:drink	drink	饮用
@@ -480,8 +481,8 @@ HUD:swing	swing	挥动
 HUD:throw	throw	投掷
 HUD:use	use	使用
 MUSIC:amble	amble	漫步
-MUSIC:cherry tree pt 1	cherry tree pt {0}	樱桃树 第 {0} 部分
-MUSIC:cherry tree pt 2	cherry tree pt {0}	樱桃树 第 {0} 部分
+MUSIC:cherry tree pt 1	cherry tree pt {0}	樱桃树 其{0}
+MUSIC:cherry tree pt 2	cherry tree pt {0}	樱桃树 其{0}
 MUSIC:drift	drift	漂流
 MUSIC:lost	lost	迷失
 MUSIC:oranger	oranger	橘园
@@ -493,7 +494,7 @@ MUSIC:geo	geo	大地
 MUSIC:lullaby	lullaby	摇篮曲
 MUSIC:icecream has melted	icecream has melted	冰淇淋融化了
 MUSIC:hypno	hypno	催眠
-MUSIC:5	{0}	第 {0} 首
+MUSIC:5	{0}	{0}
 MUSIC:bird	bird	鸟
 MUSIC:bowed	bowed	弓弦
 MUSIC:hi	hi	嗨
@@ -673,8 +674,8 @@ KEYBIND:edit menu	edit menu	编辑菜单
 KEYBIND:preview look speed	preview look speed	预览视角速度
 KEYBIND:point and click	point and click	点击操作
 KEYBIND:side mouse button b	side mouse button B	鼠标侧键 B
-W:Window:promo|n:help us create new updates!:TextButton|text_name	help us create new updates!	帮助我们更新！
-W:Window:promo|n:help us create new updates!:TextButton|name	help us create new updates!	帮助我们更新！
+W:Window:promo|n:help us create new updates!:TextButton|text_name	help us create new updates!	帮助我们更新!
+W:Window:promo|n:help us create new updates!:TextButton|name	help us create new updates!	帮助我们更新!
 TIP:control for extra action like with blocks	control for extra action like with blocks	额外行为（例如与方块互动）
 W:Window:controls|n:preview:BallButton|text_name	preview look speed	预览视角速度
 W:Window:controls|n:preview:BallButton|name	preview look speed	预览视角速度
@@ -721,7 +722,7 @@ W:Window:|n:wishlist:Button|text_name	wishlist	加入愿望单
 W:Window:|n:discord blog:Button|text_name	discord blog	Discord 博客
 W:Window:controls|n:show keyboard and mouse:Button|text_name	show keyboard and mouse	显示键鼠
 W:Window:controls|n:show simple controls list:Button|text_name	show simple controls list	显示简洁控制
-W:Window:multiplayer|n:create server!:Button|text_name	create server!	创建服务器！
+W:Window:multiplayer|n:create server!:Button|text_name	create server!	创建服务器!
 W:Window:set color|n:brightness:Button|text_name	brightness	亮度
 W:Window:set color|n:color:Button|text_name	color	颜色
 W:Window:updates|n:Removed:TextButton|text_name	Removed	移除
@@ -730,7 +731,7 @@ W:Window:updates|n:Modified:TextButton|text_name	Modified	修改
 W:Window:updates|n:Moved:TextButton|text_name	Moved	移动
 W:Window:updates|n:no updates needed:Button|text_name	no updates needed	无需更新
 W:Window:updates|n:update now:Button|text_name	update now	立即更新
-W:Window:updates|n:updates included!:TextButton|text_name	updates included!	已包含更新！
+W:Window:updates|n:updates included!:TextButton|text_name	updates included!	已包含更新!
 W:Window:|n:enable cheats:Button|text_name	enable cheats	启用作弊
 W:Window:backups|n:auto save:BoolButton|text_name	auto save	自动保存
 W:Window:backups|n:delete backups:Button|text_name	delete backups	删除备份
@@ -752,7 +753,7 @@ W:Window:missing types|n:done and play world:Button|text_name	done and play worl
 W:Window:missing types|n:Replace:TypeButton|text_name	Replace	替换
 W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing slab types?	是否替换这些缺失的板块类型？
 W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing card types?	是否替换这些缺失的卡片类型？
-W:Window:|n:thanks for playing voima!:TextButton|text_name	thanks for playing voima!	感谢游玩 VOIMA！
+W:Window:|n:thanks for playing voima!:TextButton|text_name	thanks for playing voima!	感谢游玩 VOIMA!
 W:Window:|n:credits:Button|text_name	credits	制作人员
 W:Window:universes|n:import universe:Button|text_name	import universe	导入宇宙
 W:Window:universes|n:Select Universe:Button|text_name	Select Universe	选择宇宙
@@ -810,7 +811,7 @@ X:TextureText|healing	healing	治疗
 X:TextureText|tools	tools	工具
 X:TextureText|paintings	paintings	画作
 X:TextureText|slabs	slabs	板块
-X:TextureText|hud_font_page	hud_font_page	副操作建造主操作设置网格复制尺寸切换网格更多攻击挖掘放置跳跃丢弃使用装备拳击射击挥动投掷手持饮用食用瘫倒奔跑重生打开背包合成返回鼠标侧键滚轮
+X:TextureText|hud_font_page	hud_font_page	副操作建造主操作设置网格复制尺寸切换网格更多攻击挖掘放置跳跃丢弃使用装备拳击射击挥动投掷手持饮用食用瘫倒奔跑重生打开背包合成返回鼠标侧键滚轮绘关闭墙体厚度吸附世界编辑始完发
 X:TextureText|recipes crafted	{0} / {1} recipes crafted	{0} / {1} 个配方已合成
 X:TextureText|recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
 X:TextureText|recipes still locked	{0} recipes still locked	{0} 个配方未解锁
@@ -818,19 +819,8 @@ X:TextureText|recipes still locked	{0} recipe still locked	{0} 个配方未解�
 X:TextureText|speech_font_page	speech_font_page	交易鼠标左右中键侧滚轮
 X:TextureText|to trade	{*} to trade	{*} 交易
 TIP:to trade	{*} to trade	{*} 交易
-X:TextureText|death	you were killed by {*}.	你被 {*} 杀死了
-X:TextureText|death	you exploded by {*}.	你被 {*} 炸死了
-X:TextureText|death	you fell to your death.	你摔死了
-X:TextureText|death	you fell to their death.	你因他们摔死了
-X:TextureText|death	you fell into the void.	你坠入了虚空
-X:TextureText|death	you drowned.	你进水了
-X:TextureText|death	you exploded.	你爆炸了
-X:TextureText|death	you squished by a slab.	你被板块压扁了
-X:TextureText|death	you hit a wall too hard.	你撞墙太狠了
-X:TextureText|death	you died from a falling {*}	你被掉落的 {*} 砸死了
-X:TextureText|death	you died.	你死了
-X:TextureText|letz lvl	letz lvl	来单挑
-X:TextureText|srsly	srsly	说真的
+X:TextureText|letz lvl	letz lvl	莱单朓
+X:TextureText|srsly	srsly	嗦真的
 X:TextureText|you fell to your death.	you fell to your death.	你摔死了
 X:TextureText|play again	play again	再玩一次
 TIP:play again	play again	再玩一次
@@ -942,7 +932,7 @@ KEYCAP:[right arrow]	[right arrow]	右方向键
 TIP:primary action	primary action	主操作
 TIP:secondary action	secondary action	副操作
 TIP:higher shadow quality	higher shadow quality	提升阴影
-MUSIC:now playing	now playing {*} by {*}	正在播放 {*}（{*}）
+MUSIC:now playing	now playing {*} by {*}	正在播放 {*} ({*})
 MUSIC:now playing	now playing {*}	正在播放 {*}
 TIP:move left	{*} to move left	【{*}】向左移动
 TIP:move right	{*} to move right	【{*}】向右移动
@@ -1114,18 +1104,18 @@ X:TextureText|animal	oucc	啊哟
 X:TextureText|animal	sheezh	天那
 X:TextureText|animal	da peyn iz unberabl	痛的嗖不了
 X:TextureText|animal	uupz	呃呀
-X:TextureText|animal	ma leg!!{0}!	窝滴腿！！{0}！
+X:TextureText|animal	ma leg!!1!	窝滴腿!!1!
 X:TextureText|animal	taht hurrt	豪痛
 X:TextureText|animal	owwww	嗷呜
-X:TextureText|animal	gud ting i hab helth insuranc!	害好窝有宜疗抱险！
+X:TextureText|animal	gud ting i hab helth insuranc!	害好窝有宜疗抱险!
 X:TextureText|animal	ackk	呃啊
-X:TextureText|animal	shuuht	哔嘴！
+X:TextureText|animal	shuuht	哔嘴!
 X:TextureText|animal	breh	兄第
 X:TextureText|animal	gahhh	呀啊啊
-X:TextureText|animal	stapp	卒手！
-X:TextureText|animal	uh o	造了！
+X:TextureText|animal	stapp	卒手!
+X:TextureText|animal	uh o	造了!
 X:TextureText|animal	oopzy deysie	哎呀呀
-X:TextureText|animal	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心！！！
+X:TextureText|animal	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 X:TextureText|animal	welp	号吧
 X:TextureText|animal	dawgg	葛们
 X:TextureText|animal	wers ma hony potiun	窝滴冯蜜药水捏？
@@ -1141,10 +1131,10 @@ X:TextureText|animal	boim boim	砰姆 砰姆
 X:TextureText|animal	bring in da berz	吧熊都叫莱
 X:TextureText|animal	wump womp	乌咚 乌咚
 X:TextureText|animal	itz voimin tieme	voimin时尖到
-X:TextureText|animal	{0} voimuhhhh	{0} voimu呃呃呃
-X:TextureText|animal	letz {0}v{0}	{0}v{0} 单挑
+X:TextureText|animal	4 voimuhhhh	4 voimu呃呃呃
+X:TextureText|animal	letz 1v1	莱 1v1 单朓
 X:TextureText|animal	diz al u got?	泥就贼点本司？
-X:TextureText|animal	{0} nozcop	{0}次盲狙
+X:TextureText|animal	360 nozcop	360杜盲狙
 X:TextureText|animal	ged oudda hirrr	滚粗去
 X:TextureText|animal	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
 X:TextureText|animal	git voimd	被voim了吧
@@ -1158,7 +1148,7 @@ X:TextureText|animal	ruhn runn run rrruun run	抛跑抛抛跑
 X:TextureText|animal	glup	咕嘟
 X:TextureText|animal	gg	寄
 X:TextureText|animal	huuuhhlllpppp miiiiiii	救救窝哦哦哦
-X:TextureText|animal	i ned bakkup!	窝徐要兹援！
+X:TextureText|animal	i ned bakkup!	窝徐要兹援!
 X:TextureText|animal	i heyt runnin	窝套厌逃泡
 X:TextureText|animal	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
 X:TextureText|animal	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
@@ -1381,15 +1371,15 @@ X:TextureText|da peyn iz unberabl	da peyn iz unberabl	痛的嗖不了
 X:TextureText|uupz	uupz	呃呀
 X:TextureText|taht hurrt	taht hurrt	豪痛
 X:TextureText|owwww	owwww	嗷呜
-X:TextureText|gud ting i hab helth insuranc!	gud ting i hab helth insuranc!	害好窝有宜疗抱险！
+X:TextureText|gud ting i hab helth insuranc!	gud ting i hab helth insuranc!	害好窝有宜疗抱险!
 X:TextureText|ackk	ackk	呃啊
-X:TextureText|shuuht	shuuht	哔嘴！
+X:TextureText|shuuht	shuuht	哔嘴!
 X:TextureText|breh	breh	兄第
 X:TextureText|gahhh	gahhh	呀啊啊
-X:TextureText|stapp	stapp	卒手！
-X:TextureText|uh o	uh o	造了！
+X:TextureText|stapp	stapp	卒手!
+X:TextureText|uh o	uh o	造了!
 X:TextureText|oopzy deysie	oopzy deysie	哎呀呀
-X:TextureText|ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心！！！
+X:TextureText|ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 X:TextureText|welp	welp	号吧
 X:TextureText|dawgg	dawgg	葛们
 X:TextureText|wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏？
@@ -1419,7 +1409,7 @@ X:TextureText|ruhn runn run rrruun run	ruhn runn run rrruun run	抛跑抛抛跑
 X:TextureText|glup	glup	咕嘟
 X:TextureText|gg	gg	寄
 X:TextureText|huuuhhlllpppp miiiiiii	huuuhhlllpppp miiiiiii	救救窝哦哦哦
-X:TextureText|i ned bakkup!	i ned bakkup!	窝徐要兹援！
+X:TextureText|i ned bakkup!	i ned bakkup!	窝徐要兹援!
 X:TextureText|i heyt runnin	i heyt runnin	窝套厌逃泡
 X:TextureText|run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
 X:TextureText|wehrs valtsu wen i nid emmm	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
@@ -1650,15 +1640,15 @@ TIP:da peyn iz unberabl	da peyn iz unberabl	痛的嗖不了
 TIP:uupz	uupz	呃呀
 TIP:taht hurrt	taht hurrt	豪痛
 TIP:owwww	owwww	嗷呜
-TIP:gud ting i hab helth insuranc!	gud ting i hab helth insuranc!	害好窝有宜疗抱险！
+TIP:gud ting i hab helth insuranc!	gud ting i hab helth insuranc!	害好窝有宜疗抱险!
 TIP:ackk	ackk	呃啊
-TIP:shuuht	shuuht	哔嘴！
+TIP:shuuht	shuuht	哔嘴!
 TIP:breh	breh	兄第
 TIP:gahhh	gahhh	呀啊啊
-TIP:stapp	stapp	卒手！
-TIP:uh o	uh o	造了！
+TIP:stapp	stapp	卒手!
+TIP:uh o	uh o	造了!
 TIP:oopzy deysie	oopzy deysie	哎呀呀
-TIP:ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心！！！
+TIP:ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 TIP:welp	welp	号吧
 TIP:dawgg	dawgg	葛们
 TIP:wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏？
@@ -1688,7 +1678,7 @@ TIP:ruhn runn run rrruun run	ruhn runn run rrruun run	抛跑抛抛跑
 TIP:glup	glup	咕嘟
 TIP:gg	gg	寄
 TIP:huuuhhlllpppp miiiiiii	huuuhhlllpppp miiiiiii	救救窝哦哦哦
-TIP:i ned bakkup!	i ned bakkup!	窝徐要兹援！
+TIP:i ned bakkup!	i ned bakkup!	窝徐要兹援!
 TIP:i heyt runnin	i heyt runnin	窝套厌逃泡
 TIP:run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
 TIP:wehrs valtsu wen i nid emmm	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
@@ -1759,3 +1749,371 @@ MUSIC:now playing:owl	now playing owl	正在播放 owl (猫头鹰)
 MUSIC:now playing:owl	now playing owl by {*}	正在播放 owl (猫头鹰) by {*}
 MUSIC:now playing:wanting more	now playing wanting more	正在播放 wanting more (欲求更多)
 MUSIC:now playing:wanting more	now playing wanting more by {*}	正在播放 wanting more (欲求更多) by {*}
+X:TextureText|launch	launch	发射
+TIP:launch	launch	发射
+HUD:draw	draw	绘制
+HUD:wall thickness off	wall thickness off	关闭墙体厚度
+HUD:snap	snap	吸附
+HUD:world edit	world edit	世界编辑
+HUD:start setting grid	start setting grid	开始设置网格
+HUD:complete drawing	complete drawing	完成绘制
+HUD:set grid	set grid	设置网格
+HUD:copy size	copy size	复制尺寸
+HUD:toggle grid	toggle grid	切换网格
+HUD:more	more	更多
+HUD:edit world settings	edit world settings	编辑世界设置
+W:Window:tabs|n:color:Button|text_name	color	颜色
+TIP:world editor	world editor	世界编辑器
+W:Window:set color|n:stop picking color:Button|text_name	stop picking color	停止取色
+W:Window:delete...|header_text	delete...	删除...
+TIP:jawn tree 7x	jawn tree\n7x	嚼恩树\n7x
+W:Window:graphics settings|n:disable reflections:BoolButton|text_name	disable reflections\nand waves	禁用反射\n与水面
+TIP:console	console	控制台
+W:Window:tabs|n:remove:Button|text_name	remove\ngrid	移除\n网格
+W:Window:tabs|n:set:Button|text_name	set\ngrid	设置\n网格
+TIP:open universe folder	open universe folder	打开宇宙文件夹
+HUD:complete	complete	完成
+HUD:slope	slope	斜坡
+HUD:force height	force height	强制高度
+HUD:stop	stop	停止
+HUD:latest point to finish wall	latest point to finish wall	最后一点完成墙体
+HUD:reload universe	reload universe	重新加载宇宙
+HUD:printer	printer	打印机
+HUD:reset edits in entire universe	reset edits in entire universe	重置整个宇宙的编辑
+TIP:reload universe	reload universe	重新加载宇宙
+TIP:printer	printer	打印机
+TIP:reset edits in entire universe	reset edits in entire universe	重置整个宇宙的编辑
+W:Window:error report|header_text	error report	错误报告
+W:Window:backups|header_text	backups	备份
+W:Window:|n:resolution width:StringButton|text_name	resolution width	分辨率宽度
+W:Window:|n:resolution height:StringButton|text_name	resolution height	分辨率高度
+W:Window:|n:fov:SliderButton|text_name	fov	视场角(fov)
+W:Window:|n:distance:AdjusterButton|text_name	distance	距离
+W:Window:|n:height:AdjusterButton|text_name	height	高度
+W:Window:|n:angle:AdjusterButton|text_name	angle	角度
+W:Window:|n:sides:SliderButton|text_name	sides	边数
+W:Window:|n:shadows:SliderButton|text_name	shadows	阴影
+W:Window:|n:pivot x:AdjusterButton|text_name	pivot x	轴心 X
+W:Window:|n:pivot y:AdjusterButton|text_name	pivot y	轴心 Y
+W:Window:|n:load settings:Button|text_name	load settings	加载设置
+W:Window:|n:load models:Button|text_name	load models	加载模型
+W:Window:|n:exit printer:Button|text_name	exit printer	退出打印机
+W:Window:|n:exit printer:Button|text_name	are you sure?	你确定吗？
+W:Window:|n:slice spritesheet:Button|text_name	slice spritesheet	切分精灵表
+W:Window:|n:pivot z:AdjusterButton|text_name	pivot z	轴心 Z
+W:Window:|n:rotation x:AdjusterButton|text_name	rotation x	旋转 X
+W:Window:|n:rotation y:AdjusterButton|text_name	rotation y	旋转 Y
+W:Window:|n:rotation z:AdjusterButton|text_name	rotation z	旋转 Z
+W:Window:controls|n:reset controls:Button|text_name	are you sure?	你确定吗？
+MUSIC:now playing:cherry tree pt 1	now playing cherry tree pt 1	正在播放 cherry tree pt 1 (樱桃树 其1)
+MUSIC:now playing:cherry tree pt 1	now playing cherry tree pt 1 by {*}	正在播放 cherry tree pt 1 (樱桃树 其1) by {*}
+MUSIC:now playing:cherry tree pt 2	now playing cherry tree pt 2	正在播放 cherry tree pt 2 (樱桃树 其2)
+MUSIC:now playing:cherry tree pt 2	now playing cherry tree pt 2 by {*}	正在播放 cherry tree pt 2 (樱桃树 其2) by {*}
+MUSIC:now playing:5	now playing 5	正在播放 5
+MUSIC:now playing:5	now playing 5 by {*}	正在播放 5 by {*}
+W:Window:world details|n:play:Button|text_name	play	开始游戏
+W:Window:world details|n:edit:Button|text_name	edit	编辑
+W:Window:world details|n:export:Button|text_name	export	导出
+W:Window:world details|n:delete:Button|text_name	delete	删除
+W:Window:world details|n:delete:Button|text_name	are you sure?	你确定吗？
+W:Window:world details|n:cheats enabled:TextButton|text_name	cheats enabled	已开启作弊
+W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played: {0} hours ago	上次游玩：{0} 小时前
+W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played:  {0} hours ago	上次游玩：{0} 小时前
+W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played: yesterday	上次游玩：昨天
+W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played:  yesterday	上次游玩：昨天
+W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played: {0} minutes	总游玩时间：{0} 分钟
+W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played:  {0} minutes	总游玩时间：{0} 分钟
+W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played: {0} hours	总游玩时间：{0} 小时
+W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played:  {0} hours	总游玩时间：{0} 小时
+W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played: {0} days ago	上次游玩：{0} 天前
+W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played:  {0} days ago	上次游玩：{0} 天前
+W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played: {0} minutes ago	上次游玩：{0} 分钟前
+W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played:  {0} minutes ago	上次游玩：{0} 分钟前
+W:Window:world details|n:Last played: just now:TextButton|text_name	Last played: just now	上次游玩：刚刚
+W:Window:world details|n:creative world:TextButton|text_name	creative world	创造世界
+W:Window:world details|n:sandbox world:TextButton|text_name	sandbox world	沙盒世界
+W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played: less than a minute ago	上次游玩：不到一分钟前
+W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played: {0} seconds	总游玩时间：{0} 秒
+W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played: {0} days	总游玩时间：{0} 天
+W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played: {0} seconds ago	上次游玩：{0} 秒前
+W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played:  less than a minute ago	上次游玩：不到一分钟前
+W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played:  {0} seconds	总游玩时间：{0} 秒
+W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played:  {0} days	总游玩时间：{0} 天
+W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played:  {0} seconds ago	上次游玩：{0} 秒前
+ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}?	窝科以要{*}
+ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}	窝科以要{*}
+ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}?	请给窝{*}
+ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}	请给窝{*}
+ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}?	泥有{*}
+ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}	泥有{*}
+ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}?	情丢给窝依个{*}
+ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}	情丢给窝依个{*}
+ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}?	窝徐要仪个{*}
+ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}	窝徐要仪个{*}
+ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}?	窝能要{*}
+ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}	窝能要{*}
+ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}?	由妹有{*}
+ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}	由妹有{*}
+W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played: {0} second	总游玩时间：{0} 秒
+W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played: {0} second ago	上次游玩：{0} 秒前
+W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played:  {0} second	总游玩时间：{0} 秒
+W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played:  {0} second ago	上次游玩：{0} 秒前
+W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played: {0} minute	总游玩时间：{0} 分钟
+W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played: {0} minute ago	上次游玩：{0} 分钟前
+W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played:  {0} minute	总游玩时间：{0} 分钟
+W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played:  {0} minute ago	上次游玩：{0} 分钟前
+W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played: {0} hour	总游玩时间：{0} 小时
+W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played: {0} hour ago	上次游玩：{0} 小时前
+W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played:  {0} hour	总游玩时间：{0} 小时
+W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played:  {0} hour ago	上次游玩：{0} 小时前
+W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played: {0} day	总游玩时间：{0} 天
+W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played: {0} day ago	上次游玩：{0} 天前
+W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played:  {0} day	总游玩时间：{0} 天
+W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played:  {0} day ago	上次游玩：{0} 天前
+W:Window:cancel|n:cancel:Button|text_name	cancel	取消
+W:Window:your new world...|n:S:CategoryButton|text_value	S	小
+W:Window:your new world...|n:S:BoolButton|text_value	S	小
+W:Window:your new world...|n:S:Button|text_value	S	小
+W:Window:your new world...|n:M:CategoryButton|text_value	M	中
+W:Window:your new world...|n:M:BoolButton|text_value	M	中
+W:Window:your new world...|n:M:Button|text_value	M	中
+W:Window:your new world...|n:L:CategoryButton|text_value	L	大
+W:Window:your new world...|n:L:BoolButton|text_value	L	大
+W:Window:your new world...|n:L:Button|text_value	L	大
+W:Window:your new world...|n:XL:CategoryButton|text_value	XL	特大
+W:Window:your new world...|n:XL:BoolButton|text_value	XL	特大
+W:Window:your new world...|n:XL:Button|text_value	XL	特大
+W:Window:your new world...|n:XXL:CategoryButton|text_value	XXL	太大啦!
+W:Window:your new world...|n:XXL:BoolButton|text_value	XXL	太大啦!
+W:Window:your new world...|n:XXL:Button|text_value	XXL	太大啦!
+X:TextureText|generating the world..	generating the world..	正在生成世界...
+X:TextureText|generating the world...	generating the world...	正在生成世界...
+W:Window:are you sure?|header_text	are you sure?	你确定吗？
+DEATH:void	you fell into the void.	你坠入了虚空
+DEATH:suffocate	you drowned.	你进水了
+DEATH:card	you were killed by {*}.	你被 {*} 杀死了
+DEATH:card	you fell to your death.	你摔死了
+DEATH:card	you fell to their death.	你因他们摔死了
+DEATH:card	you exploded.	你爆炸了
+DEATH:card	you squished by a slab.	你被板块压扁了
+DEATH:card	you hit a wall too hard.	你撞墙太狠了
+DEATH:card	you died from a falling {*}	你被掉落的 {*} 砸死了
+DEATH:card	you died.	你死了
+DEATH:card	you fell into the void.	你坠入了虚空
+DEATH:card	you drowned.	你进水了
+DEATH:card	you exploded by {*}.	你被 {*} 炸死了
+ITEM:adult ghost pine	adult ghost pine	成年幽灵松
+ITEM:adult pine	adult pine	成年松树
+ITEM:ash	ash	灰烬
+ITEM:ash bucket	ash bucket	烟灰桶
+ITEM:baby bear	baby bear	小熊
+ITEM:baby jawn tree	baby jawn tree	嚼恩树苗
+ITEM:baby milo bear	baby milo bear	小米洛熊
+ITEM:baby pine	baby pine	松树苗
+ITEM:baby porri bear	baby porri bear	小波里熊
+ITEM:balloon	balloon	气球
+ITEM:barrel	barrel	木桶
+ITEM:bear	bear	熊
+ITEM:bear x	bear x	熊 X
+ITEM:bear y	bear y	熊 Y
+ITEM:bee	bee	蜜蜂
+ITEM:bee nest	bee nest	蜂巢
+ITEM:berry juice	berry juice	浆果汁
+ITEM:birch	birch	白桦
+ITEM:block shooter	block shooter	方块发射器
+ITEM:blue checker	blue checker	蓝色棋盘格
+ITEM:blueberry	blueberry	蓝莓
+ITEM:blueberry bush	blueberry bush	蓝莓灌木
+ITEM:blur	blur	模糊
+ITEM:blurry mirror x	blurry mirror x	模糊镜像X
+ITEM:blurry mirror y	blurry mirror y	模糊镜像Y
+ITEM:bomb	bomb	炸弹
+ITEM:bone	bone	骨头
+ITEM:boombox	boombox	音响
+ITEM:boulder	boulder	巨石
+ITEM:brick	brick	砖块
+ITEM:brick tile	brick tile	砖瓦
+ITEM:brown checker	brown checker	棕色棋盘格
+ITEM:bubble	bubble	泡泡
+ITEM:burger	burger	汉堡
+ITEM:bush	bush	灌木
+ITEM:cabin	cabin	小屋
+ITEM:camel statue	camel statue	骆驼雕像
+ITEM:card hand	card hand	卡片手
+ITEM:cave plant	cave plant	洞穴植物
+ITEM:chaingun	chaingun	链炮
+ITEM:chess checker	chess checker	象棋棋盘格
+ITEM:chisel	chisel	凿子
+ITEM:circuit	circuit	电路
+ITEM:cobble	cobble	鹅卵石
+ITEM:coin	coin	硬币
+ITEM:concrete	concrete	混凝土
+ITEM:control pad	control pad	控制板
+ITEM:cows	cows	奶牛
+ITEM:diamond scissors	diamond scissors	钻石剪刀
+ITEM:dirt	dirt	泥土
+ITEM:drill	drill	钻头
+ITEM:error checker	error checker	错误棋盘格
+ITEM:fan	fan	风扇
+ITEM:fern	fern	蕨类
+ITEM:fishing rod	fishing rod	鱼竿
+ITEM:flashlight	flashlight	手电筒
+ITEM:flowers in vase	flowers in vase	花瓶
+ITEM:forever	forever	永恒
+ITEM:fur	fur	毛皮
+ITEM:ghost pine	ghost pine	幽灵松
+ITEM:glass	glass	玻璃
+ITEM:glue gun	glue gun	胶枪
+ITEM:goober	goober	咕宝
+ITEM:gray window	gray window	灰色窗户
+ITEM:hay	hay	干草
+ITEM:hay pile	hay pile	干草堆
+ITEM:haze	haze	霾
+ITEM:haze skin	haze skin	霾皮
+ITEM:healer	healer	治疗
+ITEM:honey	honey	蜂蜜
+ITEM:honey ball	honey ball	蜂蜜球
+ITEM:honey potion	honey potion	蜂蜜药水
+ITEM:hot pickaxe	hot pickaxe	炽热镐
+ITEM:hot shotgun	hot shotgun	炽热霰弹枪
+ITEM:ice	ice	冰
+ITEM:invert	invert	反色
+ITEM:invert spruce	invert spruce	倒置云杉
+ITEM:inverted window	inverted window	反色窗户
+ITEM:jawn	jawn	嚼恩
+ITEM:jawn axe	jawn axe	嚼斧
+ITEM:jawn tree	jawn tree	嚼恩树
+ITEM:jesus on the cross	jesus on the cross	十字架上的耶稣
+ITEM:jumper	jumper	跳枪
+ITEM:kitchen	kitchen	厨房
+ITEM:lamp	lamp	台灯
+ITEM:lava	lava	熔岩
+ITEM:logs	logs	原木
+ITEM:love	love	爱心
+ITEM:magnet	magnet	磁铁
+ITEM:magpie	magpie	喜鹊
+ITEM:meet voima	meet voima	遇见 voima
+ITEM:metal	metal	金属
+ITEM:metal spike	metal spike	金属尖刺
+ITEM:metallic skeleton	metallic skeleton	金属骷髅
+ITEM:mirror adult pine	mirror adult pine	镜像成年松
+ITEM:mirror winter birch	mirror winter birch	镜像冬桦
+ITEM:mirror x	mirror x	镜像X
+ITEM:mirror y	mirror y	镜像Y
+ITEM:moss	moss	苔藓
+ITEM:mossy log	mossy log	苔藓原木
+ITEM:mossy stone	mossy stone	苔藓石
+ITEM:movie	movie	电影
+ITEM:museum bear	museum bear	博物馆熊
+ITEM:mushroom big	mushroom big	大蘑菇
+ITEM:mushroom small	mushroom small	小蘑菇
+ITEM:music box	music box	八音盒
+ITEM:paint brush	paint brush	画笔
+ITEM:pickup	pickup	拾取
+ITEM:pine bark	pine bark	松树皮
+ITEM:pinecone	pinecone	松果
+ITEM:pink checker	pink checker	粉色棋盘格
+ITEM:plank	plank	木板
+ITEM:portal	portal	传送门
+ITEM:reach	reach	触碰
+ITEM:respawn statue	respawn statue	重生雕像
+ITEM:reunion	reunion	重逢
+ITEM:reverse shotgun	reverse shotgun	反向霰弹枪
+ITEM:rock	rock	岩石
+ITEM:rocks	rocks	碎石
+ITEM:sand	sand	沙子
+ITEM:scissors	scissors	剪刀
+ITEM:sectors	sectors	《Sectors》
+ITEM:selector	selector	选择器
+ITEM:shotgun	shotgun	霰弹枪
+ITEM:skeleton bear	skeleton bear	骷髅熊
+ITEM:skull	skull	头骨
+ITEM:sky	sky	天空
+ITEM:slab hand	slab hand	板块手
+ITEM:smoke	smoke	烟雾
+ITEM:snow	snow	雪
+ITEM:snowball	snowball	雪球
+ITEM:snowball shooter	snowball shooter	雪球发射器
+ITEM:sponge	sponge	海绵
+ITEM:standoff	standoff	对峙
+ITEM:stone	stone	石头
+ITEM:stone dots	stone dots	点状石
+ITEM:strawberry	strawberry	草莓
+ITEM:street light	street light	路灯
+ITEM:teenager birch	teenager birch	白桦幼树
+ITEM:teenager birch trunk	teenager birch trunk	白桦幼树干
+ITEM:teenager spruce	teenager spruce	云杉幼树
+ITEM:the vision	the vision	愿景
+ITEM:the way	the way	道路
+ITEM:tooth	tooth	牙齿
+ITEM:torch	torch	火炬
+ITEM:trash	trash	垃圾
+ITEM:trash bag	trash bag	垃圾袋
+ITEM:universe edit	universe edit	宇宙编辑
+ITEM:void	void	虚空
+ITEM:voim voim	voim voim	voim voim
+ITEM:water	water	水
+ITEM:welf	welf	韦尔夫
+ITEM:white checker	white checker	白色棋盘格
+ITEM:winter adult spruce	winter adult spruce	冬季成年云杉
+ITEM:winter baby spruce	winter baby spruce	冬季云杉苗
+ITEM:winter birch	winter birch	冬桦
+ITEM:winter pc	winter pc	冬日电脑
+ITEM:winter rowan	winter rowan	冬季花楸
+ITEM:winter teenager spruce	winter teenager spruce	冬季云杉幼树
+ITEM:wood	wood	木头
+ITEM:wooden chest	wooden chest	木箱
+ITEM:wooden pickaxe	wooden pickaxe	木镐
+ITEM:wooden shotgun	wooden shotgun	木头霰弹枪
+ITEM:wooden turret	wooden turret	木头炮塔
+ITEM:world edit	world edit	世界编辑
+HUD:shorten	shorten	缩短
+HUD:extend	extend	延长
+HUD:cut	cut	切割
+HUD:paint	paint	涂色
+HUD:reset	reset	重置
+HUD:glue	glue	粘合
+HUD:unglue	unglue	解除粘合
+W:Window:populate tools|n:brush size:SliderButton|text_name	brush size	笔刷大小
+W:Window:populate tools|n:color:Button|text_name	color	颜色
+W:Window:populate tools|n:size:Button|text_name	size	大小
+W:Window:populate tools|n:set:Button|text_name	set\ngrid	设置\n网格
+W:Window:populate tools|n:remove:Button|text_name	remove\ngrid	移除\n网格
+W:Window:change card size|header_text	change card size	改变卡片大小
+W:Window:change card size|n:height:SliderButton|text_name	height	高度
+W:Window:change card size|n:variation:SliderButton|text_name	variation	变化
+HUD:pick a type	pick a type	选择类型
+HUD:delete	delete	删除
+HUD:to select	to select	选择
+W:Window:|n:printer:Button|text_name	printer	打印机
+W:Window:|n:import universe:Button|text_name	import universe	导入宇宙
+W:Window:Karhula|n:play:Button|text_name	play	开始
+W:Window:Karhula 2|n:play:Button|text_name	play	开始
+W:Window:Karhula|n:duplicate:Button|text_name	duplicate	复制
+W:Window:Karhula 2|n:duplicate:Button|text_name	duplicate	复制
+W:Window:Karhula|n:delete:Button|text_name	delete	删除
+W:Window:Karhula 2|n:delete:Button|text_name	delete	删除
+W:Window:Karhula 2|n:delete:Button|text_name	are you sure?	你确定吗？
+W:Window:credits|n:Karhula::TextButton|text_name	Karhula:	karhula (熊之地):
+W:Window:credits|n:bear by jorma rysky:TextButton|text_name	bear by jorma rysky	熊：Jorma Rysky
+W:Window:credits|n:goober by kassu:TextButton|text_name	goober by kassu	咕宝：Kassu
+W:Window:credits|n:jawn by jorma rysky and valtsu:TextButton|text_name	jawn by jorma rysky and valtsu	嚼恩：Jorma Rysky 和 Valtsu
+W:Window:credits|n:haze by jorma rysky and emma:TextButton|text_name	haze by jorma rysky and emma	霾：Jorma Rysky 和 Emma
+W:Window:credits|n:textures by valtsu and lololy:TextButton|text_name	textures by valtsu and lololy	纹理：Valtsu 和 Lololy
+W:Window:credits|n:drill and jawn axe by splav:TextButton|text_name	drill and jawn axe by splav	钻头与嚼斧：Splav
+W:Window:credits|n:special font letters by p#k#:TextButton|text_name	special font letters by p1k1	特殊字体字母：p1k1
+W:Window:credits|n:welf sounds by andy:TextButton|text_name	welf sounds by andy	韦尔夫音效：Andy
+W:Window:credits|n:wooden shotgun sound and cave sounds by arpuzik:TextButton|text_name	wooden shotgun sound and cave sounds by arpuzik	木头霰弹枪音效与洞穴音效：Arpuzik
+W:Window:credits|n:thanks:Button|text_name	thanks	感谢
+W:Window:credits|header_text	credits	制作人员
+W:Window:credits|n:bee sounds by benboncan on freesound.org:TextButton|text_name	bee sounds by benboncan on freesound.org	蜜蜂音效：benboncan（freesound.org）
+W:Window:credits|n:glass sounds by trp on freesound.org:TextButton|text_name	glass sounds by trp on freesound.org	玻璃音效：trp（freesound.org）
+W:Window:credits|n:VOIMA::TextButton|text_name	VOIMA:	VOIMA:
+W:Window:credits|n:Designed and coded by Valtsu:TextButton|text_name	Designed and coded by Valtsu	设计与编程：Valtsu
+W:Window:credits|n:Co-designed by Jorma Rysky:TextButton|text_name	Co-designed by Jorma Rysky	联合设计：Jorma Rysky
+W:Window:credits|n:Multiplayer coded by valtsu and disk:TextButton|text_name	Multiplayer coded by valtsu and disk	多人游戏编程：valtsu 和 disk
+W:Window:credits|n:All glory to God, Amen:TextButton|text_name	All glory to God, Amen	一切荣耀归于上帝，阿们
+W:Window:credits|n:Open-Source Code by Third Parties::TextButton|text_name	Open-Source Code by Third Parties:	第三方开源代码：
+W:Window:credits|n:OBJ file importer by Dummiesman:TextButton|text_name	OBJ file importer by Dummiesman	OBJ 文件导入器：Dummiesman
+W:Window:credits|n:StandaloneFileBrowser by Gökhan Gökçe:TextButton|text_name	StandaloneFileBrowser by Gökhan Gökçe	独立文件浏览器 (StandaloneFileBrowser)：Gökhan Gökçe
+W:Window:credits|n:Some of SSAO by Virtual Method Studios:TextButton|text_name	Some of SSAO by Virtual Method Studios	部分 SSAO：Virtual Method Studios
