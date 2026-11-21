@@ -166,7 +166,7 @@ bool FontPatch::InstallEarly(uintptr_t base, const std::string& fontDir) {
     void* ctor = reinterpret_cast<void*>(base + 0x42A090);
     const unsigned char* cp = reinterpret_cast<const unsigned char*>(ctor);
     // 48 89 5C 24 08 48 89 6C 24 10 ...
-    if (cp[0] == 0x48 && cp[1] == 0x89 && cp[2] == 0x5C && cp[3] == 0x24) {
+    if (cp[0] == 0x48 || cp[0] == 0x40) {
         st = MH_CreateHook(ctor, reinterpret_cast<void*>(&HookFontCtor), reinterpret_cast<void**>(&g_origFontCtor));
         if (st == MH_OK && MH_EnableHook(ctor) == MH_OK) {
             Diag("hooked TextureFont..ctor");

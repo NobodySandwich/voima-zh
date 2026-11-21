@@ -48,6 +48,8 @@ using StringNewFn = Il2CppString* (*)(const uint16_t*, int32_t);
 
 std::atomic<bool> g_ready{false};
 std::vector<void*> g_pendingHud;
+int g_bannerPage = -1;
+void* g_chestTemplate = nullptr;
 void ProcessPendingHud();
 std::atomic<bool> g_generationContext{false};
 std::vector<int> g_speechPages;
@@ -667,6 +669,63 @@ void DumpObjectGraph(std::string scenario) {
     Logger::Instance().Log("dump", "wrote " + path + " rows=" + std::to_string(rows));
 }
 
+void DumpCardTooltipFields(void* card, Il2CppClass* ct) {
+    Logger::Instance().Debug("carddump", "enter card=" + std::to_string((uintptr_t)card) + " ct=" + std::to_string((uintptr_t)ct));
+    if (!card) return;
+    if (!ct) { Logger::Instance().Debug("carddump", "ct=null"); return; }
+    static size_t pathOff = SIZE_MAX, nameOff = SIZE_MAX, damageOff = SIZE_MAX, healOff = SIZE_MAX, pushOff = SIZE_MAX;
+    static bool header = false;
+    static bool logged = false;
+    if (pathOff == SIZE_MAX) {
+        pathOff = FieldOffset(ct, "path");
+        nameOff = FieldOffset(ct, "name");
+        damageOff = FieldOffset(ct, "damage");
+        healOff = FieldOffset(ct, "heal_amount");
+        pushOff = FieldOffset(ct, "push_damage");
+    }
+    int damage = damageOff == SIZE_MAX ? 0 : ReadObjectInt(card, damageOff);
+    int heal = healOff == SIZE_MAX ? 0 : ReadObjectInt(card, healOff);
+    int push = pushOff == SIZE_MAX ? 0 : ReadObjectInt(card, pushOff);
+    void* pp = nullptr; void* np = nullptr;
+    std::string path, nm;
+    if (pathOff != SIZE_MAX && ReadObjectPtr(card, pathOff, &pp)) path = ReadManagedString(reinterpret_cast<Il2CppString*>(pp));
+    if (nameOff != SIZE_MAX && ReadObjectPtr(card, nameOff, &np)) nm = ReadManagedString(reinterpret_cast<Il2CppString*>(np));
+    std::string dir = g_modDir + "\catalog";
+    std::string outPath = dir + "\card_tooltip_fields.tsv";
+    CreateDirectoryA(dir.c_str(), nullptr);
+    std::ofstream out(outPath, std::ios::app);
+    if (!logged) {
+        logged = true;
+        Logger::Instance().Debug("carddump", "dir=" + EscapeForLog(dir) + " path=" + EscapeForLog(outPath) + " open=" + std::to_string(out ? 1 : 0));
+    }
+    if (!out) return;
+    if (!header) { out << "path\tname\tdamage\theal_amount\tpush_damage\n"; header = true; }
+    out << EscapeForLog(path) << "\t" << EscapeForLog(nm) << "\t" << damage << "\t" << heal << "\t" << push << "\n";
+}
+
+void DumpAllCardTypes() {
+    static uint64_t last = 0;
+    uint64_t now = GetTickCount64();
+    if (now - last < 2000) return;
+    last = now;
+    Il2CppClass* ct = FindClass("CardType");
+    FieldInfo* uniField = FindField(FindClass("Card"), "uni");
+    if (!uniField) uniField = FindField(FindClass("Lord"), "uni");
+    void* uni = uniField ? StaticPtr(uniField) : nullptr;
+    void* cards = nullptr;
+    int n = 0;
+    if (uni && ReadObjectPtr(uni, 0x10, &cards) && cards) n = ReadObjectInt(cards, 0x18);
+    Logger::Instance().Debug("unidump", "uni=" + std::to_string((uintptr_t)uni) + " cards=" + std::to_string((uintptr_t)cards) + " len=" + std::to_string(n) + " ct=" + std::to_string((uintptr_t)ct));
+    if (!ct || !cards || n <= 0) return;
+    void** items = reinterpret_cast<void**>(reinterpret_cast<char*>(cards) + 0x20);
+    Logger::Instance().Debug("unidump", "first=" + std::to_string((uintptr_t)(n > 0 ? items[0] : nullptr)) + " second=" + std::to_string((uintptr_t)(n > 1 ? items[1] : nullptr)));
+    static std::set<void*> seen;
+    for (int i = 0; i < n; ++i) {
+        void* card = items[i];
+        if (card && seen.insert(card).second) DumpCardTooltipFields(card, ct);
+    }
+}
+
 void* HookLoadCardType(void* self, Il2CppString* file, Il2CppString* name, int cardId, bool save) {
     void* card = g_origLoadCardType ? g_origLoadCardType(self, file, name, cardId, save) : nullptr;
     if (card) g_loadedCards.push_back(card);
@@ -1062,7 +1121,7 @@ void RecordFrameTiming() {
     size_t n = times.size();
     double avg = sum / (double)n;
     double p95 = sorted[(size_t)((sorted.size() - 1) * 0.95)];
-    Logger::Instance().Log("fps", "frames=" + std::to_string(n) +
+    Logger::Instance().Debug("fps", "frames=" + std::to_string(n) +
         " avg_fps=" + std::to_string(1000.0 / avg) +
         " avg_ms=" + std::to_string(avg) +
         " p95_ms=" + std::to_string(p95) +
@@ -1189,10 +1248,35 @@ void ProcessPageQueue() {
     if (g_pageQueue.empty()) g_bootOverlayDone = true;
 }
 
+void PrewarmHudPages() {
+    static bool done = false;
+    if (done) return;
+    done = true;
+    const char* samples[] = {"space 切割", "推动 发射", "[space] 切割", "缩短 延长 切割", "[e] 打开", "[e] to open", "inventory 打开"};
+    for (const char* s : samples) {
+        int page = g_db.EnsurePageForText(s, 200);
+        if (page >= 0 && !g_fontPages.IsPageReady(page)) g_pageQueue.push_back(page);
+    }
+}
+
 void HookLordUpdate(void* self) {
     if (g_ready.load()) {
+        static bool allPagesQueued = false;
+        if (!allPagesQueued) {
+            allPagesQueued = true;
+            for (size_t i = 0; i < g_db.pageCount(); ++i)
+                if (!g_fontPages.IsPageReady((int)i)) g_pageQueue.push_back((int)i);
+        }
+        static bool bannerBuilt = false;
+        if (!bannerBuilt && g_bannerPage >= 0) {
+            bannerBuilt = true;
+            int bp = g_fontPages.EnsurePage(g_bannerPage);
+            void* bf = g_fontPages.FontForPage(g_bannerPage);
+            Logger::Instance().Log("banner", "ready prebuild page=" + std::to_string(g_bannerPage) + " result=" + std::to_string(bp) + " font=" + std::to_string(reinterpret_cast<uintptr_t>(bf)));
+        }
         ProcessPageQueue();
         ProcessPendingHud();
+        PrewarmHudPages();
         static FieldInfo* worldField = nullptr;
         static size_t gen = SIZE_MAX, load = SIZE_MAX;
         if (!worldField) {
@@ -1278,7 +1362,8 @@ void HookLordUpdate(void* self) {
         g_fontPages.ProcessPending();
         static int frames = 0;
         if (Logger::Instance().TestMode() && (frames == 120 || frames == 600)) DumpButtonBounds();
-        if (++frames % 60 == 0) ProcessCommandFile();
+        ++frames;
+        if ((Logger::Instance().DebugMode() || Logger::Instance().TestMode()) && frames % 60 == 0) ProcessCommandFile();
         if (Logger::Instance().TestMode() && frames == 10) {
             for (size_t i = 0; i < g_db.pageCount(); ++i) g_fontPages.RequestPage((int)i);
         }
@@ -1289,7 +1374,7 @@ void HookLordUpdate(void* self) {
             g_bootOverlayDone = true;
             Logger::Instance().Log("boot", "one-time live UI translation barrier released overlay");
         }
-        RecordFrameTiming();
+        if (Logger::Instance().DebugMode()) RecordFrameTiming();
     }
 }
 
@@ -1313,10 +1398,17 @@ void ForceConfirmFont(void* self, void* font) {
 
 void HookPickFont(void* self, void* font) {
     if (g_fontPages.IsForced(self)) return;
+    if (self) {
+        std::string early = g_model.TextureText(self);
+        if (LowerAscii(early).find("voima is still buggy") != std::string::npos)
+            Logger::Instance().Debug("bannerprobe", "pickfont-early=" + std::to_string((uintptr_t)font) + " text=" + EscapeForLog(early));
+    }
     if (g_ready.load() && self) {
         std::string text = g_model.TextureText(self);
         if (text.find("确定") != std::string::npos)
             Logger::Instance().Log("confirm", "pickfont before forced=0 font=" + std::to_string((uintptr_t)font));
+        if (LowerAscii(text).find("voima is still buggy") != std::string::npos)
+            Logger::Instance().Debug("bannerprobe", "pickfont=" + std::to_string((uintptr_t)font) + " text=" + EscapeForLog(text));
     }
     if (g_origPickFont) reinterpret_cast<void (*)(void*, void*)>(g_origPickFont)(self, font);
 }
@@ -1399,21 +1491,116 @@ void HookSetVectorArrayImpl(void* self, int id, void* arr, int count) {
     if (g_origSetVectorArrayImpl) g_origSetVectorArrayImpl(self, id, arr, count);
 }
 
+std::atomic<bool> g_bannerOverlayStarted{false};
+std::atomic<uint64_t> g_bannerOverlayLastSeen{0};
+
+DWORD WINAPI BannerOverlayThread(LPVOID) {
+    Gdiplus::GdiplusStartupInput input;
+    ULONG_PTR token = 0;
+    if (Gdiplus::GdiplusStartup(&token, &input, nullptr) != Gdiplus::Ok) return 0;
+    const wchar_t* kClass = L"VOIMA_ZH_BannerOverlay";
+    WNDCLASSEXW wc{}; wc.cbSize = sizeof(wc); wc.lpfnWndProc = DefWindowProcW;
+    wc.hInstance = GetModuleHandleW(nullptr); wc.lpszClassName = kClass;
+    RegisterClassExW(&wc);
+    HWND hwnd = CreateWindowExW(WS_EX_LAYERED | WS_EX_TRANSPARENT | WS_EX_TOOLWINDOW | WS_EX_NOACTIVATE | WS_EX_TOPMOST,
+        kClass, L"", WS_POPUP, 0, 0, 1, 1, nullptr, nullptr, wc.hInstance, nullptr);
+    if (!hwnd) { Gdiplus::GdiplusShutdown(token); return 0; }
+    const std::wstring text = L"voima 仍然一堆bug，并且还没做完...\n所以暂时免费提供给大家 :)";
+    while (true) {
+        MSG msg; while (PeekMessageW(&msg, nullptr, 0, 0, PM_REMOVE)) { TranslateMessage(&msg); DispatchMessageW(&msg); }
+        uint64_t now = GetTickCount64();
+        if (now - g_bannerOverlayLastSeen.load() > 1500) { ShowWindow(hwnd, SW_HIDE); Sleep(30); continue; }
+        HWND game = FindWindowW(nullptr, L"VOIMA");
+        if (!game) { Sleep(30); continue; }
+        RECT cr{}; GetClientRect(game, &cr); POINT origin{0,0}; ClientToScreen(game, &origin);
+        int w = cr.right, h = cr.bottom;
+        if (w <= 0 || h <= 0) { Sleep(30); continue; }
+        int ow = 1200, oh = 150;
+        int ox = origin.x + (w - ow) / 2, oy = origin.y + h - 190;
+        Gdiplus::Bitmap bmp(ow, oh, PixelFormat32bppARGB);
+        Gdiplus::Graphics g(&bmp);
+        g.SetTextRenderingHint(Gdiplus::TextRenderingHintAntiAlias);
+        g.Clear(Gdiplus::Color(0,0,0,0));
+        Gdiplus::Font font(L"Microsoft YaHei", 28, Gdiplus::FontStyleRegular, Gdiplus::UnitPixel);
+        Gdiplus::StringFormat sf; sf.SetAlignment(Gdiplus::StringAlignmentCenter); sf.SetLineAlignment(Gdiplus::StringAlignmentCenter);
+        Gdiplus::SolidBrush brush(Gdiplus::Color(255,245,245,235));
+        Gdiplus::RectF rect(0,0,(float)ow,(float)oh);
+        g.DrawString(text.c_str(), -1, &font, rect, &sf, &brush);
+        HBITMAP hbmp = nullptr; bmp.GetHBITMAP(Gdiplus::Color(0,0,0,0), &hbmp);
+        HDC mem = CreateCompatibleDC(nullptr); HGDIOBJ old = SelectObject(mem, hbmp);
+        POINT pt{ox,oy}; SIZE size{ow,oh}; POINT src{0,0};
+        BLENDFUNCTION bf{AC_SRC_OVER,0,255,AC_SRC_ALPHA};
+        SetWindowPos(hwnd, HWND_TOPMOST, ox, oy, ow, oh, SWP_NOACTIVATE | SWP_SHOWWINDOW);
+        UpdateLayeredWindow(hwnd, nullptr, &pt, &size, mem, &src, 0, &bf, ULW_ALPHA);
+        SelectObject(mem, old); DeleteObject(hbmp); DeleteDC(mem);
+        Sleep(30);
+    }
+}
+
 void HookRender(void* self, void* camera, bool flag) {
     g_inConfirmRender = (self == g_confirmSelf);
     if (self && g_ready.load()) {
         std::string s = g_model.TextureText(self);
+        if (LowerAscii(s).find("voima is still buggy") != std::string::npos) {
+            static std::set<void*> bannerSeen;
+            if (bannerSeen.insert(self).second) {
+                void* font = nullptr;
+                ReadObjectPtr(self, FieldOffset(FindClass("TextureText"), "font"), &font);
+                void* texIds = nullptr; ReadObjectPtr(self, FieldOffset(FindClass("TextureText"), "texture_ids"), &texIds);
+                void* charIds = nullptr; ReadObjectPtr(self, FieldOffset(FindClass("TextureText"), "char_ids"), &charIds);
+                int texCount = texIds ? ReadObjectInt(texIds, 0x18) : -1;
+                int charCount = charIds ? ReadObjectInt(charIds, 0x18) : -1;
+                Logger::Instance().Debug("bannerprobe", "self=" + std::to_string((uintptr_t)self) + " font=" + std::to_string((uintptr_t)font) + " tex=" + std::to_string(texCount) + " chars=" + std::to_string(charCount));
+            }
+            ObjectKeys keys = g_model.Describe(self, s);
+            std::string tr, mk, ms; int page = -1;
+            if (g_db.Lookup(keys.keys, s, tr, mk, ms, &page) && !tr.empty() && tr != s) {
+                page = g_db.EnsurePageForText(tr, 200);
+                static std::set<int> bannerPagesInvalidated;
+                if (page >= 0 && bannerPagesInvalidated.insert(page).second) g_fontPages.InvalidatePage(page);
+                if (page >= 0 && g_fontPages.EnsurePage(page) >= 0) {
+                    void* oldText=nullptr; void* oldFont=nullptr; void* oldMat=nullptr; void* oldTex=nullptr; void* oldChars=nullptr;
+                    ReadObjectPtr(self, 0xB8, &oldText); ReadObjectPtr(self, 0x30, &oldFont);
+                    ReadObjectPtr(self, 0x38, &oldMat); ReadObjectPtr(self, 0x58, &oldTex); ReadObjectPtr(self, 0x68, &oldChars);
+                    ApplyPageFont(self, page);
+                    Il2CppString* ns = NewManagedString(tr);
+                    MethodInfo* layout = FindMethodInfo("TextureText", "Layout", 2, nullptr);
+                    if (ns && layout && g_api.runtime_invoke) {
+                        if (g_api.gchandle_new) g_api.gchandle_new(reinterpret_cast<Il2CppObject*>(ns), false);
+                        float dream = 0.0f;
+                        void* args[2] = {ns, &dream};
+                        Il2CppObject* exc = nullptr;
+                        g_api.runtime_invoke(layout, self, args, &exc);
+                        void* curTextPtr=nullptr; ReadObjectPtr(self, 0xB8, &curTextPtr);
+                        std::string cur = curTextPtr ? ReadManagedString(reinterpret_cast<Il2CppString*>(curTextPtr)) : "";
+                        void* curTex=nullptr; void* curChars=nullptr; ReadObjectPtr(self, 0x58, &curTex); ReadObjectPtr(self, 0x68, &curChars);
+                        int tc = curTex ? ReadObjectInt(curTex, 0x18) : 0; int cc = curChars ? ReadObjectInt(curChars, 0x18) : 0;
+                        bool ok = !exc && cur.find("仍然") != std::string::npos && tc > 0 && cc > 0;
+                        if (!ok) {
+                            *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + 0xB8) = oldText;
+                            *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + 0x30) = oldFont;
+                            *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + 0x38) = oldMat;
+                            *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + 0x58) = oldTex;
+                            *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + 0x68) = oldChars;
+                        } else {
+                            ForceFontWithUniverse(self, g_fontPages.FontForPage(page));
+                        }
+                        Logger::Instance().Debug("bannerprobe", std::string("layout=") + (ok ? "commit" : "revert") + " tex=" + std::to_string(tc) + " chars=" + std::to_string(cc));
+                    }
+                }
+            }
+        }
         if (s.empty()) {
             static std::set<void*> emptySeen;
             if (emptySeen.insert(self).second) {
                 ObjectKeys k = g_model.Describe(self, "");
-                Logger::Instance().Log("renderempty", "self=" + std::to_string((uintptr_t)self) + " key=" + EscapeForLog(k.primary) + " detail=" + EscapeForLog(k.detail));
+                Logger::Instance().Debug("renderempty", "self=" + std::to_string((uintptr_t)self) + " key=" + EscapeForLog(k.primary) + " detail=" + EscapeForLog(k.detail));
             }
         } else if (s.find_first_of("") != std::string::npos) {
             static std::set<void*> zhSeen;
             if (zhSeen.insert(self).second) {
                 ObjectKeys k = g_model.Describe(self, s);
-                Logger::Instance().Log("renderzh", "self=" + std::to_string((uintptr_t)self) + " key=" + EscapeForLog(k.primary) + " text=" + EscapeForLog(s));
+                Logger::Instance().Debug("renderzh", "self=" + std::to_string((uintptr_t)self) + " key=" + EscapeForLog(k.primary) + " text=" + EscapeForLog(s));
             }
         } else if (s.find('?') != std::string::npos) {
             static std::set<void*> rawSeen;
@@ -1713,17 +1900,34 @@ std::string MarkMissingGlyphs(const std::string& text) {
     return out;
 }
 
+std::string TranslateHudKeyHint(const std::string& input);
+
 void HookBuildRotated(void* self, Il2CppString* text, float x, float y, float z, Quat rotation, float dream) {
     if (self && text && g_ready.load()) {
         std::string s = ReadManagedString(text);
         if (s.empty()) Logger::Instance().Log("emptybuild", "rotated source empty");
         std::string lower = LowerAscii(s);
+        if (lower.find("inventory") != std::string::npos && lower.find("to open") != std::string::npos) {
+            std::string local = Trim(TranslateHudKeyHint(s));
+            int page = g_db.EnsurePageForText(local, 200);
+            if (page >= 0 && g_fontPages.EnsurePage(page) >= 0) {
+                Il2CppString* ns = NewManagedString(local);
+                if (ns) {
+                    if (g_api.gchandle_new) g_api.gchandle_new(reinterpret_cast<Il2CppObject*>(ns), false);
+                    ForceFontWithUniverse(self, g_fontPages.FontForPage(page));
+                    if (g_origBuildRotated) g_origBuildRotated(self, ns, x, y, z, rotation, dream);
+                    return;
+                }
+            }
+        }
         if (lower.find("continue playing") != std::string::npos) { /* keep overlay */ }
         std::string key = "X:TextureText|" + LowerAscii(Trim(s));
         // BuildRotated is also used for world prompts such as "[e] to trade".
         // Their key is dynamic, so use the same canonical key as Describe().
         if (lower.find(" to trade") != std::string::npos)
             key = "X:TextureText|to trade";
+        if (lower.find("inventory") != std::string::npos && lower.find("to open") != std::string::npos)
+            key = "X:TextureText|inventory to open";
         if (lower.rfind("you ", 0) == 0 &&
             (lower.find("were killed by ") != std::string::npos ||
              lower.find("fell to your death") != std::string::npos ||
@@ -1749,7 +1953,7 @@ void HookBuildRotated(void* self, Il2CppString* text, float x, float y, float z,
             return;
         }
         // Death text is accepted only within a recent Card death context.
-        const bool hasDedicatedKey = (key == "X:TextureText|to trade" || key.rfind("DEATH:", 0) == 0); // object role + source pattern
+        const bool hasDedicatedKey = (key == "X:TextureText|to trade" || key == "X:TextureText|inventory to open" || key.rfind("DEATH:", 0) == 0); // object role + source pattern
         bool found = hasDedicatedKey && g_db.Lookup({key}, s, translated, matchedKey, matchedSource, &page);
         if (!found)
             found = g_db.LookupByPrefix("ANIMAL:characters/bear/", s, translated, matchedKey, matchedSource, &page);
@@ -1789,7 +1993,7 @@ void HookBuildRotated(void* self, Il2CppString* text, float x, float y, float z,
                 if (ns) {
                     if (g_api.gchandle_new) g_api.gchandle_new(reinterpret_cast<Il2CppObject*>(ns), false);
                     RecordSpeech(s, translated);
-                    Logger::Instance().Log("speechfirst", "page=" + std::to_string(page) + " text=" + EscapeForLog(translated));
+                    Logger::Instance().Debug("speechfirst", "page=" + std::to_string(page) + " text=" + EscapeForLog(translated));
                     speechCache[s] = { ns, page };
                     if (g_origBuildRotated) g_origBuildRotated(self, ns, x, y, z, rotation, dream);
                     if (page >= 0 && g_fontPages.IsPageReady(page))
@@ -1978,6 +2182,7 @@ std::string KeyLabelFromBind(void* bind) {
     if (key == 327) return "[鼠标侧键 B]";
     if (key == 328) return "[鼠标侧键 C]";
     if (key == 329) return "[鼠标侧键 D]";
+    if (key == 32) return "[space]";
     if (key >= 32 && key < 127) { char ch[8] = {}; snprintf(ch, sizeof(ch), "[%c]", key); return ch; }
     if (c >= 32 && c < 127) { char ch[8] = {}; snprintf(ch, sizeof(ch), "[%c]", c); return ch; }
     if (c == 20) return "[滚轮]";
@@ -2021,9 +2226,26 @@ void* HudBindForAction(const std::string& label, const std::string& action) {
         if (void* bind = FindBind(it->second)) return bind;
     }
 
+    if (a == "cut") {
+        auto logBind = [](const char* tag, void* b) {
+            if (!b) { Logger::Instance().Debug("hudbind", std::string(tag) + "=null"); return; }
+            void* np = nullptr; std::string name;
+            if (ReadObjectPtr(b, 0x10, &np) && np) name = ReadManagedString(reinterpret_cast<Il2CppString*>(np));
+            Logger::Instance().Debug("hudbind", std::string(tag) + " name=" + EscapeForLog(name) + " key=" + std::to_string(ReadObjectInt(b, 0x20)) + " c=" + std::to_string(ReadObjectInt(b, 0x52)));
+        };
+        void* jb = FindBind("jump");
+        void* cb = FindBind("cut");
+        logBind("jump", jb); logBind("cut", cb);
+        if (jb) return jb;
+    }
     // Prefer the bind named after the action. This keeps the HUD following
     // rebinds for every action instead of trusting a stale display label.
     if (void* bind = FindBind(a)) return bind;
+    if (a == "cut") {
+        for (const char* alias : {"chop", "slice", "saw"}) {
+            if (void* bind = FindBind(alias)) return bind;
+        }
+    }
 
     // Dynamic actions: "edit every <object>" and "wall thickness <value>".
     if (a.rfind("edit every ", 0) == 0) {
@@ -2073,7 +2295,7 @@ void DumpHudBindsOnce() {
         int c = ReadObjectInt(b, 0x52);
         std::string lower = LowerAscii(name);
         if (lower.find("cut") != std::string::npos || key == 32 || c == 32)
-            Logger::Instance().Log("hudbind", "name='" + EscapeForLog(name) + "' key=" + std::to_string(key) + " c=" + std::to_string(c));
+            Logger::Instance().Debug("hudbind", "name='" + EscapeForLog(name) + "' key=" + std::to_string(key) + " c=" + std::to_string(c));
     });
 }
 
@@ -2084,7 +2306,7 @@ std::string TranslateHudAction(const std::string& action) {
         {"draw", "绘制"}, {"wall thickness off", "关闭墙体厚度"},
         {"snap", "吸附"}, {"world edit", "世界编辑"},
         {"start setting grid", "开始设置网格"}, {"complete drawing", "完成绘制"},
-        {"edit world settings", "编辑世界设置"}, {"launch", "发射"},
+        {"edit world settings", "编辑世界设置"}, {"launch", "发射"}, {"to open", "打开"}, {"for open", "打开"},
         {"mine", "挖掘"}, {"place", "放置"}, {"jump", "跳跃"}, {"drop", "丢弃"},
         {"use", "使用"}, {"equip", "装备"}, {"punch", "拳击"}, {"shoot", "射击"},
         {"swing", "挥动"}, {"throw", "投掷"}, {"hold", "手持"}, {"drink", "饮用"},
@@ -2151,7 +2373,7 @@ bool LooksLikeHudHint(const std::string& input) {
         // not treated as a HUD hint.
         static const char* prefixes[] = {"space ", "primary action ", "secondary action ",
             "left mouse button ", "right mouse button ", "middle mouse button ",
-            "tab ", "ctrl ", "shift ", "alt "};
+            "tab ", "ctrl ", "shift ", "alt ", "inventory "};
         std::string lower = LowerAscii(Trim(input));
         for (const char* p : prefixes) {
             size_t n = std::strlen(p);
@@ -2351,7 +2573,20 @@ void HookBuild(void* self, Il2CppString* text, float x, float y, float z, float 
     if (!g_ready.load()) {
         std::string earlyInput = ReadManagedString(text);
         if (LowerAscii(earlyInput).find("voima is still buggy") != std::string::npos) {
-            // Keep the object alive so the one-time live UI pass can translate it.
+            ObjectKeys earlyKeys = g_model.Describe(self, earlyInput);
+            std::string earlyTr, earlyMk, earlyMs; int earlyPage = -1;
+            if (g_db.Lookup(earlyKeys.keys, earlyInput, earlyTr, earlyMk, earlyMs, &earlyPage) && !earlyTr.empty()) {
+                earlyPage = g_db.EnsurePageForText(earlyTr, 200);
+                if (earlyPage >= 0 && g_fontPages.EnsurePage(earlyPage) >= 0) {
+                    Il2CppString* earlyNs = NewManagedString(earlyTr);
+                    if (earlyNs) {
+                        ApplyPageFont(self, earlyPage);
+                        Logger::Instance().Debug("bannerprobe", "early-build page=" + std::to_string(earlyPage));
+                        if (g_origBuild) g_origBuild(self, earlyNs, x, y, z, effect, fontSize);
+                        return;
+                    }
+                }
+            }
             BufferEarlyBuild(self, text, x, y, z, effect, fontSize);
             ApplyPageFont(self, -1);
                 if (g_origBuild) g_origBuild(self, text, x, y, z, effect, fontSize);
@@ -2364,6 +2599,10 @@ void HookBuild(void* self, Il2CppString* text, float x, float y, float z, float 
     }
     inHook = true;
     const std::string input = ReadManagedString(text);
+    if (LowerAscii(input).find("generating the world") != std::string::npos || LowerAscii(input).find("rendering the world") != std::string::npos)
+        g_generationContext = true;
+    if (LowerAscii(input).find("to open") != std::string::npos || input.find("打开") != std::string::npos)
+        Logger::Instance().Debug("chestdebug", "build input=" + EscapeForLog(input));
     if (input.empty()) {
         inHook = false;
         ApplyPageFont(self, -1);
@@ -2432,8 +2671,8 @@ void HookBuild(void* self, Il2CppString* text, float x, float y, float z, float 
     if (LooksLikeHudHint(input)) {
         std::string local = TranslateHudKeyHint(input);
         if (local != input) {
-            int page = g_db.FindPageForText(local, 200);
-            if (page >= 0 && !g_fontPages.IsPageReady(page)) page = -1;
+            int page = g_db.EnsurePageForText(local, 200);
+            if (page >= 0 && !g_fontPages.IsPageReady(page)) page = g_fontPages.EnsurePage(page);
             if (page < 0) {
                 g_pendingHud.push_back(self);
                 inHook = false;
@@ -2739,6 +2978,7 @@ void Startup() {
     g_speechPages = g_db.PrepareSpeechPages(200);
     g_hudPage = g_db.EnsurePageForText("缩短延长切割", 200);
     int confirmPage = g_db.EnsurePageForText("你确定吗？", 200);
+    g_bannerPage = g_db.EnsurePageForText("voima 仍然一堆bug，并且还没做完...\n所以暂时免费提供给大家 :)", 200);
     Logger::Instance().Log("translation", "entries=" + std::to_string(g_db.size()) + " keys=" + std::to_string(g_db.keyCount()) +
                                              " pages=" + std::to_string(g_db.pageCount()));
     for (size_t pi = 0; pi < g_db.pageCount(); ++pi) {

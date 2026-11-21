@@ -59,6 +59,9 @@ int WINAPI wWinMain(HINSTANCE, HINSTANCE, LPWSTR, int) {
 
     bool testMode = HasArg(argc, argv, L"--test");
     if (testMode) SetEnvironmentVariableW(L"VOIMA_ZH_TEST", L"1");
+#ifdef VOIMA_ZH_DEBUG_BUILD
+    SetEnvironmentVariableW(L"VOIMA_ZH_DEBUG", L"1");
+#endif
 
     std::wstring cmd = Quote(exePath);
     bool hasFullscreen = false;

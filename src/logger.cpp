@@ -35,11 +35,17 @@ void Logger::Init(const std::string& modDir) {
                          FILE_SHARE_READ | FILE_SHARE_WRITE, nullptr, CREATE_ALWAYS, FILE_ATTRIBUTE_NORMAL, nullptr);
     const char* test = std::getenv("VOIMA_ZH_TEST");
     testMode_ = test && *test && std::string(test) != "0";
-    Log("start", "VOIMA_ZH plugin logger initialised dir=" + modDir + " test=" + (testMode_ ? "1" : "0"));
+    const char* debug = std::getenv("VOIMA_ZH_DEBUG");
+    debugMode_ = debug && *debug && std::string(debug) != "0";
+    Log("start", "VOIMA_ZH plugin logger initialised dir=" + modDir + " test=" + (testMode_ ? "1" : "0") + " debug=" + (debugMode_ ? "1" : "0"));
 }
 
 void Logger::Log(const std::string& tag, const std::string& message) {
     WriteFileLine(log_, "[" + tag + "] " + message);
+}
+
+void Logger::Debug(const std::string& tag, const std::string& message) {
+    if (debugMode_) WriteFileLine(log_, "[" + tag + "] " + message);
 }
 
 void Logger::Trace(const std::string& key, const std::string& source, const std::string& translation) {

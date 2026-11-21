@@ -6,6 +6,7 @@
 #include <regex>
 #include <set>
 #include <sstream>
+#include <cstring>
 
 namespace {
 
@@ -24,6 +25,38 @@ std::string NormalizeMatch(const std::string& s) {
         }
     }
     return out;
+}
+
+std::string NormalizeNumericKey(const std::string& key) {
+    if (key.rfind("TIP:", 0) != 0) return key;
+    size_t pos = key.find(" = ");
+    size_t headLen = 0;
+    if (pos != std::string::npos) headLen = pos + 3;
+    else {
+        for (const char* marker : {" poisons ", " heals "}) {
+            size_t p = key.find(marker);
+            if (p != std::string::npos) { headLen = p + std::strlen(marker); break; }
+        }
+    }
+    if (headLen == 0 || headLen >= key.size()) return key;
+    std::string out;
+    int index = 0;
+    bool inNumber = false;
+    for (size_t i = headLen; i < key.size(); ++i) {
+        char c = key[i];
+        if (std::isdigit((unsigned char)c)) {
+            if (!inNumber) {
+                out += "{";
+                out += std::to_string(index++);
+                out += "}";
+                inNumber = true;
+            }
+        } else {
+            out += c;
+            inNumber = false;
+        }
+    }
+    return key.substr(0, headLen) + out;
 }
 
 std::string NormalizeLiteral(const std::string& s) {
@@ -459,6 +492,10 @@ bool TranslationDb::Lookup(const std::vector<std::string>& keys, const std::stri
     std::string normalized = NormalizeMatch(input);
     for (const std::string& key : keys) {
         auto it = index_.find(key);
+        if (it == index_.end()) {
+            std::string numericKey = NormalizeNumericKey(key);
+            if (numericKey != key) it = index_.find(numericKey);
+        }
         if (it == index_.end()) continue;
         // Exact source first, then patterns.
         for (size_t pass = 0; pass < 2; ++pass) {

@@ -1,0 +1,45 @@
+status	stat	item	key	source
+MISSING_KEY	damage	balloon	TIP:balloon damage = {0}	balloon\ndamage = {0}
+MISSING_KEY	damage	block shooter	TIP:block shooter damage = {0}	block shooter\ndamage = {0}
+MISSING_KEY	damage	bomb	TIP:bomb damage = {0}	bomb\ndamage = {0}
+MISSING_KEY	damage	card hand	TIP:card hand damage = {0}	card hand\ndamage = {0}
+MISSING_KEY	damage	chisel	TIP:chisel damage = {0}	chisel\ndamage = {0}
+MISSING_KEY	damage	coin	TIP:coin damage = {0}	coin\ndamage = {0}
+MISSING_KEY	damage	diamond scissors	TIP:diamond scissors damage = {0}	diamond scissors\ndamage = {0}
+MISSING_KEY	damage	drill	TIP:drill damage = {0}	drill\ndamage = {0}
+MISSING_KEY	damage	fan	TIP:fan damage = {0}	fan\ndamage = {0}
+MISSING_KEY	damage	fishing rod	TIP:fishing rod damage = {0}	fishing rod\ndamage = {0}
+MISSING_KEY	damage	flashlight	TIP:flashlight damage = {0}	flashlight\ndamage = {0}
+MISSING_KEY	damage	glue gun	TIP:glue gun damage = {0}	glue gun\ndamage = {0}
+MISSING_KEY	damage	healer	TIP:healer damage = {0}	healer\ndamage = {0}
+MISSING_KEY	damage	honey ball	TIP:honey ball damage = {0}	honey ball\ndamage = {0}
+MISSING_KEY	damage	hot pickaxe	TIP:hot pickaxe damage = {0}	hot pickaxe\ndamage = {0}
+MISSING_KEY	damage	hot shotgun	TIP:hot shotgun damage = {0}	hot shotgun\ndamage = {0}
+MISSING_KEY	damage	jawn axe	TIP:jawn axe damage = {0}	jawn axe\ndamage = {0}
+MISSING_KEY	damage	jumper	TIP:jumper damage = {0}	jumper\ndamage = {0}
+MISSING_KEY	damage	magnet	TIP:magnet damage = {0}	magnet\ndamage = {0}
+MISSING_KEY	damage	metal spike	TIP:metal spike damage = {0}	metal spike\ndamage = {0}
+MISSING_KEY	damage	paint brush	TIP:paint brush damage = {0}	paint brush\ndamage = {0}
+MISSING_KEY	damage	respawn statue	TIP:respawn statue damage = {0}	respawn statue\ndamage = {0}
+MISSING_KEY	damage	reverse shotgun	TIP:reverse shotgun damage = {0}	reverse shotgun\ndamage = {0}
+MISSING_KEY	damage	scissors	TIP:scissors damage = {0}	scissors\ndamage = {0}
+MISSING_KEY	damage	selector	TIP:selector damage = {0}	selector\ndamage = {0}
+MISSING_KEY	damage	shotgun	TIP:shotgun damage = {0}	shotgun\ndamage = {0}
+MISSING_KEY	damage	slab hand	TIP:slab hand damage = {0}	slab hand\ndamage = {0}
+MISSING_KEY	damage	smoke	TIP:smoke damage = {0}	smoke\ndamage = {0}
+MISSING_KEY	damage	snowball	TIP:snowball damage = {0}	snowball\ndamage = {0}
+MISSING_KEY	damage	snowball shooter	TIP:snowball shooter damage = {0}	snowball shooter\ndamage = {0}
+MISSING_KEY	damage	sponge	TIP:sponge damage = {0}	sponge\ndamage = {0}
+MISSING_KEY	damage	torch	TIP:torch damage = {0}	torch\ndamage = {0}
+MISSING_KEY	damage	universe edit	TIP:universe edit damage = {0}	universe edit\ndamage = {0}
+MISSING_KEY	damage	wooden pickaxe	TIP:wooden pickaxe damage = {0}	wooden pickaxe\ndamage = {0}
+MISSING_KEY	damage	wooden shotgun	TIP:wooden shotgun damage = {0}	wooden shotgun\ndamage = {0}
+MISSING_KEY	damage	wooden turret	TIP:wooden turret damage = {0}	wooden turret\ndamage = {0}
+MISSING_KEY	damage	world edit	TIP:world edit damage = {0}	world edit\ndamage = {0}
+MISSING_KEY	heals others	berry juice	TIP:berry juice heals others = {0}	berry juice\nheals others = {0}
+MISSING_KEY	heals others	blueberry	TIP:blueberry heals others = {0}	blueberry\nheals others = {0}
+MISSING_KEY	heals others	burger	TIP:burger heals others = {0}	burger\nheals others = {0}
+MISSING_KEY	heals others	honey potion	TIP:honey potion heals others = {0}	honey potion\nheals others = {0}
+MISSING_KEY	heals others	jesus on the cross	TIP:jesus on the cross heals others = {0}	jesus on the cross\nheals others = {0}
+MISSING_KEY	heals others	strawberry	TIP:strawberry heals others = {0}	strawberry\nheals others = {0}
+PATTERN_COVERED	damage	chaingun	TIP:chaingun damage = {0}	chaingun\ndamage = {0}

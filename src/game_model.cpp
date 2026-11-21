@@ -584,6 +584,7 @@ ObjectKeys GameModel::Describe(void* self, const std::string& input) const {
             if (fword.empty() && ftext.empty()) return false;
             std::string spaced = fword;
             if (!ftext.empty() && ftext != fword) spaced += " " + ftext;
+            if (!spaced.empty()) add("TIP:" + LowerAscii(spaced));
             bool joined = finput == spaced;
             if (finput != fword && finput != ftext && !joined) return false;
             auto addCanonical = [&](const std::string& v) {

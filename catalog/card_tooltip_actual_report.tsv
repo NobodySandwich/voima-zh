@@ -1,0 +1,25 @@
+status	stat	item	key	source
+EXACT	damage	block shooter	TIP:block shooter damage = 2	block shooter\ndamage = 2
+EXACT	damage	bomb	TIP:bomb damage = 4	bomb\ndamage = 4
+EXACT	damage	chaingun	TIP:chaingun damage = 2	chaingun\ndamage = 2
+EXACT	damage	chisel	TIP:chisel damage = 6	chisel\ndamage = 6
+EXACT	damage	diamond scissors	TIP:diamond scissors damage = 8	diamond scissors\ndamage = 8
+EXACT	damage	drill	TIP:drill damage = 12	drill\ndamage = 12
+EXACT	damage	hot pickaxe	TIP:hot pickaxe damage = 14	hot pickaxe\ndamage = 14
+EXACT	damage	hot shotgun	TIP:hot shotgun damage = 2	hot shotgun\ndamage = 2
+EXACT	damage	jawn axe	TIP:jawn axe damage = 9	jawn axe\ndamage = 9
+EXACT	damage	metal spike	TIP:metal spike damage = 5	metal spike\ndamage = 5
+EXACT	damage	reverse shotgun	TIP:reverse shotgun damage = 2	reverse shotgun\ndamage = 2
+EXACT	damage	scissors	TIP:scissors damage = 2	scissors\ndamage = 2
+EXACT	damage	shotgun	TIP:shotgun damage = 3	shotgun\ndamage = 3
+EXACT	damage	sponge	TIP:sponge damage = 20	sponge\ndamage = 20
+EXACT	damage	wooden pickaxe	TIP:wooden pickaxe damage = 6	wooden pickaxe\ndamage = 6
+EXACT	damage	wooden shotgun	TIP:wooden shotgun damage = 2	wooden shotgun\ndamage = 2
+EXACT	damage	wooden turret	TIP:wooden turret damage = 3	wooden turret\ndamage = 3
+EXACT	heals	berry juice	TIP:berry juice heals 25%	berry juice\nheals 25%
+EXACT	heals	blueberry	TIP:blueberry heals 20%	blueberry\nheals 20%
+EXACT	heals	burger	TIP:burger heals 100%	burger\nheals 100%
+EXACT	heals	honey potion	TIP:honey potion heals 50%	honey potion\nheals 50%
+EXACT	heals	strawberry	TIP:strawberry heals 5%	strawberry\nheals 5%
+EXACT	heals others	healer	TIP:healer heals others = 4	healer\nheals others = 4
+EXACT	heals others	jesus on the cross	TIP:jesus on the cross heals others = 1	jesus on the cross\nheals others = 1

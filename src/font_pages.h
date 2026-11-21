@@ -16,6 +16,7 @@ public:
     void ProcessPending();
     void Force(void* self, void* font, size_t fontOffset);
     void Clear(void* self, size_t fontOffset);
+    void InvalidatePage(int page) { if (page >= 0 && page < (int)fonts_.size()) fonts_[page] = nullptr; failed_.erase(page); pending_.erase(page); }
     bool IsForced(void* self) const;
     void* ForcedFont(void* self) const;
     int CreatedCount() const { return created_; }
