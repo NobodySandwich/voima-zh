@@ -107,11 +107,12 @@ std::vector<int> TranslationDb::PagesForPrefix(const std::string& prefix) const 
 }
 
 bool TranslationDb::Load(const std::string& path) {
-    std::ifstream f(path, std::ios::binary);
-    if (!f) {
+    std::string data;
+    if (!ReadFileUtf8(Utf8ToWide(path), data)) {
         lastError_ = "cannot open " + path;
         return false;
     }
+    std::istringstream f(data);
     std::string line;
     std::set<std::string> seen;
     int lineNo = 0;
