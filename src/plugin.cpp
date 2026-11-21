@@ -1252,7 +1252,9 @@ void PrewarmHudPages() {
     static bool done = false;
     if (done) return;
     done = true;
-    const char* samples[] = {"space 切割", "推动 发射", "[space] 切割", "缩短 延长 切割", "[e] 打开", "[e] to open", "inventory 打开"};
+    std::string hudPrewarm = "缩短 延长 切割", pmk, pms;
+    g_db.Lookup({"PREWARM:hud"}, "prewarm hud", hudPrewarm, pmk, pms);
+    const char* samples[] = {"space 切割", "推动 发射", "[space] 切割", hudPrewarm.c_str(), "[e] 打开", "[e] to open", "inventory 打开"};
     for (const char* s : samples) {
         int page = g_db.EnsurePageForText(s, 200);
         if (page >= 0 && !g_fontPages.IsPageReady(page)) g_pageQueue.push_back(page);
@@ -2300,50 +2302,34 @@ void DumpHudBindsOnce() {
 }
 
 std::string TranslateHudAction(const std::string& action) {
-    static const std::map<std::string, std::string> actions = {
-        {"attack", "攻击"}, {"build", "建造"}, {"set grid", "设置网格"},
-        {"copy size", "复制尺寸"}, {"toggle grid", "切换网格"}, {"more", "更多"},
-        {"draw", "绘制"}, {"wall thickness off", "关闭墙体厚度"},
-        {"snap", "吸附"}, {"world edit", "世界编辑"},
-        {"start setting grid", "开始设置网格"}, {"complete drawing", "完成绘制"},
-        {"edit world settings", "编辑世界设置"}, {"launch", "发射"}, {"to open", "打开"}, {"for open", "打开"},
-        {"mine", "挖掘"}, {"place", "放置"}, {"jump", "跳跃"}, {"drop", "丢弃"},
-        {"use", "使用"}, {"equip", "装备"}, {"punch", "拳击"}, {"shoot", "射击"},
-        {"swing", "挥动"}, {"throw", "投掷"}, {"hold", "手持"}, {"drink", "饮用"},
-        {"eat", "食用"}, {"slump", "瘫倒"}, {"run", "奔跑"}, {"respawn", "重生"},
-        {"open inventory", "打开背包"}, {"craft", "合成"}, {"back", "返回"},
-        {"cut", "切割"}, {"chop", "劈砍"}, {"dig", "挖掘"}, {"harvest", "收获"},
-        {"pick", "拾取"}, {"grab", "抓取"}, {"plant", "种植"}, {"pour", "倒出"},
-        {"fill", "填充"}, {"paint", "涂色"}, {"pull", "拉动"}, {"push", "推动"},
-        {"open", "打开"}, {"close", "关闭"}, {"mount", "骑乘"}, {"dismount", "下马"},
-        {"sprint", "冲刺"}, {"dash", "冲刺"}, {"roll", "翻滚"}, {"block", "格挡"},
-        {"parry", "招架"}, {"charge", "蓄力"}, {"reload", "装填"}, {"aim", "瞄准"}
-    };
     std::string a = LowerAscii(Trim(action));
-    auto it = actions.find(a);
-    if (it != actions.end()) return it->second;
-
-    // Fixed actions can also be supplied from translations.tsv as HUD:<action>,
-    // so new HUD entries do not require another DLL rebuild.
     {
         std::string translated, matchedKey, matchedSource;
-        if (g_db.Lookup({"HUD:" + a}, action, translated, matchedKey, matchedSource))
+        if (g_db.Lookup({"HUD:" + a}, a, translated, matchedKey, matchedSource) && !translated.empty())
             return translated;
     }
-
     // "edit every <object>" has a dynamic suffix.
     if (a.rfind("edit every ", 0) == 0) {
         std::string object = a.substr(11);
         std::string translated, matchedKey, matchedSource;
-        if (g_db.Lookup({"TIP:" + object}, object, translated, matchedKey, matchedSource))
-            return "批量编辑" + translated;
-        return "批量编辑";
+        if (g_db.Lookup({"TIP:" + object}, object, translated, matchedKey, matchedSource)) {
+            std::string prefix, p;
+            if (g_db.Lookup({"HUD:edit every"}, "edit every", p, matchedKey, matchedSource) && !p.empty()) prefix = p;
+            return prefix.empty() ? translated : prefix + translated;
+        }
+        std::string prefix, p;
+        if (g_db.Lookup({"HUD:edit every"}, "edit every", p, matchedKey, matchedSource) && !p.empty()) prefix = p;
+        return prefix;
     }
 
     // "wall thickness <value>" has a numeric suffix.
     if (a.rfind("wall thickness ", 0) == 0) {
         std::string value = a.substr(15);
-        if (!value.empty()) return "墙体厚度 " + value;
+        if (!value.empty()) {
+            std::string prefix, p, mk, ms;
+            if (g_db.Lookup({"HUD:wall thickness"}, "wall thickness", p, mk, ms) && !p.empty()) prefix = p;
+            return prefix.empty() ? value : prefix + " " + value;
+        }
     }
     return std::string();
 }
@@ -2463,47 +2449,28 @@ std::string TranslateHudKeyHint(const std::string& input) {
 
 bool TryTranslateGenerationText(const std::string& input, std::string& out) {
     if (!g_generationContext.load()) return false;
-    static const std::string kGenerating = "generating the world";
-    static const std::string kRendering = "rendering the world";
-    auto translateLine = [](const std::string& raw) -> std::string {
-        std::string text = Trim(raw);
-        std::string lower = LowerAscii(text);
-        if (lower.rfind(kGenerating, 0) == 0)
-            return "正在生成世界" + text.substr(kGenerating.size());
-        if (lower.rfind(kRendering, 0) == 0)
-            return "正在渲染世界" + text.substr(kRendering.size());
-        auto unitMatch = [&](const char* plural, const char* singular, const char* zh) -> std::string {
-            std::string suffix(plural);
-            size_t cut = std::string::npos;
-            if (lower.size() > suffix.size() && lower.rfind(suffix, lower.size() - suffix.size()) != std::string::npos) {
-                cut = text.size() - suffix.size();
-            } else {
-                suffix.assign(singular);
-                if (lower.size() > suffix.size() && lower.rfind(suffix, lower.size() - suffix.size()) != std::string::npos)
-                    cut = text.size() - suffix.size();
-            }
-            if (cut == std::string::npos) return {};
-            std::string n = Trim(text.substr(0, cut));
-            bool numeric = !n.empty();
-            for (unsigned char c : n)
-                if (!((c >= '0' && c <= '9') || c == ',' || c == '.' || c == 'k' || c == 'K')) numeric = false;
-            return numeric ? n + zh : std::string();
-        };
-        std::string r = unitMatch(" cards", " card", " 张卡片");
-        if (!r.empty()) return r;
-        return unitMatch(" slabs", " slab", " 个板块");
-    };
     std::string result;
     bool changed = false;
     size_t start = 0;
     while (start <= input.size()) {
-        size_t end = input.find('\n', start);
+        size_t end = input.find((char)10, start);
         std::string line = input.substr(start, end == std::string::npos ? std::string::npos : end - start);
-        std::string tr = translateLine(line);
-        if (!tr.empty()) { result += tr; changed = true; }
+        std::string text = Trim(line);
+        std::string lower = LowerAscii(text);
+        bool generationLike = lower.rfind("generating the world", 0) == 0 || lower.rfind("rendering the world", 0) == 0 ||
+                              lower.find(" cards") != std::string::npos || lower.find(" card") != std::string::npos ||
+                              lower.find(" slabs") != std::string::npos || lower.find(" slab") != std::string::npos;
+        std::string translated, matchedKey, matchedSource;
+        if (generationLike) {
+            for (const char* key : {"GEN:generating the world", "GEN:rendering the world", "GEN:cards", "GEN:slabs"}) {
+                if (g_db.Lookup({key}, text, translated, matchedKey, matchedSource) && !translated.empty())
+                    break;
+            }
+        }
+        if (!translated.empty()) { result += translated; changed = true; }
         else result += line;
         if (end == std::string::npos) break;
-        result.push_back('\n');
+        result.push_back((char)10);
         start = end + 1;
     }
     out = result;
@@ -2976,9 +2943,14 @@ void Startup() {
     }
     g_db.AssignPages(200);
     g_speechPages = g_db.PrepareSpeechPages(200);
-    g_hudPage = g_db.EnsurePageForText("缩短延长切割", 200);
-    int confirmPage = g_db.EnsurePageForText("你确定吗？", 200);
-    g_bannerPage = g_db.EnsurePageForText("voima 仍然一堆bug，并且还没做完...\n所以暂时免费提供给大家 :)", 200);
+    auto prewarmText = [](const char* key, const char* source, const char* fallback) {
+        std::string out, mk, ms;
+        if (g_db.Lookup({key}, source, out, mk, ms) && !out.empty()) return out;
+        return std::string(fallback);
+    };
+    g_hudPage = g_db.EnsurePageForText(prewarmText("PREWARM:hud", "prewarm hud", "缩短延长切割"), 200);
+    int confirmPage = g_db.EnsurePageForText(prewarmText("PREWARM:confirm", "prewarm confirm", "你确定吗？"), 200);
+    g_bannerPage = g_db.EnsurePageForText(prewarmText("PREWARM:banner", "prewarm banner", "voima 仍然一堆bug，并且还没做完...\n所以暂时免费提供给大家 :)"), 200);
     Logger::Instance().Log("translation", "entries=" + std::to_string(g_db.size()) + " keys=" + std::to_string(g_db.keyCount()) +
                                              " pages=" + std::to_string(g_db.pageCount()));
     for (size_t pi = 0; pi < g_db.pageCount(); ++pi) {

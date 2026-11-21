@@ -30,7 +30,7 @@ CARD:furniture/flowers in vase/flowers in vase	Flowers in vase	花瓶
 CARD:furniture/lamp/lamp	Lamp	台灯
 CARD:furniture/street light/street light	Street Light	路灯
 CARD:furniture/trash bag/trash bag	trash bag	垃圾袋
-CARD:furniture/wooden chest/wooden chest	Wooden Chest	木箱
+CARD:furniture/wooden chest/wooden chest	Wooden Chest	木头箱子
 CARD:healing/berry juice/berry juice	Berry Juice	浆果汁
 CARD:healing/blueberry/blueberry	Blueberry	蓝莓
 CARD:healing/burger/burger	Burger	汉堡
@@ -137,7 +137,7 @@ CARD:tools/fan/fan	Fan	风扇
 CARD:tools/fishing rod/fishing rod	fishing rod	鱼竿
 CARD:tools/flashlight/flashlight	Flashlight	手电筒
 CARD:tools/glue gun/glue gun	Glue Gun	胶枪
-CARD:tools/healer	Healer	治疗
+CARD:tools/healer	Healer	治疗心
 CARD:tools/honey ball/honey ball	Honey Ball	蜂蜜球
 CARD:tools/hot pickaxe/hot pickaxe	Hot Pickaxe	炽热镐
 CARD:tools/hot shotgun/hot shotgun	Hot Shotgun	炽热霰弹枪
@@ -152,7 +152,7 @@ CARD:tools/scissors/scissors	Scissors	剪刀
 CARD:tools/selector/selector	Selector	选择器
 CARD:tools/shotguns/reverse shotgun	Reverse Shotgun	反向霰弹枪
 CARD:tools/shotguns/shotgun	Shotgun	霰弹枪
-CARD:tools/slab hand/slab hand	Slab Hand	板块手
+CARD:tools/slab hand/slab hand	Slab Hand	形块手
 CARD:tools/snowball/snowball	Snowball	雪球
 CARD:tools/sponge/sponge	Sponge	海绵
 CARD:tools/torch/torch	Torch	火炬
@@ -196,7 +196,7 @@ ANIMAL:characters/bear/bear:hello_messages:5	goot aftornuun	瞎午好
 ANIMAL:characters/bear/bear:hello_messages:6	guuhd evnin	碗上好
 ANIMAL:characters/bear/bear:hello_messages:7	wanuh b frindz	想脚个盆友吗
 ANIMAL:characters/bear/bear:hello_messages:8	wattz yur neme	泥叫甚么名字
-ANIMAL:characters/bear/bear:hello_messages:9	juh niw roun heer?	泥是新来的吗？
+ANIMAL:characters/bear/bear:hello_messages:9	juh niw roun heer?	泥是新来的吗 ?
 ANIMAL:characters/bear/bear:hello_messages:10	greehtinz	蛤喽呀
 ANIMAL:characters/bear/bear:hello_messages:11	blub	咕噜
 ANIMAL:characters/bear/bear:hello_messages:12	mmmmmmmm	嗯...
@@ -233,7 +233,7 @@ ANIMAL:characters/bear/bear:hurt_messages:17	oopzy deysie	哎呀呀
 ANIMAL:characters/bear/bear:hurt_messages:18	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 ANIMAL:characters/bear/bear:hurt_messages:19	welp	号吧
 ANIMAL:characters/bear/bear:hurt_messages:20	dawgg	葛们
-ANIMAL:characters/bear/bear:hurt_messages:21	wers ma hony potiun	窝滴冯蜜药水捏？
+ANIMAL:characters/bear/bear:hurt_messages:21	wers ma hony potiun	窝滴冯蜜药水捏 ?
 ANIMAL:characters/bear/bear:hurt_messages:22	yumi pain	枚味的痛库
 ANIMAL:characters/bear/bear:hurt_messages:23	datz alota demeg	贼桑害可真高
 ANIMAL:characters/bear/bear:hurt_messages:24	oof	唉
@@ -248,7 +248,7 @@ ANIMAL:characters/bear/bear:attack_messages:2	wump womp	乌咚 乌咚
 ANIMAL:characters/bear/bear:attack_messages:3	itz voimin tieme	voimin时尖到
 ANIMAL:characters/bear/bear:attack_messages:4	4 voimuhhhh	4 voimu呃呃呃
 ANIMAL:characters/bear/bear:attack_messages:5	letz 1v1	莱 1v1 单朓
-ANIMAL:characters/bear/bear:attack_messages:6	diz al u got?	泥就贼点本司？
+ANIMAL:characters/bear/bear:attack_messages:6	diz al u got?	泥就贼点本司 ?
 ANIMAL:characters/bear/bear:attack_messages:7	360 nozcop	360杜盲狙
 ANIMAL:characters/bear/bear:attack_messages:8	ged oudda hirrr	滚粗去
 ANIMAL:characters/bear/bear:attack_messages:9	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
@@ -265,7 +265,7 @@ ANIMAL:characters/bear/bear:flee_messages:3	gg	寄
 ANIMAL:characters/bear/bear:flee_messages:4	huuuhhlllpppp miiiiiii	救救窝哦哦哦
 ANIMAL:characters/bear/bear:flee_messages:5	i ned bakkup!	窝徐要兹援!
 ANIMAL:characters/bear/bear:flee_messages:6	i heyt runnin	窝套厌逃泡
-ANIMAL:characters/bear/bear:flee_messages:7	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
+ANIMAL:characters/bear/bear:flee_messages:7	run 4 yur vooimmmm!!!1!1!!	块跑 , 未了泥的 VOoIMmmm!!!1!1!!
 ANIMAL:characters/bear/bear:flee_messages:8	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
 ANIMAL:characters/bear/bear:flee_messages:9	il b leyt for dinnr	宛饭要妹的吃了
 ANIMAL:characters/bear/bear:flee_messages:10	pllzz don huhrt mehhh	求泥别丧害窝
@@ -323,8 +323,8 @@ W:Window:promo|n:as one of the first:TextButton|text_name	as one of the first	  
 W:Window:promo|n:believers in VOIMA:TextButton|text_name	believers in VOIMA	信仰 VOIMA 的人
 W:Window:promo|n:by naming a bear:TextButton|text_name	by naming a bear	通过预购
 W:Window:promo|n:with a pre-order!:TextButton|text_name	with a pre-order!	为一只熊命名!
-W:Window:promo|n:Instead of adding microtransactions,:TextButton|text_name	Instead of adding microtransactions,	我们没有加入微交易，
-W:Window:promo|n:or rushing an unfinished paid release,:TextButton|text_name	or rushing an unfinished paid release,	也没有仓促推出未完成的付费版，
+W:Window:promo|n:Instead of adding microtransactions,:TextButton|text_name	Instead of adding microtransactions,	我们没有加入微交易 ,
+W:Window:promo|n:or rushing an unfinished paid release,:TextButton|text_name	or rushing an unfinished paid release,	也没有仓促推出未完成的付费版 ,
 W:Window:promo|n:visit our website:Button|text_name	visit our website	访问我们的网站
 W:Window:promo|n:and...:TextButton|text_name	and...	而且...
 W:Window:promo|n:we also have a patreon:Button|text_name	we also have a patreon	我们也有 Patreon
@@ -405,7 +405,7 @@ LOAD:loading karhula sounds	loading karhula sounds	正在加载熊之地音效
 LOAD:loading karhula characters	loading karhula characters	正在加载熊之地角色
 LOAD:loading karhula furniture	loading karhula furniture	正在加载熊之地家具
 LOAD:loading karhula plants	loading karhula plants	正在加载熊之地植物
-LOAD:loading karhula slabs	loading karhula slabs	正在加载熊之地板块
+LOAD:loading karhula slabs	loading karhula slabs	正在加载熊之地形块
 LOAD:loading karhula tools	loading karhula tools	正在加载熊之地工具
 LOAD:loading karhula textures	loading karhula textures	正在加载熊之地纹理
 LOAD:loading karhula paintings	loading karhula paintings	正在加载熊之地画作
@@ -584,7 +584,7 @@ TIP:inventory	inventory	背包
 TIP:escape to open the	escape to open the	【esc】打开
 TIP:menu	menu	菜单
 TIP:z for extra action	z for extra action	【z】额外操作
-TIP:like with blocks	like with blocks	（用于方块）
+TIP:like with blocks	like with blocks	(用于方块)
 TIP:0 to equip the 10th slot	0 to equip the 10th slot	【0】装备第 10 格
 TIP:1 to equip the 1st slot	1 to equip the 1st slot	【1】装备第 1 格
 TIP:2 to equip the 2nd slot	2 to equip the 2nd slot	【2】装备第 2 格
@@ -609,7 +609,7 @@ TIP:m to toggle machinima mode	m to toggle machinima mode	【m】切换固定相
 TIP:side mouse button a to use your cursor freely	side mouse button a to use your cursor freely	【鼠标侧键 A】自由使用光标
 TIP:e for inventory	e for inventory	【e】打开背包
 TIP:escape to open the menu	escape to open the menu	【esc】打开菜单
-TIP:z for extra action like with blocks	z for extra action like with blocks	【z】额外操作（用于方块）
+TIP:z for extra action like with blocks	z for extra action like with blocks	【z】额外操作 (用于方块)
 TIPD:to jump	to jump	跳跃
 TIPD:to run	to run	奔跑
 TIPD:to drop	to drop	丢弃
@@ -639,7 +639,7 @@ TIPD:opens the chat window	opens the chat window	打开聊天窗口
 TIPD:for tools	for tools	工具
 TIPD:to open the menu	to open the menu	打开菜单
 TIPD:for inventory	for inventory	背包
-TIPD:for extra action like with blocks	for extra action like with blocks	额外操作（如用于方块）
+TIPD:for extra action like with blocks	for extra action like with blocks	额外操作 (如用于方块)
 TIPD:for third person	for third person	第三人称
 TIPD:for extra action	for extra action	额外操作
 TIPD:to equip the 1st slot	to equip the 1st slot	装备第 1 格
@@ -676,7 +676,7 @@ KEYBIND:point and click	point and click	点击操作
 KEYBIND:side mouse button b	side mouse button B	鼠标侧键 B
 W:Window:promo|n:help us create new updates!:TextButton|text_name	help us create new updates!	帮助我们更新!
 W:Window:promo|n:help us create new updates!:TextButton|name	help us create new updates!	帮助我们更新!
-TIP:control for extra action like with blocks	control for extra action like with blocks	额外行为（例如与方块互动）
+TIP:control for extra action like with blocks	control for extra action like with blocks	额外行为 (例如与方块互动)
 W:Window:controls|n:preview:BallButton|text_name	preview look speed	预览视角速度
 W:Window:controls|n:preview:BallButton|name	preview look speed	预览视角速度
 W:Window:promo|n:we are funding voima with pre-orders :):TextButton|text_name	we are funding voima with pre-orders :)	我们通过预购来资助 VOIMA :)
@@ -751,8 +751,8 @@ W:Window:world buttons|n:Worlds:Button|text_name	Worlds	世界
 W:Window:world buttons|n:Select Worlds:Button|text_name	Select Worlds	选择世界
 W:Window:missing types|n:done and play world:Button|text_name	done and play world	完成并进入世界
 W:Window:missing types|n:Replace:TypeButton|text_name	Replace	替换
-W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing slab types?	是否替换这些缺失的板块类型？
-W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing card types?	是否替换这些缺失的卡片类型？
+W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing slab types?	是否替换这些缺失的形块类型 ?
+W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing card types?	是否替换这些缺失的卡片类型 ?
 W:Window:|n:thanks for playing voima!:TextButton|text_name	thanks for playing voima!	感谢游玩 VOIMA!
 W:Window:|n:credits:Button|text_name	credits	制作人员
 W:Window:universes|n:import universe:Button|text_name	import universe	导入宇宙
@@ -764,8 +764,8 @@ W:Window:mods|n:create mod:Button|text_name	create mod	创建模组
 W:Window:mods|n:delete mod:Button|text_name	delete mod	删除模组
 W:Window:mods|n:save mod:Button|text_name	save mod	保存模组
 W:Window:mods|n:Select Mods:Button|text_name	Select Mods	选择模组
-X:TextureText|voima is still buggy and not complete...    so for now   i made this free :)	voima is still buggy and not complete...    so for now   i made this free :)	voima 仍然一堆bug，并且还没做完...\n所以暂时免费提供给大家 :)
-X:TextureText|voima is still buggy, laggy and not complete btw...     thats why i made this free :)	voima is still buggy, laggy and not complete btw...     thats why i made this free :)	voima 仍然一堆bug，还很卡，并且还没做完...\n所以暂时免费提供给大家 :)
+X:TextureText|voima is still buggy and not complete...    so for now   i made this free :)	voima is still buggy and not complete...    so for now   i made this free :)	voima 仍然一堆bug , 并且还没做完...\n所以暂时免费提供给大家 :)
+X:TextureText|voima is still buggy, laggy and not complete btw...     thats why i made this free :)	voima is still buggy, laggy and not complete btw...     thats why i made this free :)	voima 仍然一堆bug , 还很卡 , 并且还没做完...\n所以暂时免费提供给大家 :)
 TIP:open chat	open chat	打开聊天
 TIP:exit universe editor	exit universe editor	退出宇宙编辑器
 TIP:weapons	weapons	武器
@@ -776,13 +776,13 @@ TIP:survival	survival	生存
 W:Window:world settings|header_text	world settings	世界设置
 W:Window:world settings|n:drops:BoolButton|text_name	drops	掉落物
 W:Window:world settings|n:freeze cards:BoolButton|text_name	freeze cards	冻结卡片
-W:Window:world settings|n:freeze slabs:BoolButton|text_name	freeze slabs	冻结板块
+W:Window:world settings|n:freeze slabs:BoolButton|text_name	freeze slabs	冻结形块
 W:Window:world settings|n:peaceful beings:BoolButton|text_name	peaceful beings	和平生物
 W:Window:world settings|n:card spawning:BoolButton|text_name	card spawning	卡片生成
 W:Window:world settings|n:delete things:Button|text_name	delete things	删除物品
 TIP:drops	drops	掉落物
 TIP:freeze cards	freeze cards	冻结卡片
-TIP:freeze slabs	freeze slabs	冻结板块
+TIP:freeze slabs	freeze slabs	冻结形块
 TIP:peaceful beings	peaceful beings	和平生物
 TIP:card spawning	card spawning	卡片生成
 TIP:delete things	delete things	删除物品
@@ -793,10 +793,10 @@ W:Window:fly settings|n:player scale:SliderButton|text_name	player scale	玩家�
 W:Window:fly settings|n:camera spin:SliderButton|text_name	camera spin	镜头旋转
 TIP:fly settings	fly settings	飞行设置
 TIP:glue gun	glue gun	胶枪
-TIP:healer heals others = 4	healer\nheals others = 4	回血道具\n治疗他人 = 4
+TIP:healer heals others = 4	healer\nheals others = 4	治疗心\n治疗他人 = 4
 TIP:selector	selector	选择器
 TIP:card hand	card hand	卡片手
-TIP:slab hand	slab hand	板块手
+TIP:slab hand	slab hand	形块手
 W:Window:cheat menu|header_text	cheat menu	作弊菜单
 TIP:cheat menu	cheat menu	作弊菜单
 W:Window:crafting|header_text	crafting	合成
@@ -810,7 +810,7 @@ X:TextureText|fluids	fluids	流体
 X:TextureText|healing	healing	治疗
 X:TextureText|tools	tools	工具
 X:TextureText|paintings	paintings	画作
-X:TextureText|slabs	slabs	板块
+X:TextureText|slabs	slabs	形块
 X:TextureText|hud_font_page	hud_font_page	副操作建造主操作设置网格复制尺寸切换网格更多攻击挖掘放置跳跃丢弃使用装备拳击射击挥动投掷手持饮用食用瘫倒奔跑重生打开背包合成返回鼠标侧键滚轮绘关闭墙体厚度吸附世界编辑始完发
 X:TextureText|recipes crafted	{0} / {1} recipes crafted	{0} / {1} 个配方已合成
 X:TextureText|recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
@@ -834,23 +834,23 @@ TIP:{0} / {1} recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个�
 X:TextureText|{0} / {1} recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
 X:TextureText|1 recipe still locked	1 recipe still locked	1 个配方未解锁
 W:Window:block tools|n:size:BlockButton|text_name	normal cube	普通方块
-W:Window:block tools|n:size:BlockButton|text_name	normal slab	普通板块
+W:Window:block tools|n:size:BlockButton|text_name	normal slab	普通形块
 W:Window:block tools|n:size:BlockButton|text_name	normal pillar	普通柱
 W:Window:block tools|n:size:BlockButton|text_name	normal wall	普通墙
 W:Window:block tools|n:size:BlockButton|text_name	half cube	半方块
-W:Window:block tools|n:size:BlockButton|text_name	half slab	半板块
+W:Window:block tools|n:size:BlockButton|text_name	half slab	半形块
 W:Window:block tools|n:size:BlockButton|text_name	half pillar	半柱
 W:Window:block tools|n:size:BlockButton|text_name	half wall	半墙
 W:Window:block tools|n:size:BlockButton|text_name	quarter cube	1/4方块
-W:Window:block tools|n:size:BlockButton|text_name	quarter slab	1/4板块
+W:Window:block tools|n:size:BlockButton|text_name	quarter slab	1/4形块
 W:Window:block tools|n:size:BlockButton|text_name	quarter pillar	1/4柱
 W:Window:block tools|n:size:BlockButton|text_name	quarter wall	1/4墙
 W:Window:block tools|n:size:BlockButton|text_name	tiny cube	小方块
-W:Window:block tools|n:size:BlockButton|text_name	tiny slab	小板块
+W:Window:block tools|n:size:BlockButton|text_name	tiny slab	小形块
 W:Window:block tools|n:size:BlockButton|text_name	tiny pillar	小柱
 W:Window:block tools|n:size:BlockButton|text_name	tiny wall	小墙
 W:Window:block tools|n:size:BlockButton|text_name	tiniest cube	最小方块
-W:Window:block tools|n:size:BlockButton|text_name	tiniest slab	最小板块
+W:Window:block tools|n:size:BlockButton|text_name	tiniest slab	最小形块
 W:Window:block tools|n:size:BlockButton|text_name	tiniest pillar	最小柱
 W:Window:block tools|n:size:BlockButton|text_name	tiniest wall	最小墙
 W:Window:block tools|n:size:BlockButton|text_name	circle	圆形
@@ -869,7 +869,7 @@ W:Window:time settings|n:shadow angle:SliderButton|text_name	shadow angle	阴影
 W:Window:creative settings|n:immortal:Button|text_name	immortal	无敌
 TIP:mining	mining	采矿
 TIP:building	building	建造
-TIP:cheat slabs	cheat slabs	作弊板块
+TIP:cheat slabs	cheat slabs	作弊形块
 TIP:tough	tough	固体
 TIP:fluids	fluids	流体
 TIP:healing	healing	治疗
@@ -877,7 +877,7 @@ TIP:tools	tools	工具
 TIP:misc	misc	杂项
 TIP:paintings	paintings	画作
 TIP:voim voim	voim voim	voim voim
-TIP:slabs	slabs	板块
+TIP:slabs	slabs	形块
 TIP:control pad	control pad	控制板
 TIP:control pad	#control pad	控制板
 TIP:#control pad	control pad	控制板
@@ -984,7 +984,7 @@ TIP:toggle machinima mode	{*} to toggle machinima mode	【{*}】切换固定相�
 TIP:use your cursor freely	{*} to use your cursor freely	【{*}】自由使用光标
 TIP:inventory	{*} for inventory	【{*}】打开背包
 TIP:open the menu	{*} to open the menu	【{*}】打开菜单
-TIP:extra action like with blocks	{*} for extra action like with blocks	【{*}】额外操作（用于方块）
+TIP:extra action like with blocks	{*} for extra action like with blocks	【{*}】额外操作 (用于方块)
 TIP:open the menu	to open the menu	打开菜单
 TIP:open the menu	{*} for open the menu	【{*}】打开菜单
 TIP:open the menu	for open the menu	打开菜单
@@ -1030,9 +1030,9 @@ TIP:equip the 10th slot	for equip the 10th slot	装备第 10 格
 TIP:inventory	{*} to inventory	【{*}】打开背包
 TIP:inventory	to inventory	打开背包
 TIP:inventory	for inventory	背包
-TIP:extra action like with blocks	{*} to extra action like with blocks	【{*}】额外操作（例如与方块互动）
-TIP:extra action like with blocks	to extra action like with blocks	额外操作（例如与方块互动）
-TIP:extra action like with blocks	for extra action like with blocks	额外操作（如用于方块）
+TIP:extra action like with blocks	{*} to extra action like with blocks	【{*}】额外操作 (例如与方块互动)
+TIP:extra action like with blocks	to extra action like with blocks	额外操作 (例如与方块互动)
+TIP:extra action like with blocks	for extra action like with blocks	额外操作 (如用于方块)
 TIP:crouch when flying	to crouch when flying	飞行时蹲下
 TIP:crouch when flying	{*} for crouch when flying	【{*}】飞行时蹲下
 TIP:crouch when flying	for crouch when flying	飞行时蹲下
@@ -1081,7 +1081,7 @@ X:TextureText|animal	goot aftornuun	瞎午好
 X:TextureText|animal	guuhd evnin	碗上好
 X:TextureText|animal	wanuh b frindz	想脚个盆友吗
 X:TextureText|animal	wattz yur neme	泥叫甚么名字
-X:TextureText|animal	juh niw roun heer?	泥是新来的吗？
+X:TextureText|animal	juh niw roun heer?	泥是新来的吗 ?
 X:TextureText|animal	greehtinz	蛤喽呀
 X:TextureText|animal	blub	咕噜
 X:TextureText|animal	mmmmmmmm	嗯...
@@ -1118,7 +1118,7 @@ X:TextureText|animal	oopzy deysie	哎呀呀
 X:TextureText|animal	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 X:TextureText|animal	welp	号吧
 X:TextureText|animal	dawgg	葛们
-X:TextureText|animal	wers ma hony potiun	窝滴冯蜜药水捏？
+X:TextureText|animal	wers ma hony potiun	窝滴冯蜜药水捏 ?
 X:TextureText|animal	yumi pain	枚味的痛库
 X:TextureText|animal	datz alota demeg	贼桑害可真高
 X:TextureText|animal	oof	唉
@@ -1133,7 +1133,7 @@ X:TextureText|animal	wump womp	乌咚 乌咚
 X:TextureText|animal	itz voimin tieme	voimin时尖到
 X:TextureText|animal	4 voimuhhhh	4 voimu呃呃呃
 X:TextureText|animal	letz 1v1	莱 1v1 单朓
-X:TextureText|animal	diz al u got?	泥就贼点本司？
+X:TextureText|animal	diz al u got?	泥就贼点本司 ?
 X:TextureText|animal	360 nozcop	360杜盲狙
 X:TextureText|animal	ged oudda hirrr	滚粗去
 X:TextureText|animal	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
@@ -1150,7 +1150,7 @@ X:TextureText|animal	gg	寄
 X:TextureText|animal	huuuhhlllpppp miiiiiii	救救窝哦哦哦
 X:TextureText|animal	i ned bakkup!	窝徐要兹援!
 X:TextureText|animal	i heyt runnin	窝套厌逃泡
-X:TextureText|animal	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
+X:TextureText|animal	run 4 yur vooimmmm!!!1!1!!	块跑 , 未了泥的 VOoIMmmm!!!1!1!!
 X:TextureText|animal	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
 X:TextureText|animal	il b leyt for dinnr	宛饭要妹的吃了
 X:TextureText|animal	pllzz don huhrt mehhh	求泥别丧害窝
@@ -1203,7 +1203,7 @@ X:TextureText|flowers in vase	flowers in vase	花瓶
 X:TextureText|lamp	lamp	台灯
 X:TextureText|street light	street light	路灯
 X:TextureText|trash bag	trash bag	垃圾袋
-X:TextureText|wooden chest	wooden chest	木箱
+X:TextureText|wooden chest	wooden chest	木头箱子
 X:TextureText|berry juice	berry juice	浆果汁
 X:TextureText|blueberry	blueberry	蓝莓
 X:TextureText|burger	burger	汉堡
@@ -1308,7 +1308,7 @@ X:TextureText|fan	fan	风扇
 X:TextureText|fishing rod	fishing rod	鱼竿
 X:TextureText|flashlight	flashlight	手电筒
 X:TextureText|glue gun	glue gun	胶枪
-X:TextureText|healer	healer	治疗
+X:TextureText|healer	healer	治疗心
 X:TextureText|honey ball	honey ball	蜂蜜球
 X:TextureText|hot pickaxe	hot pickaxe	炽热镐
 X:TextureText|hot shotgun	hot shotgun	炽热霰弹枪
@@ -1322,7 +1322,7 @@ X:TextureText|scissors	scissors	剪刀
 X:TextureText|selector	selector	选择器
 X:TextureText|reverse shotgun	reverse shotgun	反向霰弹枪
 X:TextureText|shotgun	shotgun	霰弹枪
-X:TextureText|slab hand	slab hand	板块手
+X:TextureText|slab hand	slab hand	形块手
 X:TextureText|snowball	snowball	雪球
 X:TextureText|sponge	sponge	海绵
 X:TextureText|torch	torch	火炬
@@ -1346,7 +1346,7 @@ X:TextureText|goot aftornuun	goot aftornuun	瞎午好
 X:TextureText|guuhd evnin	guuhd evnin	碗上好
 X:TextureText|wanuh b frindz	wanuh b frindz	想脚个盆友吗
 X:TextureText|wattz yur neme	wattz yur neme	泥叫甚么名字
-X:TextureText|juh niw roun heer?	juh niw roun heer?	泥是新来的吗？
+X:TextureText|juh niw roun heer?	juh niw roun heer?	泥是新来的吗 ?
 X:TextureText|greehtinz	greehtinz	蛤喽呀
 X:TextureText|blub	blub	咕噜
 X:TextureText|mmmmmmmm	mmmmmmmm	嗯...
@@ -1382,7 +1382,7 @@ X:TextureText|oopzy deysie	oopzy deysie	哎呀呀
 X:TextureText|ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 X:TextureText|welp	welp	号吧
 X:TextureText|dawgg	dawgg	葛们
-X:TextureText|wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏？
+X:TextureText|wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏 ?
 X:TextureText|yumi pain	yumi pain	枚味的痛库
 X:TextureText|datz alota demeg	datz alota demeg	贼桑害可真高
 X:TextureText|oof	oof	唉
@@ -1395,7 +1395,7 @@ X:TextureText|boim boim	boim boim	砰姆 砰姆
 X:TextureText|bring in da berz	bring in da berz	吧熊都叫莱
 X:TextureText|wump womp	wump womp	乌咚 乌咚
 X:TextureText|itz voimin tieme	itz voimin tieme	voimin时尖到
-X:TextureText|diz al u got?	diz al u got?	泥就贼点本司？
+X:TextureText|diz al u got?	diz al u got?	泥就贼点本司 ?
 X:TextureText|ged oudda hirrr	ged oudda hirrr	滚粗去
 X:TextureText|grrrrrrhhrrggrr grrrrrrhh	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
 X:TextureText|git voimd	git voimd	被voim了吧
@@ -1411,7 +1411,7 @@ X:TextureText|gg	gg	寄
 X:TextureText|huuuhhlllpppp miiiiiii	huuuhhlllpppp miiiiiii	救救窝哦哦哦
 X:TextureText|i ned bakkup!	i ned bakkup!	窝徐要兹援!
 X:TextureText|i heyt runnin	i heyt runnin	窝套厌逃泡
-X:TextureText|run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
+X:TextureText|run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑 , 未了泥的 VOoIMmmm!!!1!1!!
 X:TextureText|wehrs valtsu wen i nid emmm	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
 X:TextureText|il b leyt for dinnr	il b leyt for dinnr	宛饭要妹的吃了
 X:TextureText|pllzz don huhrt mehhh	pllzz don huhrt mehhh	求泥别丧害窝
@@ -1465,7 +1465,7 @@ TIP:flowers in vase	flowers in vase	花瓶
 TIP:lamp	lamp	台灯
 TIP:street light	street light	路灯
 TIP:trash bag	trash bag	垃圾袋
-TIP:wooden chest	wooden chest	木箱
+TIP:wooden chest	wooden chest	木头箱子
 TIP:berry juice	berry juice	浆果汁
 TIP:blueberry	blueberry	蓝莓
 TIP:burger	burger	汉堡
@@ -1567,7 +1567,7 @@ TIP:drill	drill	钻头
 TIP:fan	fan	风扇
 TIP:fishing rod	fishing rod	鱼竿
 TIP:flashlight	flashlight	手电筒
-TIP:healer	healer	治疗
+TIP:healer	healer	治疗心
 TIP:honey ball	honey ball	蜂蜜球
 TIP:hot pickaxe	hot pickaxe	炽热镐
 TIP:hot shotgun	hot shotgun	炽热霰弹枪
@@ -1615,7 +1615,7 @@ TIP:goot aftornuun	goot aftornuun	瞎午好
 TIP:guuhd evnin	guuhd evnin	碗上好
 TIP:wanuh b frindz	wanuh b frindz	想脚个盆友吗
 TIP:wattz yur neme	wattz yur neme	泥叫甚么名字
-TIP:juh niw roun heer?	juh niw roun heer?	泥是新来的吗？
+TIP:juh niw roun heer?	juh niw roun heer?	泥是新来的吗 ?
 TIP:greehtinz	greehtinz	蛤喽呀
 TIP:blub	blub	咕噜
 TIP:mmmmmmmm	mmmmmmmm	嗯...
@@ -1651,7 +1651,7 @@ TIP:oopzy deysie	oopzy deysie	哎呀呀
 TIP:ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 TIP:welp	welp	号吧
 TIP:dawgg	dawgg	葛们
-TIP:wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏？
+TIP:wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏 ?
 TIP:yumi pain	yumi pain	枚味的痛库
 TIP:datz alota demeg	datz alota demeg	贼桑害可真高
 TIP:oof	oof	唉
@@ -1664,7 +1664,7 @@ TIP:boim boim	boim boim	砰姆 砰姆
 TIP:bring in da berz	bring in da berz	吧熊都叫莱
 TIP:wump womp	wump womp	乌咚 乌咚
 TIP:itz voimin tieme	itz voimin tieme	voimin时尖到
-TIP:diz al u got?	diz al u got?	泥就贼点本司？
+TIP:diz al u got?	diz al u got?	泥就贼点本司 ?
 TIP:ged oudda hirrr	ged oudda hirrr	滚粗去
 TIP:grrrrrrhhrrggrr grrrrrrhh	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
 TIP:git voimd	git voimd	被voim了吧
@@ -1680,7 +1680,7 @@ TIP:gg	gg	寄
 TIP:huuuhhlllpppp miiiiiii	huuuhhlllpppp miiiiiii	救救窝哦哦哦
 TIP:i ned bakkup!	i ned bakkup!	窝徐要兹援!
 TIP:i heyt runnin	i heyt runnin	窝套厌逃泡
-TIP:run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
+TIP:run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑 , 未了泥的 VOoIMmmm!!!1!1!!
 TIP:wehrs valtsu wen i nid emmm	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
 TIP:il b leyt for dinnr	il b leyt for dinnr	宛饭要妹的吃了
 TIP:pllzz don huhrt mehhh	pllzz don huhrt mehhh	求泥别丧害窝
@@ -1798,13 +1798,13 @@ W:Window:|n:pivot y:AdjusterButton|text_name	pivot y	轴心 Y
 W:Window:|n:load settings:Button|text_name	load settings	加载设置
 W:Window:|n:load models:Button|text_name	load models	加载模型
 W:Window:|n:exit printer:Button|text_name	exit printer	退出打印机
-W:Window:|n:exit printer:Button|text_name	are you sure?	你确定吗？
+W:Window:|n:exit printer:Button|text_name	are you sure?	你确定吗 ?
 W:Window:|n:slice spritesheet:Button|text_name	slice spritesheet	切分精灵表
 W:Window:|n:pivot z:AdjusterButton|text_name	pivot z	轴心 Z
 W:Window:|n:rotation x:AdjusterButton|text_name	rotation x	旋转 X
 W:Window:|n:rotation y:AdjusterButton|text_name	rotation y	旋转 Y
 W:Window:|n:rotation z:AdjusterButton|text_name	rotation z	旋转 Z
-W:Window:controls|n:reset controls:Button|text_name	are you sure?	你确定吗？
+W:Window:controls|n:reset controls:Button|text_name	are you sure?	你确定吗 ?
 MUSIC:now playing:cherry tree pt 1	now playing cherry tree pt 1	正在播放 cherry tree pt 1 (樱桃树 其1)
 MUSIC:now playing:cherry tree pt 1	now playing cherry tree pt 1 by {*}	正在播放 cherry tree pt 1 (樱桃树 其1) by {*}
 MUSIC:now playing:cherry tree pt 2	now playing cherry tree pt 2	正在播放 cherry tree pt 2 (樱桃树 其2)
@@ -1815,61 +1815,61 @@ W:Window:world details|n:play:Button|text_name	play	开始游戏
 W:Window:world details|n:edit:Button|text_name	edit	编辑
 W:Window:world details|n:export:Button|text_name	export	导出
 W:Window:world details|n:delete:Button|text_name	delete	删除
-W:Window:world details|n:delete:Button|text_name	are you sure?	你确定吗？
+W:Window:world details|n:delete:Button|text_name	are you sure?	你确定吗 ?
 W:Window:world details|n:cheats enabled:TextButton|text_name	cheats enabled	已开启作弊
-W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played: {0} hours ago	上次游玩：{0} 小时前
-W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played:  {0} hours ago	上次游玩：{0} 小时前
-W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played: yesterday	上次游玩：昨天
-W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played:  yesterday	上次游玩：昨天
-W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played: {0} minutes	总游玩时间：{0} 分钟
-W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played:  {0} minutes	总游玩时间：{0} 分钟
-W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played: {0} hours	总游玩时间：{0} 小时
-W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played:  {0} hours	总游玩时间：{0} 小时
-W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played: {0} days ago	上次游玩：{0} 天前
-W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played:  {0} days ago	上次游玩：{0} 天前
-W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played: {0} minutes ago	上次游玩：{0} 分钟前
-W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played:  {0} minutes ago	上次游玩：{0} 分钟前
-W:Window:world details|n:Last played: just now:TextButton|text_name	Last played: just now	上次游玩：刚刚
+W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played: {0} hours ago	上次游玩 : {0} 小时前
+W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played:  {0} hours ago	上次游玩 : {0} 小时前
+W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played: yesterday	上次游玩 : 昨天
+W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played:  yesterday	上次游玩 : 昨天
+W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played: {0} minutes	总游玩时间 : {0} 分钟
+W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played:  {0} minutes	总游玩时间 : {0} 分钟
+W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played: {0} hours	总游玩时间 : {0} 小时
+W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played:  {0} hours	总游玩时间 : {0} 小时
+W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played: {0} days ago	上次游玩 : {0} 天前
+W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played:  {0} days ago	上次游玩 : {0} 天前
+W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played: {0} minutes ago	上次游玩 : {0} 分钟前
+W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played:  {0} minutes ago	上次游玩 : {0} 分钟前
+W:Window:world details|n:Last played: just now:TextButton|text_name	Last played: just now	上次游玩 : 刚刚
 W:Window:world details|n:creative world:TextButton|text_name	creative world	创造世界
 W:Window:world details|n:sandbox world:TextButton|text_name	sandbox world	沙盒世界
-W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played: less than a minute ago	上次游玩：不到一分钟前
-W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played: {0} seconds	总游玩时间：{0} 秒
-W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played: {0} days	总游玩时间：{0} 天
-W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played: {0} seconds ago	上次游玩：{0} 秒前
-W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played:  less than a minute ago	上次游玩：不到一分钟前
-W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played:  {0} seconds	总游玩时间：{0} 秒
-W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played:  {0} days	总游玩时间：{0} 天
-W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played:  {0} seconds ago	上次游玩：{0} 秒前
-ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}?	窝科以要{*}
-ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}	窝科以要{*}
-ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}?	请给窝{*}
-ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}	请给窝{*}
-ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}?	泥有{*}
-ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}	泥有{*}
-ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}?	情丢给窝依个{*}
-ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}	情丢给窝依个{*}
-ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}?	窝徐要仪个{*}
-ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}	窝徐要仪个{*}
-ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}?	窝能要{*}
-ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}	窝能要{*}
-ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}?	由妹有{*}
-ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}	由妹有{*}
-W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played: {0} second	总游玩时间：{0} 秒
-W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played: {0} second ago	上次游玩：{0} 秒前
-W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played:  {0} second	总游玩时间：{0} 秒
-W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played:  {0} second ago	上次游玩：{0} 秒前
-W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played: {0} minute	总游玩时间：{0} 分钟
-W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played: {0} minute ago	上次游玩：{0} 分钟前
-W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played:  {0} minute	总游玩时间：{0} 分钟
-W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played:  {0} minute ago	上次游玩：{0} 分钟前
-W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played: {0} hour	总游玩时间：{0} 小时
-W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played: {0} hour ago	上次游玩：{0} 小时前
-W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played:  {0} hour	总游玩时间：{0} 小时
-W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played:  {0} hour ago	上次游玩：{0} 小时前
-W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played: {0} day	总游玩时间：{0} 天
-W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played: {0} day ago	上次游玩：{0} 天前
-W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played:  {0} day	总游玩时间：{0} 天
-W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played:  {0} day ago	上次游玩：{0} 天前
+W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played: less than a minute ago	上次游玩 : 不到一分钟前
+W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played: {0} seconds	总游玩时间 : {0} 秒
+W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played: {0} days	总游玩时间 : {0} 天
+W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played: {0} seconds ago	上次游玩 : {0} 秒前
+W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played:  less than a minute ago	上次游玩 : 不到一分钟前
+W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played:  {0} seconds	总游玩时间 : {0} 秒
+W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played:  {0} days	总游玩时间 : {0} 天
+W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played:  {0} seconds ago	上次游玩 : {0} 秒前
+ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}?	窝科以要{*} ?
+ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}	窝科以要{*} ?
+ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}?	请给窝{*} ?
+ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}	请给窝{*} ?
+ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}?	泥有{*} ?
+ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}	泥有{*} ?
+ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}?	情丢给窝依个{*} ?
+ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}	情丢给窝依个{*} ?
+ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}?	窝徐要仪个{*} ?
+ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}	窝徐要仪个{*} ?
+ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}?	窝能要{*} ?
+ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}	窝能要{*} ?
+ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}?	由妹有{*} ?
+ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}	由妹有{*} ?
+W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played: {0} second	总游玩时间 : {0} 秒
+W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played: {0} second ago	上次游玩 : {0} 秒前
+W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played:  {0} second	总游玩时间 : {0} 秒
+W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played:  {0} second ago	上次游玩 : {0} 秒前
+W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played: {0} minute	总游玩时间 : {0} 分钟
+W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played: {0} minute ago	上次游玩 : {0} 分钟前
+W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played:  {0} minute	总游玩时间 : {0} 分钟
+W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played:  {0} minute ago	上次游玩 : {0} 分钟前
+W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played: {0} hour	总游玩时间 : {0} 小时
+W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played: {0} hour ago	上次游玩 : {0} 小时前
+W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played:  {0} hour	总游玩时间 : {0} 小时
+W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played:  {0} hour ago	上次游玩 : {0} 小时前
+W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played: {0} day	总游玩时间 : {0} 天
+W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played: {0} day ago	上次游玩 : {0} 天前
+W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played:  {0} day	总游玩时间 : {0} 天
+W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played:  {0} day ago	上次游玩 : {0} 天前
 W:Window:cancel|n:cancel:Button|text_name	cancel	取消
 W:Window:your new world...|n:S:CategoryButton|text_value	S	小
 W:Window:your new world...|n:S:BoolButton|text_value	S	小
@@ -1888,14 +1888,14 @@ W:Window:your new world...|n:XXL:BoolButton|text_value	XXL	太大啦!
 W:Window:your new world...|n:XXL:Button|text_value	XXL	太大啦!
 X:TextureText|generating the world..	generating the world..	正在生成世界...
 X:TextureText|generating the world...	generating the world...	正在生成世界...
-W:Window:are you sure?|header_text	are you sure?	你确定吗？
+W:Window:are you sure?|header_text	are you sure?	你确定吗 ?
 DEATH:void	you fell into the void.	你坠入了虚空
 DEATH:suffocate	you drowned.	你进水了
 DEATH:card	you were killed by {*}.	你被 {*} 杀死了
 DEATH:card	you fell to your death.	你摔死了
 DEATH:card	you fell to their death.	你因他们摔死了
 DEATH:card	you exploded.	你爆炸了
-DEATH:card	you squished by a slab.	你被板块压扁了
+DEATH:card	you squished by a slab.	你被形块压扁了
 DEATH:card	you hit a wall too hard.	你撞墙太狠了
 DEATH:card	you died from a falling {*}	你被掉落的 {*} 砸死了
 DEATH:card	you died.	你死了
@@ -1970,7 +1970,7 @@ ITEM:hay	hay	干草
 ITEM:hay pile	hay pile	干草堆
 ITEM:haze	haze	霾
 ITEM:haze skin	haze skin	霾皮
-ITEM:healer	healer	治疗
+ITEM:healer	healer	治疗心
 ITEM:honey	honey	蜂蜜
 ITEM:honey ball	honey ball	蜂蜜球
 ITEM:honey potion	honey potion	蜂蜜药水
@@ -2029,7 +2029,7 @@ ITEM:shotgun	shotgun	霰弹枪
 ITEM:skeleton bear	skeleton bear	骷髅熊
 ITEM:skull	skull	头骨
 ITEM:sky	sky	天空
-ITEM:slab hand	slab hand	板块手
+ITEM:slab hand	slab hand	形块手
 ITEM:smoke	smoke	烟雾
 ITEM:snow	snow	雪
 ITEM:snowball	snowball	雪球
@@ -2062,7 +2062,7 @@ ITEM:winter pc	winter pc	冬日电脑
 ITEM:winter rowan	winter rowan	冬季花楸
 ITEM:winter teenager spruce	winter teenager spruce	冬季云杉幼树
 ITEM:wood	wood	木头
-ITEM:wooden chest	wooden chest	木箱
+ITEM:wooden chest	wooden chest	木头箱子
 ITEM:wooden pickaxe	wooden pickaxe	木镐
 ITEM:wooden shotgun	wooden shotgun	木头霰弹枪
 ITEM:wooden turret	wooden turret	木头炮塔
@@ -2093,27 +2093,185 @@ W:Window:Karhula|n:duplicate:Button|text_name	duplicate	复制
 W:Window:Karhula 2|n:duplicate:Button|text_name	duplicate	复制
 W:Window:Karhula|n:delete:Button|text_name	delete	删除
 W:Window:Karhula 2|n:delete:Button|text_name	delete	删除
-W:Window:Karhula 2|n:delete:Button|text_name	are you sure?	你确定吗？
+W:Window:Karhula 2|n:delete:Button|text_name	are you sure?	你确定吗 ?
 W:Window:credits|n:Karhula::TextButton|text_name	Karhula:	karhula (熊之地):
-W:Window:credits|n:bear by jorma rysky:TextButton|text_name	bear by jorma rysky	熊：Jorma Rysky
-W:Window:credits|n:goober by kassu:TextButton|text_name	goober by kassu	咕宝：Kassu
-W:Window:credits|n:jawn by jorma rysky and valtsu:TextButton|text_name	jawn by jorma rysky and valtsu	嚼恩：Jorma Rysky 和 Valtsu
-W:Window:credits|n:haze by jorma rysky and emma:TextButton|text_name	haze by jorma rysky and emma	霾：Jorma Rysky 和 Emma
-W:Window:credits|n:textures by valtsu and lololy:TextButton|text_name	textures by valtsu and lololy	纹理：Valtsu 和 Lololy
-W:Window:credits|n:drill and jawn axe by splav:TextButton|text_name	drill and jawn axe by splav	钻头与嚼斧：Splav
-W:Window:credits|n:special font letters by p#k#:TextButton|text_name	special font letters by p1k1	特殊字体字母：p1k1
-W:Window:credits|n:welf sounds by andy:TextButton|text_name	welf sounds by andy	韦尔夫音效：Andy
-W:Window:credits|n:wooden shotgun sound and cave sounds by arpuzik:TextButton|text_name	wooden shotgun sound and cave sounds by arpuzik	木头霰弹枪音效与洞穴音效：Arpuzik
+W:Window:credits|n:bear by jorma rysky:TextButton|text_name	bear by jorma rysky	熊 : Jorma Rysky
+W:Window:credits|n:goober by kassu:TextButton|text_name	goober by kassu	咕宝 : Kassu
+W:Window:credits|n:jawn by jorma rysky and valtsu:TextButton|text_name	jawn by jorma rysky and valtsu	嚼恩 : Jorma Rysky 和 Valtsu
+W:Window:credits|n:haze by jorma rysky and emma:TextButton|text_name	haze by jorma rysky and emma	霾 : Jorma Rysky 和 Emma
+W:Window:credits|n:textures by valtsu and lololy:TextButton|text_name	textures by valtsu and lololy	纹理 : Valtsu 和 Lololy
+W:Window:credits|n:drill and jawn axe by splav:TextButton|text_name	drill and jawn axe by splav	钻头与嚼斧 : Splav
+W:Window:credits|n:special font letters by p#k#:TextButton|text_name	special font letters by p1k1	特殊字体字母 : p1k1
+W:Window:credits|n:welf sounds by andy:TextButton|text_name	welf sounds by andy	韦尔夫音效 : Andy
+W:Window:credits|n:wooden shotgun sound and cave sounds by arpuzik:TextButton|text_name	wooden shotgun sound and cave sounds by arpuzik	木头霰弹枪音效与洞穴音效 : Arpuzik
 W:Window:credits|n:thanks:Button|text_name	thanks	感谢
 W:Window:credits|header_text	credits	制作人员
-W:Window:credits|n:bee sounds by benboncan on freesound.org:TextButton|text_name	bee sounds by benboncan on freesound.org	蜜蜂音效：benboncan（freesound.org）
-W:Window:credits|n:glass sounds by trp on freesound.org:TextButton|text_name	glass sounds by trp on freesound.org	玻璃音效：trp（freesound.org）
+W:Window:credits|n:bee sounds by benboncan on freesound.org:TextButton|text_name	bee sounds by benboncan on freesound.org	蜜蜂音效 : benboncan (freesound.org)
+W:Window:credits|n:glass sounds by trp on freesound.org:TextButton|text_name	glass sounds by trp on freesound.org	玻璃音效 : trp (freesound.org)
 W:Window:credits|n:VOIMA::TextButton|text_name	VOIMA:	VOIMA:
-W:Window:credits|n:Designed and coded by Valtsu:TextButton|text_name	Designed and coded by Valtsu	设计与编程：Valtsu
-W:Window:credits|n:Co-designed by Jorma Rysky:TextButton|text_name	Co-designed by Jorma Rysky	联合设计：Jorma Rysky
-W:Window:credits|n:Multiplayer coded by valtsu and disk:TextButton|text_name	Multiplayer coded by valtsu and disk	多人游戏编程：valtsu 和 disk
-W:Window:credits|n:All glory to God, Amen:TextButton|text_name	All glory to God, Amen	一切荣耀归于上帝，阿们
-W:Window:credits|n:Open-Source Code by Third Parties::TextButton|text_name	Open-Source Code by Third Parties:	第三方开源代码：
-W:Window:credits|n:OBJ file importer by Dummiesman:TextButton|text_name	OBJ file importer by Dummiesman	OBJ 文件导入器：Dummiesman
-W:Window:credits|n:StandaloneFileBrowser by Gökhan Gökçe:TextButton|text_name	StandaloneFileBrowser by Gökhan Gökçe	独立文件浏览器 (StandaloneFileBrowser)：Gökhan Gökçe
-W:Window:credits|n:Some of SSAO by Virtual Method Studios:TextButton|text_name	Some of SSAO by Virtual Method Studios	部分 SSAO：Virtual Method Studios
+W:Window:credits|n:Designed and coded by Valtsu:TextButton|text_name	Designed and coded by Valtsu	设计与编程 : Valtsu
+W:Window:credits|n:Co-designed by Jorma Rysky:TextButton|text_name	Co-designed by Jorma Rysky	联合设计 : Jorma Rysky
+W:Window:credits|n:Multiplayer coded by valtsu and disk:TextButton|text_name	Multiplayer coded by valtsu and disk	多人游戏编程 : valtsu 和 disk
+W:Window:credits|n:All glory to God, Amen:TextButton|text_name	All glory to God, Amen	一切荣耀归于上帝 , 阿们
+W:Window:credits|n:Open-Source Code by Third Parties::TextButton|text_name	Open-Source Code by Third Parties:	第三方开源代码 : 
+W:Window:credits|n:OBJ file importer by Dummiesman:TextButton|text_name	OBJ file importer by Dummiesman	OBJ 文件导入器 : Dummiesman
+W:Window:credits|n:StandaloneFileBrowser by Gökhan Gökçe:TextButton|text_name	StandaloneFileBrowser by Gökhan Gökçe	独立文件浏览器 (StandaloneFileBrowser) : Gökhan Gökçe
+W:Window:credits|n:Some of SSAO by Virtual Method Studios:TextButton|text_name	Some of SSAO by Virtual Method Studios	部分 SSAO : Virtual Method Studios
+TIP:chaingun damage = {0}	chaingun\ndamage = {0}	链炮\n伤害 = {0}
+TIP:chaingun damage = 2	chaingun\ndamage = 2	链炮\n伤害 = 2
+TIP:chaingun damage = 2	chaingun damage = 2	链炮 伤害 = 2
+TIP:chaingun damage = {0}	chaingun damage = {0}	链炮 伤害 = {0}
+TIP:block shooter damage = 2	block shooter\ndamage = 2	方块发射器\n伤害 = 2
+TIP:bomb damage = 4	bomb\ndamage = 4	炸弹\n伤害 = 4
+TIP:chisel damage = 6	chisel\ndamage = 6	凿子\n伤害 = 6
+TIP:diamond scissors damage = 8	diamond scissors\ndamage = 8	钻石剪刀\n伤害 = 8
+TIP:hot pickaxe damage = 14	hot pickaxe\ndamage = 14	炽热镐\n伤害 = 14
+TIP:hot shotgun damage = 2	hot shotgun\ndamage = 2	炽热霰弹枪\n伤害 = 2
+TIP:jawn axe damage = 9	jawn axe\ndamage = 9	嚼斧\n伤害 = 9
+TIP:metal spike damage = 5	metal spike\ndamage = 5	金属尖刺\n伤害 = 5
+TIP:reverse shotgun damage = 2	reverse shotgun\ndamage = 2	反向霰弹枪\n伤害 = 2
+TIP:scissors damage = 2	scissors\ndamage = 2	剪刀\n伤害 = 2
+TIP:shotgun damage = 3	shotgun\ndamage = 3	霰弹枪\n伤害 = 3
+TIP:sponge damage = 20	sponge\ndamage = 20	海绵\n伤害 = 20
+TIP:wooden pickaxe damage = 6	wooden pickaxe\ndamage = 6	木镐\n伤害 = 6
+TIP:wooden shotgun damage = 2	wooden shotgun\ndamage = 2	木头霰弹枪\n伤害 = 2
+TIP:wooden turret damage = 3	wooden turret\ndamage = 3	木头炮塔\n伤害 = 3
+TIP:berry juice heals 25%	berry juice\nheals 25%	浆果汁\n治疗 25%
+TIP:blueberry heals 20%	blueberry\nheals 20%	蓝莓\n治疗 20%
+TIP:strawberry heals 5%	strawberry\nheals 5%	草莓\n治疗 5%
+TIP:jesus on the cross heals others = 1	jesus on the cross\nheals others = 1	十字架上的耶稣\n治疗他人 = 1
+TIP:block shooter damage = 2	block shooter damage = 2	方块发射器 伤害 = 2
+TIP:bomb damage = 4	bomb damage = 4	炸弹 伤害 = 4
+TIP:chisel damage = 6	chisel damage = 6	凿子 伤害 = 6
+TIP:diamond scissors damage = 8	diamond scissors damage = 8	钻石剪刀 伤害 = 8
+TIP:hot pickaxe damage = 14	hot pickaxe damage = 14	炽热镐 伤害 = 14
+TIP:hot shotgun damage = 2	hot shotgun damage = 2	炽热霰弹枪 伤害 = 2
+TIP:jawn axe damage = 9	jawn axe damage = 9	嚼斧 伤害 = 9
+TIP:metal spike damage = 5	metal spike damage = 5	金属尖刺 伤害 = 5
+TIP:reverse shotgun damage = 2	reverse shotgun damage = 2	反向霰弹枪 伤害 = 2
+TIP:scissors damage = 2	scissors damage = 2	剪刀 伤害 = 2
+TIP:shotgun damage = 3	shotgun damage = 3	霰弹枪 伤害 = 3
+TIP:sponge damage = 20	sponge damage = 20	海绵 伤害 = 20
+TIP:wooden pickaxe damage = 6	wooden pickaxe damage = 6	木镐 伤害 = 6
+TIP:wooden shotgun damage = 2	wooden shotgun damage = 2	木头霰弹枪 伤害 = 2
+TIP:wooden turret damage = 3	wooden turret damage = 3	木头炮塔 伤害 = 3
+TIP:berry juice heals 25%	berry juice heals 25%	浆果汁 治疗 25%
+TIP:blueberry heals 20%	blueberry heals 20%	蓝莓 治疗 20%
+TIP:strawberry heals 5%	strawberry heals 5%	草莓 治疗 5%
+TIP:jesus on the cross heals others = 1	jesus on the cross heals others = 1	十字架上的耶稣 治疗他人 = 1
+伤害 = {0}
+中毒 {0}%
+TIP:drill damage = {0}	drill damage = {0}	钻头\n伤害 = {0}
+TIP:mushroom big poisons {0}%	mushroom big poisons {0}%	大蘑菇\n中毒 {0}%
+TIP:block shooter damage = {0}	block shooter damage = {0}	方块发射器\n伤害 = {0}
+TIP:bomb damage = {0}	bomb damage = {0}	炸弹\n伤害 = {0}
+TIP:chaingun damage = {0}	chaingun damage = {0}	链炮\n伤害 = {0}
+TIP:chisel damage = {0}	chisel damage = {0}	凿子\n伤害 = {0}
+TIP:diamond scissors damage = {0}	diamond scissors damage = {0}	钻石剪刀\n伤害 = {0}
+TIP:hot pickaxe damage = {0}	hot pickaxe damage = {0}	炽热镐\n伤害 = {0}
+TIP:hot shotgun damage = {0}	hot shotgun damage = {0}	炽热霰弹枪\n伤害 = {0}
+TIP:jawn axe damage = {0}	jawn axe damage = {0}	嚼斧\n伤害 = {0}
+TIP:metal spike damage = {0}	metal spike damage = {0}	金属尖刺\n伤害 = {0}
+TIP:reverse shotgun damage = {0}	reverse shotgun damage = {0}	反向霰弹枪\n伤害 = {0}
+TIP:scissors damage = {0}	scissors damage = {0}	剪刀\n伤害 = {0}
+TIP:shotgun damage = {0}	shotgun damage = {0}	霰弹枪\n伤害 = {0}
+TIP:sponge damage = {0}	sponge damage = {0}	海绵\n伤害 = {0}
+TIP:wooden pickaxe damage = {0}	wooden pickaxe damage = {0}	木镐\n伤害 = {0}
+TIP:wooden shotgun damage = {0}	wooden shotgun damage = {0}	木头霰弹枪\n伤害 = {0}
+TIP:wooden turret damage = {0}	wooden turret damage = {0}	木头炮塔\n伤害 = {0}
+TIP:berry juice heals {0}%	berry juice heals {0}%	浆果汁\n治疗 {0}%
+TIP:blueberry heals {0}%	blueberry heals {0}%	蓝莓\n治疗 {0}%
+TIP:burger heals {0}%	burger heals {0}%	汉堡\n治疗 {0}%
+TIP:honey potion heals {0}%	honey potion heals {0}%	蜂蜜药水\n治疗 {0}%
+TIP:strawberry heals {0}%	strawberry heals {0}%	草莓\n治疗 {0}%
+TIP:healer heals others = {0}	healer heals others = {0}	治疗心\n治疗他人 = {0}
+TIP:jesus on the cross heals others = {0}	jesus on the cross heals others = {0}	十字架上的耶稣\n治疗他人 = {0}
+TIP:mushroom small poisons {0}%	mushroom small poisons {0}%	小蘑菇\n中毒 {0}%
+TIP:goober damage = {0}	goober damage = {0}	咕宝\n伤害 = {0}
+W:Window:wooden chest|header_text	wooden chest	木头箱子
+X:TextureText|inventory to open	inventory to open	[e] 打开
+W:Window:draw tools|n:color:Button|text_name	color	颜色
+W:Window:draw tools|n:set:Button|text_name	set\ngrid	设置\n网格
+DEATH:card	you were killed by a baby bear.	你被一只小熊杀死了
+DEATH:card	you were killed by baby bear.	你被一只小熊杀死了
+DEATH:card	you were killed by a baby jawn tree.	你被一棵嚼恩树苗杀死了
+DEATH:card	you were killed by baby jawn tree.	你被一棵嚼恩树苗杀死了
+DEATH:card	you were killed by a baby milo bear.	你被一只小米洛熊杀死了
+DEATH:card	you were killed by baby milo bear.	你被一只小米洛熊杀死了
+DEATH:card	you were killed by a baby porri bear.	你被一只小波里熊杀死了
+DEATH:card	you were killed by baby porri bear.	你被一只小波里熊杀死了
+DEATH:card	you were killed by a bear.	你被一只熊杀死了
+DEATH:card	you were killed by bear.	你被一只熊杀死了
+DEATH:card	you were killed by a bear x.	你被一只熊 X 杀死了
+DEATH:card	you were killed by bear x.	你被一只熊 X 杀死了
+DEATH:card	you were killed by a bear y.	你被一只熊 Y 杀死了
+DEATH:card	you were killed by bear y.	你被一只熊 Y 杀死了
+DEATH:card	you were killed by a bee.	你被一只蜜蜂杀死了
+DEATH:card	you were killed by bee.	你被一只蜜蜂杀死了
+DEATH:card	you were killed by a bee nest.	你被一个蜂巢杀死了
+DEATH:card	you were killed by bee nest.	你被一个蜂巢杀死了
+DEATH:card	you were killed by a bone.	你被一根骨头杀死了
+DEATH:card	you were killed by bone.	你被一根骨头杀死了
+DEATH:card	you were killed by a boulder.	你被一个巨石杀死了
+DEATH:card	you were killed by boulder.	你被一个巨石杀死了
+DEATH:card	you were killed by a goober.	你被一个咕宝杀死了
+DEATH:card	you were killed by goober.	你被一个咕宝杀死了
+DEATH:card	you were killed by a haze.	你被一个霾杀死了
+DEATH:card	you were killed by haze.	你被一个霾杀死了
+DEATH:card	you were killed by a haze skin.	你被一块霾皮杀死了
+DEATH:card	you were killed by haze skin.	你被一块霾皮杀死了
+DEATH:card	you were killed by a jawn.	你被一个嚼恩杀死了
+DEATH:card	you were killed by jawn.	你被一个嚼恩杀死了
+DEATH:card	you were killed by a jawn tree.	你被一棵嚼恩树杀死了
+DEATH:card	you were killed by jawn tree.	你被一棵嚼恩树杀死了
+DEATH:card	you were killed by a magpie.	你被一只喜鹊杀死了
+DEATH:card	you were killed by magpie.	你被一只喜鹊杀死了
+DEATH:card	you were killed by a metallic skeleton.	你被一个金属骷髅杀死了
+DEATH:card	you were killed by metallic skeleton.	你被一个金属骷髅杀死了
+DEATH:card	you were killed by a skeleton bear.	你被一只骷髅熊杀死了
+DEATH:card	you were killed by skeleton bear.	你被一只骷髅熊杀死了
+DEATH:card	you were killed by a skull.	你被一个头骨杀死了
+DEATH:card	you were killed by skull.	你被一个头骨杀死了
+DEATH:card	you were killed by a tooth.	你被一个牙齿杀死了
+DEATH:card	you were killed by tooth.	你被一个牙齿杀死了
+DEATH:card	you were killed by a welf.	你被一个韦尔夫杀死了
+DEATH:card	you were killed by welf.	你被一个韦尔夫杀死了
+HUD:to open	to open	打开
+HUD:for open	for open	打开
+HUD:equip	equip	装备
+HUD:slump	slump	瘫倒
+HUD:run	run	奔跑
+HUD:respawn	respawn	重生
+HUD:open inventory	open inventory	打开背包
+HUD:back	back	返回
+HUD:chop	chop	劈砍
+HUD:dig	dig	挖掘
+HUD:harvest	harvest	收获
+HUD:pick	pick	拾取
+HUD:grab	grab	抓取
+HUD:plant	plant	种植
+HUD:pour	pour	倒出
+HUD:fill	fill	填充
+HUD:pull	pull	拉动
+HUD:push	push	推动
+HUD:open	open	打开
+HUD:close	close	关闭
+HUD:mount	mount	骑乘
+HUD:dismount	dismount	下来
+HUD:sprint	sprint	冲刺
+HUD:dash	dash	冲刺
+HUD:roll	roll	翻滚
+HUD:block	block	格挡
+HUD:parry	parry	招架
+HUD:charge	charge	蓄力
+HUD:reload	reload	装填
+HUD:aim	aim	瞄准
+GEN:generating the world	generating the world{*}	正在生成世界{*}
+GEN:rendering the world	rendering the world{*}	正在渲染世界{*}
+GEN:cards	{0} cards	{0} 卡片
+GEN:slabs	{0} slabs	{0} 形块
+HUD:edit every	edit every	批量编辑
+HUD:wall thickness	wall thickness	墙体厚度
+PREWARM:banner	prewarm banner	voima 仍然一堆bug , 并且还没做完...\n所以暂时免费提供给大家 :)
+PREWARM:hud	prewarm hud	缩短 延长 断开
+PREWARM:confirm	prewarm confirm	你确定吗 ?

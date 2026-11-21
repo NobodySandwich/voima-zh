@@ -420,7 +420,7 @@ bool TranslationDb::MatchEntry(const TranslationEntry& e, const std::string& nor
         }
         rx += escaped;
         if (i < e.placeholders.size()) {
-            rx += e.placeholders[i] == -1 ? "(.*?)" : "([0-9]+)";
+            rx += e.placeholders[i] == -1 ? "(.*?)" : "([0-9][0-9.,]*[kKmMbB]?)";
         }
     }
     rx += "$";
