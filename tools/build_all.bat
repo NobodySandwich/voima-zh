@@ -7,6 +7,9 @@ if not exist build mkdir build
 windres -I assets assets\voima_zh.rc -O coff -o build\voima_zh_icon.o || exit /b 1
 g++ -O2 -std=c++20 -static -static-libgcc -static-libstdc++ -municode -mwindows -DUNICODE -D_UNICODE ^
   -o VOIMA_ZH.exe src\launcher.cpp build\voima_zh_icon.o -luser32 || exit /b 1
+windres -I assets assets\voima_debug.rc -O coff -o build\voima_debug_icon.o || exit /b 1
+g++ -O2 -std=c++20 -static -static-libgcc -static-libstdc++ -municode -mwindows -DUNICODE -D_UNICODE ^
+  -DVOIMA_ZH_DEBUG_BUILD -o DEBUGMA_ZH.exe src\launcher.cpp build\voima_debug_icon.o -luser32 || exit /b 1
 if not exist "Font\glyphs.txt" (
   echo Missing Font/glyphs.txt - run tools\build_font.py first
   exit /b 1

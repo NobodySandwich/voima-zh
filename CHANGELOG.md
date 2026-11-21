@@ -1,39 +1,114 @@
-# Changelog
+# VOIMA_ZH 中文汉化 CHANGELOG
+
+## 0.1.5 — 2026-11-21
+
+HUD、交互提示、生物名、生成阶段与发布工程完善。
+
+### HUD 与键位
+
+- 修复缩短/延长/切割 HUD 首次出现时的明显卡顿。
+- 启动阶段预构建字体页，消除游玩中首次构建页面导致的长帧。
+- 修复 cut 键位显示为空 `[]` 的问题；空格键现显示为 `[space]`。
+- cut 键位优先跟随当前 jump 绑定，修改键位后 HUD 自动更新。
+- 风扇 HUD 的 push/launch 文案正常显示中文。
+- 板块手菜单的 color、set grid 显示为中文（颜色、设置网格）。
+
+### 交互提示
+
+- 修复箱子提示 `[e]/[y] to open` 与中文交替显示的问题。
+- 在 `BuildRotated` 前直接翻译 inventory 提示，兼容控制字符与动态绑定键名。
+- 修复箱子提示中文不居中的问题。
+- 箱子窗口标题显示为“木头箱子”。
+
+### 生物名
+
+- 从 Character 卡牌静态生成生物死亡名称。
+- 支持熊、小熊、嚼恩、蜜蜂、蜂巢、骨头等生物名。
+- 自动添加中文量词：一只熊、一个嚼恩、一根骨头、一棵嚼恩树。
+- 随机玩家名保留原文，避免误翻译。
+
+### 生成阶段
+
+- 修复世界生成最开始几帧显示英文 “generating the world” 的问题。
+- 检测到生成/渲染文本时立即建立 generation context，同一帧显示中文。
+
+### 调试与性能
+
+- 新增 `DEBUGMA_ZH.exe`，使用反色图标。
+- `DEBUGMA_ZH.exe` 自动启用 FPS、字体页、HUD、tooltip 等全部调试日志。
+- 普通 `VOIMA_ZH.exe` 不再进行 FPS 采样、调试日志和 command 文件轮询。
+- 移除运行期 CardType 周期 dump。
+- 所有字体页改为加载阶段预构建，避免游玩中首次构建造成卡顿。
+
+---
+
+## 0.1.4 — 2026-11-21
+
+物品 tooltip 与数字占位符支持。
+
+- 修复链炮、钻头、蘑菇、咕宝等双行物品 tooltip 未翻译的问题。
+- 从实际卡牌配置与对象 key 生成 tooltip，不再按物品名与模板做排列组合。
+- 支持 `TIP:<物品> <属性> = <数字>` 这类动态 key。
+- 增加数字 key 归一化：运行时将数字部分替换为 `{0}`、`{1}` 后再查表。
+- TSV 支持 `{0}`、`{1}` 模式，数字变化不再需要重复写死条目。
+- 同时支持真实换行与规范化空格两种 source。
+- 修复钻头伤害写死为 12 的错误，改为按实际值显示。
+- 补齐木头箱子等容器标题，并完善 tooltip 的空格与换行。
+
+---
+
+## 0.1.3 — 2026-11-20
+
+稳定加载页与首次中文 Build。
+
+- 修复加载页 banner 随机英文、残缺或消失的问题。
+- 改为在 `TextureText.Build` 首次构建前替换中文文本与字体页，避免先英文 Build 后再重建。
+- 修复 `TextureFont..ctor` 签名检查，兼容当前游戏构造函数。
+- 完成逐行字体注入协议：读取完整 manifest、逐文件备份、写 journal、启动前校验、退出或崩溃后恢复。
+- 注入失败不会留下半成品字体文件；退出后恢复并校验 Font。
+- 加载页主文字与底部 banner 在重复启动中稳定显示中文。
+- 清理旧的“先 Layout 再重建”路径，避免随机清空 banner。
+
+---
 
 ## 0.1.2 — 2026-11-20
 
-翻译覆盖
+启动器与发布资源整理。
 
-- 翻译表扩展到 2119 行，补齐主菜单、设置、控制、世界菜单、作弊菜单、HUD、卡牌、动物对话、加载文字和 credits。
-- 新增对象键：populate tools、change card size、world details、Karhula 删除确认、printer、import universe、credits 等。
-- 作弊 HUD 补齐 paint、reset、glue、unglue、to select；修正 set grid / remove grid 与 are you sure 的显示。
-- credits 按原版内容补全，第三方开源条目、作者名和致谢保留原有格式。
+- 启动器改为 GUI subsystem，不再弹出控制台窗口。
+- 发布包补齐完整 Font 资源，避免缺页导致的随机英文。
+- 固化对象感知翻译表与发布目录结构。
+- 加入字体备份 / journal / 恢复的基础启动流程。
+- 完成重复启动的基础稳定性验证。
 
-字体与加载
+---
 
-- 字体页改为按需构造，并加入主线程分帧队列，每 80ms 最多构造一页，避免一次性长时间阻塞。
-- 字体页队列提前到加载条阶段入队，进入世界时不再临时构造页面，减少卡顿和加载转圈。
-- 保留加载文本原始的省略号点数，不再用固定文本覆盖游戏的 . / .. / ... 动画。
-- 修复动物对话缓存命中时字体页未重新应用导致的空气泡。
-- 移除了会破坏按钮状态并导致物品栏崩溃的 Button 字段写入实验。
+## 0.1.1 — 2026-11-19
 
-稳定性与工程
+补全翻译遗漏并固化项目 skill。
 
-- 启动器改为 GUI 子系统，启动时不再弹出控制台。
-- 保持独立注入，不引入 BepInEx 或其他模组框架。
-- GitHub 源码树整理：只保留构建、测试、文档、许可证和翻译所需内容。
-- 移除构建产物、日志、生成字体、发布二进制、临时字体注入文件和实验字形。
+- 翻译表从 687 条增至 703 条：设置页 tab 的 `text_name` 键、菜单颜色 CALM/DITHER、快捷键移动/鼠标动作、图形设置补充项。
+- 修复 LOAD 阶段大小写与尾部句点导致的未命中；加载文案不再刷 `untranslated.log`。
+- 修复促销计数按钮被 `Button.translate=false` 跳过的问题（仅对三个已知静态计数键覆盖）。
+- 修复促销预购者名单在 `untranslated.log` 刷屏。
+- 新增 `test_settings_coverage`（设置页静态覆盖）与促销计数测试。
+- 字形 718 个，所有字体页在测试模式下全部创建成功。
+- 页字体改为首次 Build 前同步创建；测试模式预热全部页，避免“先英文一帧”。
+
+---
 
 ## 0.1.0 — 2026-11-17
 
 首个可运行版本。
 
-- 独立启动器注入 VOIMA_ZH.dll，不依赖 BepInEx。
-- 运行时 IL2CPP 反射解析 TextureText / TextureFont / Window / Button / Lord。
-- 对象感知对象键：窗口 + 按钮 + 控件类 + 字段，另有 CARD / KEYBIND / TIP / LOAD / HUD / MUSIC / MENU 上下文键。
+- 独立启动器注入 `VOIMA_ZH.dll`，不依赖 BepInEx。
+- 运行时 IL2CPP 反射解析 `TextureText` / `TextureFont` / `Window` / `Button` / `Lord`。
+- 对象感知对象键：窗口 + 按钮 + 控件类 + 字段，另有 `CARD` / `KEYBIND` / `TIP` / `LOAD` / `HUD` / `MUSIC` / `MENU` 上下文键。
 - 687 条翻译条目，覆盖主菜单、控制、设置、卡牌、动物语音、加载等。
 - 霞鹜文楷 Screen 字形，200×200，717 个字形。
-- 字体分页：绕开 Texture2DArray 256 层限制，按需在 Lord.Update 创建页字体。
-- 修复 GC 导致的 String.get_Chars 崩溃（翻译字符串、字体路径全部加 GC root）。
-- 日志：plugin.log / untranslated.log / test_trace.tsv。
+- 字体分页：绕开 `Texture2DArray` 256 层限制，按需在 `Lord.Update` 创建页字体。
+- 修复 GC 导致的 `String.get_Chars` 崩溃（翻译字符串、字体路径全部加 GC root）。
+- 日志：`plugin.log` / `untranslated.log` / `test_trace.tsv`。
 - 测试：单元测试 13 项 + 实际启动游戏集成测试 6 项。
+
+---

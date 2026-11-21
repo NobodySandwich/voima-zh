@@ -2117,3 +2117,122 @@ W:Window:credits|n:Open-Source Code by Third Parties::TextButton|text_name	Open-
 W:Window:credits|n:OBJ file importer by Dummiesman:TextButton|text_name	OBJ file importer by Dummiesman	OBJ 文件导入器：Dummiesman
 W:Window:credits|n:StandaloneFileBrowser by Gökhan Gökçe:TextButton|text_name	StandaloneFileBrowser by Gökhan Gökçe	独立文件浏览器 (StandaloneFileBrowser)：Gökhan Gökçe
 W:Window:credits|n:Some of SSAO by Virtual Method Studios:TextButton|text_name	Some of SSAO by Virtual Method Studios	部分 SSAO：Virtual Method Studios
+TIP:chaingun damage = {0}	chaingun\ndamage = {0}	链炮\n伤害 = {0}
+TIP:chaingun damage = 2	chaingun\ndamage = 2	链炮\n伤害 = 2
+TIP:chaingun damage = 2	chaingun damage = 2	链炮 伤害 = 2
+TIP:chaingun damage = {0}	chaingun damage = {0}	链炮 伤害 = {0}
+TIP:block shooter damage = 2	block shooter\ndamage = 2	方块发射器\n伤害 = 2
+TIP:bomb damage = 4	bomb\ndamage = 4	炸弹\n伤害 = 4
+TIP:chisel damage = 6	chisel\ndamage = 6	凿子\n伤害 = 6
+TIP:diamond scissors damage = 8	diamond scissors\ndamage = 8	钻石剪刀\n伤害 = 8
+TIP:hot pickaxe damage = 14	hot pickaxe\ndamage = 14	炽热镐\n伤害 = 14
+TIP:hot shotgun damage = 2	hot shotgun\ndamage = 2	炽热霰弹枪\n伤害 = 2
+TIP:jawn axe damage = 9	jawn axe\ndamage = 9	嚼斧\n伤害 = 9
+TIP:metal spike damage = 5	metal spike\ndamage = 5	金属尖刺\n伤害 = 5
+TIP:reverse shotgun damage = 2	reverse shotgun\ndamage = 2	反向霰弹枪\n伤害 = 2
+TIP:scissors damage = 2	scissors\ndamage = 2	剪刀\n伤害 = 2
+TIP:shotgun damage = 3	shotgun\ndamage = 3	霰弹枪\n伤害 = 3
+TIP:sponge damage = 20	sponge\ndamage = 20	海绵\n伤害 = 20
+TIP:wooden pickaxe damage = 6	wooden pickaxe\ndamage = 6	木镐\n伤害 = 6
+TIP:wooden shotgun damage = 2	wooden shotgun\ndamage = 2	木头霰弹枪\n伤害 = 2
+TIP:wooden turret damage = 3	wooden turret\ndamage = 3	木头炮塔\n伤害 = 3
+TIP:berry juice heals 25%	berry juice\nheals 25%	浆果汁\n治疗 25%
+TIP:blueberry heals 20%	blueberry\nheals 20%	蓝莓\n治疗 20%
+TIP:strawberry heals 5%	strawberry\nheals 5%	草莓\n治疗 5%
+TIP:jesus on the cross heals others = 1	jesus on the cross\nheals others = 1	十字架上的耶稣\n治疗他人 = 1
+TIP:block shooter damage = 2	block shooter damage = 2	方块发射器 伤害 = 2
+TIP:bomb damage = 4	bomb damage = 4	炸弹 伤害 = 4
+TIP:chisel damage = 6	chisel damage = 6	凿子 伤害 = 6
+TIP:diamond scissors damage = 8	diamond scissors damage = 8	钻石剪刀 伤害 = 8
+TIP:hot pickaxe damage = 14	hot pickaxe damage = 14	炽热镐 伤害 = 14
+TIP:hot shotgun damage = 2	hot shotgun damage = 2	炽热霰弹枪 伤害 = 2
+TIP:jawn axe damage = 9	jawn axe damage = 9	嚼斧 伤害 = 9
+TIP:metal spike damage = 5	metal spike damage = 5	金属尖刺 伤害 = 5
+TIP:reverse shotgun damage = 2	reverse shotgun damage = 2	反向霰弹枪 伤害 = 2
+TIP:scissors damage = 2	scissors damage = 2	剪刀 伤害 = 2
+TIP:shotgun damage = 3	shotgun damage = 3	霰弹枪 伤害 = 3
+TIP:sponge damage = 20	sponge damage = 20	海绵 伤害 = 20
+TIP:wooden pickaxe damage = 6	wooden pickaxe damage = 6	木镐 伤害 = 6
+TIP:wooden shotgun damage = 2	wooden shotgun damage = 2	木头霰弹枪 伤害 = 2
+TIP:wooden turret damage = 3	wooden turret damage = 3	木头炮塔 伤害 = 3
+TIP:berry juice heals 25%	berry juice heals 25%	浆果汁 治疗 25%
+TIP:blueberry heals 20%	blueberry heals 20%	蓝莓 治疗 20%
+TIP:strawberry heals 5%	strawberry heals 5%	草莓 治疗 5%
+TIP:jesus on the cross heals others = 1	jesus on the cross heals others = 1	十字架上的耶稣 治疗他人 = 1
+伤害 = {0}
+中毒 {0}%
+TIP:drill damage = {0}	drill damage = {0}	钻头\n伤害 = {0}
+TIP:mushroom big poisons {0}%	mushroom big poisons {0}%	大蘑菇\n中毒 {0}%
+TIP:block shooter damage = {0}	block shooter damage = {0}	方块发射器\n伤害 = {0}
+TIP:bomb damage = {0}	bomb damage = {0}	炸弹\n伤害 = {0}
+TIP:chaingun damage = {0}	chaingun damage = {0}	链炮\n伤害 = {0}
+TIP:chisel damage = {0}	chisel damage = {0}	凿子\n伤害 = {0}
+TIP:diamond scissors damage = {0}	diamond scissors damage = {0}	钻石剪刀\n伤害 = {0}
+TIP:hot pickaxe damage = {0}	hot pickaxe damage = {0}	炽热镐\n伤害 = {0}
+TIP:hot shotgun damage = {0}	hot shotgun damage = {0}	炽热霰弹枪\n伤害 = {0}
+TIP:jawn axe damage = {0}	jawn axe damage = {0}	嚼斧\n伤害 = {0}
+TIP:metal spike damage = {0}	metal spike damage = {0}	金属尖刺\n伤害 = {0}
+TIP:reverse shotgun damage = {0}	reverse shotgun damage = {0}	反向霰弹枪\n伤害 = {0}
+TIP:scissors damage = {0}	scissors damage = {0}	剪刀\n伤害 = {0}
+TIP:shotgun damage = {0}	shotgun damage = {0}	霰弹枪\n伤害 = {0}
+TIP:sponge damage = {0}	sponge damage = {0}	海绵\n伤害 = {0}
+TIP:wooden pickaxe damage = {0}	wooden pickaxe damage = {0}	木镐\n伤害 = {0}
+TIP:wooden shotgun damage = {0}	wooden shotgun damage = {0}	木头霰弹枪\n伤害 = {0}
+TIP:wooden turret damage = {0}	wooden turret damage = {0}	木头炮塔\n伤害 = {0}
+TIP:berry juice heals {0}%	berry juice heals {0}%	浆果汁\n治疗 {0}%
+TIP:blueberry heals {0}%	blueberry heals {0}%	蓝莓\n治疗 {0}%
+TIP:burger heals {0}%	burger heals {0}%	汉堡\n治疗 {0}%
+TIP:honey potion heals {0}%	honey potion heals {0}%	蜂蜜药水\n治疗 {0}%
+TIP:strawberry heals {0}%	strawberry heals {0}%	草莓\n治疗 {0}%
+TIP:healer heals others = {0}	healer heals others = {0}	治疗\n治疗他人 = {0}
+TIP:jesus on the cross heals others = {0}	jesus on the cross heals others = {0}	十字架上的耶稣\n治疗他人 = {0}
+TIP:mushroom small poisons {0}%	mushroom small poisons {0}%	小蘑菇\n中毒 {0}%
+TIP:goober damage = {0}	goober damage = {0}	咕宝\n伤害 = {0}
+W:Window:wooden chest|header_text	wooden chest	木头箱子
+X:TextureText|inventory to open	inventory to open	[e] 打开
+W:Window:draw tools|n:color:Button|text_name	color	颜色
+W:Window:draw tools|n:set:Button|text_name	set\ngrid	设置\n网格
+DEATH:card	you were killed by a baby bear.	你被一只小熊杀死了
+DEATH:card	you were killed by baby bear.	你被一只小熊杀死了
+DEATH:card	you were killed by a baby jawn tree.	你被一棵嚼恩树苗杀死了
+DEATH:card	you were killed by baby jawn tree.	你被一棵嚼恩树苗杀死了
+DEATH:card	you were killed by a baby milo bear.	你被一只小米洛熊杀死了
+DEATH:card	you were killed by baby milo bear.	你被一只小米洛熊杀死了
+DEATH:card	you were killed by a baby porri bear.	你被一只小波里熊杀死了
+DEATH:card	you were killed by baby porri bear.	你被一只小波里熊杀死了
+DEATH:card	you were killed by a bear.	你被一只熊杀死了
+DEATH:card	you were killed by bear.	你被一只熊杀死了
+DEATH:card	you were killed by a bear x.	你被一只熊 X 杀死了
+DEATH:card	you were killed by bear x.	你被一只熊 X 杀死了
+DEATH:card	you were killed by a bear y.	你被一只熊 Y 杀死了
+DEATH:card	you were killed by bear y.	你被一只熊 Y 杀死了
+DEATH:card	you were killed by a bee.	你被一只蜜蜂杀死了
+DEATH:card	you were killed by bee.	你被一只蜜蜂杀死了
+DEATH:card	you were killed by a bee nest.	你被一个蜂巢杀死了
+DEATH:card	you were killed by bee nest.	你被一个蜂巢杀死了
+DEATH:card	you were killed by a bone.	你被一根骨头杀死了
+DEATH:card	you were killed by bone.	你被一根骨头杀死了
+DEATH:card	you were killed by a boulder.	你被一个巨石杀死了
+DEATH:card	you were killed by boulder.	你被一个巨石杀死了
+DEATH:card	you were killed by a goober.	你被一个咕宝杀死了
+DEATH:card	you were killed by goober.	你被一个咕宝杀死了
+DEATH:card	you were killed by a haze.	你被一个霾杀死了
+DEATH:card	you were killed by haze.	你被一个霾杀死了
+DEATH:card	you were killed by a haze skin.	你被一个霾皮杀死了
+DEATH:card	you were killed by haze skin.	你被一个霾皮杀死了
+DEATH:card	you were killed by a jawn.	你被一个嚼恩杀死了
+DEATH:card	you were killed by jawn.	你被一个嚼恩杀死了
+DEATH:card	you were killed by a jawn tree.	你被一棵嚼恩树杀死了
+DEATH:card	you were killed by jawn tree.	你被一棵嚼恩树杀死了
+DEATH:card	you were killed by a magpie.	你被一个喜鹊杀死了
+DEATH:card	you were killed by magpie.	你被一个喜鹊杀死了
+DEATH:card	you were killed by a metallic skeleton.	你被一个金属骷髅杀死了
+DEATH:card	you were killed by metallic skeleton.	你被一个金属骷髅杀死了
+DEATH:card	you were killed by a skeleton bear.	你被一只骷髅熊杀死了
+DEATH:card	you were killed by skeleton bear.	你被一只骷髅熊杀死了
+DEATH:card	you were killed by a skull.	你被一根头骨杀死了
+DEATH:card	you were killed by skull.	你被一根头骨杀死了
+DEATH:card	you were killed by a tooth.	你被一个牙齿杀死了
+DEATH:card	you were killed by tooth.	你被一个牙齿杀死了
+DEATH:card	you were killed by a welf.	你被一个韦尔夫杀死了
+DEATH:card	you were killed by welf.	你被一个韦尔夫杀死了
