@@ -36,6 +36,7 @@ public:
     size_t size() const { return entries_.size(); }
     size_t keyCount() const { return index_.size(); }
     size_t pageCount() const { return pages_.size(); }
+    std::vector<std::string> PrewarmTexts() const;
     std::vector<int> PagesForPrefix(const std::string& prefix) const;
     const std::vector<uint16_t>& pageChars(size_t page) const { return pages_[page].chars; }
     const std::vector<size_t>& pageEntries(size_t page) const { return pages_[page].entries; }

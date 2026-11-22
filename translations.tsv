@@ -30,7 +30,7 @@ CARD:furniture/flowers in vase/flowers in vase	Flowers in vase	花瓶
 CARD:furniture/lamp/lamp	Lamp	台灯
 CARD:furniture/street light/street light	Street Light	路灯
 CARD:furniture/trash bag/trash bag	trash bag	垃圾袋
-CARD:furniture/wooden chest/wooden chest	Wooden Chest	木箱
+CARD:furniture/wooden chest/wooden chest	Wooden Chest	木头箱子
 CARD:healing/berry juice/berry juice	Berry Juice	浆果汁
 CARD:healing/blueberry/blueberry	Blueberry	蓝莓
 CARD:healing/burger/burger	Burger	汉堡
@@ -137,7 +137,7 @@ CARD:tools/fan/fan	Fan	风扇
 CARD:tools/fishing rod/fishing rod	fishing rod	鱼竿
 CARD:tools/flashlight/flashlight	Flashlight	手电筒
 CARD:tools/glue gun/glue gun	Glue Gun	胶枪
-CARD:tools/healer	Healer	治疗
+CARD:tools/healer	Healer	治疗心
 CARD:tools/honey ball/honey ball	Honey Ball	蜂蜜球
 CARD:tools/hot pickaxe/hot pickaxe	Hot Pickaxe	炽热镐
 CARD:tools/hot shotgun/hot shotgun	Hot Shotgun	炽热霰弹枪
@@ -152,7 +152,7 @@ CARD:tools/scissors/scissors	Scissors	剪刀
 CARD:tools/selector/selector	Selector	选择器
 CARD:tools/shotguns/reverse shotgun	Reverse Shotgun	反向霰弹枪
 CARD:tools/shotguns/shotgun	Shotgun	霰弹枪
-CARD:tools/slab hand/slab hand	Slab Hand	板块手
+CARD:tools/slab hand/slab hand	Slab Hand	形块手
 CARD:tools/snowball/snowball	Snowball	雪球
 CARD:tools/sponge/sponge	Sponge	海绵
 CARD:tools/torch/torch	Torch	火炬
@@ -184,7 +184,6 @@ W:Window:gameplay settings|header_text	gameplay settings	游戏设置
 W:Window:graphics settings|header_text	graphics settings	画面设置
 W:Window:video settings|header_text	video settings	视频设置
 W:Window:your other worlds|header_text	your other worlds	其他世界
-W:Window:mods|header_text	mods	模组
 W:Window:multiplayer|header_text	multiplayer	多人游戏
 W:Window:controls|header_text	controls	控制
 ANIMAL:characters/bear/bear:hello_messages:0	sup	嗨
@@ -196,7 +195,7 @@ ANIMAL:characters/bear/bear:hello_messages:5	goot aftornuun	瞎午好
 ANIMAL:characters/bear/bear:hello_messages:6	guuhd evnin	碗上好
 ANIMAL:characters/bear/bear:hello_messages:7	wanuh b frindz	想脚个盆友吗
 ANIMAL:characters/bear/bear:hello_messages:8	wattz yur neme	泥叫甚么名字
-ANIMAL:characters/bear/bear:hello_messages:9	juh niw roun heer?	泥是新来的吗？
+ANIMAL:characters/bear/bear:hello_messages:9	juh niw roun heer?	泥是新来的吗 ?
 ANIMAL:characters/bear/bear:hello_messages:10	greehtinz	蛤喽呀
 ANIMAL:characters/bear/bear:hello_messages:11	blub	咕噜
 ANIMAL:characters/bear/bear:hello_messages:12	mmmmmmmm	嗯...
@@ -233,7 +232,7 @@ ANIMAL:characters/bear/bear:hurt_messages:17	oopzy deysie	哎呀呀
 ANIMAL:characters/bear/bear:hurt_messages:18	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 ANIMAL:characters/bear/bear:hurt_messages:19	welp	号吧
 ANIMAL:characters/bear/bear:hurt_messages:20	dawgg	葛们
-ANIMAL:characters/bear/bear:hurt_messages:21	wers ma hony potiun	窝滴冯蜜药水捏？
+ANIMAL:characters/bear/bear:hurt_messages:21	wers ma hony potiun	窝滴冯蜜药水捏 ?
 ANIMAL:characters/bear/bear:hurt_messages:22	yumi pain	枚味的痛库
 ANIMAL:characters/bear/bear:hurt_messages:23	datz alota demeg	贼桑害可真高
 ANIMAL:characters/bear/bear:hurt_messages:24	oof	唉
@@ -248,7 +247,7 @@ ANIMAL:characters/bear/bear:attack_messages:2	wump womp	乌咚 乌咚
 ANIMAL:characters/bear/bear:attack_messages:3	itz voimin tieme	voimin时尖到
 ANIMAL:characters/bear/bear:attack_messages:4	4 voimuhhhh	4 voimu呃呃呃
 ANIMAL:characters/bear/bear:attack_messages:5	letz 1v1	莱 1v1 单朓
-ANIMAL:characters/bear/bear:attack_messages:6	diz al u got?	泥就贼点本司？
+ANIMAL:characters/bear/bear:attack_messages:6	diz al u got?	泥就贼点本司 ?
 ANIMAL:characters/bear/bear:attack_messages:7	360 nozcop	360杜盲狙
 ANIMAL:characters/bear/bear:attack_messages:8	ged oudda hirrr	滚粗去
 ANIMAL:characters/bear/bear:attack_messages:9	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
@@ -265,7 +264,7 @@ ANIMAL:characters/bear/bear:flee_messages:3	gg	寄
 ANIMAL:characters/bear/bear:flee_messages:4	huuuhhlllpppp miiiiiii	救救窝哦哦哦
 ANIMAL:characters/bear/bear:flee_messages:5	i ned bakkup!	窝徐要兹援!
 ANIMAL:characters/bear/bear:flee_messages:6	i heyt runnin	窝套厌逃泡
-ANIMAL:characters/bear/bear:flee_messages:7	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
+ANIMAL:characters/bear/bear:flee_messages:7	run 4 yur vooimmmm!!!1!1!!	块跑 , 未了泥的 VOoIMmmm!!!1!1!!
 ANIMAL:characters/bear/bear:flee_messages:8	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
 ANIMAL:characters/bear/bear:flee_messages:9	il b leyt for dinnr	宛饭要妹的吃了
 ANIMAL:characters/bear/bear:flee_messages:10	pllzz don huhrt mehhh	求泥别丧害窝
@@ -323,8 +322,8 @@ W:Window:promo|n:as one of the first:TextButton|text_name	as one of the first	  
 W:Window:promo|n:believers in VOIMA:TextButton|text_name	believers in VOIMA	信仰 VOIMA 的人
 W:Window:promo|n:by naming a bear:TextButton|text_name	by naming a bear	通过预购
 W:Window:promo|n:with a pre-order!:TextButton|text_name	with a pre-order!	为一只熊命名!
-W:Window:promo|n:Instead of adding microtransactions,:TextButton|text_name	Instead of adding microtransactions,	我们没有加入微交易，
-W:Window:promo|n:or rushing an unfinished paid release,:TextButton|text_name	or rushing an unfinished paid release,	也没有仓促推出未完成的付费版，
+W:Window:promo|n:Instead of adding microtransactions,:TextButton|text_name	Instead of adding microtransactions,	我们没有加入微交易 ,
+W:Window:promo|n:or rushing an unfinished paid release,:TextButton|text_name	or rushing an unfinished paid release,	也没有仓促推出未完成的付费版 ,
 W:Window:promo|n:visit our website:Button|text_name	visit our website	访问我们的网站
 W:Window:promo|n:and...:TextButton|text_name	and...	而且...
 W:Window:promo|n:we also have a patreon:Button|text_name	we also have a patreon	我们也有 Patreon
@@ -367,11 +366,6 @@ W:Window:controls|n:reverse y:BoolButton|text_name	reverse y	Y轴反转
 W:Window:controls|n:back to menu:Button|text_name	back to menu	返回菜单
 W:Window:controls|n:controls list:Button|text_name	controls list	控制列表
 W:Window:controls|n:reset controls:Button|text_name	reset controls	重置控制
-W:Window:mods|n:no mods in this universe yet:TextButton|text_name	no mods in this universe yet	这个宇宙还没有模组
-W:Window:mods|n:back to menu:Button|text_name	back to menu	返回菜单
-W:Window:mods|n:import mods:Button|text_name	import mods	导入模组
-W:Window:mods|n:apply changes:Button|text_name	apply changes	应用更改
-W:Window:mods|n:enter modding mode:Button|text_name	enter modding mode	进入模组编辑模式
 W:Window:multiplayer|n:voima was unable to:TextButton|text_name	voima was unable to connect to steam...\n\nyou need it for\nmultiplayer	VOIMA 无法连接 Steam...\n多人游戏需要它
 W:Window:multiplayer|n:back to menu:Button|text_name	back to menu	返回菜单
 W:Window:world buttons|n:back to menu:Button|text_name	back to menu	返回菜单
@@ -405,7 +399,7 @@ LOAD:loading karhula sounds	loading karhula sounds	正在加载熊之地音效
 LOAD:loading karhula characters	loading karhula characters	正在加载熊之地角色
 LOAD:loading karhula furniture	loading karhula furniture	正在加载熊之地家具
 LOAD:loading karhula plants	loading karhula plants	正在加载熊之地植物
-LOAD:loading karhula slabs	loading karhula slabs	正在加载熊之地板块
+LOAD:loading karhula slabs	loading karhula slabs	正在加载熊之地形块
 LOAD:loading karhula tools	loading karhula tools	正在加载熊之地工具
 LOAD:loading karhula textures	loading karhula textures	正在加载熊之地纹理
 LOAD:loading karhula paintings	loading karhula paintings	正在加载熊之地画作
@@ -584,7 +578,7 @@ TIP:inventory	inventory	背包
 TIP:escape to open the	escape to open the	【esc】打开
 TIP:menu	menu	菜单
 TIP:z for extra action	z for extra action	【z】额外操作
-TIP:like with blocks	like with blocks	（用于方块）
+TIP:like with blocks	like with blocks	(用于方块)
 TIP:0 to equip the 10th slot	0 to equip the 10th slot	【0】装备第 10 格
 TIP:1 to equip the 1st slot	1 to equip the 1st slot	【1】装备第 1 格
 TIP:2 to equip the 2nd slot	2 to equip the 2nd slot	【2】装备第 2 格
@@ -609,7 +603,7 @@ TIP:m to toggle machinima mode	m to toggle machinima mode	【m】切换固定相
 TIP:side mouse button a to use your cursor freely	side mouse button a to use your cursor freely	【鼠标侧键 A】自由使用光标
 TIP:e for inventory	e for inventory	【e】打开背包
 TIP:escape to open the menu	escape to open the menu	【esc】打开菜单
-TIP:z for extra action like with blocks	z for extra action like with blocks	【z】额外操作（用于方块）
+TIP:z for extra action like with blocks	z for extra action like with blocks	【z】额外操作 (用于方块)
 TIPD:to jump	to jump	跳跃
 TIPD:to run	to run	奔跑
 TIPD:to drop	to drop	丢弃
@@ -639,7 +633,7 @@ TIPD:opens the chat window	opens the chat window	打开聊天窗口
 TIPD:for tools	for tools	工具
 TIPD:to open the menu	to open the menu	打开菜单
 TIPD:for inventory	for inventory	背包
-TIPD:for extra action like with blocks	for extra action like with blocks	额外操作（如用于方块）
+TIPD:for extra action like with blocks	for extra action like with blocks	额外操作 (如用于方块)
 TIPD:for third person	for third person	第三人称
 TIPD:for extra action	for extra action	额外操作
 TIPD:to equip the 1st slot	to equip the 1st slot	装备第 1 格
@@ -676,12 +670,11 @@ KEYBIND:point and click	point and click	点击操作
 KEYBIND:side mouse button b	side mouse button B	鼠标侧键 B
 W:Window:promo|n:help us create new updates!:TextButton|text_name	help us create new updates!	帮助我们更新!
 W:Window:promo|n:help us create new updates!:TextButton|name	help us create new updates!	帮助我们更新!
-TIP:control for extra action like with blocks	control for extra action like with blocks	额外行为（例如与方块互动）
+TIP:control for extra action like with blocks	control for extra action like with blocks	额外行为 (例如与方块互动)
 W:Window:controls|n:preview:BallButton|text_name	preview look speed	预览视角速度
 W:Window:controls|n:preview:BallButton|name	preview look speed	预览视角速度
 W:Window:promo|n:we are funding voima with pre-orders :):TextButton|text_name	we are funding voima with pre-orders :)	我们通过预购来资助 VOIMA :)
 W:Window:promo|n:visit our website:Button|text_name	visit our website\nand name a bear!	访问我们的网站
-X:TextureText|voima is 100% community funded.	voima is 100% community funded.	VOIMA 100% 由社区资助
 W:Window:promo|n:monthly goal #€:Button|text_name	monthly goal {0}€	每月目标 {0}€
 KEYBIND:up arrow	up arrow	上方向键
 KEYBIND:down arrow	down arrow	下方向键
@@ -751,21 +744,12 @@ W:Window:world buttons|n:Worlds:Button|text_name	Worlds	世界
 W:Window:world buttons|n:Select Worlds:Button|text_name	Select Worlds	选择世界
 W:Window:missing types|n:done and play world:Button|text_name	done and play world	完成并进入世界
 W:Window:missing types|n:Replace:TypeButton|text_name	Replace	替换
-W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing slab types?	是否替换这些缺失的板块类型？
-W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing card types?	是否替换这些缺失的卡片类型？
+W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing slab types?	是否替换这些缺失的形块类型 ?
+W:Window:missing types|n:Would you like to replace:TextButton|text_name	Would you like to replace\nthese missing card types?	是否替换这些缺失的卡片类型 ?
 W:Window:|n:thanks for playing voima!:TextButton|text_name	thanks for playing voima!	感谢游玩 VOIMA!
 W:Window:|n:credits:Button|text_name	credits	制作人员
 W:Window:universes|n:import universe:Button|text_name	import universe	导入宇宙
 W:Window:universes|n:Select Universe:Button|text_name	Select Universe	选择宇宙
-W:Window:mods|n:show health:BoolButton|text_name	show health	显示生命
-W:Window:mods|n:show touch area:BoolButton|text_name	show touch area	显示触碰范围
-W:Window:mods|n:show eye level:BoolButton|text_name	show eye level	显示视线高度
-W:Window:mods|n:create mod:Button|text_name	create mod	创建模组
-W:Window:mods|n:delete mod:Button|text_name	delete mod	删除模组
-W:Window:mods|n:save mod:Button|text_name	save mod	保存模组
-W:Window:mods|n:Select Mods:Button|text_name	Select Mods	选择模组
-X:TextureText|voima is still buggy and not complete...    so for now   i made this free :)	voima is still buggy and not complete...    so for now   i made this free :)	voima 仍然一堆bug，并且还没做完...\n所以暂时免费提供给大家 :)
-X:TextureText|voima is still buggy, laggy and not complete btw...     thats why i made this free :)	voima is still buggy, laggy and not complete btw...     thats why i made this free :)	voima 仍然一堆bug，还很卡，并且还没做完...\n所以暂时免费提供给大家 :)
 TIP:open chat	open chat	打开聊天
 TIP:exit universe editor	exit universe editor	退出宇宙编辑器
 TIP:weapons	weapons	武器
@@ -776,13 +760,13 @@ TIP:survival	survival	生存
 W:Window:world settings|header_text	world settings	世界设置
 W:Window:world settings|n:drops:BoolButton|text_name	drops	掉落物
 W:Window:world settings|n:freeze cards:BoolButton|text_name	freeze cards	冻结卡片
-W:Window:world settings|n:freeze slabs:BoolButton|text_name	freeze slabs	冻结板块
+W:Window:world settings|n:freeze slabs:BoolButton|text_name	freeze slabs	冻结形块
 W:Window:world settings|n:peaceful beings:BoolButton|text_name	peaceful beings	和平生物
 W:Window:world settings|n:card spawning:BoolButton|text_name	card spawning	卡片生成
 W:Window:world settings|n:delete things:Button|text_name	delete things	删除物品
 TIP:drops	drops	掉落物
 TIP:freeze cards	freeze cards	冻结卡片
-TIP:freeze slabs	freeze slabs	冻结板块
+TIP:freeze slabs	freeze slabs	冻结形块
 TIP:peaceful beings	peaceful beings	和平生物
 TIP:card spawning	card spawning	卡片生成
 TIP:delete things	delete things	删除物品
@@ -793,72 +777,44 @@ W:Window:fly settings|n:player scale:SliderButton|text_name	player scale	玩家�
 W:Window:fly settings|n:camera spin:SliderButton|text_name	camera spin	镜头旋转
 TIP:fly settings	fly settings	飞行设置
 TIP:glue gun	glue gun	胶枪
-TIP:healer heals others = 4	healer\nheals others = 4	回血道具\n治疗他人 = 4
+TIP:healer heals others = 4	healer\nheals others = 4	治疗心\n治疗他人 = 4
 TIP:selector	selector	选择器
 TIP:card hand	card hand	卡片手
-TIP:slab hand	slab hand	板块手
+TIP:slab hand	slab hand	形块手
 W:Window:cheat menu|header_text	cheat menu	作弊菜单
 TIP:cheat menu	cheat menu	作弊菜单
 W:Window:crafting|header_text	crafting	合成
-X:TextureText|crafting	crafting	合成
-X:TextureText|misc	misc	杂项
-X:TextureText|weapons	weapons	武器
-X:TextureText|mining	mining	采矿
-X:TextureText|building	building	建造
-X:TextureText|tough	tough	固体
-X:TextureText|fluids	fluids	流体
-X:TextureText|healing	healing	治疗
-X:TextureText|tools	tools	工具
-X:TextureText|paintings	paintings	画作
-X:TextureText|slabs	slabs	板块
-X:TextureText|hud_font_page	hud_font_page	副操作建造主操作设置网格复制尺寸切换网格更多攻击挖掘放置跳跃丢弃使用装备拳击射击挥动投掷手持饮用食用瘫倒奔跑重生打开背包合成返回鼠标侧键滚轮绘关闭墙体厚度吸附世界编辑始完发
-X:TextureText|recipes crafted	{0} / {1} recipes crafted	{0} / {1} 个配方已合成
-X:TextureText|recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
-X:TextureText|recipes still locked	{0} recipes still locked	{0} 个配方未解锁
-X:TextureText|recipes still locked	{0} recipe still locked	{0} 个配方未解锁
-X:TextureText|speech_font_page	speech_font_page	交易鼠标左右中键侧滚轮
-X:TextureText|to trade	{*} to trade	{*} 交易
 TIP:to trade	{*} to trade	{*} 交易
-X:TextureText|letz lvl	letz lvl	莱单朓
-X:TextureText|srsly	srsly	嗦真的
-X:TextureText|you fell to your death.	you fell to your death.	你摔死了
-X:TextureText|play again	play again	再玩一次
 TIP:play again	play again	再玩一次
 W:Window:death|n:play again:Button|text_name	play again	再玩一次
 W:Window:|n:play again:Button|text_name	play again	再玩一次
 TIP:recipes crafted	{0} / {1} recipes crafted	{0} / {1} 个配方已合成
 TIP:recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
-X:TextureText|{0} / {1} recipes crafted	{0} / {1} recipes crafted	{0} / {1} 个配方已合成
 TIP:{0} / {1} recipes crafted	{0} / {1} recipes crafted	{0} / {1} 个配方已合成
 TIP:{0} / {1} recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
-X:TextureText|{0} / {1} recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
-X:TextureText|1 recipe still locked	1 recipe still locked	1 个配方未解锁
 W:Window:block tools|n:size:BlockButton|text_name	normal cube	普通方块
-W:Window:block tools|n:size:BlockButton|text_name	normal slab	普通板块
+W:Window:block tools|n:size:BlockButton|text_name	normal slab	普通形块
 W:Window:block tools|n:size:BlockButton|text_name	normal pillar	普通柱
 W:Window:block tools|n:size:BlockButton|text_name	normal wall	普通墙
 W:Window:block tools|n:size:BlockButton|text_name	half cube	半方块
-W:Window:block tools|n:size:BlockButton|text_name	half slab	半板块
+W:Window:block tools|n:size:BlockButton|text_name	half slab	半形块
 W:Window:block tools|n:size:BlockButton|text_name	half pillar	半柱
 W:Window:block tools|n:size:BlockButton|text_name	half wall	半墙
 W:Window:block tools|n:size:BlockButton|text_name	quarter cube	1/4方块
-W:Window:block tools|n:size:BlockButton|text_name	quarter slab	1/4板块
+W:Window:block tools|n:size:BlockButton|text_name	quarter slab	1/4形块
 W:Window:block tools|n:size:BlockButton|text_name	quarter pillar	1/4柱
 W:Window:block tools|n:size:BlockButton|text_name	quarter wall	1/4墙
 W:Window:block tools|n:size:BlockButton|text_name	tiny cube	小方块
-W:Window:block tools|n:size:BlockButton|text_name	tiny slab	小板块
+W:Window:block tools|n:size:BlockButton|text_name	tiny slab	小形块
 W:Window:block tools|n:size:BlockButton|text_name	tiny pillar	小柱
 W:Window:block tools|n:size:BlockButton|text_name	tiny wall	小墙
 W:Window:block tools|n:size:BlockButton|text_name	tiniest cube	最小方块
-W:Window:block tools|n:size:BlockButton|text_name	tiniest slab	最小板块
+W:Window:block tools|n:size:BlockButton|text_name	tiniest slab	最小形块
 W:Window:block tools|n:size:BlockButton|text_name	tiniest pillar	最小柱
 W:Window:block tools|n:size:BlockButton|text_name	tiniest wall	最小墙
 W:Window:block tools|n:size:BlockButton|text_name	circle	圆形
 W:Window:block tools|n:size:BlockButton|text_name	triangle	三角形
 W:Window:block tools|n:size:BlockButton|text_name	hexagon	六边形
-X:TextureText|tooth	tooth	牙齿
-X:TextureText|plank	plank	木板
-X:TextureText|jawn axe	jawn axe	嚼斧
 TIP:cheat cards	cheat cards	作弊卡片
 TIP:time settings	time settings	时间设置
 TIP:immortal	immortal	无敌
@@ -869,15 +825,14 @@ W:Window:time settings|n:shadow angle:SliderButton|text_name	shadow angle	阴影
 W:Window:creative settings|n:immortal:Button|text_name	immortal	无敌
 TIP:mining	mining	采矿
 TIP:building	building	建造
-TIP:cheat slabs	cheat slabs	作弊板块
+TIP:cheat slabs	cheat slabs	作弊形块
 TIP:tough	tough	固体
 TIP:fluids	fluids	流体
 TIP:healing	healing	治疗
 TIP:tools	tools	工具
-TIP:misc	misc	杂项
 TIP:paintings	paintings	画作
 TIP:voim voim	voim voim	voim voim
-TIP:slabs	slabs	板块
+TIP:slabs	slabs	形块
 TIP:control pad	control pad	控制板
 TIP:control pad	#control pad	控制板
 TIP:#control pad	control pad	控制板
@@ -984,7 +939,7 @@ TIP:toggle machinima mode	{*} to toggle machinima mode	【{*}】切换固定相�
 TIP:use your cursor freely	{*} to use your cursor freely	【{*}】自由使用光标
 TIP:inventory	{*} for inventory	【{*}】打开背包
 TIP:open the menu	{*} to open the menu	【{*}】打开菜单
-TIP:extra action like with blocks	{*} for extra action like with blocks	【{*}】额外操作（用于方块）
+TIP:extra action like with blocks	{*} for extra action like with blocks	【{*}】额外操作 (用于方块)
 TIP:open the menu	to open the menu	打开菜单
 TIP:open the menu	{*} for open the menu	【{*}】打开菜单
 TIP:open the menu	for open the menu	打开菜单
@@ -1030,9 +985,9 @@ TIP:equip the 10th slot	for equip the 10th slot	装备第 10 格
 TIP:inventory	{*} to inventory	【{*}】打开背包
 TIP:inventory	to inventory	打开背包
 TIP:inventory	for inventory	背包
-TIP:extra action like with blocks	{*} to extra action like with blocks	【{*}】额外操作（例如与方块互动）
-TIP:extra action like with blocks	to extra action like with blocks	额外操作（例如与方块互动）
-TIP:extra action like with blocks	for extra action like with blocks	额外操作（如用于方块）
+TIP:extra action like with blocks	{*} to extra action like with blocks	【{*}】额外操作 (例如与方块互动)
+TIP:extra action like with blocks	to extra action like with blocks	额外操作 (例如与方块互动)
+TIP:extra action like with blocks	for extra action like with blocks	额外操作 (如用于方块)
 TIP:crouch when flying	to crouch when flying	飞行时蹲下
 TIP:crouch when flying	{*} for crouch when flying	【{*}】飞行时蹲下
 TIP:crouch when flying	for crouch when flying	飞行时蹲下
@@ -1072,111 +1027,1877 @@ TIP:fixed camera	{*} to fixed camera	【{*}】固定视角
 TIP:fixed camera	to fixed camera	固定视角
 TIP:fixed camera	{*} for fixed camera	【{*}】固定视角
 TIP:fixed camera	for fixed camera	固定视角
+TIP:baby milo bear	baby milo bear	小米洛熊
+TIP:baby porri bear	baby porri bear	小波里熊
+TIP:baby bear	baby bear	小熊
+TIP:bear	bear	熊
+TIP:bear x	bear x	熊 X
+TIP:bear y	bear y	熊 Y
+TIP:bee	bee	蜜蜂
+TIP:bee nest	bee nest	蜂巢
+TIP:boulder	boulder	巨石
+TIP:goober	goober	咕宝
+TIP:haze	haze	霾
+TIP:haze skin	haze skin	霾皮
+TIP:baby jawn tree	baby jawn tree	嚼恩树苗
+TIP:jawn	jawn	嚼恩
+TIP:jawn tree	jawn tree	嚼恩树
+TIP:tooth	tooth	牙齿
+TIP:magpie	magpie	喜鹊
+TIP:metallic skeleton	metallic skeleton	金属骷髅
+TIP:bone	bone	骨头
+TIP:skeleton bear	skeleton bear	骷髅熊
+TIP:skull	skull	头骨
+TIP:welf	welf	韦尔夫
+TIP:boombox	boombox	音响
+TIP:camel statue	camel statue	骆驼雕像
+TIP:flowers in vase	flowers in vase	花瓶
+TIP:lamp	lamp	台灯
+TIP:street light	street light	路灯
+TIP:trash bag	trash bag	垃圾袋
+TIP:wooden chest	wooden chest	木头箱子
+TIP:berry juice	berry juice	浆果汁
+TIP:blueberry	blueberry	蓝莓
+TIP:burger	burger	汉堡
+TIP:honey potion	honey potion	蜂蜜药水
+TIP:jesus on the cross	jesus on the cross	十字架上的耶稣
+TIP:strawberry	strawberry	草莓
+TIP:reach	reach	触碰
+TIP:void	void	虚空
+TIP:ash bucket	ash bucket	烟灰桶
+TIP:barrel	barrel	木桶
+TIP:cabin	cabin	小屋
+TIP:kitchen	kitchen	厨房
+TIP:movie	movie	电影
+TIP:music box	music box	八音盒
+TIP:reunion	reunion	重逢
+TIP:the vision	the vision	愿景
+TIP:the way	the way	道路
+TIP:trash	trash	垃圾
+TIP:winter pc	winter pc	冬日电脑
+TIP:cows	cows	奶牛
+TIP:meet voima	meet voima	遇见 voima
+TIP:museum bear	museum bear	博物馆熊
+TIP:sectors	sectors	《Sectors》
+TIP:standoff	standoff	对峙
+TIP:adult ghost pine	adult ghost pine	成年幽灵松
+TIP:adult pine	adult pine	成年松树
+TIP:baby pine	baby pine	松树苗
+TIP:birch	birch	白桦
+TIP:bush	bush	灌木
+TIP:cave plant	cave plant	洞穴植物
+TIP:fern	fern	蕨类
+TIP:ghost pine	ghost pine	幽灵松
+TIP:hay pile	hay pile	干草堆
+TIP:mushroom big	mushroom big	大蘑菇
+TIP:mushroom small	mushroom small	小蘑菇
+TIP:pinecone	pinecone	松果
+TIP:rock	rock	岩石
+TIP:invert spruce	invert spruce	倒置云杉
+TIP:mirror adult pine	mirror adult pine	镜像成年松
+TIP:mirror winter birch	mirror winter birch	镜像冬桦
+TIP:teenager birch	teenager birch	白桦幼树
+TIP:teenager birch trunk	teenager birch trunk	白桦幼树干
+TIP:teenager spruce	teenager spruce	云杉幼树
+TIP:winter adult spruce	winter adult spruce	冬季成年云杉
+TIP:winter baby spruce	winter baby spruce	冬季云杉苗
+TIP:winter birch	winter birch	冬桦
+TIP:winter rowan	winter rowan	冬季花楸
+TIP:winter teenager spruce	winter teenager spruce	冬季云杉幼树
+TIP:blue checker	blue checker	蓝色棋盘格
+TIP:brown checker	brown checker	棕色棋盘格
+TIP:chess checker	chess checker	象棋棋盘格
+TIP:error checker	error checker	错误棋盘格
+TIP:pink checker	pink checker	粉色棋盘格
+TIP:white checker	white checker	白色棋盘格
+TIP:circuit	circuit	电路
+TIP:mirror x	mirror x	镜像X
+TIP:mirror y	mirror y	镜像Y
+TIP:honey	honey	蜂蜜
+TIP:lava	lava	熔岩
+TIP:water	water	水
+TIP:ash	ash	灰烬
+TIP:fur	fur	毛皮
+TIP:glass	glass	玻璃
+TIP:metal	metal	金属
+TIP:blueberry bush	blueberry bush	蓝莓灌木
+TIP:dirt	dirt	泥土
+TIP:hay	hay	干草
+TIP:ice	ice	冰
+TIP:moss	moss	苔藓
+TIP:mossy log	mossy log	苔藓原木
+TIP:mossy stone	mossy stone	苔藓石
+TIP:sand	sand	沙子
+TIP:snow	snow	雪
+TIP:blur	blur	模糊
+TIP:blurry mirror x	blurry mirror x	模糊镜像X
+TIP:blurry mirror y	blurry mirror y	模糊镜像Y
+TIP:forever	forever	永恒
+TIP:gray window	gray window	灰色窗户
+TIP:invert	invert	反色
+TIP:inverted window	inverted window	反色窗户
+TIP:sky	sky	天空
+TIP:brick	brick	砖块
+TIP:brick tile	brick tile	砖瓦
+TIP:cobble	cobble	鹅卵石
+TIP:concrete	concrete	混凝土
+TIP:rocks	rocks	碎石
+TIP:stone	stone	石头
+TIP:stone dots	stone dots	点状石
+TIP:logs	logs	原木
+TIP:pine bark	pine bark	松树皮
+TIP:plank	plank	木板
+TIP:wood	wood	木头
+TIP:balloon	balloon	气球
+TIP:bomb	bomb	炸弹
+TIP:smoke	smoke	烟雾
+TIP:chisel	chisel	凿子
+TIP:coin	coin	硬币
+TIP:drill	drill	钻头
+TIP:fan	fan	风扇
+TIP:fishing rod	fishing rod	鱼竿
+TIP:flashlight	flashlight	手电筒
+TIP:healer	healer	治疗心
+TIP:honey ball	honey ball	蜂蜜球
+TIP:hot pickaxe	hot pickaxe	炽热镐
+TIP:hot shotgun	hot shotgun	炽热霰弹枪
+TIP:jawn axe	jawn axe	嚼斧
+TIP:jumper	jumper	跳枪
+TIP:magnet	magnet	磁铁
+TIP:metal spike	metal spike	金属尖刺
+TIP:paint brush	paint brush	画笔
+TIP:respawn statue	respawn statue	重生雕像
+TIP:diamond scissors	diamond scissors	钻石剪刀
+TIP:scissors	scissors	剪刀
+TIP:reverse shotgun	reverse shotgun	反向霰弹枪
+TIP:shotgun	shotgun	霰弹枪
+TIP:snowball	snowball	雪球
+TIP:sponge	sponge	海绵
+TIP:torch	torch	火炬
+TIP:universe edit	universe edit	宇宙编辑
+TIP:block shooter	block shooter	方块发射器
+TIP:chaingun	chaingun	链炮
+TIP:snowball shooter	snowball shooter	雪球发射器
+TIP:wooden pickaxe	wooden pickaxe	木镐
+TIP:wooden shotgun	wooden shotgun	木头霰弹枪
+TIP:wooden turret	wooden turret	木头炮塔
+TIP:world edit	world edit	世界编辑
+TIP:bubble	bubble	泡泡
+TIP:love	love	爱心
+TIP:portal	portal	传送门
+TIP:pickup	pickup	拾取
+TIP:birch forest	birch forest	白桦林
+TIP:dirt forest	dirt forest	泥土森林
+TIP:error	error	错误
+TIP:farlands	farlands	边境之地
+TIP:forest	forest	森林
+TIP:ocean	ocean	海洋
+TIP:pine forest	pine forest	松树林
+TIP:plains	plains	平原
+TIP:sand forest	sand forest	沙林
+TIP:spruce forest	spruce forest	云杉林
+TIP:winter	winter	冬天
+TIP:sup	sup	嗨
+TIP:wazzup	wazzup	咋样
+TIP:voma	voma	voma
+TIP:gud mohrnin	gud mohrnin	造上好呀
+TIP:goot aftornuun	goot aftornuun	瞎午好
+TIP:guuhd evnin	guuhd evnin	碗上好
+TIP:wanuh b frindz	wanuh b frindz	想脚个盆友吗
+TIP:wattz yur neme	wattz yur neme	泥叫甚么名字
+TIP:juh niw roun heer?	juh niw roun heer?	泥是新来的吗 ?
+TIP:greehtinz	greehtinz	蛤喽呀
+TIP:blub	blub	咕噜
+TIP:mmmmmmmm	mmmmmmmm	嗯...
+TIP:wat a niec dey tudey	wat a niec dey tudey	津天天气针好
+TIP:iv nevr sen u befuhr	iv nevr sen u befuhr	窝以前没见过泥
+TIP:hoo r u	hoo r u	泥是谁
+TIP:imm lozt	imm lozt	窝迷路乐
+TIP:a piencon a dei kepz de jawn awej..	a piencon a dei kepz de jawn awej..	一颗松果妹天都会被嚼恩纳走...
+TIP:les go minin	les go minin	取挖矿吧
+TIP:teeheeh	teeheeh	嘻嘻
+TIP:watccu lookn at	watccu lookn at	泥看甚么看
+TIP:mynd yo buznes	mynd yo buznes	扫管闲似
+TIP:outu mah way	outu mah way	攘开
+TIP:uhhh	uhhh	呃...
+TIP:hmm hm hm	hmm hm hm	嗯哼嗯哼
+TIP:helpppp	helpppp	救命啊啊啊
+TIP:halp	halp	纠命啊
+TIP:hlep	hlep	九九我
+TIP:oucc	oucc	啊哟
+TIP:sheezh	sheezh	天那
+TIP:da peyn iz unberabl	da peyn iz unberabl	痛的嗖不了
+TIP:uupz	uupz	呃呀
+TIP:taht hurrt	taht hurrt	豪痛
+TIP:owwww	owwww	嗷呜
+TIP:gud ting i hab helth insuranc!	gud ting i hab helth insuranc!	害好窝有宜疗抱险!
+TIP:ackk	ackk	呃啊
+TIP:shuuht	shuuht	哔嘴!
+TIP:breh	breh	兄第
+TIP:gahhh	gahhh	呀啊啊
+TIP:stapp	stapp	卒手!
+TIP:uh o	uh o	造了!
+TIP:oopzy deysie	oopzy deysie	哎呀呀
+TIP:ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
+TIP:welp	welp	号吧
+TIP:dawgg	dawgg	葛们
+TIP:wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏 ?
+TIP:yumi pain	yumi pain	枚味的痛库
+TIP:datz alota demeg	datz alota demeg	贼桑害可真高
+TIP:oof	oof	唉
+TIP:bro	bro	哥们
+TIP:eeek	eeek	呀
+TIP:hhmpff	hhmpff	哼
+TIP:yabbadabaduuu	yabbadabaduuu	呀吧哒吧嘟
+TIP:hahhhhhh	hahhhhhh	呼哈哈哈哈
+TIP:boim boim	boim boim	砰姆 砰姆
+TIP:bring in da berz	bring in da berz	吧熊都叫莱
+TIP:wump womp	wump womp	乌咚 乌咚
+TIP:itz voimin tieme	itz voimin tieme	voimin时尖到
+TIP:diz al u got?	diz al u got?	泥就贼点本司 ?
+TIP:ged oudda hirrr	ged oudda hirrr	滚粗去
+TIP:grrrrrrhhrrggrr grrrrrrhh	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
+TIP:git voimd	git voimd	被voim了吧
+TIP:izzat blod	izzat blod	那似血吗
+TIP:finaly a wurthi voimpownent	finaly a wurthi voimpownent	纵于由个像样的voim对手拉
+TIP:teyk thiz	teyk thiz	洁招
+TIP:tis izuh roberri	tis izuh roberri	贼是枪劫
+TIP:gg bru	gg bru	打的豪凶弟
+TIP:am outuh hier	am outuh hier	窝撤乐
+TIP:ruhn runn run rrruun run	ruhn runn run rrruun run	抛跑抛抛跑
+TIP:glup	glup	咕嘟
+TIP:gg	gg	寄
+TIP:huuuhhlllpppp miiiiiii	huuuhhlllpppp miiiiiii	救救窝哦哦哦
+TIP:i ned bakkup!	i ned bakkup!	窝徐要兹援!
+TIP:i heyt runnin	i heyt runnin	窝套厌逃泡
+TIP:run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑 , 未了泥的 VOoIMmmm!!!1!1!!
+TIP:wehrs valtsu wen i nid emmm	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
+TIP:il b leyt for dinnr	il b leyt for dinnr	宛饭要妹的吃了
+TIP:pllzz don huhrt mehhh	pllzz don huhrt mehhh	求泥别丧害窝
+TIP:naaaaaaa	naaaaaaa	不——
+TIP:ru zingl	ru zingl	泥单森吗
+TIP:wil u mery mih	wil u mery mih	泥缘意嫁给窝吗
+TIP:i luhv yuu	i luhv yuu	窝爱泥
+TIP:i lav juh tu	i lav juh tu	窝叶爱泥
+TIP:blibilibibb	blibilibibb	哔哩哔哔
+TIP:bblulubulububbulub	bblulubulububbulub	咕噜咕噜
+TIP:teehee	teehee	嘻嘻
+TIP:can i has	can i has	窝科以要
+TIP:pls gib me	pls gib me	晴给窝
+TIP:do u hav	do u hav	泥有
+TIP:plz drop mi a	plz drop mi a	情丢给窝依个
+TIP:i ned a	i ned a	窝徐要仪个
+TIP:kan i hav	kan i hav	窝能要
+TIP:got sum	got sum	由妹有
+TIP:flop	flop	啪嗒
+TIP:wawa	wawa	哇哇
+TIP:ba	ba	吧
+TIP:wdwaiajij	wdwaiajij	呜哇咿呀
+TIP:ohoh	ohoh	哦哦
+TIP:addaddddda panpdppndads	addaddddda panpdppndads	啊哒哒哒哒 啪嗒啪嗒
+MUSIC:now playing:melodic noise	now playing melodic noise	正在播放 melodic noise (噪声旋律)
+MUSIC:now playing:melodic noise	now playing melodic noise by {*}	正在播放 melodic noise (噪声旋律) by {*}
+MUSIC:now playing:meditate	now playing meditate	正在播放 meditate (冥想)
+MUSIC:now playing:meditate	now playing meditate by {*}	正在播放 meditate (冥想) by {*}
+MUSIC:now playing:carousel	now playing carousel	正在播放 carousel (旋转木马)
+MUSIC:now playing:carousel	now playing carousel by {*}	正在播放 carousel (旋转木马) by {*}
+MUSIC:now playing:icecream	now playing icecream	正在播放 icecream (冰淇淋)
+MUSIC:now playing:icecream	now playing icecream by {*}	正在播放 icecream (冰淇淋) by {*}
+MUSIC:now playing:amble	now playing amble	正在播放 amble (漫步)
+MUSIC:now playing:amble	now playing amble by {*}	正在播放 amble (漫步) by {*}
+MUSIC:now playing:drift	now playing drift	正在播放 drift (漂流)
+MUSIC:now playing:drift	now playing drift by {*}	正在播放 drift (漂流) by {*}
+MUSIC:now playing:lost	now playing lost	正在播放 lost (迷失)
+MUSIC:now playing:lost	now playing lost by {*}	正在播放 lost (迷失) by {*}
+MUSIC:now playing:oranger	now playing oranger	正在播放 oranger (橘园)
+MUSIC:now playing:oranger	now playing oranger by {*}	正在播放 oranger (橘园) by {*}
+MUSIC:now playing:pinecone	now playing pinecone	正在播放 pinecone (松果)
+MUSIC:now playing:pinecone	now playing pinecone by {*}	正在播放 pinecone (松果) by {*}
+MUSIC:now playing:snowfall	now playing snowfall	正在播放 snowfall (落雪)
+MUSIC:now playing:snowfall	now playing snowfall by {*}	正在播放 snowfall (落雪) by {*}
+MUSIC:now playing:still	now playing still	正在播放 still (静止)
+MUSIC:now playing:still	now playing still by {*}	正在播放 still (静止) by {*}
+MUSIC:now playing:convivium	now playing convivium	正在播放 convivium (筵席)
+MUSIC:now playing:convivium	now playing convivium by {*}	正在播放 convivium (筵席) by {*}
+MUSIC:now playing:geo	now playing geo	正在播放 geo (大地)
+MUSIC:now playing:geo	now playing geo by {*}	正在播放 geo (大地) by {*}
+MUSIC:now playing:lullaby	now playing lullaby	正在播放 lullaby (摇篮曲)
+MUSIC:now playing:lullaby	now playing lullaby by {*}	正在播放 lullaby (摇篮曲) by {*}
+MUSIC:now playing:icecream has melted	now playing icecream has melted	正在播放 icecream has melted (冰淇淋融化了)
+MUSIC:now playing:icecream has melted	now playing icecream has melted by {*}	正在播放 icecream has melted (冰淇淋融化了) by {*}
+MUSIC:now playing:hypno	now playing hypno	正在播放 hypno (催眠)
+MUSIC:now playing:hypno	now playing hypno by {*}	正在播放 hypno (催眠) by {*}
+MUSIC:now playing:bird	now playing bird	正在播放 bird (鸟)
+MUSIC:now playing:bird	now playing bird by {*}	正在播放 bird (鸟) by {*}
+MUSIC:now playing:bowed	now playing bowed	正在播放 bowed (弓弦)
+MUSIC:now playing:bowed	now playing bowed by {*}	正在播放 bowed (弓弦) by {*}
+MUSIC:now playing:hi	now playing hi	正在播放 hi (嗨)
+MUSIC:now playing:hi	now playing hi by {*}	正在播放 hi (嗨) by {*}
+MUSIC:now playing:old bird	now playing old bird	正在播放 old bird (老鸟)
+MUSIC:now playing:old bird	now playing old bird by {*}	正在播放 old bird (老鸟) by {*}
+MUSIC:now playing:owl	now playing owl	正在播放 owl (猫头鹰)
+MUSIC:now playing:owl	now playing owl by {*}	正在播放 owl (猫头鹰) by {*}
+MUSIC:now playing:wanting more	now playing wanting more	正在播放 wanting more (欲求更多)
+MUSIC:now playing:wanting more	now playing wanting more by {*}	正在播放 wanting more (欲求更多) by {*}
+TIP:launch	launch	发射
+HUD:draw	draw	绘制
+HUD:wall thickness off	wall thickness off	关闭墙体厚度
+HUD:snap	snap	吸附
+HUD:world edit	world edit	世界编辑
+HUD:start setting grid	start setting grid	开始设置网格
+HUD:complete drawing	complete drawing	完成绘制
+HUD:set grid	set grid	设置网格
+HUD:copy size	copy size	复制尺寸
+HUD:toggle grid	toggle grid	切换网格
+HUD:more	more	更多
+HUD:edit world settings	edit world settings	编辑世界设置
+W:Window:tabs|n:color:Button|text_name	color	颜色
+TIP:world editor	world editor	世界编辑器
+W:Window:set color|n:stop picking color:Button|text_name	stop picking color	停止取色
+W:Window:delete...|header_text	delete...	删除...
+TIP:jawn tree 7x	jawn tree\n7x	嚼恩树\n7x
+W:Window:graphics settings|n:disable reflections:BoolButton|text_name	disable reflections\nand waves	禁用反射\n与水面
+TIP:console	console	控制台
+W:Window:tabs|n:remove:Button|text_name	remove\ngrid	移除\n网格
+W:Window:tabs|n:set:Button|text_name	set\ngrid	设置\n网格
+TIP:open universe folder	open universe folder	打开宇宙文件夹
+HUD:complete	complete	完成
+HUD:slope	slope	斜坡
+HUD:force height	force height	强制高度
+HUD:stop	stop	停止
+HUD:latest point to finish wall	latest point to finish wall	最后一点完成墙体
+HUD:reload universe	reload universe	重新加载宇宙
+HUD:printer	printer	打印机
+HUD:reset edits in entire universe	reset edits in entire universe	重置整个宇宙的编辑
+TIP:reload universe	reload universe	重新加载宇宙
+TIP:printer	printer	打印机
+TIP:reset edits in entire universe	reset edits in entire universe	重置整个宇宙的编辑
+W:Window:error report|header_text	error report	错误报告
+W:Window:backups|header_text	backups	备份
+W:Window:|n:resolution width:StringButton|text_name	resolution width	分辨率宽度
+W:Window:|n:resolution height:StringButton|text_name	resolution height	分辨率高度
+W:Window:|n:fov:SliderButton|text_name	fov	视场角(fov)
+W:Window:|n:distance:AdjusterButton|text_name	distance	距离
+W:Window:|n:height:AdjusterButton|text_name	height	高度
+W:Window:|n:angle:AdjusterButton|text_name	angle	角度
+W:Window:|n:sides:SliderButton|text_name	sides	边数
+W:Window:|n:shadows:SliderButton|text_name	shadows	阴影
+W:Window:|n:pivot x:AdjusterButton|text_name	pivot x	轴心 X
+W:Window:|n:pivot y:AdjusterButton|text_name	pivot y	轴心 Y
+W:Window:|n:load settings:Button|text_name	load settings	加载设置
+W:Window:|n:load models:Button|text_name	load models	加载模型
+W:Window:|n:exit printer:Button|text_name	exit printer	退出打印机
+W:Window:|n:exit printer:Button|text_name	are you sure?	你确定吗 ?
+W:Window:|n:slice spritesheet:Button|text_name	slice spritesheet	切分精灵表
+W:Window:|n:pivot z:AdjusterButton|text_name	pivot z	轴心 Z
+W:Window:|n:rotation x:AdjusterButton|text_name	rotation x	旋转 X
+W:Window:|n:rotation y:AdjusterButton|text_name	rotation y	旋转 Y
+W:Window:|n:rotation z:AdjusterButton|text_name	rotation z	旋转 Z
+W:Window:controls|n:reset controls:Button|text_name	are you sure?	你确定吗 ?
+MUSIC:now playing:cherry tree pt 1	now playing cherry tree pt 1	正在播放 cherry tree pt 1 (樱桃树 其1)
+MUSIC:now playing:cherry tree pt 1	now playing cherry tree pt 1 by {*}	正在播放 cherry tree pt 1 (樱桃树 其1) by {*}
+MUSIC:now playing:cherry tree pt 2	now playing cherry tree pt 2	正在播放 cherry tree pt 2 (樱桃树 其2)
+MUSIC:now playing:cherry tree pt 2	now playing cherry tree pt 2 by {*}	正在播放 cherry tree pt 2 (樱桃树 其2) by {*}
+MUSIC:now playing:5	now playing 5	正在播放 5
+MUSIC:now playing:5	now playing 5 by {*}	正在播放 5 by {*}
+W:Window:world details|n:play:Button|text_name	play	开始游戏
+W:Window:world details|n:edit:Button|text_name	edit	编辑
+W:Window:world details|n:export:Button|text_name	export	导出
+W:Window:world details|n:delete:Button|text_name	delete	删除
+W:Window:world details|n:delete:Button|text_name	are you sure?	你确定吗 ?
+W:Window:world details|n:cheats enabled:TextButton|text_name	cheats enabled	已开启作弊
+W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played: {0} hours ago	上次游玩 : {0} 小时前
+W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played:  {0} hours ago	上次游玩 : {0} 小时前
+W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played: yesterday	上次游玩 : 昨天
+W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played:  yesterday	上次游玩 : 昨天
+W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played: {0} minutes	总游玩时间 : {0} 分钟
+W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played:  {0} minutes	总游玩时间 : {0} 分钟
+W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played: {0} hours	总游玩时间 : {0} 小时
+W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played:  {0} hours	总游玩时间 : {0} 小时
+W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played: {0} days ago	上次游玩 : {0} 天前
+W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played:  {0} days ago	上次游玩 : {0} 天前
+W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played: {0} minutes ago	上次游玩 : {0} 分钟前
+W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played:  {0} minutes ago	上次游玩 : {0} 分钟前
+W:Window:world details|n:Last played: just now:TextButton|text_name	Last played: just now	上次游玩 : 刚刚
+W:Window:world details|n:creative world:TextButton|text_name	creative world	创造世界
+W:Window:world details|n:sandbox world:TextButton|text_name	sandbox world	沙盒世界
+W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played: less than a minute ago	上次游玩 : 不到一分钟前
+W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played: {0} seconds	总游玩时间 : {0} 秒
+W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played: {0} days	总游玩时间 : {0} 天
+W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played: {0} seconds ago	上次游玩 : {0} 秒前
+W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played:  less than a minute ago	上次游玩 : 不到一分钟前
+W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played:  {0} seconds	总游玩时间 : {0} 秒
+W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played:  {0} days	总游玩时间 : {0} 天
+W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played:  {0} seconds ago	上次游玩 : {0} 秒前
+ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}?	窝科以要{*} ?
+ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}	窝科以要{*} ?
+ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}?	请给窝{*} ?
+ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}	请给窝{*} ?
+ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}?	泥有{*} ?
+ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}	泥有{*} ?
+ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}?	情丢给窝依个{*} ?
+ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}	情丢给窝依个{*} ?
+ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}?	窝徐要仪个{*} ?
+ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}	窝徐要仪个{*} ?
+ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}?	窝能要{*} ?
+ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}	窝能要{*} ?
+ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}?	由妹有{*} ?
+ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}	由妹有{*} ?
+W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played: {0} second	总游玩时间 : {0} 秒
+W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played: {0} second ago	上次游玩 : {0} 秒前
+W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played:  {0} second	总游玩时间 : {0} 秒
+W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played:  {0} second ago	上次游玩 : {0} 秒前
+W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played: {0} minute	总游玩时间 : {0} 分钟
+W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played: {0} minute ago	上次游玩 : {0} 分钟前
+W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played:  {0} minute	总游玩时间 : {0} 分钟
+W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played:  {0} minute ago	上次游玩 : {0} 分钟前
+W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played: {0} hour	总游玩时间 : {0} 小时
+W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played: {0} hour ago	上次游玩 : {0} 小时前
+W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played:  {0} hour	总游玩时间 : {0} 小时
+W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played:  {0} hour ago	上次游玩 : {0} 小时前
+W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played: {0} day	总游玩时间 : {0} 天
+W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played: {0} day ago	上次游玩 : {0} 天前
+W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played:  {0} day	总游玩时间 : {0} 天
+W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played:  {0} day ago	上次游玩 : {0} 天前
+W:Window:cancel|n:cancel:Button|text_name	cancel	取消
+W:Window:your new world...|n:S:CategoryButton|text_value	S	小
+W:Window:your new world...|n:S:BoolButton|text_value	S	小
+W:Window:your new world...|n:S:Button|text_value	S	小
+W:Window:your new world...|n:M:CategoryButton|text_value	M	中
+W:Window:your new world...|n:M:BoolButton|text_value	M	中
+W:Window:your new world...|n:M:Button|text_value	M	中
+W:Window:your new world...|n:L:CategoryButton|text_value	L	大
+W:Window:your new world...|n:L:BoolButton|text_value	L	大
+W:Window:your new world...|n:L:Button|text_value	L	大
+W:Window:your new world...|n:XL:CategoryButton|text_value	XL	特大
+W:Window:your new world...|n:XL:BoolButton|text_value	XL	特大
+W:Window:your new world...|n:XL:Button|text_value	XL	特大
+W:Window:your new world...|n:XXL:CategoryButton|text_value	XXL	太大啦!
+W:Window:your new world...|n:XXL:BoolButton|text_value	XXL	太大啦!
+W:Window:your new world...|n:XXL:Button|text_value	XXL	太大啦!
+W:Window:are you sure?|header_text	are you sure?	你确定吗 ?
+DEATH:void	you fell into the void.	你坠入了虚空
+DEATH:suffocate	you drowned.	你进水了
+DEATH:card	you were killed by {*}.	你被 {*} 杀死了
+DEATH:card	you fell to your death.	你摔死了
+DEATH:card	you fell to their death.	你因他们摔死了
+DEATH:card	you exploded.	你爆炸了
+DEATH:card	you squished by a slab.	你被形块压扁了
+DEATH:card	you hit a wall too hard.	你撞墙太狠了
+DEATH:card	you died from a falling {*}	你被掉落的 {*} 砸死了
+DEATH:card	you died.	你死了
+DEATH:card	you fell into the void.	你坠入了虚空
+DEATH:card	you drowned.	你进水了
+DEATH:card	you exploded by {*}.	你被 {*} 炸死了
+ITEM:adult ghost pine	adult ghost pine	成年幽灵松
+ITEM:adult pine	adult pine	成年松树
+ITEM:ash	ash	灰烬
+ITEM:ash bucket	ash bucket	烟灰桶
+ITEM:baby bear	baby bear	小熊
+ITEM:baby jawn tree	baby jawn tree	嚼恩树苗
+ITEM:baby milo bear	baby milo bear	小米洛熊
+ITEM:baby pine	baby pine	松树苗
+ITEM:baby porri bear	baby porri bear	小波里熊
+ITEM:balloon	balloon	气球
+ITEM:barrel	barrel	木桶
+ITEM:bear	bear	熊
+ITEM:bear x	bear x	熊 X
+ITEM:bear y	bear y	熊 Y
+ITEM:bee	bee	蜜蜂
+ITEM:bee nest	bee nest	蜂巢
+ITEM:berry juice	berry juice	浆果汁
+ITEM:birch	birch	白桦
+ITEM:block shooter	block shooter	方块发射器
+ITEM:blue checker	blue checker	蓝色棋盘格
+ITEM:blueberry	blueberry	蓝莓
+ITEM:blueberry bush	blueberry bush	蓝莓灌木
+ITEM:blur	blur	模糊
+ITEM:blurry mirror x	blurry mirror x	模糊镜像X
+ITEM:blurry mirror y	blurry mirror y	模糊镜像Y
+ITEM:bomb	bomb	炸弹
+ITEM:bone	bone	骨头
+ITEM:boombox	boombox	音响
+ITEM:boulder	boulder	巨石
+ITEM:brick	brick	砖块
+ITEM:brick tile	brick tile	砖瓦
+ITEM:brown checker	brown checker	棕色棋盘格
+ITEM:bubble	bubble	泡泡
+ITEM:burger	burger	汉堡
+ITEM:bush	bush	灌木
+ITEM:cabin	cabin	小屋
+ITEM:camel statue	camel statue	骆驼雕像
+ITEM:card hand	card hand	卡片手
+ITEM:cave plant	cave plant	洞穴植物
+ITEM:chaingun	chaingun	链炮
+ITEM:chess checker	chess checker	象棋棋盘格
+ITEM:chisel	chisel	凿子
+ITEM:circuit	circuit	电路
+ITEM:cobble	cobble	鹅卵石
+ITEM:coin	coin	硬币
+ITEM:concrete	concrete	混凝土
+ITEM:control pad	control pad	控制板
+ITEM:cows	cows	奶牛
+ITEM:diamond scissors	diamond scissors	钻石剪刀
+ITEM:dirt	dirt	泥土
+ITEM:drill	drill	钻头
+ITEM:error checker	error checker	错误棋盘格
+ITEM:fan	fan	风扇
+ITEM:fern	fern	蕨类
+ITEM:fishing rod	fishing rod	鱼竿
+ITEM:flashlight	flashlight	手电筒
+ITEM:flowers in vase	flowers in vase	花瓶
+ITEM:forever	forever	永恒
+ITEM:fur	fur	毛皮
+ITEM:ghost pine	ghost pine	幽灵松
+ITEM:glass	glass	玻璃
+ITEM:glue gun	glue gun	胶枪
+ITEM:goober	goober	咕宝
+ITEM:gray window	gray window	灰色窗户
+ITEM:hay	hay	干草
+ITEM:hay pile	hay pile	干草堆
+ITEM:haze	haze	霾
+ITEM:haze skin	haze skin	霾皮
+ITEM:healer	healer	治疗心
+ITEM:honey	honey	蜂蜜
+ITEM:honey ball	honey ball	蜂蜜球
+ITEM:honey potion	honey potion	蜂蜜药水
+ITEM:hot pickaxe	hot pickaxe	炽热镐
+ITEM:hot shotgun	hot shotgun	炽热霰弹枪
+ITEM:ice	ice	冰
+ITEM:invert	invert	反色
+ITEM:invert spruce	invert spruce	倒置云杉
+ITEM:inverted window	inverted window	反色窗户
+ITEM:jawn	jawn	嚼恩
+ITEM:jawn axe	jawn axe	嚼斧
+ITEM:jawn tree	jawn tree	嚼恩树
+ITEM:jesus on the cross	jesus on the cross	十字架上的耶稣
+ITEM:jumper	jumper	跳枪
+ITEM:kitchen	kitchen	厨房
+ITEM:lamp	lamp	台灯
+ITEM:lava	lava	熔岩
+ITEM:logs	logs	原木
+ITEM:love	love	爱心
+ITEM:magnet	magnet	磁铁
+ITEM:magpie	magpie	喜鹊
+ITEM:meet voima	meet voima	遇见 voima
+ITEM:metal	metal	金属
+ITEM:metal spike	metal spike	金属尖刺
+ITEM:metallic skeleton	metallic skeleton	金属骷髅
+ITEM:mirror adult pine	mirror adult pine	镜像成年松
+ITEM:mirror winter birch	mirror winter birch	镜像冬桦
+ITEM:mirror x	mirror x	镜像X
+ITEM:mirror y	mirror y	镜像Y
+ITEM:moss	moss	苔藓
+ITEM:mossy log	mossy log	苔藓原木
+ITEM:mossy stone	mossy stone	苔藓石
+ITEM:movie	movie	电影
+ITEM:museum bear	museum bear	博物馆熊
+ITEM:mushroom big	mushroom big	大蘑菇
+ITEM:mushroom small	mushroom small	小蘑菇
+ITEM:music box	music box	八音盒
+ITEM:paint brush	paint brush	画笔
+ITEM:pickup	pickup	拾取
+ITEM:pine bark	pine bark	松树皮
+ITEM:pinecone	pinecone	松果
+ITEM:pink checker	pink checker	粉色棋盘格
+ITEM:plank	plank	木板
+ITEM:portal	portal	传送门
+ITEM:reach	reach	触碰
+ITEM:respawn statue	respawn statue	重生雕像
+ITEM:reunion	reunion	重逢
+ITEM:reverse shotgun	reverse shotgun	反向霰弹枪
+ITEM:rock	rock	岩石
+ITEM:rocks	rocks	碎石
+ITEM:sand	sand	沙子
+ITEM:scissors	scissors	剪刀
+ITEM:sectors	sectors	《Sectors》
+ITEM:selector	selector	选择器
+ITEM:shotgun	shotgun	霰弹枪
+ITEM:skeleton bear	skeleton bear	骷髅熊
+ITEM:skull	skull	头骨
+ITEM:sky	sky	天空
+ITEM:slab hand	slab hand	形块手
+ITEM:smoke	smoke	烟雾
+ITEM:snow	snow	雪
+ITEM:snowball	snowball	雪球
+ITEM:snowball shooter	snowball shooter	雪球发射器
+ITEM:sponge	sponge	海绵
+ITEM:standoff	standoff	对峙
+ITEM:stone	stone	石头
+ITEM:stone dots	stone dots	点状石
+ITEM:strawberry	strawberry	草莓
+ITEM:street light	street light	路灯
+ITEM:teenager birch	teenager birch	白桦幼树
+ITEM:teenager birch trunk	teenager birch trunk	白桦幼树干
+ITEM:teenager spruce	teenager spruce	云杉幼树
+ITEM:the vision	the vision	愿景
+ITEM:the way	the way	道路
+ITEM:tooth	tooth	牙齿
+ITEM:torch	torch	火炬
+ITEM:trash	trash	垃圾
+ITEM:trash bag	trash bag	垃圾袋
+ITEM:universe edit	universe edit	宇宙编辑
+ITEM:void	void	虚空
+ITEM:voim voim	voim voim	voim voim
+ITEM:water	water	水
+ITEM:welf	welf	韦尔夫
+ITEM:white checker	white checker	白色棋盘格
+ITEM:winter adult spruce	winter adult spruce	冬季成年云杉
+ITEM:winter baby spruce	winter baby spruce	冬季云杉苗
+ITEM:winter birch	winter birch	冬桦
+ITEM:winter pc	winter pc	冬日电脑
+ITEM:winter rowan	winter rowan	冬季花楸
+ITEM:winter teenager spruce	winter teenager spruce	冬季云杉幼树
+ITEM:wood	wood	木头
+ITEM:wooden chest	wooden chest	木头箱子
+ITEM:wooden pickaxe	wooden pickaxe	木镐
+ITEM:wooden shotgun	wooden shotgun	木头霰弹枪
+ITEM:wooden turret	wooden turret	木头炮塔
+ITEM:world edit	world edit	世界编辑
+HUD:shorten	shorten	缩短
+HUD:extend	extend	延长
+HUD:cut	cut	切割
+HUD:paint	paint	涂色
+HUD:reset	reset	重置
+HUD:glue	glue	粘合
+HUD:unglue	unglue	解除粘合
+W:Window:populate tools|n:brush size:SliderButton|text_name	brush size	笔刷大小
+W:Window:populate tools|n:color:Button|text_name	color	颜色
+W:Window:populate tools|n:size:Button|text_name	size	大小
+W:Window:populate tools|n:set:Button|text_name	set\ngrid	设置\n网格
+W:Window:populate tools|n:remove:Button|text_name	remove\ngrid	移除\n网格
+W:Window:change card size|header_text	change card size	改变卡片大小
+W:Window:change card size|n:height:SliderButton|text_name	height	高度
+W:Window:change card size|n:variation:SliderButton|text_name	variation	变化
+HUD:pick a type	pick a type	选择类型
+HUD:delete	delete	删除
+HUD:to select	to select	选择
+W:Window:|n:printer:Button|text_name	printer	打印机
+W:Window:|n:import universe:Button|text_name	import universe	导入宇宙
+W:Window:credits|n:Karhula::TextButton|text_name	Karhula:	karhula (熊之地):
+W:Window:credits|n:bear by jorma rysky:TextButton|text_name	bear by jorma rysky	熊 : Jorma Rysky
+W:Window:credits|n:goober by kassu:TextButton|text_name	goober by kassu	咕宝 : Kassu
+W:Window:credits|n:jawn by jorma rysky and valtsu:TextButton|text_name	jawn by jorma rysky and valtsu	嚼恩 : Jorma Rysky 和 Valtsu
+W:Window:credits|n:haze by jorma rysky and emma:TextButton|text_name	haze by jorma rysky and emma	霾 : Jorma Rysky 和 Emma
+W:Window:credits|n:textures by valtsu and lololy:TextButton|text_name	textures by valtsu and lololy	纹理 : Valtsu 和 Lololy
+W:Window:credits|n:drill and jawn axe by splav:TextButton|text_name	drill and jawn axe by splav	钻头与嚼斧 : Splav
+W:Window:credits|n:special font letters by p#k#:TextButton|text_name	special font letters by p1k1	特殊字体字母 : p1k1
+W:Window:credits|n:welf sounds by andy:TextButton|text_name	welf sounds by andy	韦尔夫音效 : Andy
+W:Window:credits|n:wooden shotgun sound and cave sounds by arpuzik:TextButton|text_name	wooden shotgun sound and cave sounds by arpuzik	木头霰弹枪音效与洞穴音效 : Arpuzik
+W:Window:credits|n:thanks:Button|text_name	thanks	感谢
+W:Window:credits|header_text	credits	制作人员
+W:Window:credits|n:bee sounds by benboncan on freesound.org:TextButton|text_name	bee sounds by benboncan on freesound.org	蜜蜂音效 : benboncan (freesound.org)
+W:Window:credits|n:glass sounds by trp on freesound.org:TextButton|text_name	glass sounds by trp on freesound.org	玻璃音效 : trp (freesound.org)
+W:Window:credits|n:VOIMA::TextButton|text_name	VOIMA:	VOIMA:
+W:Window:credits|n:Designed and coded by Valtsu:TextButton|text_name	Designed and coded by Valtsu	设计与编程 : Valtsu
+W:Window:credits|n:Co-designed by Jorma Rysky:TextButton|text_name	Co-designed by Jorma Rysky	联合设计 : Jorma Rysky
+W:Window:credits|n:Multiplayer coded by valtsu and disk:TextButton|text_name	Multiplayer coded by valtsu and disk	多人游戏编程 : valtsu 和 disk
+W:Window:credits|n:All glory to God, Amen:TextButton|text_name	All glory to God, Amen	一切荣耀归于上帝 , 阿们
+W:Window:credits|n:Open-Source Code by Third Parties::TextButton|text_name	Open-Source Code by Third Parties:	第三方开源代码 : 
+W:Window:credits|n:OBJ file importer by Dummiesman:TextButton|text_name	OBJ file importer by Dummiesman	OBJ 文件导入器 : Dummiesman
+W:Window:credits|n:StandaloneFileBrowser by Gökhan Gökçe:TextButton|text_name	StandaloneFileBrowser by Gökhan Gökçe	独立文件浏览器 (StandaloneFileBrowser) : Gökhan Gökçe
+W:Window:credits|n:Some of SSAO by Virtual Method Studios:TextButton|text_name	Some of SSAO by Virtual Method Studios	部分 SSAO : Virtual Method Studios
+TIP:chaingun damage = {0}	chaingun\ndamage = {0}	链炮\n伤害 = {0}
+TIP:chaingun damage = 2	chaingun\ndamage = 2	链炮\n伤害 = 2
+TIP:chaingun damage = 2	chaingun damage = 2	链炮 伤害 = 2
+TIP:chaingun damage = {0}	chaingun damage = {0}	链炮 伤害 = {0}
+TIP:block shooter damage = 2	block shooter\ndamage = 2	方块发射器\n伤害 = 2
+TIP:bomb damage = 4	bomb\ndamage = 4	炸弹\n伤害 = 4
+TIP:chisel damage = 6	chisel\ndamage = 6	凿子\n伤害 = 6
+TIP:diamond scissors damage = 8	diamond scissors\ndamage = 8	钻石剪刀\n伤害 = 8
+TIP:hot pickaxe damage = 14	hot pickaxe\ndamage = 14	炽热镐\n伤害 = 14
+TIP:hot shotgun damage = 2	hot shotgun\ndamage = 2	炽热霰弹枪\n伤害 = 2
+TIP:jawn axe damage = 9	jawn axe\ndamage = 9	嚼斧\n伤害 = 9
+TIP:metal spike damage = 5	metal spike\ndamage = 5	金属尖刺\n伤害 = 5
+TIP:reverse shotgun damage = 2	reverse shotgun\ndamage = 2	反向霰弹枪\n伤害 = 2
+TIP:scissors damage = 2	scissors\ndamage = 2	剪刀\n伤害 = 2
+TIP:shotgun damage = 3	shotgun\ndamage = 3	霰弹枪\n伤害 = 3
+TIP:sponge damage = 20	sponge\ndamage = 20	海绵\n伤害 = 20
+TIP:wooden pickaxe damage = 6	wooden pickaxe\ndamage = 6	木镐\n伤害 = 6
+TIP:wooden shotgun damage = 2	wooden shotgun\ndamage = 2	木头霰弹枪\n伤害 = 2
+TIP:wooden turret damage = 3	wooden turret\ndamage = 3	木头炮塔\n伤害 = 3
+TIP:berry juice heals 25%	berry juice\nheals 25%	浆果汁\n治疗 25%
+TIP:blueberry heals 20%	blueberry\nheals 20%	蓝莓\n治疗 20%
+TIP:strawberry heals 5%	strawberry\nheals 5%	草莓\n治疗 5%
+TIP:jesus on the cross heals others = 1	jesus on the cross\nheals others = 1	十字架上的耶稣\n治疗他人 = 1
+TIP:block shooter damage = 2	block shooter damage = 2	方块发射器 伤害 = 2
+TIP:bomb damage = 4	bomb damage = 4	炸弹 伤害 = 4
+TIP:chisel damage = 6	chisel damage = 6	凿子 伤害 = 6
+TIP:diamond scissors damage = 8	diamond scissors damage = 8	钻石剪刀 伤害 = 8
+TIP:hot pickaxe damage = 14	hot pickaxe damage = 14	炽热镐 伤害 = 14
+TIP:hot shotgun damage = 2	hot shotgun damage = 2	炽热霰弹枪 伤害 = 2
+TIP:jawn axe damage = 9	jawn axe damage = 9	嚼斧 伤害 = 9
+TIP:metal spike damage = 5	metal spike damage = 5	金属尖刺 伤害 = 5
+TIP:reverse shotgun damage = 2	reverse shotgun damage = 2	反向霰弹枪 伤害 = 2
+TIP:scissors damage = 2	scissors damage = 2	剪刀 伤害 = 2
+TIP:shotgun damage = 3	shotgun damage = 3	霰弹枪 伤害 = 3
+TIP:sponge damage = 20	sponge damage = 20	海绵 伤害 = 20
+TIP:wooden pickaxe damage = 6	wooden pickaxe damage = 6	木镐 伤害 = 6
+TIP:wooden shotgun damage = 2	wooden shotgun damage = 2	木头霰弹枪 伤害 = 2
+TIP:wooden turret damage = 3	wooden turret damage = 3	木头炮塔 伤害 = 3
+TIP:berry juice heals 25%	berry juice heals 25%	浆果汁 治疗 25%
+TIP:blueberry heals 20%	blueberry heals 20%	蓝莓 治疗 20%
+TIP:strawberry heals 5%	strawberry heals 5%	草莓 治疗 5%
+TIP:jesus on the cross heals others = 1	jesus on the cross heals others = 1	十字架上的耶稣 治疗他人 = 1
+伤害 = {0}
+中毒 {0}%
+TIP:drill damage = {0}	drill damage = {0}	钻头\n伤害 = {0}
+TIP:mushroom big poisons {0}%	mushroom big poisons {0}%	大蘑菇\n中毒 {0}%
+TIP:block shooter damage = {0}	block shooter damage = {0}	方块发射器\n伤害 = {0}
+TIP:bomb damage = {0}	bomb damage = {0}	炸弹\n伤害 = {0}
+TIP:chaingun damage = {0}	chaingun damage = {0}	链炮\n伤害 = {0}
+TIP:chisel damage = {0}	chisel damage = {0}	凿子\n伤害 = {0}
+TIP:diamond scissors damage = {0}	diamond scissors damage = {0}	钻石剪刀\n伤害 = {0}
+TIP:hot pickaxe damage = {0}	hot pickaxe damage = {0}	炽热镐\n伤害 = {0}
+TIP:hot shotgun damage = {0}	hot shotgun damage = {0}	炽热霰弹枪\n伤害 = {0}
+TIP:jawn axe damage = {0}	jawn axe damage = {0}	嚼斧\n伤害 = {0}
+TIP:metal spike damage = {0}	metal spike damage = {0}	金属尖刺\n伤害 = {0}
+TIP:reverse shotgun damage = {0}	reverse shotgun damage = {0}	反向霰弹枪\n伤害 = {0}
+TIP:scissors damage = {0}	scissors damage = {0}	剪刀\n伤害 = {0}
+TIP:shotgun damage = {0}	shotgun damage = {0}	霰弹枪\n伤害 = {0}
+TIP:sponge damage = {0}	sponge damage = {0}	海绵\n伤害 = {0}
+TIP:wooden pickaxe damage = {0}	wooden pickaxe damage = {0}	木镐\n伤害 = {0}
+TIP:wooden shotgun damage = {0}	wooden shotgun damage = {0}	木头霰弹枪\n伤害 = {0}
+TIP:wooden turret damage = {0}	wooden turret damage = {0}	木头炮塔\n伤害 = {0}
+TIP:berry juice heals {0}%	berry juice heals {0}%	浆果汁\n治疗 {0}%
+TIP:blueberry heals {0}%	blueberry heals {0}%	蓝莓\n治疗 {0}%
+TIP:burger heals {0}%	burger heals {0}%	汉堡\n治疗 {0}%
+TIP:honey potion heals {0}%	honey potion heals {0}%	蜂蜜药水\n治疗 {0}%
+TIP:strawberry heals {0}%	strawberry heals {0}%	草莓\n治疗 {0}%
+TIP:healer heals others = {0}	healer heals others = {0}	治疗心\n治疗他人 = {0}
+TIP:jesus on the cross heals others = {0}	jesus on the cross heals others = {0}	十字架上的耶稣\n治疗他人 = {0}
+TIP:mushroom small poisons {0}%	mushroom small poisons {0}%	小蘑菇\n中毒 {0}%
+TIP:goober damage = {0}	goober damage = {0}	咕宝\n伤害 = {0}
+W:Window:wooden chest|header_text	wooden chest	木头箱子
+W:Window:draw tools|n:color:Button|text_name	color	颜色
+W:Window:draw tools|n:set:Button|text_name	set\ngrid	设置\n网格
+DEATH:card	you were killed by a baby bear.	你被一只小熊杀死了
+DEATH:card	you were killed by baby bear.	你被一只小熊杀死了
+DEATH:card	you were killed by a baby jawn tree.	你被一棵嚼恩树苗杀死了
+DEATH:card	you were killed by baby jawn tree.	你被一棵嚼恩树苗杀死了
+DEATH:card	you were killed by a baby milo bear.	你被一只小米洛熊杀死了
+DEATH:card	you were killed by baby milo bear.	你被一只小米洛熊杀死了
+DEATH:card	you were killed by a baby porri bear.	你被一只小波里熊杀死了
+DEATH:card	you were killed by baby porri bear.	你被一只小波里熊杀死了
+DEATH:card	you were killed by a bear.	你被一只熊杀死了
+DEATH:card	you were killed by bear.	你被一只熊杀死了
+DEATH:card	you were killed by a bear x.	你被一只熊 X 杀死了
+DEATH:card	you were killed by bear x.	你被一只熊 X 杀死了
+DEATH:card	you were killed by a bear y.	你被一只熊 Y 杀死了
+DEATH:card	you were killed by bear y.	你被一只熊 Y 杀死了
+DEATH:card	you were killed by a bee.	你被一只蜜蜂杀死了
+DEATH:card	you were killed by bee.	你被一只蜜蜂杀死了
+DEATH:card	you were killed by a bee nest.	你被一个蜂巢杀死了
+DEATH:card	you were killed by bee nest.	你被一个蜂巢杀死了
+DEATH:card	you were killed by a bone.	你被一根骨头杀死了
+DEATH:card	you were killed by bone.	你被一根骨头杀死了
+DEATH:card	you were killed by a boulder.	你被一个巨石杀死了
+DEATH:card	you were killed by boulder.	你被一个巨石杀死了
+DEATH:card	you were killed by a goober.	你被一个咕宝杀死了
+DEATH:card	you were killed by goober.	你被一个咕宝杀死了
+DEATH:card	you were killed by a haze.	你被一个霾杀死了
+DEATH:card	you were killed by haze.	你被一个霾杀死了
+DEATH:card	you were killed by a haze skin.	你被一块霾皮杀死了
+DEATH:card	you were killed by haze skin.	你被一块霾皮杀死了
+DEATH:card	you were killed by a jawn.	你被一个嚼恩杀死了
+DEATH:card	you were killed by jawn.	你被一个嚼恩杀死了
+DEATH:card	you were killed by a jawn tree.	你被一棵嚼恩树杀死了
+DEATH:card	you were killed by jawn tree.	你被一棵嚼恩树杀死了
+DEATH:card	you were killed by a magpie.	你被一只喜鹊杀死了
+DEATH:card	you were killed by magpie.	你被一只喜鹊杀死了
+DEATH:card	you were killed by a metallic skeleton.	你被一个金属骷髅杀死了
+DEATH:card	you were killed by metallic skeleton.	你被一个金属骷髅杀死了
+DEATH:card	you were killed by a skeleton bear.	你被一只骷髅熊杀死了
+DEATH:card	you were killed by skeleton bear.	你被一只骷髅熊杀死了
+DEATH:card	you were killed by a skull.	你被一个头骨杀死了
+DEATH:card	you were killed by skull.	你被一个头骨杀死了
+DEATH:card	you were killed by a tooth.	你被一个牙齿杀死了
+DEATH:card	you were killed by tooth.	你被一个牙齿杀死了
+DEATH:card	you were killed by a welf.	你被一个韦尔夫杀死了
+DEATH:card	you were killed by welf.	你被一个韦尔夫杀死了
+HUD:to open	to open	打开
+HUD:for open	for open	打开
+HUD:equip	equip	装备
+HUD:slump	slump	瘫倒
+HUD:run	run	奔跑
+HUD:respawn	respawn	重生
+HUD:open inventory	open inventory	打开背包
+HUD:back	back	返回
+HUD:chop	chop	劈砍
+HUD:dig	dig	挖掘
+HUD:harvest	harvest	收获
+HUD:pick	pick	拾取
+HUD:grab	grab	抓取
+HUD:plant	plant	种植
+HUD:pour	pour	倒出
+HUD:fill	fill	填充
+HUD:pull	pull	拉动
+HUD:push	push	推动
+HUD:open	open	打开
+HUD:close	close	关闭
+HUD:mount	mount	骑乘
+HUD:dismount	dismount	下来
+HUD:sprint	sprint	冲刺
+HUD:dash	dash	冲刺
+HUD:roll	roll	翻滚
+HUD:block	block	格挡
+HUD:parry	parry	招架
+HUD:charge	charge	蓄力
+HUD:reload	reload	装填
+HUD:aim	aim	瞄准
+GEN:generating the world	generating the world{*}	正在生成世界{*}
+GEN:rendering the world	rendering the world{*}	正在渲染世界{*}
+GEN:cards	{0} cards	{0} 卡片
+GEN:slabs	{0} slabs	{0} 形块
+HUD:edit every	edit every	批量编辑
+HUD:wall thickness	wall thickness	墙体厚度
+PREWARM:banner	prewarm banner	voima 仍然一堆bug , 并且还没做完...\n所以暂时免费提供给大家 :)
+PREWARM:hud	prewarm hud	缩短 延长 断开
+PREWARM:confirm	prewarm confirm	你确定吗 ?
+W:Window:your worlds|header_text	your worlds	你的世界
+W:Window:|n:new world:TextButton|text_name	new world	新世界
+W:Window:|n:universe editor:Button|text_name	universe editor	宇宙编辑器
+W:Window:your new world...|n:biome selector:BiomeCircleButton|text_name	biome selector	生物群系选择
+W:Window:your new world...|n:birch forest:Button|text_name	birch forest	白桦林
+W:Window:your new world...|n:birch forest:TextButton|text_name	birch forest	白桦林
+W:Window:your new world...|n:birch forest:BiomeButton|text_name	birch forest	白桦林
+W:Window:your new world...|n:dirt forest:Button|text_name	dirt forest	泥土森林
+W:Window:your new world...|n:dirt forest:TextButton|text_name	dirt forest	泥土森林
+W:Window:your new world...|n:dirt forest:BiomeButton|text_name	dirt forest	泥土森林
+W:Window:your new world...|n:error:Button|text_name	error	错误
+W:Window:your new world...|n:error:TextButton|text_name	error	错误
+W:Window:your new world...|n:error:BiomeButton|text_name	error	错误
+W:Window:your new world...|n:farlands:Button|text_name	farlands	边境之地
+W:Window:your new world...|n:farlands:TextButton|text_name	farlands	边境之地
+W:Window:your new world...|n:farlands:BiomeButton|text_name	farlands	边境之地
+W:Window:your new world...|n:farlands2:Button|text_name	farlands2	边境之地2
+W:Window:your new world...|n:farlands2:TextButton|text_name	farlands2	边境之地2
+W:Window:your new world...|n:farlands2:BiomeButton|text_name	farlands2	边境之地2
+W:Window:your new world...|n:forest:Button|text_name	forest	森林
+W:Window:your new world...|n:forest:TextButton|text_name	forest	森林
+W:Window:your new world...|n:forest:BiomeButton|text_name	forest	森林
+W:Window:your new world...|n:ocean:Button|text_name	ocean	海洋
+W:Window:your new world...|n:ocean:TextButton|text_name	ocean	海洋
+W:Window:your new world...|n:ocean:BiomeButton|text_name	ocean	海洋
+W:Window:your new world...|n:pine forest:Button|text_name	pine forest	松树林
+W:Window:your new world...|n:pine forest:TextButton|text_name	pine forest	松树林
+W:Window:your new world...|n:pine forest:BiomeButton|text_name	pine forest	松树林
+W:Window:your new world...|n:plains:Button|text_name	plains	平原
+W:Window:your new world...|n:plains:TextButton|text_name	plains	平原
+W:Window:your new world...|n:plains:BiomeButton|text_name	plains	平原
+W:Window:your new world...|n:sand forest:Button|text_name	sand forest	沙林
+W:Window:your new world...|n:sand forest:TextButton|text_name	sand forest	沙林
+W:Window:your new world...|n:sand forest:BiomeButton|text_name	sand forest	沙林
+W:Window:your new world...|n:spruce forest:Button|text_name	spruce forest	云杉林
+W:Window:your new world...|n:spruce forest:TextButton|text_name	spruce forest	云杉林
+W:Window:your new world...|n:spruce forest:BiomeButton|text_name	spruce forest	云杉林
+W:Window:your new world...|n:winter:Button|text_name	winter	冬天
+W:Window:your new world...|n:winter:TextButton|text_name	winter	冬天
+W:Window:your new world...|n:winter:BiomeButton|text_name	winter	冬天
+W:Window:your new world...|n:11/11 biomes selected:TextButton|text_name	11/11 biomes selected	已选择 11/11 个生物群系
+W:Window:your new world...|n:0/11 biomes selected:TextButton|text_name	0/11 biomes selected	已选择 0/11 个生物群系
+W:Window:your new world...|n:1/11 biomes selected:TextButton|text_name	1/11 biomes selected	已选择 1/11 个生物群系
+W:Window:your new world...|n:2/11 biomes selected:TextButton|text_name	2/11 biomes selected	已选择 2/11 个生物群系
+W:Window:your new world...|n:3/11 biomes selected:TextButton|text_name	3/11 biomes selected	已选择 3/11 个生物群系
+W:Window:your new world...|n:4/11 biomes selected:TextButton|text_name	4/11 biomes selected	已选择 4/11 个生物群系
+W:Window:your new world...|n:5/11 biomes selected:TextButton|text_name	5/11 biomes selected	已选择 5/11 个生物群系
+W:Window:your new world...|n:6/11 biomes selected:TextButton|text_name	6/11 biomes selected	已选择 6/11 个生物群系
+W:Window:your new world...|n:7/11 biomes selected:TextButton|text_name	7/11 biomes selected	已选择 7/11 个生物群系
+W:Window:your new world...|n:8/11 biomes selected:TextButton|text_name	8/11 biomes selected	已选择 8/11 个生物群系
+W:Window:your new world...|n:9/11 biomes selected:TextButton|text_name	9/11 biomes selected	已选择 9/11 个生物群系
+W:Window:your new world...|n:10/11 biomes selected:TextButton|text_name	10/11 biomes selected	已选择 10/11 个生物群系
+TIP:silence	silence	寂静
+CARD:paintings/valtsu paintings/silence	silence	寂静
+CARD:paintings/voim voim paintings/silence	silence	寂静
+CARD:paintings/voima paintings/silence	silence	寂静
+W:Window:credits|n:silence painting by petr:TextButton|text_name	silence painting by petr	寂静画作 : Petr
+W:Window:credits|n:bubble texture by louis:TextButton|text_name	bubble texture by louis	气泡纹理 : Louis
+TIP:gen preview	gen preview	生成预览
+W:Window:gen preview|header_text	gen preview	生成预览
+W:Window:SEA|n:sea_height:SliderButton|text_name	sea_height	海平面高度
+W:Window:SEA|n:open_sea_width:SliderButton|text_name	open_sea_width	开阔海宽度
+W:Window:SEA|n:open_sea_width_floating:SliderButton|text_name	open_sea_width_floating	浮空开阔海宽度
+W:Window:SEA|n:rim_width:SliderButton|text_name	rim_width	边缘宽度
+W:Window:SEA|n:rim_floor_default:SliderButton|text_name	rim_floor_default	默认边缘地板
+W:Window:SEA|n:sea_slices:SliderButton|text_name	sea_slices	海洋切片数
+W:Window:SEA|n:sea_slice_corners:SliderButton|text_name	sea_slice_corners	海洋切片角数
+W:Window:SEA|header_text	SEA	海洋
+W:Window:REGIONS|n:climate_freq:SliderButton|text_name	climate_freq	气候频率
+W:Window:REGIONS|n:hills_region_freq:SliderButton|text_name	hills_region_freq	丘陵区域频率
+W:Window:REGIONS|n:sea_region_freq:SliderButton|text_name	sea_region_freq	海洋区域频率
+W:Window:REGIONS|n:land_lift:SliderButton|text_name	land_lift	陆地抬升
+W:Window:REGIONS|n:ground_squash:SliderButton|text_name	ground_squash	地面压扁
+W:Window:REGIONS|n:calm_hills:SliderButton|text_name	calm_hills	平缓丘陵
+W:Window:REGIONS|n:seabed_dip:SliderButton|text_name	seabed_dip	海床下沉
+W:Window:REGIONS|n:seabed_slow:SliderButton|text_name	seabed_slow	海床缓坡
+W:Window:REGIONS|header_text	REGIONS	区域
+W:Window:OVERHANGS|n:overhang_high:SliderButton|text_name	overhang_high	悬垂上限
+W:Window:OVERHANGS|n:overhang_low:SliderButton|text_name	overhang_low	悬垂下限
+W:Window:OVERHANGS|n:overhang_from_layer:SliderButton|text_name	overhang_from_layer	悬垂起始层
+W:Window:OVERHANGS|n:overhang_top_layer:SliderButton|text_name	overhang_top_layer	悬垂顶层
+W:Window:OVERHANGS|n:overhang_reach:SliderButton|text_name	overhang_reach	悬垂范围
+W:Window:OVERHANGS|n:terrain_wide:SliderButton|text_name	terrain_wide	地形宽度
+W:Window:OVERHANGS|n:terrain_freq_y:SliderButton|text_name	terrain_freq_y	Y 轴地形频率
+W:Window:OVERHANGS|n:flip_freq_y:SliderButton|text_name	flip_freq_y	Y 轴翻转频率
+W:Window:OVERHANGS|n:chain_flip_zone:SliderButton|text_name	chain_flip_zone	连锁翻转区
+W:Window:OVERHANGS|header_text	OVERHANGS	悬垂
+W:Window:MOUNTAINS|n:mountains_on:BoolButton|text_name	mountains_on	山脉开启
+W:Window:MOUNTAINS|n:chain_freq:SliderButton|text_name	chain_freq	山脉链频率
+W:Window:MOUNTAINS|n:chain_half_width:SliderButton|text_name	chain_half_width	山脉链半宽
+W:Window:MOUNTAINS|n:chain_warp:SliderButton|text_name	chain_warp	山脉链扭曲
+W:Window:MOUNTAINS|n:chain_hills:SliderButton|text_name	chain_hills	山脉链丘陵
+W:Window:MOUNTAINS|n:range_from:SliderButton|text_name	range_from	山脉范围起点
+W:Window:MOUNTAINS|n:chain_height:SliderButton|text_name	chain_height	山脉链高度
+W:Window:MOUNTAINS|n:chain_height_vary:SliderButton|text_name	chain_height_vary	山脉链高度变化
+W:Window:MOUNTAINS|n:chain_height_contrast:SliderButton|text_name	chain_height_contrast	山脉链高度对比
+W:Window:MOUNTAINS|n:biome_blend:SliderButton|text_name	biome_blend	生物群系混合
+W:Window:MOUNTAINS|n:wall_lean_min:SliderButton|text_name	wall_lean_min	壁面倾斜最小
+W:Window:MOUNTAINS|n:wall_lean_max:SliderButton|text_name	wall_lean_max	壁面倾斜最大
+W:Window:MOUNTAINS|n:ledge_band:SliderButton|text_name	ledge_band	岩架带宽
+W:Window:MOUNTAINS|n:ledge_depth:SliderButton|text_name	ledge_depth	岩架深度
+W:Window:MOUNTAINS|n:squat_strength:SliderButton|text_name	squat_strength	压缩强度
+W:Window:MOUNTAINS|header_text	MOUNTAINS	山脉
+W:Window:FLATS AND SHELVES|n:flats_freq:SliderButton|text_name	flats_freq	平台频率
+W:Window:FLATS AND SHELVES|n:flats_from:SliderButton|text_name	flats_from	平台起始
+W:Window:FLATS AND SHELVES|n:flats_height:SliderButton|text_name	flats_height	平台高度
+W:Window:FLATS AND SHELVES|n:shelf_freq:SliderButton|text_name	shelf_freq	陆架频率
+W:Window:FLATS AND SHELVES|n:shelf_count:SliderButton|text_name	shelf_count	陆架数量
+W:Window:FLATS AND SHELVES|n:shelf_step:SliderButton|text_name	shelf_step	陆架间距
+W:Window:FLATS AND SHELVES|n:shelf_edge:SliderButton|text_name	shelf_edge	陆架边缘
+W:Window:FLATS AND SHELVES|n:shelf_shore:SliderButton|text_name	shelf_shore	陆架海岸
+W:Window:FLATS AND SHELVES|header_text	FLATS AND SHELVES	平台与陆架
+W:Window:CELLS AND SLABS|n:column_width:SliderButton|text_name	column_width	列宽
+W:Window:CELLS AND SLABS|n:cell_size:SliderButton|text_name	cell_size	单元尺寸
+W:Window:CELLS AND SLABS|n:cell_uneven:SliderButton|text_name	cell_uneven	单元不均匀度
+W:Window:CELLS AND SLABS|n:cell_warp:SliderButton|text_name	cell_warp	单元扭曲
+W:Window:CELLS AND SLABS|n:cell_warp_freq:SliderButton|text_name	cell_warp_freq	单元扭曲频率
+W:Window:CELLS AND SLABS|n:cells_per_group:SliderButton|text_name	cells_per_group	每组单元数
+W:Window:CELLS AND SLABS|n:groups_per_big:SliderButton|text_name	groups_per_big	大组分组数
+W:Window:CELLS AND SLABS|n:flat_snap:SliderButton|text_name	flat_snap	平面吸附
+W:Window:CELLS AND SLABS|n:layer_height:SliderButton|text_name	layer_height	层高
+W:Window:CELLS AND SLABS|n:tallest_block:SliderButton|text_name	tallest_block	最高方块
+W:Window:CELLS AND SLABS|n:max_tread:SliderButton|text_name	max_tread	最大踏面
+W:Window:CELLS AND SLABS|n:rim_max_layers:SliderButton|text_name	rim_max_layers	边缘最大层数
+W:Window:CELLS AND SLABS|n:snap_steep:SliderButton|text_name	snap_steep	陡坡吸附
+W:Window:CELLS AND SLABS|n:outline_simplify:SliderButton|text_name	outline_simplify	轮廓简化
+W:Window:CELLS AND SLABS|n:min_outline_area:SliderButton|text_name	min_outline_area	最小轮廓面积
+W:Window:CELLS AND SLABS|n:soil_slope:SliderButton|text_name	soil_slope	土壤坡度
+W:Window:CELLS AND SLABS|n:bare_rock_drop:SliderButton|text_name	bare_rock_drop	裸岩落差
+W:Window:CELLS AND SLABS|n:sand_depth:SliderButton|text_name	sand_depth	沙层深度
+W:Window:CELLS AND SLABS|header_text	CELLS AND SLABS	单元与形块
+W:Window:ROCK FACES|n:rock_rough:SliderButton|text_name	rock_rough	岩石粗糙度
+W:Window:ROCK FACES|n:rock_rough_freq_y:SliderButton|text_name	rock_rough_freq_y	Y 轴岩石粗糙频率
+W:Window:ROCK FACES|n:rough_from_slope:SliderButton|text_name	rough_from_slope	坡度粗糙度
+W:Window:ROCK FACES|n:rock_jag:SliderButton|text_name	rock_jag	岩石锯齿
+W:Window:ROCK FACES|n:cave_jag:SliderButton|text_name	cave_jag	洞穴锯齿
+W:Window:ROCK FACES|n:ravine_jag:SliderButton|text_name	ravine_jag	峡谷锯齿
+W:Window:ROCK FACES|n:ravine_jag_freq:SliderButton|text_name	ravine_jag_freq	峡谷锯齿频率
+W:Window:ROCK FACES|header_text	ROCK FACES	岩壁
+W:Window:CAVES|n:caves_on:BoolButton|text_name	caves_on	洞穴开启
+W:Window:CAVES|n:cave_height_mul:SliderButton|text_name	cave_height_mul	洞穴高度倍率
+W:Window:CAVES|n:cave_roof_drop:SliderButton|text_name	cave_roof_drop	洞顶落差
+W:Window:CAVES|n:cave_min_roof:SliderButton|text_name	cave_min_roof	最小洞顶厚度
+W:Window:CAVES|n:cave_edge_sharp:SliderButton|text_name	cave_edge_sharp	洞穴边缘锐度
+W:Window:CAVES|n:lava_drop:SliderButton|text_name	lava_drop	岩浆落差
+W:Window:CAVES|n:lava_drop_fade:SliderButton|text_name	lava_drop_fade	岩浆落差渐变
+W:Window:CAVES|n:pillar_grid:SliderButton|text_name	pillar_grid	石柱网格
+W:Window:CAVES|n:pillar_chance:SliderButton|text_name	pillar_chance	石柱概率
+W:Window:CAVES|n:pillar_min_cave:SliderButton|text_name	pillar_min_cave	石柱最小洞穴
+W:Window:CAVES|n:pillar_radius:SliderButton|text_name	pillar_radius	石柱半径
+W:Window:CAVES|n:pillar_waist_min:SliderButton|text_name	pillar_waist_min	石柱腰部最小
+W:Window:CAVES|n:pillar_waist_max:SliderButton|text_name	pillar_waist_max	石柱腰部最大
+W:Window:CAVES|n:pillar_lean:SliderButton|text_name	pillar_lean	石柱倾斜
+W:Window:CAVES|n:pillar_turn:SliderButton|text_name	pillar_turn	石柱转向
+W:Window:CAVES|header_text	CAVES	洞穴
+W:Window:RAVINES|n:ravines_on:BoolButton|text_name	ravines_on	峡谷开启
+W:Window:RAVINES|n:ravine_rarity:SliderButton|text_name	ravine_rarity	峡谷稀有度
+W:Window:RAVINES|n:ravine_tip:SliderButton|text_name	ravine_tip	峡谷尖端
+W:Window:RAVINES|n:ravine_open_gap:SliderButton|text_name	ravine_open_gap	峡谷开口
+W:Window:RAVINES|n:ravine_freq:SliderButton|text_name	ravine_freq	峡谷频率
+W:Window:RAVINES|n:ravine_warp:SliderButton|text_name	ravine_warp	峡谷扭曲
+W:Window:RAVINES|n:ravine_erode:SliderButton|text_name	ravine_erode	峡谷侵蚀
+W:Window:RAVINES|n:ravine_erode_fine:SliderButton|text_name	ravine_erode_fine	峡谷细侵蚀
+W:Window:RAVINES|n:ravine_crack:SliderButton|text_name	ravine_crack	峡谷裂缝
+W:Window:RAVINES|n:ravine_wind:SliderButton|text_name	ravine_wind	峡谷蜿蜒
+W:Window:RAVINES|n:ravine_max_height:SliderButton|text_name	ravine_max_height	峡谷最大高度
+W:Window:RAVINES|n:ravine_width_top:SliderButton|text_name	ravine_width_top	峡谷顶部宽度
+W:Window:RAVINES|n:ravine_width_floor:SliderButton|text_name	ravine_width_floor	峡谷底部宽度
+W:Window:RAVINES|n:ravine_flare:SliderButton|text_name	ravine_flare	峡谷扩张
+W:Window:RAVINES|n:ravine_min_roof:SliderButton|text_name	ravine_min_roof	峡谷最小顶厚
+W:Window:RAVINES|n:ravine_margin:SliderButton|text_name	ravine_margin	峡谷边缘
+W:Window:RAVINES|n:cave_spread:SliderButton|text_name	cave_spread	洞穴扩散
+W:Window:RAVINES|n:cave_lobe_freq:SliderButton|text_name	cave_lobe_freq	洞穴分支频率
+W:Window:RAVINES|n:hall_strength:SliderButton|text_name	hall_strength	大厅强度
+W:Window:RAVINES|n:hall_spread:SliderButton|text_name	hall_spread	大厅扩散
+W:Window:RAVINES|n:hall_min_roof:SliderButton|text_name	hall_min_roof	大厅最小顶厚
+W:Window:RAVINES|n:lava_dig_depth:SliderButton|text_name	lava_dig_depth	岩浆挖掘深度
+W:Window:RAVINES|n:lava_vein_freq:SliderButton|text_name	lava_vein_freq	岩浆矿脉频率
+W:Window:RAVINES|n:lava_blot_freq:SliderButton|text_name	lava_blot_freq	岩浆斑块频率
+W:Window:RAVINES|n:lava_dig_cut:SliderButton|text_name	lava_dig_cut	岩浆切割
+W:Window:RAVINES|header_text	RAVINES	峡谷
+W:Window:ROOMS AND ORE|n:room_grid:SliderButton|text_name	room_grid	房间网格
+W:Window:ROOMS AND ORE|n:room_chance:SliderButton|text_name	room_chance	房间概率
+W:Window:ROOMS AND ORE|n:room_r_min:SliderButton|text_name	room_r_min	房间最小半径
+W:Window:ROOMS AND ORE|n:room_r_max:SliderButton|text_name	room_r_max	房间最大半径
+W:Window:ROOMS AND ORE|n:room_h_min:SliderButton|text_name	room_h_min	房间最小高度
+W:Window:ROOMS AND ORE|n:room_h_max:SliderButton|text_name	room_h_max	房间最大高度
+W:Window:ROOMS AND ORE|n:room_fade:SliderButton|text_name	room_fade	房间淡出
+W:Window:ROOMS AND ORE|n:ore_chance:SliderButton|text_name	ore_chance	矿石概率
+W:Window:ROOMS AND ORE|n:ore_max_height:SliderButton|text_name	ore_max_height	矿石最大高度
+W:Window:ROOMS AND ORE|n:ore_max_width:SliderButton|text_name	ore_max_width	矿石最大宽度
+W:Window:ROOMS AND ORE|header_text	ROOMS AND ORE	房间与矿石
+W:Window:variables|n:SEA:Button|text_name	SEA	海洋
+W:Window:variables|n:REGIONS:Button|text_name	REGIONS	区域
+W:Window:variables|n:OVERHANGS:Button|text_name	OVERHANGS	悬垂
+W:Window:variables|n:MOUNTAINS:Button|text_name	MOUNTAINS	山脉
+W:Window:variables|n:FLATS AND SHELVES:Button|text_name	FLATS AND SHELVES	平台与陆架
+W:Window:variables|n:CELLS AND SLABS:Button|text_name	CELLS AND SLABS	单元与形块
+W:Window:variables|n:ROCK FACES:Button|text_name	ROCK FACES	岩壁
+W:Window:variables|n:CAVES:Button|text_name	CAVES	洞穴
+W:Window:variables|n:RAVINES:Button|text_name	RAVINES	峡谷
+W:Window:variables|n:ROOMS AND ORE:Button|text_name	ROOMS AND ORE	房间与矿石
+W:Window:variables|header_text	variables	变量
+W:Window:controls|n:seed:StringButton|text_name	seed	种子
+W:Window:controls|n:regenerate:Button|text_name	regenerate	重新生成
+W:Window:controls|n:generate random:Button|text_name	generate random	随机生成
+W:Window:controls|n:leave:Button|text_name	leave	离开
+W:Window:settings|header_text	settings	设置
+W:Window:settings|n:peaks:BoolButton|text_name	peaks	山峰
+W:Window:settings|n:floating:BoolButton|text_name	floating	浮空
+W:Window:settings|n:sunken:BoolButton|text_name	sunken	沉没
+W:Window:settings|n:smooth:BoolButton|text_name	smooth	平滑
+W:Window:settings|n:sharp:BoolButton|text_name	sharp	锐利
+W:Window:settings|n:slabs:BoolButton|text_name	slabs	形块
+W:Window:settings|n:textures:BoolButton|text_name	textures	纹理
+TIP:same seed, from scratch	same seed, from scratch	相同种子，从头生成
+W:Window:your changes|header_text	your changes	你的更改
+W:Window:settings|n:S:CategoryButton|text_name	S	小
+W:Window:settings|n:S:Button|text_name	S	小
+W:Window:settings|n:S:BoolButton|text_name	S	小
+W:Window:settings|n:M:CategoryButton|text_name	M	中
+W:Window:settings|n:M:Button|text_name	M	中
+W:Window:settings|n:M:BoolButton|text_name	M	中
+W:Window:settings|n:L:CategoryButton|text_name	L	大
+W:Window:settings|n:L:Button|text_name	L	大
+W:Window:settings|n:L:BoolButton|text_name	L	大
+W:Window:settings|n:XL:CategoryButton|text_name	XL	超大
+W:Window:settings|n:XL:Button|text_name	XL	超大
+W:Window:settings|n:XL:BoolButton|text_name	XL	超大
+W:Window:settings|n:XXL:CategoryButton|text_name	XXL	太大啦
+W:Window:settings|n:XXL:Button|text_name	XXL	太大啦
+W:Window:settings|n:XXL:BoolButton|text_name	XXL	太大啦
+W:Window:settings|n:S:TextButton|text_name	S	小
+W:Window:settings|n:S:StringButton|text_name	S	小
+W:Window:settings|n:S:AdjusterButton|text_name	S	小
+W:Window:settings|n:S:TypeButton|text_name	S	小
+W:Window:settings|n:S:CircleButton|text_name	S	小
+W:Window:settings|n:S:SizeButton|text_name	S	小
+W:Window:settings|n:M:TextButton|text_name	M	中
+W:Window:settings|n:M:StringButton|text_name	M	中
+W:Window:settings|n:M:AdjusterButton|text_name	M	中
+W:Window:settings|n:M:TypeButton|text_name	M	中
+W:Window:settings|n:M:CircleButton|text_name	M	中
+W:Window:settings|n:M:SizeButton|text_name	M	中
+W:Window:settings|n:L:TextButton|text_name	L	大
+W:Window:settings|n:L:StringButton|text_name	L	大
+W:Window:settings|n:L:AdjusterButton|text_name	L	大
+W:Window:settings|n:L:TypeButton|text_name	L	大
+W:Window:settings|n:L:CircleButton|text_name	L	大
+W:Window:settings|n:L:SizeButton|text_name	L	大
+W:Window:settings|n:XL:TextButton|text_name	XL	超大
+W:Window:settings|n:XL:StringButton|text_name	XL	超大
+W:Window:settings|n:XL:AdjusterButton|text_name	XL	超大
+W:Window:settings|n:XL:TypeButton|text_name	XL	超大
+W:Window:settings|n:XL:CircleButton|text_name	XL	超大
+W:Window:settings|n:XL:SizeButton|text_name	XL	超大
+W:Window:settings|n:XXL:TextButton|text_name	XXL	太大啦
+W:Window:settings|n:XXL:StringButton|text_name	XXL	太大啦
+W:Window:settings|n:XXL:AdjusterButton|text_name	XXL	太大啦
+W:Window:settings|n:XXL:TypeButton|text_name	XXL	太大啦
+W:Window:settings|n:XXL:CircleButton|text_name	XXL	太大啦
+W:Window:settings|n:XXL:SizeButton|text_name	XXL	太大啦
+TIP:back to default	back to default	恢复默认
+TIP:ground_squash in regions	ground_squash in REGIONS	区域中的地面压扁
+TIP:hills_region_freq in regions	hills_region_freq in REGIONS	区域中的丘陵频率
+TIP:sea_region_freq in regions	sea_region_freq in REGIONS	区域中的海洋频率
+TIP:more = hilly and calm areas alternate faster	more = hilly and calm areas alternate faster	数值越大，丘陵与平缓区域交替越快
+TIP:more = smaller lakes and lands	more = smaller lakes and lands	数值越大，湖泊与陆地越小
+TIP:more = smaller cold and warm regions	more = smaller cold and warm regions	数值越大，寒冷与温暖区域越小
+TIP:lake beds sink at full rate down to this...	lake beds sink at full rate down to this...	湖床以此速度下沉到这里...
+W:Window:your changes|n:save mod:Button|text_name	save mod	保存模组
+W:Window:your changes|n:bare_rock_drop (#/#):BoolButton|text_name	bare_rock_drop ({*})	裸岩落差 ({*})
+W:Window:your changes|n:biome_blend (#/#):BoolButton|text_name	biome_blend ({*})	生物群系混合 ({*})
+W:Window:your changes|n:calm_hills (#/#):BoolButton|text_name	calm_hills ({*})	平缓丘陵 ({*})
+W:Window:your changes|n:cave_edge_sharp (#/#):BoolButton|text_name	cave_edge_sharp ({*})	洞穴边缘锐度 ({*})
+W:Window:your changes|n:cave_height_mul (#/#):BoolButton|text_name	cave_height_mul ({*})	洞穴高度倍率 ({*})
+W:Window:your changes|n:cave_jag (#/#):BoolButton|text_name	cave_jag ({*})	洞穴锯齿 ({*})
+W:Window:your changes|n:cave_lobe_freq (#/#):BoolButton|text_name	cave_lobe_freq ({*})	洞穴分支频率 ({*})
+W:Window:your changes|n:cave_min_roof (#/#):BoolButton|text_name	cave_min_roof ({*})	最小洞顶厚度 ({*})
+W:Window:your changes|n:cave_roof_drop (#/#):BoolButton|text_name	cave_roof_drop ({*})	洞顶落差 ({*})
+W:Window:your changes|n:cave_spread (#/#):BoolButton|text_name	cave_spread ({*})	洞穴扩散 ({*})
+W:Window:your changes|n:caves_on (#/#):BoolButton|text_name	caves_on ({*})	洞穴开启 ({*})
+W:Window:your changes|n:cell_size (#/#):BoolButton|text_name	cell_size ({*})	单元尺寸 ({*})
+W:Window:your changes|n:cell_uneven (#/#):BoolButton|text_name	cell_uneven ({*})	单元不均匀度 ({*})
+W:Window:your changes|n:cell_warp (#/#):BoolButton|text_name	cell_warp ({*})	单元扭曲 ({*})
+W:Window:your changes|n:cell_warp_freq (#/#):BoolButton|text_name	cell_warp_freq ({*})	单元扭曲频率 ({*})
+W:Window:your changes|n:cells_per_group (#/#):BoolButton|text_name	cells_per_group ({*})	每组单元数 ({*})
+W:Window:your changes|n:chain_flip_zone (#/#):BoolButton|text_name	chain_flip_zone ({*})	连锁翻转区 ({*})
+W:Window:your changes|n:chain_freq (#/#):BoolButton|text_name	chain_freq ({*})	山脉链频率 ({*})
+W:Window:your changes|n:chain_half_width (#/#):BoolButton|text_name	chain_half_width ({*})	山脉链半宽 ({*})
+W:Window:your changes|n:chain_height (#/#):BoolButton|text_name	chain_height ({*})	山脉链高度 ({*})
+W:Window:your changes|n:chain_height_contrast (#/#):BoolButton|text_name	chain_height_contrast ({*})	山脉链高度对比 ({*})
+W:Window:your changes|n:chain_height_vary (#/#):BoolButton|text_name	chain_height_vary ({*})	山脉链高度变化 ({*})
+W:Window:your changes|n:chain_hills (#/#):BoolButton|text_name	chain_hills ({*})	山脉链丘陵 ({*})
+W:Window:your changes|n:chain_warp (#/#):BoolButton|text_name	chain_warp ({*})	山脉链扭曲 ({*})
+W:Window:your changes|n:climate_freq (#/#):BoolButton|text_name	climate_freq ({*})	气候频率 ({*})
+W:Window:your changes|n:column_width (#/#):BoolButton|text_name	column_width ({*})	列宽 ({*})
+W:Window:your changes|n:flat_snap (#/#):BoolButton|text_name	flat_snap ({*})	平面吸附 ({*})
+W:Window:your changes|n:flats_freq (#/#):BoolButton|text_name	flats_freq ({*})	平台频率 ({*})
+W:Window:your changes|n:flats_from (#/#):BoolButton|text_name	flats_from ({*})	平台起始 ({*})
+W:Window:your changes|n:flats_height (#/#):BoolButton|text_name	flats_height ({*})	平台高度 ({*})
+W:Window:your changes|n:flip_freq_y (#/#):BoolButton|text_name	flip_freq_y ({*})	Y 轴翻转频率 ({*})
+W:Window:your changes|n:ground_squash (#/#):BoolButton|text_name	ground_squash ({*})	地面压扁 ({*})
+W:Window:your changes|n:groups_per_big (#/#):BoolButton|text_name	groups_per_big ({*})	大组分组数 ({*})
+W:Window:your changes|n:hall_min_roof (#/#):BoolButton|text_name	hall_min_roof ({*})	大厅最小顶厚 ({*})
+W:Window:your changes|n:hall_spread (#/#):BoolButton|text_name	hall_spread ({*})	大厅扩散 ({*})
+W:Window:your changes|n:hall_strength (#/#):BoolButton|text_name	hall_strength ({*})	大厅强度 ({*})
+W:Window:your changes|n:hills_region_freq (#/#):BoolButton|text_name	hills_region_freq ({*})	丘陵区域频率 ({*})
+W:Window:your changes|n:land_lift (#/#):BoolButton|text_name	land_lift ({*})	陆地抬升 ({*})
+W:Window:your changes|n:lava_blot_freq (#/#):BoolButton|text_name	lava_blot_freq ({*})	岩浆斑块频率 ({*})
+W:Window:your changes|n:lava_dig_cut (#/#):BoolButton|text_name	lava_dig_cut ({*})	岩浆切割 ({*})
+W:Window:your changes|n:lava_dig_depth (#/#):BoolButton|text_name	lava_dig_depth ({*})	岩浆挖掘深度 ({*})
+W:Window:your changes|n:lava_drop (#/#):BoolButton|text_name	lava_drop ({*})	岩浆落差 ({*})
+W:Window:your changes|n:lava_drop_fade (#/#):BoolButton|text_name	lava_drop_fade ({*})	岩浆落差渐变 ({*})
+W:Window:your changes|n:lava_vein_freq (#/#):BoolButton|text_name	lava_vein_freq ({*})	岩浆矿脉频率 ({*})
+W:Window:your changes|n:layer_height (#/#):BoolButton|text_name	layer_height ({*})	层高 ({*})
+W:Window:your changes|n:ledge_band (#/#):BoolButton|text_name	ledge_band ({*})	岩架带宽 ({*})
+W:Window:your changes|n:ledge_depth (#/#):BoolButton|text_name	ledge_depth ({*})	岩架深度 ({*})
+W:Window:your changes|n:max_tread (#/#):BoolButton|text_name	max_tread ({*})	最大踏面 ({*})
+W:Window:your changes|n:min_outline_area (#/#):BoolButton|text_name	min_outline_area ({*})	最小轮廓面积 ({*})
+W:Window:your changes|n:mountains_on (#/#):BoolButton|text_name	mountains_on ({*})	山脉开启 ({*})
+W:Window:your changes|n:open_sea_width (#/#):BoolButton|text_name	open_sea_width ({*})	开阔海宽度 ({*})
+W:Window:your changes|n:open_sea_width_floating (#/#):BoolButton|text_name	open_sea_width_floating ({*})	浮空开阔海宽度 ({*})
+W:Window:your changes|n:ore_chance (#/#):BoolButton|text_name	ore_chance ({*})	矿石概率 ({*})
+W:Window:your changes|n:ore_max_height (#/#):BoolButton|text_name	ore_max_height ({*})	矿石最大高度 ({*})
+W:Window:your changes|n:ore_max_width (#/#):BoolButton|text_name	ore_max_width ({*})	矿石最大宽度 ({*})
+W:Window:your changes|n:outline_simplify (#/#):BoolButton|text_name	outline_simplify ({*})	轮廓简化 ({*})
+W:Window:your changes|n:overhang_from_layer (#/#):BoolButton|text_name	overhang_from_layer ({*})	悬垂起始层 ({*})
+W:Window:your changes|n:overhang_high (#/#):BoolButton|text_name	overhang_high ({*})	悬垂上限 ({*})
+W:Window:your changes|n:overhang_low (#/#):BoolButton|text_name	overhang_low ({*})	悬垂下限 ({*})
+W:Window:your changes|n:overhang_reach (#/#):BoolButton|text_name	overhang_reach ({*})	悬垂范围 ({*})
+W:Window:your changes|n:overhang_top_layer (#/#):BoolButton|text_name	overhang_top_layer ({*})	悬垂顶层 ({*})
+W:Window:your changes|n:pillar_chance (#/#):BoolButton|text_name	pillar_chance ({*})	石柱概率 ({*})
+W:Window:your changes|n:pillar_grid (#/#):BoolButton|text_name	pillar_grid ({*})	石柱网格 ({*})
+W:Window:your changes|n:pillar_lean (#/#):BoolButton|text_name	pillar_lean ({*})	石柱倾斜 ({*})
+W:Window:your changes|n:pillar_min_cave (#/#):BoolButton|text_name	pillar_min_cave ({*})	石柱最小洞穴 ({*})
+W:Window:your changes|n:pillar_radius (#/#):BoolButton|text_name	pillar_radius ({*})	石柱半径 ({*})
+W:Window:your changes|n:pillar_turn (#/#):BoolButton|text_name	pillar_turn ({*})	石柱转向 ({*})
+W:Window:your changes|n:pillar_waist_max (#/#):BoolButton|text_name	pillar_waist_max ({*})	石柱腰部最大 ({*})
+W:Window:your changes|n:pillar_waist_min (#/#):BoolButton|text_name	pillar_waist_min ({*})	石柱腰部最小 ({*})
+W:Window:your changes|n:range_from (#/#):BoolButton|text_name	range_from ({*})	山脉范围起点 ({*})
+W:Window:your changes|n:ravine_crack (#/#):BoolButton|text_name	ravine_crack ({*})	峡谷裂缝 ({*})
+W:Window:your changes|n:ravine_erode (#/#):BoolButton|text_name	ravine_erode ({*})	峡谷侵蚀 ({*})
+W:Window:your changes|n:ravine_erode_fine (#/#):BoolButton|text_name	ravine_erode_fine ({*})	峡谷细侵蚀 ({*})
+W:Window:your changes|n:ravine_flare (#/#):BoolButton|text_name	ravine_flare ({*})	峡谷扩张 ({*})
+W:Window:your changes|n:ravine_freq (#/#):BoolButton|text_name	ravine_freq ({*})	峡谷频率 ({*})
+W:Window:your changes|n:ravine_jag (#/#):BoolButton|text_name	ravine_jag ({*})	峡谷锯齿 ({*})
+W:Window:your changes|n:ravine_jag_freq (#/#):BoolButton|text_name	ravine_jag_freq ({*})	峡谷锯齿频率 ({*})
+W:Window:your changes|n:ravine_margin (#/#):BoolButton|text_name	ravine_margin ({*})	峡谷边缘 ({*})
+W:Window:your changes|n:ravine_max_height (#/#):BoolButton|text_name	ravine_max_height ({*})	峡谷最大高度 ({*})
+W:Window:your changes|n:ravine_min_roof (#/#):BoolButton|text_name	ravine_min_roof ({*})	峡谷最小顶厚 ({*})
+W:Window:your changes|n:ravine_open_gap (#/#):BoolButton|text_name	ravine_open_gap ({*})	峡谷开口 ({*})
+W:Window:your changes|n:ravine_rarity (#/#):BoolButton|text_name	ravine_rarity ({*})	峡谷稀有度 ({*})
+W:Window:your changes|n:ravine_tip (#/#):BoolButton|text_name	ravine_tip ({*})	峡谷尖端 ({*})
+W:Window:your changes|n:ravine_warp (#/#):BoolButton|text_name	ravine_warp ({*})	峡谷扭曲 ({*})
+W:Window:your changes|n:ravine_width_floor (#/#):BoolButton|text_name	ravine_width_floor ({*})	峡谷底部宽度 ({*})
+W:Window:your changes|n:ravine_width_top (#/#):BoolButton|text_name	ravine_width_top ({*})	峡谷顶部宽度 ({*})
+W:Window:your changes|n:ravine_wind (#/#):BoolButton|text_name	ravine_wind ({*})	峡谷蜿蜒 ({*})
+W:Window:your changes|n:ravines_on (#/#):BoolButton|text_name	ravines_on ({*})	峡谷开启 ({*})
+W:Window:your changes|n:rim_floor_default (#/#):BoolButton|text_name	rim_floor_default ({*})	默认边缘地板 ({*})
+W:Window:your changes|n:rim_max_layers (#/#):BoolButton|text_name	rim_max_layers ({*})	边缘最大层数 ({*})
+W:Window:your changes|n:rim_width (#/#):BoolButton|text_name	rim_width ({*})	边缘宽度 ({*})
+W:Window:your changes|n:rock_jag (#/#):BoolButton|text_name	rock_jag ({*})	岩石锯齿 ({*})
+W:Window:your changes|n:rock_rough (#/#):BoolButton|text_name	rock_rough ({*})	岩石粗糙度 ({*})
+W:Window:your changes|n:rock_rough_freq_y (#/#):BoolButton|text_name	rock_rough_freq_y ({*})	Y 轴岩石粗糙频率 ({*})
+W:Window:your changes|n:room_chance (#/#):BoolButton|text_name	room_chance ({*})	房间概率 ({*})
+W:Window:your changes|n:room_fade (#/#):BoolButton|text_name	room_fade ({*})	房间淡出 ({*})
+W:Window:your changes|n:room_grid (#/#):BoolButton|text_name	room_grid ({*})	房间网格 ({*})
+W:Window:your changes|n:room_h_max (#/#):BoolButton|text_name	room_h_max ({*})	房间最大高度 ({*})
+W:Window:your changes|n:room_h_min (#/#):BoolButton|text_name	room_h_min ({*})	房间最小高度 ({*})
+W:Window:your changes|n:room_r_max (#/#):BoolButton|text_name	room_r_max ({*})	房间最大半径 ({*})
+W:Window:your changes|n:room_r_min (#/#):BoolButton|text_name	room_r_min ({*})	房间最小半径 ({*})
+W:Window:your changes|n:rough_from_slope (#/#):BoolButton|text_name	rough_from_slope ({*})	坡度粗糙度 ({*})
+W:Window:your changes|n:sand_depth (#/#):BoolButton|text_name	sand_depth ({*})	沙层深度 ({*})
+W:Window:your changes|n:sea_height (#/#):BoolButton|text_name	sea_height ({*})	海平面高度 ({*})
+W:Window:your changes|n:sea_region_freq (#/#):BoolButton|text_name	sea_region_freq ({*})	海洋区域频率 ({*})
+W:Window:your changes|n:sea_slice_corners (#/#):BoolButton|text_name	sea_slice_corners ({*})	海洋切片角数 ({*})
+W:Window:your changes|n:sea_slices (#/#):BoolButton|text_name	sea_slices ({*})	海洋切片数 ({*})
+W:Window:your changes|n:seabed_dip (#/#):BoolButton|text_name	seabed_dip ({*})	海床下沉 ({*})
+W:Window:your changes|n:seabed_slow (#/#):BoolButton|text_name	seabed_slow ({*})	海床缓坡 ({*})
+W:Window:your changes|n:shelf_count (#/#):BoolButton|text_name	shelf_count ({*})	陆架数量 ({*})
+W:Window:your changes|n:shelf_edge (#/#):BoolButton|text_name	shelf_edge ({*})	陆架边缘 ({*})
+W:Window:your changes|n:shelf_freq (#/#):BoolButton|text_name	shelf_freq ({*})	陆架频率 ({*})
+W:Window:your changes|n:shelf_shore (#/#):BoolButton|text_name	shelf_shore ({*})	陆架海岸 ({*})
+W:Window:your changes|n:shelf_step (#/#):BoolButton|text_name	shelf_step ({*})	陆架间距 ({*})
+W:Window:your changes|n:snap_steep (#/#):BoolButton|text_name	snap_steep ({*})	陡坡吸附 ({*})
+W:Window:your changes|n:soil_slope (#/#):BoolButton|text_name	soil_slope ({*})	土壤坡度 ({*})
+W:Window:your changes|n:squat_strength (#/#):BoolButton|text_name	squat_strength ({*})	压缩强度 ({*})
+W:Window:your changes|n:tallest_block (#/#):BoolButton|text_name	tallest_block ({*})	最高方块 ({*})
+W:Window:your changes|n:terrain_freq_y (#/#):BoolButton|text_name	terrain_freq_y ({*})	Y 轴地形频率 ({*})
+W:Window:your changes|n:terrain_wide (#/#):BoolButton|text_name	terrain_wide ({*})	地形宽度 ({*})
+W:Window:your changes|n:wall_lean_max (#/#):BoolButton|text_name	wall_lean_max ({*})	壁面倾斜最大 ({*})
+W:Window:your changes|n:wall_lean_min (#/#):BoolButton|text_name	wall_lean_min ({*})	壁面倾斜最小 ({*})
+TIP:0.25f;  // columns a corner may stray off a line and still be dropped; more = blockier outlines	0.25f;  // columns a corner may stray off a line\nand still be dropped; more = blockier outlines	角点可偏离直线且仍被丢弃的列数；越大，轮廓越块状
+TIP:blocks each band steps back; more = deeper ledges	blocks each band steps back; more = deeper\nledges	每条岩带后退的方块数；越大，岩架越深
+TIP:blocks each shelf lifts the ground over the one under it	blocks each shelf lifts the ground over the one\nunder it	每层陆架相对下层抬升的方块数
+TIP:blocks of rock kept over a hall; more = chunkier ground	blocks of rock kept over a hall; more = chunkier\nground	大厅上方保留的岩石方块数；越大，地面越厚
+TIP:blocks of rock kept over a ravine's roofed parts	blocks of rock kept over a ravine's roofed parts	峡谷有顶部分上方保留的岩石方块数
+TIP:blocks over which the land sinks to the sea floor at the world's edge	blocks over which the land sinks to the sea\nfloor at the world's edge	世界边缘陆地下沉到海床所经过的方块数
+TIP:blocks per layer walls lean out; under 0 slopes, over 0 hangs	blocks per layer walls lean out; under 0 slopes,\nover 0 hangs	每层墙壁外倾的方块数；小于 0 倾斜，大于 0 悬垂
+TIP:cave floors near the lava rise up to this, so pools sit down a cliff ...fading out this far over the lava	cave floors near the lava rise up to this, so\npools sit down a cliff ...fading out this far\nover the lava	岩浆附近的洞底抬升到此高度，因此水池位于悬崖下方...在岩浆上方这么远内逐渐淡出
+TIP:column-scale chipping, the shattered look	column-scale chipping, the shattered look	柱状尺度的剥落，形成破碎外观
+TIP:columns per square; more = pillars further apart	columns per square; more = pillars further apart	每格列数；越大，石柱间距越大
+TIP:columns per square; more = rooms further apart	columns per square; more = rooms further apart	每格列数；越大，房间间距越大
+TIP:lattice layer flats sit at, a couple of blocks over the sea	lattice layer flats sit at, a couple of blocks\nover the sea	平台所在的格架层，位于海面上方几格
+TIP:lattice layers per ledge band	lattice layers per ledge band	每条岩架带的格架层数
+TIP:lattice layers; more = taller mountains	lattice layers; more = taller mountains	格架层数；越大，山脉越高
+TIP:layers overhangs may reach over the ground under them; more = bigger floating bits	layers overhangs may reach over the ground under\nthem; more = bigger floating bits	悬垂可伸到下方地面的层数；越大，悬浮部分越大
+TIP:more = flares out wider lower down	more = flares out wider lower down	越大，越往下扩张得越宽
+TIP:more = flatter, sharper floors and roofs	more = flatter, sharper floors and roofs	越大，底部和顶部越平、越锐利
+TIP:more = gentler shelf edges, less = cliffs	more = gentler shelf edges, less = cliffs	越大，陆架边缘越平缓；越小 = 悬崖
+TIP:more = shelves and mountains reach further sideways for their height	more = shelves and mountains reach further\nsideways for their height	越大，陆架和山脉相对高度向侧面延伸得越远
+TIP:more = wavier cell edges	more = wavier cell edges	越大，单元边缘越起伏
+TIP:no strata below this slope, full strata 80% of the way on to vertical	no strata below this slope, full strata 80% of\nthe way on to vertical	低于此坡度没有岩层；坡度到垂直的 80% 处为完整岩层
+TIP:overhang_low up to this layer, ramping to overhang_high...	overhang_low up to this layer, ramping to\noverhang_high...	悬垂下限直到这一层，再渐变到悬垂上限...
+TIP:world units per layer	world units per layer	每层世界单位
+TIP:world y of the sea's surface	world y of the sea's surface	海面的世界 Y 坐标
+TIP:0..1 chance a square has a room	0..1 chance a square has a room	每格出现房间的概率（0..1）
+TIP:0..1 layers a group's surface may be lifted to be one slab; more = wider surface slabs on gentle ground, 0 = off	0..1 layers a group's surface may be lifted to\nbe one slab; more = wider surface slabs on\ngentle ground, 0 = off	每组地表可抬升成一块形块的层数（0..1）；越大，平缓地面的表面形块越宽，0 = 关闭
+TIP:0..1 share of the height a noise may take off	0..1 share of the height a noise may take off	噪声可削减的高度比例（0..1）
+TIP:0..1, more = more irregular cell shapes	0..1, more = more irregular cell shapes	0..1；越大，单元形状越不规则
+TIP:0.75f        // 0..1 steepness above which faces snap to the grid, stacking into one wall; less = more snapped	0.75f        // 0..1 steepness above which faces\nsnap to the grid, stacking into one wall; less =\nmore snapped	0..1 坡度阈值；超过后表面吸附到网格并堆成墙；越小，吸附越多
+TIP:0.75f;  // outlines smaller than this (columns²) are dropped	0.75f;  // outlines smaller than this (columns²)\nare dropped	小于此面积（列²）的轮廓会被丢弃
+TIP:1 = off; more = squatter	1 = off; more = squatter	1 = 关闭；越大越矮胖
+TIP:beta height of the sea floor past the rim; less = deeper	beta height of the sea floor past the rim; less\n= deeper	边缘外海床的基准高度；越小越深
+TIP:blocks deep; more = deeper grooves and notches	blocks deep; more = deeper grooves and notches	以方块计的深度；越大，沟槽和凹口越深
+TIP:blocks; a chain is never thinner than twice this; more = also wider mountain feet, softer chain and range edges	blocks; a chain is never thinner than twice\nthis; more = also wider mountain feet, softer\nchain and range edges	方块；山脉链厚度不低于此值的两倍；越大，山脚越宽，山脉链与范围边缘越柔和
+TIP:blocks; more = chains kink and bunch more	blocks; more = chains kink and bunch more	方块；越大，山脉链越容易扭结和聚集
+TIP:blocks; more = softer mountain change across biome borders (mountain intensity)	blocks; more = softer mountain change across\nbiome borders (Mountain Intensity)	方块；越大，跨生物群系的山脉变化越柔和（山脉强度）
+TIP:cave floors near the lava rise up to this, so pools sit down a cliff	cave floors near the lava rise up to this, so\npools sit down a cliff	岩浆附近的洞底抬升到此高度，因此水池位于悬崖下方
+TIP:columns a slope may move inside one slab; more = fewer, taller slabs with wider steps.	columns a slope may move inside one slab; more =\nfewer, taller slabs with wider steps.	坡度在一块形块内可移动的列数；越大，形块越少、越高、台阶越宽
+TIP:columns of open sea past the land	columns of open sea past the land	陆地外开阔海的列数
+TIP:columns of open sea past the land ...on floating worlds, where it's only void	columns of open sea past the land ...on floating\nworlds, where it's only void	陆地外开阔海的列数...在浮空世界中，这里只是虚空
+TIP:columns out from the opening at the top	columns out from the opening at the top	从顶部开口向外的列数
+TIP:columns per layer	columns per layer	每层列数
+TIP:columns, at floor and roof	columns, at floor and roof	列数，位于底部和顶部
+TIP:extra on ravine walls	extra on ravine walls	峡谷墙壁上的额外量
+TIP:height	height	高度
+TIP:how far caves reach from ravines; more = more caves	how far caves reach from ravines; more = more\ncaves	洞穴从峡谷延伸多远；越大，洞穴越多
+TIP:land_lift in regions	land_lift in REGIONS	区域中的陆地抬升
+TIP:layers of rock kept over a cave's roof	layers of rock kept over a cave's roof	洞顶上方保留的岩层数
+TIP:mid-size bites taken out of and added to the rim	mid-size bites taken out of and added to the rim	从边缘移除和添加的中等缺口
+TIP:more = a mountain flips more often on the way up: shelves, gaps, arches	more = a mountain flips more often on the way\nup: shelves, gaps, arches	越大，山体在上升途中翻转越频繁：岩架、缺口、拱门
+TIP:more = bigger cells, fewer slabs	more = bigger cells, fewer slabs	越大，单元越大，形块越少
+TIP:more = chains closer together (~150 blocks apart), kinking, changing lean and height faster, smaller ranges	more = chains closer together (~150 blocks\napart), kinking, changing lean and height\nfaster, smaller ranges	越大，山脉链越接近（约 150 格），扭结、倾斜和高度变化更快，范围更小
+TIP:more = fewer flats	more = fewer flats	越大，平台越少
+TIP:more = fewer ranges (0.6 = about a quarter of the land)	more = fewer ranges (0.6 = about a quarter of\nthe land)	越大，山脉范围越少（0.6 = 约四分之一陆地）
+TIP:more = fewer ravines	more = fewer ravines	越大，峡谷越少
+TIP:more = finer ravine push; the fine jag is 4 times this	more = finer ravine push; the fine jag is 4\ntimes this	越大，峡谷推力越细；细锯齿是其 4 倍
+TIP:more = finer, more frequent veins	more = finer, more frequent veins	越大，矿脉越细、越频繁
+TIP:more = lean direction changes faster	more = lean direction changes faster	越大，倾斜方向变化越快
+TIP:more = more shelves, overhangs and bulges up a wall	more = more shelves, overhangs and bulges up a\nwall	越大，墙面上出现更多岩架、悬垂和凸起
+TIP:more = smaller ravines, closer together	more = smaller ravines, closer together	越大，峡谷越小、间距越近
+TIP:more = smaller shelves (~650 blocks across)	more = smaller shelves (~650 blocks across)	越大，陆架越小（约 650 格宽）
+TIP:more = smaller spatters	more = smaller spatters	越大，喷溅越小
+TIP:more = smaller, more broken-up cave lobes	more = smaller, more broken-up cave lobes	越大，洞穴分支越小、越破碎
+TIP:more = soil on steeper slopes (4 ≈ 60°), the rest is rock	more = soil on steeper slopes (4 ≈ 60°), the\nrest is rock	越大，更陡坡面上有土壤（4 ≈ 60°），其余为岩石
+TIP:more = tall mountains or low hills, little between	more = tall mountains or low hills, little\nbetween	越大，高山或低丘越极端，中间形态越少
+TIP:more = taller caves	more = taller caves	越大，洞穴越高
+TIP:more = taller slabs on the surface where the slope is steady	more = taller slabs on the surface where the\nslope is steady	越大，坡度稳定处表面形块越高
+TIP:more = thicker overhangs high up	more = thicker overhangs high up	越大，高处悬垂越厚
+TIP:more = thicker overhangs high up ...and at sea level	more = thicker overhangs high up ...and at sea\nlevel	越大，高处悬垂越厚...以及海平面处
+TIP:more = tighter waves on cell edges	more = tighter waves on cell edges	越大，单元边缘的波纹越紧密
+TIP:more = twistier outlines (~40 columns at 24)	more = twistier outlines (~40 columns at 24)	越大，轮廓越扭曲（24 时约 40 列）
+TIP:more = winds more	more = winds more	越大，蜿蜒越多
+TIP:narrow fissures running off the opening	narrow fissures running off the opening	从开口延伸出的狭窄裂缝
+TIP:no ore this far over the sea and up	no ore this far over the sea and up	海面上方这么远、这么高处没有矿石
+TIP:no ravines on ground higher than this over the sea	no ravines on ground higher than this over the\nsea	高于海面这么多的地面不会生成峡谷
+TIP:open sea past the shore: a pie of slices round the land (freepie)	open sea past the shore: a pie of slices round\nthe land (FreePie)	海岸外的开阔海：围绕陆地的一圈切片（FreePie）
+TIP:open_sea_width in sea	open_sea_width in SEA	海洋中的开阔海宽度
+TIP:overhang_low in overhangs	overhang_low in OVERHANGS	悬垂中的悬垂下限
+TIP:radius in columns	radius in columns	半径（列）
+TIP:rim_floor_default in sea	rim_floor_default in SEA	海洋中的默认边缘地板
+TIP:steps the ground climbs, evenly over the shelf noise	steps the ground climbs, evenly over the shelf\nnoise	地面在陆架噪声上均匀爬升的步数
+TIP:terrain_freq_y in overhangs	terrain_freq_y in OVERHANGS	悬垂中的 Y 轴地形频率
+TIP:terrain_wide in overhangs	terrain_wide in OVERHANGS	悬垂中的地形宽度
+TIP:waist width range; under 0 they don't meet	waist width range; under 0 they don't meet	腰部宽度范围；小于 0 时不会相接
+TIP:world units per column; more = everything bigger and coarser	world units per column; more = everything bigger\nand coarser	每列世界单位；越大，一切越大越粗糙
+TIP:0..1 chance a square has a pillar	0..1 chance a square has a pillar	每格出现石柱的概率（0..1）
+TIP:0..1 of the rock round rooms at the lava that's ore	0..1 of the rock round rooms at the lava that's\nore	岩浆周围圆形房间中矿石岩石的比例（0..1）
+TIP:0.5f;              // columns; more = more jagged rock	0.5f;              // columns; more = more\njagged rock	列数；越大，岩石越参差
+TIP:1f;                // cave walls, at any slope	1f;                // cave walls, at any slope	洞穴壁，适用于任意坡度
+TIP:blocks taken off every cave's roof; more = lower caves	blocks taken off every cave's roof; more = lower\ncaves	每个洞顶被削去的方块数；越大，洞穴越低
+TIP:columns a room reaches past the wall	columns a room reaches past the wall	房间越过墙壁的列数
+TIP:columns out from the opening at the top ...and at the floor	columns out from the opening at the top ...and\nat the floor	从顶部开口向外的列数...以及底部的列数
+TIP:columns searched round a chunk for ravines; must reach past walls and rooms	columns searched round a chunk for ravines; must\nreach past walls and rooms	围绕区块搜索峡谷的列数；必须越过墙壁和房间
+TIP:columns; only slabs this narrow, so veins stay thin	columns; only slabs this narrow, so veins stay\nthin	列数；只保留这么窄的形块，因此矿脉很细
+TIP:hill size on the chains	hill size on the chains	山脉链上的丘陵大小
+TIP:layers a bare rock top sits below the soil round it	layers a bare rock top sits below the soil round\nit	裸岩顶部低于周围土壤的层数
+TIP:mask level of a ravine's rim; more = smaller openings	mask level of a ravine's rim; more = smaller\nopenings	峡谷边缘的遮罩层级；越大，开口越小
+TIP:more = bigger halls	more = bigger halls	越大，大厅越大
+TIP:more = deeper lava veins	more = deeper lava veins	越大，岩浆矿脉越深
+TIP:more = halls reach further from the ravine	more = halls reach further from the ravine	越大，大厅从峡谷延伸得越远
+TIP:more = less of the floor dug	more = less of the floor dug	越大，底部被挖掉的越少
+TIP:more = more of a mountain's height overhangs instead of standing as a wall	more = more of a mountain's height overhangs\ninstead of standing as a wall	越大，山体更多高度以悬垂形式存在，而不是直立成墙
+TIP:more = smaller flat areas (~170 blocks across)	more = smaller flat areas (~170 blocks across)	越大，平坦区域越小（约 170 格宽）
+TIP:more = taller solid slabs inside mountains	more = taller solid slabs inside mountains	越大，山体内部实心形块越高
+TIP:more = thinner strata, shorter grooves, notches closer	more = thinner strata, shorter grooves, notches\ncloser	越大，岩层越薄，沟槽越短，凹口越近
+TIP:more = wider merged slabs	more = wider merged slabs	越大，合并后的形块越宽
+TIP:only in caves at least this tall	only in caves at least this tall	只出现在至少这么高的洞穴中
+TIP:over ravine_tip, the mask level where a ravine opens; more = fewer, narrower	over ravine_tip, the mask level where a ravine\nopens; more = fewer, narrower	超过 ravine_tip 后，峡谷开口的遮罩层级；越大，开口越少越窄
+TIP:overhang_low up to this layer, ramping to overhang_high... ...by this one	overhang_low up to this layer, ramping to\noverhang_high... ...by this one	悬垂下限直到这一层，再渐变到悬垂上限...到这一层为止
+TIP:shelves fade out where land sinks into lakes, so lakes cut in as fjords	shelves fade out where land sinks into lakes, so\nlakes cut in as fjords	陆地沉入湖泊处陆架淡出，因此湖泊像峡湾一样切入
+TIP:units of sand on ground under the sea	units of sand on ground under the sea	海面下地面上的沙层单位
+TIP:hill size off the mountain chains; less = plains, more = rolling hills	{*}	山脉链外的丘陵大小；越小 = 平原，越大 = 起伏丘陵
+TIP:lake beds sink at full rate down to this... ...then this many times slower; more = shallower lakes	{*}	湖床先以全速下沉到这里...之后慢这么多倍；越大，湖泊越浅
+TIP:more = all ground lower over its middle (1.25 = 20% lower)	{*}	越大，地面中部下沉越多（1.25 = 低 20%）
+TIP:more = more land, fewer and smaller lakes, chains lifted more off them; 2+ = no lakes	{*}	越大，陆地越多，湖泊越少越小，山脉链抬得更高；2 以上 = 没有湖泊
+W:Window:your changes|n:bare_rock_drop (#.#/#):BoolButton|text_name	bare_rock_drop ({*})	裸岩落差 ({*})
+W:Window:your changes|n:bare_rock_drop (#/#.#):BoolButton|text_name	bare_rock_drop ({*})	裸岩落差 ({*})
+W:Window:your changes|n:bare_rock_drop (#.#/#.#):BoolButton|text_name	bare_rock_drop ({*})	裸岩落差 ({*})
+W:Window:your changes|n:biome_blend (#.#/#):BoolButton|text_name	biome_blend ({*})	生物群系混合 ({*})
+W:Window:your changes|n:biome_blend (#/#.#):BoolButton|text_name	biome_blend ({*})	生物群系混合 ({*})
+W:Window:your changes|n:biome_blend (#.#/#.#):BoolButton|text_name	biome_blend ({*})	生物群系混合 ({*})
+W:Window:your changes|n:calm_hills (#.#/#):BoolButton|text_name	calm_hills ({*})	平缓丘陵 ({*})
+W:Window:your changes|n:calm_hills (#/#.#):BoolButton|text_name	calm_hills ({*})	平缓丘陵 ({*})
+W:Window:your changes|n:calm_hills (#.#/#.#):BoolButton|text_name	calm_hills ({*})	平缓丘陵 ({*})
+W:Window:your changes|n:cave_edge_sharp (#.#/#):BoolButton|text_name	cave_edge_sharp ({*})	洞穴边缘锐度 ({*})
+W:Window:your changes|n:cave_edge_sharp (#/#.#):BoolButton|text_name	cave_edge_sharp ({*})	洞穴边缘锐度 ({*})
+W:Window:your changes|n:cave_edge_sharp (#.#/#.#):BoolButton|text_name	cave_edge_sharp ({*})	洞穴边缘锐度 ({*})
+W:Window:your changes|n:cave_height_mul (#.#/#):BoolButton|text_name	cave_height_mul ({*})	洞穴高度倍率 ({*})
+W:Window:your changes|n:cave_height_mul (#/#.#):BoolButton|text_name	cave_height_mul ({*})	洞穴高度倍率 ({*})
+W:Window:your changes|n:cave_height_mul (#.#/#.#):BoolButton|text_name	cave_height_mul ({*})	洞穴高度倍率 ({*})
+W:Window:your changes|n:cave_jag (#.#/#):BoolButton|text_name	cave_jag ({*})	洞穴锯齿 ({*})
+W:Window:your changes|n:cave_jag (#/#.#):BoolButton|text_name	cave_jag ({*})	洞穴锯齿 ({*})
+W:Window:your changes|n:cave_jag (#.#/#.#):BoolButton|text_name	cave_jag ({*})	洞穴锯齿 ({*})
+W:Window:your changes|n:cave_lobe_freq (#.#/#):BoolButton|text_name	cave_lobe_freq ({*})	洞穴分支频率 ({*})
+W:Window:your changes|n:cave_lobe_freq (#/#.#):BoolButton|text_name	cave_lobe_freq ({*})	洞穴分支频率 ({*})
+W:Window:your changes|n:cave_lobe_freq (#.#/#.#):BoolButton|text_name	cave_lobe_freq ({*})	洞穴分支频率 ({*})
+W:Window:your changes|n:cave_min_roof (#.#/#):BoolButton|text_name	cave_min_roof ({*})	最小洞顶厚度 ({*})
+W:Window:your changes|n:cave_min_roof (#/#.#):BoolButton|text_name	cave_min_roof ({*})	最小洞顶厚度 ({*})
+W:Window:your changes|n:cave_min_roof (#.#/#.#):BoolButton|text_name	cave_min_roof ({*})	最小洞顶厚度 ({*})
+W:Window:your changes|n:cave_roof_drop (#.#/#):BoolButton|text_name	cave_roof_drop ({*})	洞顶落差 ({*})
+W:Window:your changes|n:cave_roof_drop (#/#.#):BoolButton|text_name	cave_roof_drop ({*})	洞顶落差 ({*})
+W:Window:your changes|n:cave_roof_drop (#.#/#.#):BoolButton|text_name	cave_roof_drop ({*})	洞顶落差 ({*})
+W:Window:your changes|n:cave_spread (#.#/#):BoolButton|text_name	cave_spread ({*})	洞穴扩散 ({*})
+W:Window:your changes|n:cave_spread (#/#.#):BoolButton|text_name	cave_spread ({*})	洞穴扩散 ({*})
+W:Window:your changes|n:cave_spread (#.#/#.#):BoolButton|text_name	cave_spread ({*})	洞穴扩散 ({*})
+W:Window:your changes|n:caves_on (#.#/#):BoolButton|text_name	caves_on ({*})	洞穴开启 ({*})
+W:Window:your changes|n:caves_on (#/#.#):BoolButton|text_name	caves_on ({*})	洞穴开启 ({*})
+W:Window:your changes|n:caves_on (#.#/#.#):BoolButton|text_name	caves_on ({*})	洞穴开启 ({*})
+W:Window:your changes|n:cell_size (#.#/#):BoolButton|text_name	cell_size ({*})	单元尺寸 ({*})
+W:Window:your changes|n:cell_size (#/#.#):BoolButton|text_name	cell_size ({*})	单元尺寸 ({*})
+W:Window:your changes|n:cell_size (#.#/#.#):BoolButton|text_name	cell_size ({*})	单元尺寸 ({*})
+W:Window:your changes|n:cell_uneven (#.#/#):BoolButton|text_name	cell_uneven ({*})	单元不均匀度 ({*})
+W:Window:your changes|n:cell_uneven (#/#.#):BoolButton|text_name	cell_uneven ({*})	单元不均匀度 ({*})
+W:Window:your changes|n:cell_uneven (#.#/#.#):BoolButton|text_name	cell_uneven ({*})	单元不均匀度 ({*})
+W:Window:your changes|n:cell_warp (#.#/#):BoolButton|text_name	cell_warp ({*})	单元扭曲 ({*})
+W:Window:your changes|n:cell_warp (#/#.#):BoolButton|text_name	cell_warp ({*})	单元扭曲 ({*})
+W:Window:your changes|n:cell_warp (#.#/#.#):BoolButton|text_name	cell_warp ({*})	单元扭曲 ({*})
+W:Window:your changes|n:cell_warp_freq (#.#/#):BoolButton|text_name	cell_warp_freq ({*})	单元扭曲频率 ({*})
+W:Window:your changes|n:cell_warp_freq (#/#.#):BoolButton|text_name	cell_warp_freq ({*})	单元扭曲频率 ({*})
+W:Window:your changes|n:cell_warp_freq (#.#/#.#):BoolButton|text_name	cell_warp_freq ({*})	单元扭曲频率 ({*})
+W:Window:your changes|n:cells_per_group (#.#/#):BoolButton|text_name	cells_per_group ({*})	每组单元数 ({*})
+W:Window:your changes|n:cells_per_group (#/#.#):BoolButton|text_name	cells_per_group ({*})	每组单元数 ({*})
+W:Window:your changes|n:cells_per_group (#.#/#.#):BoolButton|text_name	cells_per_group ({*})	每组单元数 ({*})
+W:Window:your changes|n:chain_flip_zone (#.#/#):BoolButton|text_name	chain_flip_zone ({*})	连锁翻转区 ({*})
+W:Window:your changes|n:chain_flip_zone (#/#.#):BoolButton|text_name	chain_flip_zone ({*})	连锁翻转区 ({*})
+W:Window:your changes|n:chain_flip_zone (#.#/#.#):BoolButton|text_name	chain_flip_zone ({*})	连锁翻转区 ({*})
+W:Window:your changes|n:chain_freq (#.#/#):BoolButton|text_name	chain_freq ({*})	山脉链频率 ({*})
+W:Window:your changes|n:chain_freq (#/#.#):BoolButton|text_name	chain_freq ({*})	山脉链频率 ({*})
+W:Window:your changes|n:chain_freq (#.#/#.#):BoolButton|text_name	chain_freq ({*})	山脉链频率 ({*})
+W:Window:your changes|n:chain_half_width (#.#/#):BoolButton|text_name	chain_half_width ({*})	山脉链半宽 ({*})
+W:Window:your changes|n:chain_half_width (#/#.#):BoolButton|text_name	chain_half_width ({*})	山脉链半宽 ({*})
+W:Window:your changes|n:chain_half_width (#.#/#.#):BoolButton|text_name	chain_half_width ({*})	山脉链半宽 ({*})
+W:Window:your changes|n:chain_height (#.#/#):BoolButton|text_name	chain_height ({*})	山脉链高度 ({*})
+W:Window:your changes|n:chain_height (#/#.#):BoolButton|text_name	chain_height ({*})	山脉链高度 ({*})
+W:Window:your changes|n:chain_height (#.#/#.#):BoolButton|text_name	chain_height ({*})	山脉链高度 ({*})
+W:Window:your changes|n:chain_height_contrast (#.#/#):BoolButton|text_name	chain_height_contrast ({*})	山脉链高度对比 ({*})
+W:Window:your changes|n:chain_height_contrast (#/#.#):BoolButton|text_name	chain_height_contrast ({*})	山脉链高度对比 ({*})
+W:Window:your changes|n:chain_height_contrast (#.#/#.#):BoolButton|text_name	chain_height_contrast ({*})	山脉链高度对比 ({*})
+W:Window:your changes|n:chain_height_vary (#.#/#):BoolButton|text_name	chain_height_vary ({*})	山脉链高度变化 ({*})
+W:Window:your changes|n:chain_height_vary (#/#.#):BoolButton|text_name	chain_height_vary ({*})	山脉链高度变化 ({*})
+W:Window:your changes|n:chain_height_vary (#.#/#.#):BoolButton|text_name	chain_height_vary ({*})	山脉链高度变化 ({*})
+W:Window:your changes|n:chain_hills (#.#/#):BoolButton|text_name	chain_hills ({*})	山脉链丘陵 ({*})
+W:Window:your changes|n:chain_hills (#/#.#):BoolButton|text_name	chain_hills ({*})	山脉链丘陵 ({*})
+W:Window:your changes|n:chain_hills (#.#/#.#):BoolButton|text_name	chain_hills ({*})	山脉链丘陵 ({*})
+W:Window:your changes|n:chain_warp (#.#/#):BoolButton|text_name	chain_warp ({*})	山脉链扭曲 ({*})
+W:Window:your changes|n:chain_warp (#/#.#):BoolButton|text_name	chain_warp ({*})	山脉链扭曲 ({*})
+W:Window:your changes|n:chain_warp (#.#/#.#):BoolButton|text_name	chain_warp ({*})	山脉链扭曲 ({*})
+W:Window:your changes|n:climate_freq (#.#/#):BoolButton|text_name	climate_freq ({*})	气候频率 ({*})
+W:Window:your changes|n:climate_freq (#/#.#):BoolButton|text_name	climate_freq ({*})	气候频率 ({*})
+W:Window:your changes|n:climate_freq (#.#/#.#):BoolButton|text_name	climate_freq ({*})	气候频率 ({*})
+W:Window:your changes|n:column_width (#.#/#):BoolButton|text_name	column_width ({*})	列宽 ({*})
+W:Window:your changes|n:column_width (#/#.#):BoolButton|text_name	column_width ({*})	列宽 ({*})
+W:Window:your changes|n:column_width (#.#/#.#):BoolButton|text_name	column_width ({*})	列宽 ({*})
+W:Window:your changes|n:flat_snap (#.#/#):BoolButton|text_name	flat_snap ({*})	平面吸附 ({*})
+W:Window:your changes|n:flat_snap (#/#.#):BoolButton|text_name	flat_snap ({*})	平面吸附 ({*})
+W:Window:your changes|n:flat_snap (#.#/#.#):BoolButton|text_name	flat_snap ({*})	平面吸附 ({*})
+W:Window:your changes|n:flats_freq (#.#/#):BoolButton|text_name	flats_freq ({*})	平台频率 ({*})
+W:Window:your changes|n:flats_freq (#/#.#):BoolButton|text_name	flats_freq ({*})	平台频率 ({*})
+W:Window:your changes|n:flats_freq (#.#/#.#):BoolButton|text_name	flats_freq ({*})	平台频率 ({*})
+W:Window:your changes|n:flats_from (#.#/#):BoolButton|text_name	flats_from ({*})	平台起始 ({*})
+W:Window:your changes|n:flats_from (#/#.#):BoolButton|text_name	flats_from ({*})	平台起始 ({*})
+W:Window:your changes|n:flats_from (#.#/#.#):BoolButton|text_name	flats_from ({*})	平台起始 ({*})
+W:Window:your changes|n:flats_height (#.#/#):BoolButton|text_name	flats_height ({*})	平台高度 ({*})
+W:Window:your changes|n:flats_height (#/#.#):BoolButton|text_name	flats_height ({*})	平台高度 ({*})
+W:Window:your changes|n:flats_height (#.#/#.#):BoolButton|text_name	flats_height ({*})	平台高度 ({*})
+W:Window:your changes|n:flip_freq_y (#.#/#):BoolButton|text_name	flip_freq_y ({*})	Y 轴翻转频率 ({*})
+W:Window:your changes|n:flip_freq_y (#/#.#):BoolButton|text_name	flip_freq_y ({*})	Y 轴翻转频率 ({*})
+W:Window:your changes|n:flip_freq_y (#.#/#.#):BoolButton|text_name	flip_freq_y ({*})	Y 轴翻转频率 ({*})
+W:Window:your changes|n:ground_squash (#.#/#):BoolButton|text_name	ground_squash ({*})	地面压扁 ({*})
+W:Window:your changes|n:ground_squash (#/#.#):BoolButton|text_name	ground_squash ({*})	地面压扁 ({*})
+W:Window:your changes|n:ground_squash (#.#/#.#):BoolButton|text_name	ground_squash ({*})	地面压扁 ({*})
+W:Window:your changes|n:groups_per_big (#.#/#):BoolButton|text_name	groups_per_big ({*})	大组分组数 ({*})
+W:Window:your changes|n:groups_per_big (#/#.#):BoolButton|text_name	groups_per_big ({*})	大组分组数 ({*})
+W:Window:your changes|n:groups_per_big (#.#/#.#):BoolButton|text_name	groups_per_big ({*})	大组分组数 ({*})
+W:Window:your changes|n:hall_min_roof (#.#/#):BoolButton|text_name	hall_min_roof ({*})	大厅最小顶厚 ({*})
+W:Window:your changes|n:hall_min_roof (#/#.#):BoolButton|text_name	hall_min_roof ({*})	大厅最小顶厚 ({*})
+W:Window:your changes|n:hall_min_roof (#.#/#.#):BoolButton|text_name	hall_min_roof ({*})	大厅最小顶厚 ({*})
+W:Window:your changes|n:hall_spread (#.#/#):BoolButton|text_name	hall_spread ({*})	大厅扩散 ({*})
+W:Window:your changes|n:hall_spread (#/#.#):BoolButton|text_name	hall_spread ({*})	大厅扩散 ({*})
+W:Window:your changes|n:hall_spread (#.#/#.#):BoolButton|text_name	hall_spread ({*})	大厅扩散 ({*})
+W:Window:your changes|n:hall_strength (#.#/#):BoolButton|text_name	hall_strength ({*})	大厅强度 ({*})
+W:Window:your changes|n:hall_strength (#/#.#):BoolButton|text_name	hall_strength ({*})	大厅强度 ({*})
+W:Window:your changes|n:hall_strength (#.#/#.#):BoolButton|text_name	hall_strength ({*})	大厅强度 ({*})
+W:Window:your changes|n:hills_region_freq (#.#/#):BoolButton|text_name	hills_region_freq ({*})	丘陵区域频率 ({*})
+W:Window:your changes|n:hills_region_freq (#/#.#):BoolButton|text_name	hills_region_freq ({*})	丘陵区域频率 ({*})
+W:Window:your changes|n:hills_region_freq (#.#/#.#):BoolButton|text_name	hills_region_freq ({*})	丘陵区域频率 ({*})
+W:Window:your changes|n:land_lift (#.#/#):BoolButton|text_name	land_lift ({*})	陆地抬升 ({*})
+W:Window:your changes|n:land_lift (#/#.#):BoolButton|text_name	land_lift ({*})	陆地抬升 ({*})
+W:Window:your changes|n:land_lift (#.#/#.#):BoolButton|text_name	land_lift ({*})	陆地抬升 ({*})
+W:Window:your changes|n:lava_blot_freq (#.#/#):BoolButton|text_name	lava_blot_freq ({*})	岩浆斑块频率 ({*})
+W:Window:your changes|n:lava_blot_freq (#/#.#):BoolButton|text_name	lava_blot_freq ({*})	岩浆斑块频率 ({*})
+W:Window:your changes|n:lava_blot_freq (#.#/#.#):BoolButton|text_name	lava_blot_freq ({*})	岩浆斑块频率 ({*})
+W:Window:your changes|n:lava_dig_cut (#.#/#):BoolButton|text_name	lava_dig_cut ({*})	岩浆切割 ({*})
+W:Window:your changes|n:lava_dig_cut (#/#.#):BoolButton|text_name	lava_dig_cut ({*})	岩浆切割 ({*})
+W:Window:your changes|n:lava_dig_cut (#.#/#.#):BoolButton|text_name	lava_dig_cut ({*})	岩浆切割 ({*})
+W:Window:your changes|n:lava_dig_depth (#.#/#):BoolButton|text_name	lava_dig_depth ({*})	岩浆挖掘深度 ({*})
+W:Window:your changes|n:lava_dig_depth (#/#.#):BoolButton|text_name	lava_dig_depth ({*})	岩浆挖掘深度 ({*})
+W:Window:your changes|n:lava_dig_depth (#.#/#.#):BoolButton|text_name	lava_dig_depth ({*})	岩浆挖掘深度 ({*})
+W:Window:your changes|n:lava_drop (#.#/#):BoolButton|text_name	lava_drop ({*})	岩浆落差 ({*})
+W:Window:your changes|n:lava_drop (#/#.#):BoolButton|text_name	lava_drop ({*})	岩浆落差 ({*})
+W:Window:your changes|n:lava_drop (#.#/#.#):BoolButton|text_name	lava_drop ({*})	岩浆落差 ({*})
+W:Window:your changes|n:lava_drop_fade (#.#/#):BoolButton|text_name	lava_drop_fade ({*})	岩浆落差渐变 ({*})
+W:Window:your changes|n:lava_drop_fade (#/#.#):BoolButton|text_name	lava_drop_fade ({*})	岩浆落差渐变 ({*})
+W:Window:your changes|n:lava_drop_fade (#.#/#.#):BoolButton|text_name	lava_drop_fade ({*})	岩浆落差渐变 ({*})
+W:Window:your changes|n:lava_vein_freq (#.#/#):BoolButton|text_name	lava_vein_freq ({*})	岩浆矿脉频率 ({*})
+W:Window:your changes|n:lava_vein_freq (#/#.#):BoolButton|text_name	lava_vein_freq ({*})	岩浆矿脉频率 ({*})
+W:Window:your changes|n:lava_vein_freq (#.#/#.#):BoolButton|text_name	lava_vein_freq ({*})	岩浆矿脉频率 ({*})
+W:Window:your changes|n:layer_height (#.#/#):BoolButton|text_name	layer_height ({*})	层高 ({*})
+W:Window:your changes|n:layer_height (#/#.#):BoolButton|text_name	layer_height ({*})	层高 ({*})
+W:Window:your changes|n:layer_height (#.#/#.#):BoolButton|text_name	layer_height ({*})	层高 ({*})
+W:Window:your changes|n:ledge_band (#.#/#):BoolButton|text_name	ledge_band ({*})	岩架带宽 ({*})
+W:Window:your changes|n:ledge_band (#/#.#):BoolButton|text_name	ledge_band ({*})	岩架带宽 ({*})
+W:Window:your changes|n:ledge_band (#.#/#.#):BoolButton|text_name	ledge_band ({*})	岩架带宽 ({*})
+W:Window:your changes|n:ledge_depth (#.#/#):BoolButton|text_name	ledge_depth ({*})	岩架深度 ({*})
+W:Window:your changes|n:ledge_depth (#/#.#):BoolButton|text_name	ledge_depth ({*})	岩架深度 ({*})
+W:Window:your changes|n:ledge_depth (#.#/#.#):BoolButton|text_name	ledge_depth ({*})	岩架深度 ({*})
+W:Window:your changes|n:max_tread (#.#/#):BoolButton|text_name	max_tread ({*})	最大踏面 ({*})
+W:Window:your changes|n:max_tread (#/#.#):BoolButton|text_name	max_tread ({*})	最大踏面 ({*})
+W:Window:your changes|n:max_tread (#.#/#.#):BoolButton|text_name	max_tread ({*})	最大踏面 ({*})
+W:Window:your changes|n:min_outline_area (#.#/#):BoolButton|text_name	min_outline_area ({*})	最小轮廓面积 ({*})
+W:Window:your changes|n:min_outline_area (#/#.#):BoolButton|text_name	min_outline_area ({*})	最小轮廓面积 ({*})
+W:Window:your changes|n:min_outline_area (#.#/#.#):BoolButton|text_name	min_outline_area ({*})	最小轮廓面积 ({*})
+W:Window:your changes|n:mountains_on (#.#/#):BoolButton|text_name	mountains_on ({*})	山脉开启 ({*})
+W:Window:your changes|n:mountains_on (#/#.#):BoolButton|text_name	mountains_on ({*})	山脉开启 ({*})
+W:Window:your changes|n:mountains_on (#.#/#.#):BoolButton|text_name	mountains_on ({*})	山脉开启 ({*})
+W:Window:your changes|n:open_sea_width (#.#/#):BoolButton|text_name	open_sea_width ({*})	开阔海宽度 ({*})
+W:Window:your changes|n:open_sea_width (#/#.#):BoolButton|text_name	open_sea_width ({*})	开阔海宽度 ({*})
+W:Window:your changes|n:open_sea_width (#.#/#.#):BoolButton|text_name	open_sea_width ({*})	开阔海宽度 ({*})
+W:Window:your changes|n:open_sea_width_floating (#.#/#):BoolButton|text_name	open_sea_width_floating ({*})	浮空开阔海宽度 ({*})
+W:Window:your changes|n:open_sea_width_floating (#/#.#):BoolButton|text_name	open_sea_width_floating ({*})	浮空开阔海宽度 ({*})
+W:Window:your changes|n:open_sea_width_floating (#.#/#.#):BoolButton|text_name	open_sea_width_floating ({*})	浮空开阔海宽度 ({*})
+W:Window:your changes|n:ore_chance (#.#/#):BoolButton|text_name	ore_chance ({*})	矿石概率 ({*})
+W:Window:your changes|n:ore_chance (#/#.#):BoolButton|text_name	ore_chance ({*})	矿石概率 ({*})
+W:Window:your changes|n:ore_chance (#.#/#.#):BoolButton|text_name	ore_chance ({*})	矿石概率 ({*})
+W:Window:your changes|n:ore_max_height (#.#/#):BoolButton|text_name	ore_max_height ({*})	矿石最大高度 ({*})
+W:Window:your changes|n:ore_max_height (#/#.#):BoolButton|text_name	ore_max_height ({*})	矿石最大高度 ({*})
+W:Window:your changes|n:ore_max_height (#.#/#.#):BoolButton|text_name	ore_max_height ({*})	矿石最大高度 ({*})
+W:Window:your changes|n:ore_max_width (#.#/#):BoolButton|text_name	ore_max_width ({*})	矿石最大宽度 ({*})
+W:Window:your changes|n:ore_max_width (#/#.#):BoolButton|text_name	ore_max_width ({*})	矿石最大宽度 ({*})
+W:Window:your changes|n:ore_max_width (#.#/#.#):BoolButton|text_name	ore_max_width ({*})	矿石最大宽度 ({*})
+W:Window:your changes|n:outline_simplify (#.#/#):BoolButton|text_name	outline_simplify ({*})	轮廓简化 ({*})
+W:Window:your changes|n:outline_simplify (#/#.#):BoolButton|text_name	outline_simplify ({*})	轮廓简化 ({*})
+W:Window:your changes|n:outline_simplify (#.#/#.#):BoolButton|text_name	outline_simplify ({*})	轮廓简化 ({*})
+W:Window:your changes|n:overhang_from_layer (#.#/#):BoolButton|text_name	overhang_from_layer ({*})	悬垂起始层 ({*})
+W:Window:your changes|n:overhang_from_layer (#/#.#):BoolButton|text_name	overhang_from_layer ({*})	悬垂起始层 ({*})
+W:Window:your changes|n:overhang_from_layer (#.#/#.#):BoolButton|text_name	overhang_from_layer ({*})	悬垂起始层 ({*})
+W:Window:your changes|n:overhang_high (#.#/#):BoolButton|text_name	overhang_high ({*})	悬垂上限 ({*})
+W:Window:your changes|n:overhang_high (#/#.#):BoolButton|text_name	overhang_high ({*})	悬垂上限 ({*})
+W:Window:your changes|n:overhang_high (#.#/#.#):BoolButton|text_name	overhang_high ({*})	悬垂上限 ({*})
+W:Window:your changes|n:overhang_low (#.#/#):BoolButton|text_name	overhang_low ({*})	悬垂下限 ({*})
+W:Window:your changes|n:overhang_low (#/#.#):BoolButton|text_name	overhang_low ({*})	悬垂下限 ({*})
+W:Window:your changes|n:overhang_low (#.#/#.#):BoolButton|text_name	overhang_low ({*})	悬垂下限 ({*})
+W:Window:your changes|n:overhang_reach (#.#/#):BoolButton|text_name	overhang_reach ({*})	悬垂范围 ({*})
+W:Window:your changes|n:overhang_reach (#/#.#):BoolButton|text_name	overhang_reach ({*})	悬垂范围 ({*})
+W:Window:your changes|n:overhang_reach (#.#/#.#):BoolButton|text_name	overhang_reach ({*})	悬垂范围 ({*})
+W:Window:your changes|n:overhang_top_layer (#.#/#):BoolButton|text_name	overhang_top_layer ({*})	悬垂顶层 ({*})
+W:Window:your changes|n:overhang_top_layer (#/#.#):BoolButton|text_name	overhang_top_layer ({*})	悬垂顶层 ({*})
+W:Window:your changes|n:overhang_top_layer (#.#/#.#):BoolButton|text_name	overhang_top_layer ({*})	悬垂顶层 ({*})
+W:Window:your changes|n:pillar_chance (#.#/#):BoolButton|text_name	pillar_chance ({*})	石柱概率 ({*})
+W:Window:your changes|n:pillar_chance (#/#.#):BoolButton|text_name	pillar_chance ({*})	石柱概率 ({*})
+W:Window:your changes|n:pillar_chance (#.#/#.#):BoolButton|text_name	pillar_chance ({*})	石柱概率 ({*})
+W:Window:your changes|n:pillar_grid (#.#/#):BoolButton|text_name	pillar_grid ({*})	石柱网格 ({*})
+W:Window:your changes|n:pillar_grid (#/#.#):BoolButton|text_name	pillar_grid ({*})	石柱网格 ({*})
+W:Window:your changes|n:pillar_grid (#.#/#.#):BoolButton|text_name	pillar_grid ({*})	石柱网格 ({*})
+W:Window:your changes|n:pillar_lean (#.#/#):BoolButton|text_name	pillar_lean ({*})	石柱倾斜 ({*})
+W:Window:your changes|n:pillar_lean (#/#.#):BoolButton|text_name	pillar_lean ({*})	石柱倾斜 ({*})
+W:Window:your changes|n:pillar_lean (#.#/#.#):BoolButton|text_name	pillar_lean ({*})	石柱倾斜 ({*})
+W:Window:your changes|n:pillar_min_cave (#.#/#):BoolButton|text_name	pillar_min_cave ({*})	石柱最小洞穴 ({*})
+W:Window:your changes|n:pillar_min_cave (#/#.#):BoolButton|text_name	pillar_min_cave ({*})	石柱最小洞穴 ({*})
+W:Window:your changes|n:pillar_min_cave (#.#/#.#):BoolButton|text_name	pillar_min_cave ({*})	石柱最小洞穴 ({*})
+W:Window:your changes|n:pillar_radius (#.#/#):BoolButton|text_name	pillar_radius ({*})	石柱半径 ({*})
+W:Window:your changes|n:pillar_radius (#/#.#):BoolButton|text_name	pillar_radius ({*})	石柱半径 ({*})
+W:Window:your changes|n:pillar_radius (#.#/#.#):BoolButton|text_name	pillar_radius ({*})	石柱半径 ({*})
+W:Window:your changes|n:pillar_turn (#.#/#):BoolButton|text_name	pillar_turn ({*})	石柱转向 ({*})
+W:Window:your changes|n:pillar_turn (#/#.#):BoolButton|text_name	pillar_turn ({*})	石柱转向 ({*})
+W:Window:your changes|n:pillar_turn (#.#/#.#):BoolButton|text_name	pillar_turn ({*})	石柱转向 ({*})
+W:Window:your changes|n:pillar_waist_max (#.#/#):BoolButton|text_name	pillar_waist_max ({*})	石柱腰部最大 ({*})
+W:Window:your changes|n:pillar_waist_max (#/#.#):BoolButton|text_name	pillar_waist_max ({*})	石柱腰部最大 ({*})
+W:Window:your changes|n:pillar_waist_max (#.#/#.#):BoolButton|text_name	pillar_waist_max ({*})	石柱腰部最大 ({*})
+W:Window:your changes|n:pillar_waist_min (#.#/#):BoolButton|text_name	pillar_waist_min ({*})	石柱腰部最小 ({*})
+W:Window:your changes|n:pillar_waist_min (#/#.#):BoolButton|text_name	pillar_waist_min ({*})	石柱腰部最小 ({*})
+W:Window:your changes|n:pillar_waist_min (#.#/#.#):BoolButton|text_name	pillar_waist_min ({*})	石柱腰部最小 ({*})
+W:Window:your changes|n:range_from (#.#/#):BoolButton|text_name	range_from ({*})	山脉范围起点 ({*})
+W:Window:your changes|n:range_from (#/#.#):BoolButton|text_name	range_from ({*})	山脉范围起点 ({*})
+W:Window:your changes|n:range_from (#.#/#.#):BoolButton|text_name	range_from ({*})	山脉范围起点 ({*})
+W:Window:your changes|n:ravine_crack (#.#/#):BoolButton|text_name	ravine_crack ({*})	峡谷裂缝 ({*})
+W:Window:your changes|n:ravine_crack (#/#.#):BoolButton|text_name	ravine_crack ({*})	峡谷裂缝 ({*})
+W:Window:your changes|n:ravine_crack (#.#/#.#):BoolButton|text_name	ravine_crack ({*})	峡谷裂缝 ({*})
+W:Window:your changes|n:ravine_erode (#.#/#):BoolButton|text_name	ravine_erode ({*})	峡谷侵蚀 ({*})
+W:Window:your changes|n:ravine_erode (#/#.#):BoolButton|text_name	ravine_erode ({*})	峡谷侵蚀 ({*})
+W:Window:your changes|n:ravine_erode (#.#/#.#):BoolButton|text_name	ravine_erode ({*})	峡谷侵蚀 ({*})
+W:Window:your changes|n:ravine_erode_fine (#.#/#):BoolButton|text_name	ravine_erode_fine ({*})	峡谷细侵蚀 ({*})
+W:Window:your changes|n:ravine_erode_fine (#/#.#):BoolButton|text_name	ravine_erode_fine ({*})	峡谷细侵蚀 ({*})
+W:Window:your changes|n:ravine_erode_fine (#.#/#.#):BoolButton|text_name	ravine_erode_fine ({*})	峡谷细侵蚀 ({*})
+W:Window:your changes|n:ravine_flare (#.#/#):BoolButton|text_name	ravine_flare ({*})	峡谷扩张 ({*})
+W:Window:your changes|n:ravine_flare (#/#.#):BoolButton|text_name	ravine_flare ({*})	峡谷扩张 ({*})
+W:Window:your changes|n:ravine_flare (#.#/#.#):BoolButton|text_name	ravine_flare ({*})	峡谷扩张 ({*})
+W:Window:your changes|n:ravine_freq (#.#/#):BoolButton|text_name	ravine_freq ({*})	峡谷频率 ({*})
+W:Window:your changes|n:ravine_freq (#/#.#):BoolButton|text_name	ravine_freq ({*})	峡谷频率 ({*})
+W:Window:your changes|n:ravine_freq (#.#/#.#):BoolButton|text_name	ravine_freq ({*})	峡谷频率 ({*})
+W:Window:your changes|n:ravine_jag (#.#/#):BoolButton|text_name	ravine_jag ({*})	峡谷锯齿 ({*})
+W:Window:your changes|n:ravine_jag (#/#.#):BoolButton|text_name	ravine_jag ({*})	峡谷锯齿 ({*})
+W:Window:your changes|n:ravine_jag (#.#/#.#):BoolButton|text_name	ravine_jag ({*})	峡谷锯齿 ({*})
+W:Window:your changes|n:ravine_jag_freq (#.#/#):BoolButton|text_name	ravine_jag_freq ({*})	峡谷锯齿频率 ({*})
+W:Window:your changes|n:ravine_jag_freq (#/#.#):BoolButton|text_name	ravine_jag_freq ({*})	峡谷锯齿频率 ({*})
+W:Window:your changes|n:ravine_jag_freq (#.#/#.#):BoolButton|text_name	ravine_jag_freq ({*})	峡谷锯齿频率 ({*})
+W:Window:your changes|n:ravine_margin (#.#/#):BoolButton|text_name	ravine_margin ({*})	峡谷边缘 ({*})
+W:Window:your changes|n:ravine_margin (#/#.#):BoolButton|text_name	ravine_margin ({*})	峡谷边缘 ({*})
+W:Window:your changes|n:ravine_margin (#.#/#.#):BoolButton|text_name	ravine_margin ({*})	峡谷边缘 ({*})
+W:Window:your changes|n:ravine_max_height (#.#/#):BoolButton|text_name	ravine_max_height ({*})	峡谷最大高度 ({*})
+W:Window:your changes|n:ravine_max_height (#/#.#):BoolButton|text_name	ravine_max_height ({*})	峡谷最大高度 ({*})
+W:Window:your changes|n:ravine_max_height (#.#/#.#):BoolButton|text_name	ravine_max_height ({*})	峡谷最大高度 ({*})
+W:Window:your changes|n:ravine_min_roof (#.#/#):BoolButton|text_name	ravine_min_roof ({*})	峡谷最小顶厚 ({*})
+W:Window:your changes|n:ravine_min_roof (#/#.#):BoolButton|text_name	ravine_min_roof ({*})	峡谷最小顶厚 ({*})
+W:Window:your changes|n:ravine_min_roof (#.#/#.#):BoolButton|text_name	ravine_min_roof ({*})	峡谷最小顶厚 ({*})
+W:Window:your changes|n:ravine_open_gap (#.#/#):BoolButton|text_name	ravine_open_gap ({*})	峡谷开口 ({*})
+W:Window:your changes|n:ravine_open_gap (#/#.#):BoolButton|text_name	ravine_open_gap ({*})	峡谷开口 ({*})
+W:Window:your changes|n:ravine_open_gap (#.#/#.#):BoolButton|text_name	ravine_open_gap ({*})	峡谷开口 ({*})
+W:Window:your changes|n:ravine_rarity (#.#/#):BoolButton|text_name	ravine_rarity ({*})	峡谷稀有度 ({*})
+W:Window:your changes|n:ravine_rarity (#/#.#):BoolButton|text_name	ravine_rarity ({*})	峡谷稀有度 ({*})
+W:Window:your changes|n:ravine_rarity (#.#/#.#):BoolButton|text_name	ravine_rarity ({*})	峡谷稀有度 ({*})
+W:Window:your changes|n:ravine_tip (#.#/#):BoolButton|text_name	ravine_tip ({*})	峡谷尖端 ({*})
+W:Window:your changes|n:ravine_tip (#/#.#):BoolButton|text_name	ravine_tip ({*})	峡谷尖端 ({*})
+W:Window:your changes|n:ravine_tip (#.#/#.#):BoolButton|text_name	ravine_tip ({*})	峡谷尖端 ({*})
+W:Window:your changes|n:ravine_warp (#.#/#):BoolButton|text_name	ravine_warp ({*})	峡谷扭曲 ({*})
+W:Window:your changes|n:ravine_warp (#/#.#):BoolButton|text_name	ravine_warp ({*})	峡谷扭曲 ({*})
+W:Window:your changes|n:ravine_warp (#.#/#.#):BoolButton|text_name	ravine_warp ({*})	峡谷扭曲 ({*})
+W:Window:your changes|n:ravine_width_floor (#.#/#):BoolButton|text_name	ravine_width_floor ({*})	峡谷底部宽度 ({*})
+W:Window:your changes|n:ravine_width_floor (#/#.#):BoolButton|text_name	ravine_width_floor ({*})	峡谷底部宽度 ({*})
+W:Window:your changes|n:ravine_width_floor (#.#/#.#):BoolButton|text_name	ravine_width_floor ({*})	峡谷底部宽度 ({*})
+W:Window:your changes|n:ravine_width_top (#.#/#):BoolButton|text_name	ravine_width_top ({*})	峡谷顶部宽度 ({*})
+W:Window:your changes|n:ravine_width_top (#/#.#):BoolButton|text_name	ravine_width_top ({*})	峡谷顶部宽度 ({*})
+W:Window:your changes|n:ravine_width_top (#.#/#.#):BoolButton|text_name	ravine_width_top ({*})	峡谷顶部宽度 ({*})
+W:Window:your changes|n:ravine_wind (#.#/#):BoolButton|text_name	ravine_wind ({*})	峡谷蜿蜒 ({*})
+W:Window:your changes|n:ravine_wind (#/#.#):BoolButton|text_name	ravine_wind ({*})	峡谷蜿蜒 ({*})
+W:Window:your changes|n:ravine_wind (#.#/#.#):BoolButton|text_name	ravine_wind ({*})	峡谷蜿蜒 ({*})
+W:Window:your changes|n:ravines_on (#.#/#):BoolButton|text_name	ravines_on ({*})	峡谷开启 ({*})
+W:Window:your changes|n:ravines_on (#/#.#):BoolButton|text_name	ravines_on ({*})	峡谷开启 ({*})
+W:Window:your changes|n:ravines_on (#.#/#.#):BoolButton|text_name	ravines_on ({*})	峡谷开启 ({*})
+W:Window:your changes|n:rim_floor_default (#.#/#):BoolButton|text_name	rim_floor_default ({*})	默认边缘地板 ({*})
+W:Window:your changes|n:rim_floor_default (#/#.#):BoolButton|text_name	rim_floor_default ({*})	默认边缘地板 ({*})
+W:Window:your changes|n:rim_floor_default (#.#/#.#):BoolButton|text_name	rim_floor_default ({*})	默认边缘地板 ({*})
+W:Window:your changes|n:rim_max_layers (#.#/#):BoolButton|text_name	rim_max_layers ({*})	边缘最大层数 ({*})
+W:Window:your changes|n:rim_max_layers (#/#.#):BoolButton|text_name	rim_max_layers ({*})	边缘最大层数 ({*})
+W:Window:your changes|n:rim_max_layers (#.#/#.#):BoolButton|text_name	rim_max_layers ({*})	边缘最大层数 ({*})
+W:Window:your changes|n:rim_width (#.#/#):BoolButton|text_name	rim_width ({*})	边缘宽度 ({*})
+W:Window:your changes|n:rim_width (#/#.#):BoolButton|text_name	rim_width ({*})	边缘宽度 ({*})
+W:Window:your changes|n:rim_width (#.#/#.#):BoolButton|text_name	rim_width ({*})	边缘宽度 ({*})
+W:Window:your changes|n:rock_jag (#.#/#):BoolButton|text_name	rock_jag ({*})	岩石锯齿 ({*})
+W:Window:your changes|n:rock_jag (#/#.#):BoolButton|text_name	rock_jag ({*})	岩石锯齿 ({*})
+W:Window:your changes|n:rock_jag (#.#/#.#):BoolButton|text_name	rock_jag ({*})	岩石锯齿 ({*})
+W:Window:your changes|n:rock_rough (#.#/#):BoolButton|text_name	rock_rough ({*})	岩石粗糙度 ({*})
+W:Window:your changes|n:rock_rough (#/#.#):BoolButton|text_name	rock_rough ({*})	岩石粗糙度 ({*})
+W:Window:your changes|n:rock_rough (#.#/#.#):BoolButton|text_name	rock_rough ({*})	岩石粗糙度 ({*})
+W:Window:your changes|n:rock_rough_freq_y (#.#/#):BoolButton|text_name	rock_rough_freq_y ({*})	Y 轴岩石粗糙频率 ({*})
+W:Window:your changes|n:rock_rough_freq_y (#/#.#):BoolButton|text_name	rock_rough_freq_y ({*})	Y 轴岩石粗糙频率 ({*})
+W:Window:your changes|n:rock_rough_freq_y (#.#/#.#):BoolButton|text_name	rock_rough_freq_y ({*})	Y 轴岩石粗糙频率 ({*})
+W:Window:your changes|n:room_chance (#.#/#):BoolButton|text_name	room_chance ({*})	房间概率 ({*})
+W:Window:your changes|n:room_chance (#/#.#):BoolButton|text_name	room_chance ({*})	房间概率 ({*})
+W:Window:your changes|n:room_chance (#.#/#.#):BoolButton|text_name	room_chance ({*})	房间概率 ({*})
+W:Window:your changes|n:room_fade (#.#/#):BoolButton|text_name	room_fade ({*})	房间淡出 ({*})
+W:Window:your changes|n:room_fade (#/#.#):BoolButton|text_name	room_fade ({*})	房间淡出 ({*})
+W:Window:your changes|n:room_fade (#.#/#.#):BoolButton|text_name	room_fade ({*})	房间淡出 ({*})
+W:Window:your changes|n:room_grid (#.#/#):BoolButton|text_name	room_grid ({*})	房间网格 ({*})
+W:Window:your changes|n:room_grid (#/#.#):BoolButton|text_name	room_grid ({*})	房间网格 ({*})
+W:Window:your changes|n:room_grid (#.#/#.#):BoolButton|text_name	room_grid ({*})	房间网格 ({*})
+W:Window:your changes|n:room_h_max (#.#/#):BoolButton|text_name	room_h_max ({*})	房间最大高度 ({*})
+W:Window:your changes|n:room_h_max (#/#.#):BoolButton|text_name	room_h_max ({*})	房间最大高度 ({*})
+W:Window:your changes|n:room_h_max (#.#/#.#):BoolButton|text_name	room_h_max ({*})	房间最大高度 ({*})
+W:Window:your changes|n:room_h_min (#.#/#):BoolButton|text_name	room_h_min ({*})	房间最小高度 ({*})
+W:Window:your changes|n:room_h_min (#/#.#):BoolButton|text_name	room_h_min ({*})	房间最小高度 ({*})
+W:Window:your changes|n:room_h_min (#.#/#.#):BoolButton|text_name	room_h_min ({*})	房间最小高度 ({*})
+W:Window:your changes|n:room_r_max (#.#/#):BoolButton|text_name	room_r_max ({*})	房间最大半径 ({*})
+W:Window:your changes|n:room_r_max (#/#.#):BoolButton|text_name	room_r_max ({*})	房间最大半径 ({*})
+W:Window:your changes|n:room_r_max (#.#/#.#):BoolButton|text_name	room_r_max ({*})	房间最大半径 ({*})
+W:Window:your changes|n:room_r_min (#.#/#):BoolButton|text_name	room_r_min ({*})	房间最小半径 ({*})
+W:Window:your changes|n:room_r_min (#/#.#):BoolButton|text_name	room_r_min ({*})	房间最小半径 ({*})
+W:Window:your changes|n:room_r_min (#.#/#.#):BoolButton|text_name	room_r_min ({*})	房间最小半径 ({*})
+W:Window:your changes|n:rough_from_slope (#.#/#):BoolButton|text_name	rough_from_slope ({*})	坡度粗糙度 ({*})
+W:Window:your changes|n:rough_from_slope (#/#.#):BoolButton|text_name	rough_from_slope ({*})	坡度粗糙度 ({*})
+W:Window:your changes|n:rough_from_slope (#.#/#.#):BoolButton|text_name	rough_from_slope ({*})	坡度粗糙度 ({*})
+W:Window:your changes|n:sand_depth (#.#/#):BoolButton|text_name	sand_depth ({*})	沙层深度 ({*})
+W:Window:your changes|n:sand_depth (#/#.#):BoolButton|text_name	sand_depth ({*})	沙层深度 ({*})
+W:Window:your changes|n:sand_depth (#.#/#.#):BoolButton|text_name	sand_depth ({*})	沙层深度 ({*})
+W:Window:your changes|n:sea_height (#.#/#):BoolButton|text_name	sea_height ({*})	海平面高度 ({*})
+W:Window:your changes|n:sea_height (#/#.#):BoolButton|text_name	sea_height ({*})	海平面高度 ({*})
+W:Window:your changes|n:sea_height (#.#/#.#):BoolButton|text_name	sea_height ({*})	海平面高度 ({*})
+W:Window:your changes|n:sea_region_freq (#.#/#):BoolButton|text_name	sea_region_freq ({*})	海洋区域频率 ({*})
+W:Window:your changes|n:sea_region_freq (#/#.#):BoolButton|text_name	sea_region_freq ({*})	海洋区域频率 ({*})
+W:Window:your changes|n:sea_region_freq (#.#/#.#):BoolButton|text_name	sea_region_freq ({*})	海洋区域频率 ({*})
+W:Window:your changes|n:sea_slice_corners (#.#/#):BoolButton|text_name	sea_slice_corners ({*})	海洋切片角数 ({*})
+W:Window:your changes|n:sea_slice_corners (#/#.#):BoolButton|text_name	sea_slice_corners ({*})	海洋切片角数 ({*})
+W:Window:your changes|n:sea_slice_corners (#.#/#.#):BoolButton|text_name	sea_slice_corners ({*})	海洋切片角数 ({*})
+W:Window:your changes|n:sea_slices (#.#/#):BoolButton|text_name	sea_slices ({*})	海洋切片数 ({*})
+W:Window:your changes|n:sea_slices (#/#.#):BoolButton|text_name	sea_slices ({*})	海洋切片数 ({*})
+W:Window:your changes|n:sea_slices (#.#/#.#):BoolButton|text_name	sea_slices ({*})	海洋切片数 ({*})
+W:Window:your changes|n:seabed_dip (#.#/#):BoolButton|text_name	seabed_dip ({*})	海床下沉 ({*})
+W:Window:your changes|n:seabed_dip (#/#.#):BoolButton|text_name	seabed_dip ({*})	海床下沉 ({*})
+W:Window:your changes|n:seabed_dip (#.#/#.#):BoolButton|text_name	seabed_dip ({*})	海床下沉 ({*})
+W:Window:your changes|n:seabed_slow (#.#/#):BoolButton|text_name	seabed_slow ({*})	海床缓坡 ({*})
+W:Window:your changes|n:seabed_slow (#/#.#):BoolButton|text_name	seabed_slow ({*})	海床缓坡 ({*})
+W:Window:your changes|n:seabed_slow (#.#/#.#):BoolButton|text_name	seabed_slow ({*})	海床缓坡 ({*})
+W:Window:your changes|n:shelf_count (#.#/#):BoolButton|text_name	shelf_count ({*})	陆架数量 ({*})
+W:Window:your changes|n:shelf_count (#/#.#):BoolButton|text_name	shelf_count ({*})	陆架数量 ({*})
+W:Window:your changes|n:shelf_count (#.#/#.#):BoolButton|text_name	shelf_count ({*})	陆架数量 ({*})
+W:Window:your changes|n:shelf_edge (#.#/#):BoolButton|text_name	shelf_edge ({*})	陆架边缘 ({*})
+W:Window:your changes|n:shelf_edge (#/#.#):BoolButton|text_name	shelf_edge ({*})	陆架边缘 ({*})
+W:Window:your changes|n:shelf_edge (#.#/#.#):BoolButton|text_name	shelf_edge ({*})	陆架边缘 ({*})
+W:Window:your changes|n:shelf_freq (#.#/#):BoolButton|text_name	shelf_freq ({*})	陆架频率 ({*})
+W:Window:your changes|n:shelf_freq (#/#.#):BoolButton|text_name	shelf_freq ({*})	陆架频率 ({*})
+W:Window:your changes|n:shelf_freq (#.#/#.#):BoolButton|text_name	shelf_freq ({*})	陆架频率 ({*})
+W:Window:your changes|n:shelf_shore (#.#/#):BoolButton|text_name	shelf_shore ({*})	陆架海岸 ({*})
+W:Window:your changes|n:shelf_shore (#/#.#):BoolButton|text_name	shelf_shore ({*})	陆架海岸 ({*})
+W:Window:your changes|n:shelf_shore (#.#/#.#):BoolButton|text_name	shelf_shore ({*})	陆架海岸 ({*})
+W:Window:your changes|n:shelf_step (#.#/#):BoolButton|text_name	shelf_step ({*})	陆架间距 ({*})
+W:Window:your changes|n:shelf_step (#/#.#):BoolButton|text_name	shelf_step ({*})	陆架间距 ({*})
+W:Window:your changes|n:shelf_step (#.#/#.#):BoolButton|text_name	shelf_step ({*})	陆架间距 ({*})
+W:Window:your changes|n:snap_steep (#.#/#):BoolButton|text_name	snap_steep ({*})	陡坡吸附 ({*})
+W:Window:your changes|n:snap_steep (#/#.#):BoolButton|text_name	snap_steep ({*})	陡坡吸附 ({*})
+W:Window:your changes|n:snap_steep (#.#/#.#):BoolButton|text_name	snap_steep ({*})	陡坡吸附 ({*})
+W:Window:your changes|n:soil_slope (#.#/#):BoolButton|text_name	soil_slope ({*})	土壤坡度 ({*})
+W:Window:your changes|n:soil_slope (#/#.#):BoolButton|text_name	soil_slope ({*})	土壤坡度 ({*})
+W:Window:your changes|n:soil_slope (#.#/#.#):BoolButton|text_name	soil_slope ({*})	土壤坡度 ({*})
+W:Window:your changes|n:squat_strength (#.#/#):BoolButton|text_name	squat_strength ({*})	压缩强度 ({*})
+W:Window:your changes|n:squat_strength (#/#.#):BoolButton|text_name	squat_strength ({*})	压缩强度 ({*})
+W:Window:your changes|n:squat_strength (#.#/#.#):BoolButton|text_name	squat_strength ({*})	压缩强度 ({*})
+W:Window:your changes|n:tallest_block (#.#/#):BoolButton|text_name	tallest_block ({*})	最高方块 ({*})
+W:Window:your changes|n:tallest_block (#/#.#):BoolButton|text_name	tallest_block ({*})	最高方块 ({*})
+W:Window:your changes|n:tallest_block (#.#/#.#):BoolButton|text_name	tallest_block ({*})	最高方块 ({*})
+W:Window:your changes|n:terrain_freq_y (#.#/#):BoolButton|text_name	terrain_freq_y ({*})	Y 轴地形频率 ({*})
+W:Window:your changes|n:terrain_freq_y (#/#.#):BoolButton|text_name	terrain_freq_y ({*})	Y 轴地形频率 ({*})
+W:Window:your changes|n:terrain_freq_y (#.#/#.#):BoolButton|text_name	terrain_freq_y ({*})	Y 轴地形频率 ({*})
+W:Window:your changes|n:terrain_wide (#.#/#):BoolButton|text_name	terrain_wide ({*})	地形宽度 ({*})
+W:Window:your changes|n:terrain_wide (#/#.#):BoolButton|text_name	terrain_wide ({*})	地形宽度 ({*})
+W:Window:your changes|n:terrain_wide (#.#/#.#):BoolButton|text_name	terrain_wide ({*})	地形宽度 ({*})
+W:Window:your changes|n:wall_lean_max (#.#/#):BoolButton|text_name	wall_lean_max ({*})	壁面倾斜最大 ({*})
+W:Window:your changes|n:wall_lean_max (#/#.#):BoolButton|text_name	wall_lean_max ({*})	壁面倾斜最大 ({*})
+W:Window:your changes|n:wall_lean_max (#.#/#.#):BoolButton|text_name	wall_lean_max ({*})	壁面倾斜最大 ({*})
+W:Window:your changes|n:wall_lean_min (#.#/#):BoolButton|text_name	wall_lean_min ({*})	壁面倾斜最小 ({*})
+W:Window:your changes|n:wall_lean_min (#/#.#):BoolButton|text_name	wall_lean_min ({*})	壁面倾斜最小 ({*})
+W:Window:your changes|n:wall_lean_min (#.#/#.#):BoolButton|text_name	wall_lean_min ({*})	壁面倾斜最小 ({*})
+W:Window:variables|n:FLOATING ISLANDS (ocean_void):Button|text_name	FLOATING ISLANDS (ocean_void)	浮空岛（海洋虚空）
+W:Window:variables|n:SUNKEN OCEAN (water_void):Button|text_name	SUNKEN OCEAN (water_void)	沉没海洋（水域虚空）
+W:Window:variables|n:FLAT SURVIVAL (flat_land):Button|text_name	FLAT SURVIVAL (flat_land)	平地生存（平坦陆地）
+W:Window:FLOATING ISLANDS (ocean_void)|header_text	FLOATING ISLANDS (ocean_void)	浮空岛（海洋虚空）
+W:Window:SUNKEN OCEAN (water_void)|header_text	SUNKEN OCEAN (water_void)	沉没海洋（水域虚空）
+W:Window:FLAT SURVIVAL (flat_land)|header_text	FLAT SURVIVAL (flat_land)	平地生存（平坦陆地）
+TIP:more = fewer islands (also picks the sunken world's lands)	more = fewer islands (also picks the sunken\nworld's lands)	数值越大，岛屿越少（也会选择沉没世界的陆地）
+TIP:the real slabs, cells and all; slower	the real slabs, cells and all; slower	真正的形块、单元与全部内容；较慢
+TIP:the slabs' textures, or colours by biome	the slabs' textures, or colours by biome	形块的纹理，或按生物群系着色
+W:Window:FLOATING ISLANDS (ocean_void)|n:isle_freq:SliderButton|text_name	isle_freq	岛屿频率
+W:Window:FLOATING ISLANDS (ocean_void)|n:isle_from:SliderButton|text_name	isle_from	岛屿起始
+W:Window:FLOATING ISLANDS (ocean_void)|n:isle_span:SliderButton|text_name	isle_span	岛屿跨度
+W:Window:FLOATING ISLANDS (ocean_void)|n:isle_thick:SliderButton|text_name	isle_thick	岛屿厚度
+W:Window:FLOATING ISLANDS (ocean_void)|n:isle_root:SliderButton|text_name	isle_root	岛屿根部
+W:Window:FLOATING ISLANDS (ocean_void)|n:isle_drip:SliderButton|text_name	isle_drip	岛屿滴落
+W:Window:FLOATING ISLANDS (ocean_void)|n:isle_drip_freq:SliderButton|text_name	isle_drip_freq	岛屿滴落频率
+W:Window:FLOATING ISLANDS (ocean_void)|n:isle_bank:SliderButton|text_name	isle_bank	岛屿岸
+W:Window:SUNKEN OCEAN (water_void)|n:sunk_wall:SliderButton|text_name	sunk_wall	沉没墙壁
+W:Window:SUNKEN OCEAN (water_void)|n:sunk_tall:SliderButton|text_name	sunk_tall	沉没高度
+W:Window:SUNKEN OCEAN (water_void)|n:sunk_sea_height:SliderButton|text_name	sunk_sea_height	沉没海平面高度
+W:Window:SUNKEN OCEAN (water_void)|n:sunk_floor_height:SliderButton|text_name	sunk_floor_height	沉没海底高度
+W:Window:FLAT SURVIVAL (flat_land)|n:flat_land_rise:SliderButton|text_name	flat_land_rise	平地抬升
+W:Window:FLAT SURVIVAL (flat_land)|n:flat_land_thick:SliderButton|text_name	flat_land_thick	平地厚度
+W:Window:FLAT SURVIVAL (flat_land)|n:flat_lake_dip:SliderButton|text_name	flat_lake_dip	湖泊下沉
+W:Window:FLAT SURVIVAL (flat_land)|n:flat_lake_freq:SliderButton|text_name	flat_lake_freq	湖泊频率
+W:Window:FLAT SURVIVAL (flat_land)|n:flat_lake_from:SliderButton|text_name	flat_lake_from	湖泊起始
+W:Window:FLAT SURVIVAL (flat_land)|n:flat_lake_span:SliderButton|text_name	flat_lake_span	湖泊跨度
+TIP:more = smaller islands (~150 blocks across)	more = smaller islands (~150 blocks across)	越大，岛屿越小（约 150 格宽）
+TIP:0..1, more = more uneven underside	0..1, more = more uneven underside	0..1；越大，岛屿底部越不平整
+TIP:world y of the sea's surface and floor	world y of the sea's surface and floor	海面与海底的世界 Y 坐标
+TIP:more = fewer lakes	more = fewer lakes	越大，湖泊越少
+TIP:more = smaller lakes (~80 blocks across)	more = smaller lakes (~80 blocks across)	越大，湖泊越小（约 80 格宽）
+TIP:lattice layers lakes sink	lattice layers lakes sink	湖泊下沉的格架层数
+TIP:lattice layers thick	lattice layers thick	格架层厚度
+TIP:lattice layers the sheet's top sits over the sea	lattice layers the sheet's top sits over the sea	薄层顶部高出海面的格架层数
+W:Window:your changes|n:isle_freq (#/#):BoolButton|text_name	isle_freq ({*})	岛屿频率 ({*})
+W:Window:your changes|n:isle_freq (#.#/#):BoolButton|text_name	isle_freq ({*})	岛屿频率 ({*})
+W:Window:your changes|n:isle_freq (#/#.#):BoolButton|text_name	isle_freq ({*})	岛屿频率 ({*})
+W:Window:your changes|n:isle_freq (#.#/#.#):BoolButton|text_name	isle_freq ({*})	岛屿频率 ({*})
+W:Window:your changes|n:isle_from (#/#):BoolButton|text_name	isle_from ({*})	岛屿起始 ({*})
+W:Window:your changes|n:isle_from (#.#/#):BoolButton|text_name	isle_from ({*})	岛屿起始 ({*})
+W:Window:your changes|n:isle_from (#/#.#):BoolButton|text_name	isle_from ({*})	岛屿起始 ({*})
+W:Window:your changes|n:isle_from (#.#/#.#):BoolButton|text_name	isle_from ({*})	岛屿起始 ({*})
+W:Window:your changes|n:isle_span (#/#):BoolButton|text_name	isle_span ({*})	岛屿跨度 ({*})
+W:Window:your changes|n:isle_span (#.#/#):BoolButton|text_name	isle_span ({*})	岛屿跨度 ({*})
+W:Window:your changes|n:isle_span (#/#.#):BoolButton|text_name	isle_span ({*})	岛屿跨度 ({*})
+W:Window:your changes|n:isle_span (#.#/#.#):BoolButton|text_name	isle_span ({*})	岛屿跨度 ({*})
+W:Window:your changes|n:isle_thick (#/#):BoolButton|text_name	isle_thick ({*})	岛屿厚度 ({*})
+W:Window:your changes|n:isle_thick (#.#/#):BoolButton|text_name	isle_thick ({*})	岛屿厚度 ({*})
+W:Window:your changes|n:isle_thick (#/#.#):BoolButton|text_name	isle_thick ({*})	岛屿厚度 ({*})
+W:Window:your changes|n:isle_thick (#.#/#.#):BoolButton|text_name	isle_thick ({*})	岛屿厚度 ({*})
+W:Window:your changes|n:isle_root (#/#):BoolButton|text_name	isle_root ({*})	岛屿根部 ({*})
+W:Window:your changes|n:isle_root (#.#/#):BoolButton|text_name	isle_root ({*})	岛屿根部 ({*})
+W:Window:your changes|n:isle_root (#/#.#):BoolButton|text_name	isle_root ({*})	岛屿根部 ({*})
+W:Window:your changes|n:isle_root (#.#/#.#):BoolButton|text_name	isle_root ({*})	岛屿根部 ({*})
+W:Window:your changes|n:isle_drip (#/#):BoolButton|text_name	isle_drip ({*})	岛屿滴落 ({*})
+W:Window:your changes|n:isle_drip (#.#/#):BoolButton|text_name	isle_drip ({*})	岛屿滴落 ({*})
+W:Window:your changes|n:isle_drip (#/#.#):BoolButton|text_name	isle_drip ({*})	岛屿滴落 ({*})
+W:Window:your changes|n:isle_drip (#.#/#.#):BoolButton|text_name	isle_drip ({*})	岛屿滴落 ({*})
+W:Window:your changes|n:isle_drip_freq (#/#):BoolButton|text_name	isle_drip_freq ({*})	岛屿滴落频率 ({*})
+W:Window:your changes|n:isle_drip_freq (#.#/#):BoolButton|text_name	isle_drip_freq ({*})	岛屿滴落频率 ({*})
+W:Window:your changes|n:isle_drip_freq (#/#.#):BoolButton|text_name	isle_drip_freq ({*})	岛屿滴落频率 ({*})
+W:Window:your changes|n:isle_drip_freq (#.#/#.#):BoolButton|text_name	isle_drip_freq ({*})	岛屿滴落频率 ({*})
+W:Window:your changes|n:isle_bank (#/#):BoolButton|text_name	isle_bank ({*})	岛屿岸 ({*})
+W:Window:your changes|n:isle_bank (#.#/#):BoolButton|text_name	isle_bank ({*})	岛屿岸 ({*})
+W:Window:your changes|n:isle_bank (#/#.#):BoolButton|text_name	isle_bank ({*})	岛屿岸 ({*})
+W:Window:your changes|n:isle_bank (#.#/#.#):BoolButton|text_name	isle_bank ({*})	岛屿岸 ({*})
+W:Window:your changes|n:sunk_wall (#/#):BoolButton|text_name	sunk_wall ({*})	沉没墙壁 ({*})
+W:Window:your changes|n:sunk_wall (#.#/#):BoolButton|text_name	sunk_wall ({*})	沉没墙壁 ({*})
+W:Window:your changes|n:sunk_wall (#/#.#):BoolButton|text_name	sunk_wall ({*})	沉没墙壁 ({*})
+W:Window:your changes|n:sunk_wall (#.#/#.#):BoolButton|text_name	sunk_wall ({*})	沉没墙壁 ({*})
+W:Window:your changes|n:sunk_tall (#/#):BoolButton|text_name	sunk_tall ({*})	沉没高度 ({*})
+W:Window:your changes|n:sunk_tall (#.#/#):BoolButton|text_name	sunk_tall ({*})	沉没高度 ({*})
+W:Window:your changes|n:sunk_tall (#/#.#):BoolButton|text_name	sunk_tall ({*})	沉没高度 ({*})
+W:Window:your changes|n:sunk_tall (#.#/#.#):BoolButton|text_name	sunk_tall ({*})	沉没高度 ({*})
+W:Window:your changes|n:sunk_sea_height (#/#):BoolButton|text_name	sunk_sea_height ({*})	沉没海平面高度 ({*})
+W:Window:your changes|n:sunk_sea_height (#.#/#):BoolButton|text_name	sunk_sea_height ({*})	沉没海平面高度 ({*})
+W:Window:your changes|n:sunk_sea_height (#/#.#):BoolButton|text_name	sunk_sea_height ({*})	沉没海平面高度 ({*})
+W:Window:your changes|n:sunk_sea_height (#.#/#.#):BoolButton|text_name	sunk_sea_height ({*})	沉没海平面高度 ({*})
+W:Window:your changes|n:sunk_floor_height (#/#):BoolButton|text_name	sunk_floor_height ({*})	沉没海底高度 ({*})
+W:Window:your changes|n:sunk_floor_height (#.#/#):BoolButton|text_name	sunk_floor_height ({*})	沉没海底高度 ({*})
+W:Window:your changes|n:sunk_floor_height (#/#.#):BoolButton|text_name	sunk_floor_height ({*})	沉没海底高度 ({*})
+W:Window:your changes|n:sunk_floor_height (#.#/#.#):BoolButton|text_name	sunk_floor_height ({*})	沉没海底高度 ({*})
+W:Window:your changes|n:flat_land_rise (#/#):BoolButton|text_name	flat_land_rise ({*})	平地抬升 ({*})
+W:Window:your changes|n:flat_land_rise (#.#/#):BoolButton|text_name	flat_land_rise ({*})	平地抬升 ({*})
+W:Window:your changes|n:flat_land_rise (#/#.#):BoolButton|text_name	flat_land_rise ({*})	平地抬升 ({*})
+W:Window:your changes|n:flat_land_rise (#.#/#.#):BoolButton|text_name	flat_land_rise ({*})	平地抬升 ({*})
+W:Window:your changes|n:flat_land_thick (#/#):BoolButton|text_name	flat_land_thick ({*})	平地厚度 ({*})
+W:Window:your changes|n:flat_land_thick (#.#/#):BoolButton|text_name	flat_land_thick ({*})	平地厚度 ({*})
+W:Window:your changes|n:flat_land_thick (#/#.#):BoolButton|text_name	flat_land_thick ({*})	平地厚度 ({*})
+W:Window:your changes|n:flat_land_thick (#.#/#.#):BoolButton|text_name	flat_land_thick ({*})	平地厚度 ({*})
+W:Window:your changes|n:flat_lake_dip (#/#):BoolButton|text_name	flat_lake_dip ({*})	湖泊下沉 ({*})
+W:Window:your changes|n:flat_lake_dip (#.#/#):BoolButton|text_name	flat_lake_dip ({*})	湖泊下沉 ({*})
+W:Window:your changes|n:flat_lake_dip (#/#.#):BoolButton|text_name	flat_lake_dip ({*})	湖泊下沉 ({*})
+W:Window:your changes|n:flat_lake_dip (#.#/#.#):BoolButton|text_name	flat_lake_dip ({*})	湖泊下沉 ({*})
+W:Window:your changes|n:flat_lake_freq (#/#):BoolButton|text_name	flat_lake_freq ({*})	湖泊频率 ({*})
+W:Window:your changes|n:flat_lake_freq (#.#/#):BoolButton|text_name	flat_lake_freq ({*})	湖泊频率 ({*})
+W:Window:your changes|n:flat_lake_freq (#/#.#):BoolButton|text_name	flat_lake_freq ({*})	湖泊频率 ({*})
+W:Window:your changes|n:flat_lake_freq (#.#/#.#):BoolButton|text_name	flat_lake_freq ({*})	湖泊频率 ({*})
+W:Window:your changes|n:flat_lake_from (#/#):BoolButton|text_name	flat_lake_from ({*})	湖泊起始 ({*})
+W:Window:your changes|n:flat_lake_from (#.#/#):BoolButton|text_name	flat_lake_from ({*})	湖泊起始 ({*})
+W:Window:your changes|n:flat_lake_from (#/#.#):BoolButton|text_name	flat_lake_from ({*})	湖泊起始 ({*})
+W:Window:your changes|n:flat_lake_from (#.#/#.#):BoolButton|text_name	flat_lake_from ({*})	湖泊起始 ({*})
+W:Window:your changes|n:flat_lake_span (#/#):BoolButton|text_name	flat_lake_span ({*})	湖泊跨度 ({*})
+W:Window:your changes|n:flat_lake_span (#.#/#):BoolButton|text_name	flat_lake_span ({*})	湖泊跨度 ({*})
+W:Window:your changes|n:flat_lake_span (#/#.#):BoolButton|text_name	flat_lake_span ({*})	湖泊跨度 ({*})
+W:Window:your changes|n:flat_lake_span (#.#/#.#):BoolButton|text_name	flat_lake_span ({*})	湖泊跨度 ({*})
+TIP:lattice layers an island's underside hangs under its middle	{*}	岛屿中部下方悬垂的格架层数
+TIP:more per layer its middle stands over the sea; more = deeper roots under hills	{*}	越大，岛屿中部高出海面的层数越多；越大，丘陵下根部越深
+TIP:lattice layers the ground rises to at the edge, so lakes keep a shore	{*}	边缘地面抬升到的格架层数，使湖泊保留湖岸
+TIP:field cap; makes a land's sides straight walls down to the sea floor	{*}	场地封顶；让陆地侧面成为直落海床的墙壁
+TIP:extra lattice layers lands are lifted; more = taller drop	{*}	额外抬升陆地的格架层数；越大，落差越高
+TIP:animal	animal	动物
+TIP:blank	blank	空白
+TIP:glue	glue	胶水
+TIP:gun	gun	枪
+TIP:leafless birch	leafless birch	无叶白桦
+TIP:painter	painter	画家
+TIP:populator	populator	填充器
+TIP:rope	rope	绳索
+TIP:slabdraw	slabdraw	形块绘制
+TIP:spawner	spawner	生成器
+TIP:spring teenager rowan	spring teenager rowan	春季少年花楸
+TIP:summer adult spruce	summer adult spruce	夏季成年云杉
+TIP:summer rowan	summer rowan	夏季花楸
+TIP:treasure chest	treasure chest	宝箱
+TIP:universeedit	universeedit	宇宙编辑
+TIP:plant	plant	植物
+TIP:plant	plant	植物
+TIP:plant	plant	植物
+TIP:solid	solid	固体
+TIP:fluid	fluid	流体
+TIP:fluid	fluid	流体
+TIP:solid	solid	固体
+TIP:fluid	fluid	流体
+TIP:pilot	pilot	飞行员
+TIP:pilot	pilot	飞行员
+TIP:colored	colored	彩色
+TIP:colored	colored	彩色
+TIP:dark stone	dark stone	深色石头
+TIP:dark stone	dark stone	深色石头
+TIP:dark stone	dark stone	深色石头
+X:TextureText|voima is 100% community funded.	voima is 100% community funded.	VOIMA 100% 由社区资助
+X:TextureText|voima is still buggy and not complete...    so for now   i made this free :)	voima is still buggy and not complete...    so for now   i made this free :)	voima 仍然一堆bug , 并且还没做完...\n所以暂时免费提供给大家 :)
+X:TextureText|voima is still buggy, laggy and not complete btw...     thats why i made this free :)	voima is still buggy, laggy and not complete btw...     thats why i made this free :)	voima 仍然一堆bug , 还很卡 , 并且还没做完...\n所以暂时免费提供给大家 :)
+X:TextureText|crafting	crafting	合成
+X:TextureText|weapons	weapons	武器
+X:TextureText|mining	mining	采矿
+X:TextureText|building	building	建造
+X:TextureText|tough	tough	固体
+X:TextureText|fluids	fluids	流体
+X:TextureText|healing	healing	治疗
+X:TextureText|tools	tools	工具
+X:TextureText|paintings	paintings	画作
+X:TextureText|slabs	slabs	形块
+X:TextureText|hud_font_page	hud_font_page	副操作建造主操作设置网格复制尺寸切换网格更多攻击挖掘放置跳跃丢弃使用装备拳击射击挥动投掷手持饮用食用瘫倒奔跑重生打开背包合成返回鼠标侧键滚轮绘关闭墙体厚度吸附世界编辑始完发
+X:TextureText|recipes crafted	{0} / {1} recipes crafted	{0} / {1} 个配方已合成
+X:TextureText|recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
+X:TextureText|speech_font_page	speech_font_page	交易鼠标左右中键侧滚轮
+X:TextureText|to trade	{*} to trade	{*} 交易
+X:TextureText|letz lvl	letz lvl	莱单朓
+X:TextureText|srsly	srsly	嗦真的
+X:TextureText|you fell to your death.	you fell to your death.	你摔死了
+X:TextureText|{0} / {1} recipes crafted	{0} / {1} recipes crafted	{0} / {1} 个配方已合成
+X:TextureText|{0} / {1} recipes still locked	{0} / {1} recipes still locked	{0} / {1} 个配方未解锁
+X:TextureText|1 recipe still locked	1 recipe still locked	1 个配方未解锁
+X:TextureText|tooth	tooth	牙齿
+X:TextureText|plank	plank	木板
+X:TextureText|jawn axe	jawn axe	嚼斧
 X:TextureText|animal	sup	嗨
-X:TextureText|animal	wazzup	咋样
-X:TextureText|animal	voim voim	voim voim
-X:TextureText|animal	voma	voma
-X:TextureText|animal	gud mohrnin	造上好呀
-X:TextureText|animal	goot aftornuun	瞎午好
-X:TextureText|animal	guuhd evnin	碗上好
-X:TextureText|animal	wanuh b frindz	想脚个盆友吗
-X:TextureText|animal	wattz yur neme	泥叫甚么名字
-X:TextureText|animal	juh niw roun heer?	泥是新来的吗？
-X:TextureText|animal	greehtinz	蛤喽呀
-X:TextureText|animal	blub	咕噜
-X:TextureText|animal	mmmmmmmm	嗯...
-X:TextureText|animal	wat a niec dey tudey	津天天气针好
-X:TextureText|animal	iv nevr sen u befuhr	窝以前没见过泥
-X:TextureText|animal	hoo r u	泥是谁
-X:TextureText|animal	imm lozt	窝迷路乐
-X:TextureText|animal	a piencon a dei kepz de jawn awej..	一颗松果妹天都会被嚼恩纳走...
-X:TextureText|animal	les go minin	取挖矿吧
-X:TextureText|animal	teeheeh	嘻嘻
-X:TextureText|animal	watccu lookn at	泥看甚么看
-X:TextureText|animal	mynd yo buznes	扫管闲似
-X:TextureText|animal	outu mah way	攘开
-X:TextureText|animal	uhhh	呃...
-X:TextureText|animal	hmm hm hm	嗯哼嗯哼
-X:TextureText|animal	helpppp	救命啊啊啊
-X:TextureText|animal	halp	纠命啊
-X:TextureText|animal	hlep	九九我
-X:TextureText|animal	oucc	啊哟
-X:TextureText|animal	sheezh	天那
-X:TextureText|animal	da peyn iz unberabl	痛的嗖不了
-X:TextureText|animal	uupz	呃呀
-X:TextureText|animal	ma leg!!1!	窝滴腿!!1!
-X:TextureText|animal	taht hurrt	豪痛
-X:TextureText|animal	owwww	嗷呜
-X:TextureText|animal	gud ting i hab helth insuranc!	害好窝有宜疗抱险!
-X:TextureText|animal	ackk	呃啊
-X:TextureText|animal	shuuht	哔嘴!
-X:TextureText|animal	breh	兄第
-X:TextureText|animal	gahhh	呀啊啊
-X:TextureText|animal	stapp	卒手!
-X:TextureText|animal	uh o	造了!
-X:TextureText|animal	oopzy deysie	哎呀呀
-X:TextureText|animal	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
-X:TextureText|animal	welp	号吧
-X:TextureText|animal	dawgg	葛们
-X:TextureText|animal	wers ma hony potiun	窝滴冯蜜药水捏？
-X:TextureText|animal	yumi pain	枚味的痛库
-X:TextureText|animal	datz alota demeg	贼桑害可真高
-X:TextureText|animal	oof	唉
-X:TextureText|animal	bro	哥们
-X:TextureText|animal	eeek	呀
-X:TextureText|animal	hhmpff	哼
-X:TextureText|animal	yabbadabaduuu	呀吧哒吧嘟
-X:TextureText|animal	hahhhhhh	呼哈哈哈哈
-X:TextureText|animal	boim boim	砰姆 砰姆
-X:TextureText|animal	bring in da berz	吧熊都叫莱
-X:TextureText|animal	wump womp	乌咚 乌咚
-X:TextureText|animal	itz voimin tieme	voimin时尖到
-X:TextureText|animal	4 voimuhhhh	4 voimu呃呃呃
-X:TextureText|animal	letz 1v1	莱 1v1 单朓
-X:TextureText|animal	diz al u got?	泥就贼点本司？
-X:TextureText|animal	360 nozcop	360杜盲狙
-X:TextureText|animal	ged oudda hirrr	滚粗去
-X:TextureText|animal	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
-X:TextureText|animal	git voimd	被voim了吧
-X:TextureText|animal	izzat blod	那似血吗
-X:TextureText|animal	finaly a wurthi voimpownent	纵于由个像样的voim对手拉
-X:TextureText|animal	teyk thiz	洁招
-X:TextureText|animal	tis izuh roberri	贼是枪劫
-X:TextureText|animal	gg bru	打的豪凶弟
-X:TextureText|animal	am outuh hier	窝撤乐
-X:TextureText|animal	ruhn runn run rrruun run	抛跑抛抛跑
-X:TextureText|animal	glup	咕嘟
-X:TextureText|animal	gg	寄
-X:TextureText|animal	huuuhhlllpppp miiiiiii	救救窝哦哦哦
-X:TextureText|animal	i ned bakkup!	窝徐要兹援!
-X:TextureText|animal	i heyt runnin	窝套厌逃泡
-X:TextureText|animal	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
-X:TextureText|animal	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
-X:TextureText|animal	il b leyt for dinnr	宛饭要妹的吃了
-X:TextureText|animal	pllzz don huhrt mehhh	求泥别丧害窝
-X:TextureText|animal	naaaaaaa	不——
-X:TextureText|animal	ru zingl	泥单森吗
-X:TextureText|animal	wil u mery mih	泥缘意嫁给窝吗
-X:TextureText|animal	i luhv yuu	窝爱泥
-X:TextureText|animal	i lav juh tu	窝叶爱泥
-X:TextureText|animal	blibilibibb	哔哩哔哔
-X:TextureText|animal	bblulubulububbulub	咕噜咕噜
-X:TextureText|animal	teehee	嘻嘻
-X:TextureText|animal	can i has	窝科以要
-X:TextureText|animal	pls gib me	晴给窝
-X:TextureText|animal	do u hav	泥有
-X:TextureText|animal	plz drop mi a	情丢给窝依个
-X:TextureText|animal	i ned a	窝徐要仪个
-X:TextureText|animal	kan i hav	窝能要
-X:TextureText|animal	got sum	由妹有
-X:TextureText|animal	flop	啪嗒
-X:TextureText|animal	wawa	哇哇
-X:TextureText|animal	o	哦
-X:TextureText|animal	ba	吧
-X:TextureText|animal	wdwaiajij	呜哇咿呀
-X:TextureText|animal	ohoh	哦哦
-X:TextureText|animal	addaddddda panpdppndads	啊哒哒哒哒 啪嗒啪嗒
-X:TextureText|baby milo bear	baby milo bear	小米洛熊
 X:TextureText|baby porri bear	baby porri bear	小波里熊
 X:TextureText|baby bear	baby bear	小熊
 X:TextureText|bear	bear	熊
@@ -1203,7 +2924,7 @@ X:TextureText|flowers in vase	flowers in vase	花瓶
 X:TextureText|lamp	lamp	台灯
 X:TextureText|street light	street light	路灯
 X:TextureText|trash bag	trash bag	垃圾袋
-X:TextureText|wooden chest	wooden chest	木箱
+X:TextureText|wooden chest	wooden chest	木头箱子
 X:TextureText|berry juice	berry juice	浆果汁
 X:TextureText|blueberry	blueberry	蓝莓
 X:TextureText|burger	burger	汉堡
@@ -1308,7 +3029,7 @@ X:TextureText|fan	fan	风扇
 X:TextureText|fishing rod	fishing rod	鱼竿
 X:TextureText|flashlight	flashlight	手电筒
 X:TextureText|glue gun	glue gun	胶枪
-X:TextureText|healer	healer	治疗
+X:TextureText|healer	healer	治疗心
 X:TextureText|honey ball	honey ball	蜂蜜球
 X:TextureText|hot pickaxe	hot pickaxe	炽热镐
 X:TextureText|hot shotgun	hot shotgun	炽热霰弹枪
@@ -1322,7 +3043,7 @@ X:TextureText|scissors	scissors	剪刀
 X:TextureText|selector	selector	选择器
 X:TextureText|reverse shotgun	reverse shotgun	反向霰弹枪
 X:TextureText|shotgun	shotgun	霰弹枪
-X:TextureText|slab hand	slab hand	板块手
+X:TextureText|slab hand	slab hand	形块手
 X:TextureText|snowball	snowball	雪球
 X:TextureText|sponge	sponge	海绵
 X:TextureText|torch	torch	火炬
@@ -1346,7 +3067,7 @@ X:TextureText|goot aftornuun	goot aftornuun	瞎午好
 X:TextureText|guuhd evnin	guuhd evnin	碗上好
 X:TextureText|wanuh b frindz	wanuh b frindz	想脚个盆友吗
 X:TextureText|wattz yur neme	wattz yur neme	泥叫甚么名字
-X:TextureText|juh niw roun heer?	juh niw roun heer?	泥是新来的吗？
+X:TextureText|juh niw roun heer?	juh niw roun heer?	泥是新来的吗 ?
 X:TextureText|greehtinz	greehtinz	蛤喽呀
 X:TextureText|blub	blub	咕噜
 X:TextureText|mmmmmmmm	mmmmmmmm	嗯...
@@ -1382,7 +3103,7 @@ X:TextureText|oopzy deysie	oopzy deysie	哎呀呀
 X:TextureText|ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
 X:TextureText|welp	welp	号吧
 X:TextureText|dawgg	dawgg	葛们
-X:TextureText|wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏？
+X:TextureText|wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏 ?
 X:TextureText|yumi pain	yumi pain	枚味的痛库
 X:TextureText|datz alota demeg	datz alota demeg	贼桑害可真高
 X:TextureText|oof	oof	唉
@@ -1395,7 +3116,7 @@ X:TextureText|boim boim	boim boim	砰姆 砰姆
 X:TextureText|bring in da berz	bring in da berz	吧熊都叫莱
 X:TextureText|wump womp	wump womp	乌咚 乌咚
 X:TextureText|itz voimin tieme	itz voimin tieme	voimin时尖到
-X:TextureText|diz al u got?	diz al u got?	泥就贼点本司？
+X:TextureText|diz al u got?	diz al u got?	泥就贼点本司 ?
 X:TextureText|ged oudda hirrr	ged oudda hirrr	滚粗去
 X:TextureText|grrrrrrhhrrggrr grrrrrrhh	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
 X:TextureText|git voimd	git voimd	被voim了吧
@@ -1411,7 +3132,7 @@ X:TextureText|gg	gg	寄
 X:TextureText|huuuhhlllpppp miiiiiii	huuuhhlllpppp miiiiiii	救救窝哦哦哦
 X:TextureText|i ned bakkup!	i ned bakkup!	窝徐要兹援!
 X:TextureText|i heyt runnin	i heyt runnin	窝套厌逃泡
-X:TextureText|run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
+X:TextureText|run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑 , 未了泥的 VOoIMmmm!!!1!1!!
 X:TextureText|wehrs valtsu wen i nid emmm	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
 X:TextureText|il b leyt for dinnr	il b leyt for dinnr	宛饭要妹的吃了
 X:TextureText|pllzz don huhrt mehhh	pllzz don huhrt mehhh	求泥别丧害窝
@@ -1437,684 +3158,49 @@ X:TextureText|ba	ba	吧
 X:TextureText|wdwaiajij	wdwaiajij	呜哇咿呀
 X:TextureText|ohoh	ohoh	哦哦
 X:TextureText|addaddddda panpdppndads	addaddddda panpdppndads	啊哒哒哒哒 啪嗒啪嗒
-TIP:baby milo bear	baby milo bear	小米洛熊
-TIP:baby porri bear	baby porri bear	小波里熊
-TIP:baby bear	baby bear	小熊
-TIP:bear	bear	熊
-TIP:bear x	bear x	熊 X
-TIP:bear y	bear y	熊 Y
-TIP:bee	bee	蜜蜂
-TIP:bee nest	bee nest	蜂巢
-TIP:boulder	boulder	巨石
-TIP:goober	goober	咕宝
-TIP:haze	haze	霾
-TIP:haze skin	haze skin	霾皮
-TIP:baby jawn tree	baby jawn tree	嚼恩树苗
-TIP:jawn	jawn	嚼恩
-TIP:jawn tree	jawn tree	嚼恩树
-TIP:tooth	tooth	牙齿
-TIP:magpie	magpie	喜鹊
-TIP:metallic skeleton	metallic skeleton	金属骷髅
-TIP:bone	bone	骨头
-TIP:skeleton bear	skeleton bear	骷髅熊
-TIP:skull	skull	头骨
-TIP:welf	welf	韦尔夫
-TIP:boombox	boombox	音响
-TIP:camel statue	camel statue	骆驼雕像
-TIP:flowers in vase	flowers in vase	花瓶
-TIP:lamp	lamp	台灯
-TIP:street light	street light	路灯
-TIP:trash bag	trash bag	垃圾袋
-TIP:wooden chest	wooden chest	木箱
-TIP:berry juice	berry juice	浆果汁
-TIP:blueberry	blueberry	蓝莓
-TIP:burger	burger	汉堡
-TIP:honey potion	honey potion	蜂蜜药水
-TIP:jesus on the cross	jesus on the cross	十字架上的耶稣
-TIP:strawberry	strawberry	草莓
-TIP:reach	reach	触碰
-TIP:void	void	虚空
-TIP:ash bucket	ash bucket	烟灰桶
-TIP:barrel	barrel	木桶
-TIP:cabin	cabin	小屋
-TIP:kitchen	kitchen	厨房
-TIP:movie	movie	电影
-TIP:music box	music box	八音盒
-TIP:reunion	reunion	重逢
-TIP:the vision	the vision	愿景
-TIP:the way	the way	道路
-TIP:trash	trash	垃圾
-TIP:winter pc	winter pc	冬日电脑
-TIP:cows	cows	奶牛
-TIP:meet voima	meet voima	遇见 voima
-TIP:museum bear	museum bear	博物馆熊
-TIP:sectors	sectors	《Sectors》
-TIP:standoff	standoff	对峙
-TIP:adult ghost pine	adult ghost pine	成年幽灵松
-TIP:adult pine	adult pine	成年松树
-TIP:baby pine	baby pine	松树苗
-TIP:birch	birch	白桦
-TIP:bush	bush	灌木
-TIP:cave plant	cave plant	洞穴植物
-TIP:fern	fern	蕨类
-TIP:ghost pine	ghost pine	幽灵松
-TIP:hay pile	hay pile	干草堆
-TIP:mushroom big	mushroom big	大蘑菇
-TIP:mushroom small	mushroom small	小蘑菇
-TIP:pinecone	pinecone	松果
-TIP:rock	rock	岩石
-TIP:invert spruce	invert spruce	倒置云杉
-TIP:mirror adult pine	mirror adult pine	镜像成年松
-TIP:mirror winter birch	mirror winter birch	镜像冬桦
-TIP:teenager birch	teenager birch	白桦幼树
-TIP:teenager birch trunk	teenager birch trunk	白桦幼树干
-TIP:teenager spruce	teenager spruce	云杉幼树
-TIP:winter adult spruce	winter adult spruce	冬季成年云杉
-TIP:winter baby spruce	winter baby spruce	冬季云杉苗
-TIP:winter birch	winter birch	冬桦
-TIP:winter rowan	winter rowan	冬季花楸
-TIP:winter teenager spruce	winter teenager spruce	冬季云杉幼树
-TIP:blue checker	blue checker	蓝色棋盘格
-TIP:brown checker	brown checker	棕色棋盘格
-TIP:chess checker	chess checker	象棋棋盘格
-TIP:error checker	error checker	错误棋盘格
-TIP:pink checker	pink checker	粉色棋盘格
-TIP:white checker	white checker	白色棋盘格
-TIP:circuit	circuit	电路
-TIP:mirror x	mirror x	镜像X
-TIP:mirror y	mirror y	镜像Y
-TIP:honey	honey	蜂蜜
-TIP:lava	lava	熔岩
-TIP:water	water	水
-TIP:ash	ash	灰烬
-TIP:fur	fur	毛皮
-TIP:glass	glass	玻璃
-TIP:metal	metal	金属
-TIP:blueberry bush	blueberry bush	蓝莓灌木
-TIP:dirt	dirt	泥土
-TIP:hay	hay	干草
-TIP:ice	ice	冰
-TIP:moss	moss	苔藓
-TIP:mossy log	mossy log	苔藓原木
-TIP:mossy stone	mossy stone	苔藓石
-TIP:sand	sand	沙子
-TIP:snow	snow	雪
-TIP:blur	blur	模糊
-TIP:blurry mirror x	blurry mirror x	模糊镜像X
-TIP:blurry mirror y	blurry mirror y	模糊镜像Y
-TIP:forever	forever	永恒
-TIP:gray window	gray window	灰色窗户
-TIP:invert	invert	反色
-TIP:inverted window	inverted window	反色窗户
-TIP:sky	sky	天空
-TIP:brick	brick	砖块
-TIP:brick tile	brick tile	砖瓦
-TIP:cobble	cobble	鹅卵石
-TIP:concrete	concrete	混凝土
-TIP:rocks	rocks	碎石
-TIP:stone	stone	石头
-TIP:stone dots	stone dots	点状石
-TIP:logs	logs	原木
-TIP:pine bark	pine bark	松树皮
-TIP:plank	plank	木板
-TIP:wood	wood	木头
-TIP:balloon	balloon	气球
-TIP:bomb	bomb	炸弹
-TIP:smoke	smoke	烟雾
-TIP:chisel	chisel	凿子
-TIP:coin	coin	硬币
-TIP:drill	drill	钻头
-TIP:fan	fan	风扇
-TIP:fishing rod	fishing rod	鱼竿
-TIP:flashlight	flashlight	手电筒
-TIP:healer	healer	治疗
-TIP:honey ball	honey ball	蜂蜜球
-TIP:hot pickaxe	hot pickaxe	炽热镐
-TIP:hot shotgun	hot shotgun	炽热霰弹枪
-TIP:jawn axe	jawn axe	嚼斧
-TIP:jumper	jumper	跳枪
-TIP:magnet	magnet	磁铁
-TIP:metal spike	metal spike	金属尖刺
-TIP:paint brush	paint brush	画笔
-TIP:respawn statue	respawn statue	重生雕像
-TIP:diamond scissors	diamond scissors	钻石剪刀
-TIP:scissors	scissors	剪刀
-TIP:reverse shotgun	reverse shotgun	反向霰弹枪
-TIP:shotgun	shotgun	霰弹枪
-TIP:snowball	snowball	雪球
-TIP:sponge	sponge	海绵
-TIP:torch	torch	火炬
-TIP:universe edit	universe edit	宇宙编辑
-TIP:block shooter	block shooter	方块发射器
-TIP:chaingun	chaingun	链炮
-TIP:snowball shooter	snowball shooter	雪球发射器
-TIP:wooden pickaxe	wooden pickaxe	木镐
-TIP:wooden shotgun	wooden shotgun	木头霰弹枪
-TIP:wooden turret	wooden turret	木头炮塔
-TIP:world edit	world edit	世界编辑
-TIP:bubble	bubble	泡泡
-TIP:love	love	爱心
-TIP:portal	portal	传送门
-TIP:pickup	pickup	拾取
-TIP:birch forest	birch forest	白桦林
-TIP:dirt forest	dirt forest	泥土森林
-TIP:error	error	错误
-TIP:farlands	farlands	边境之地
-TIP:forest	forest	森林
-TIP:ocean	ocean	海洋
-TIP:pine forest	pine forest	松树林
-TIP:plains	plains	平原
-TIP:sand forest	sand forest	沙林
-TIP:spruce forest	spruce forest	云杉林
-TIP:winter	winter	冬天
-TIP:sup	sup	嗨
-TIP:wazzup	wazzup	咋样
-TIP:voma	voma	voma
-TIP:gud mohrnin	gud mohrnin	造上好呀
-TIP:goot aftornuun	goot aftornuun	瞎午好
-TIP:guuhd evnin	guuhd evnin	碗上好
-TIP:wanuh b frindz	wanuh b frindz	想脚个盆友吗
-TIP:wattz yur neme	wattz yur neme	泥叫甚么名字
-TIP:juh niw roun heer?	juh niw roun heer?	泥是新来的吗？
-TIP:greehtinz	greehtinz	蛤喽呀
-TIP:blub	blub	咕噜
-TIP:mmmmmmmm	mmmmmmmm	嗯...
-TIP:wat a niec dey tudey	wat a niec dey tudey	津天天气针好
-TIP:iv nevr sen u befuhr	iv nevr sen u befuhr	窝以前没见过泥
-TIP:hoo r u	hoo r u	泥是谁
-TIP:imm lozt	imm lozt	窝迷路乐
-TIP:a piencon a dei kepz de jawn awej..	a piencon a dei kepz de jawn awej..	一颗松果妹天都会被嚼恩纳走...
-TIP:les go minin	les go minin	取挖矿吧
-TIP:teeheeh	teeheeh	嘻嘻
-TIP:watccu lookn at	watccu lookn at	泥看甚么看
-TIP:mynd yo buznes	mynd yo buznes	扫管闲似
-TIP:outu mah way	outu mah way	攘开
-TIP:uhhh	uhhh	呃...
-TIP:hmm hm hm	hmm hm hm	嗯哼嗯哼
-TIP:helpppp	helpppp	救命啊啊啊
-TIP:halp	halp	纠命啊
-TIP:hlep	hlep	九九我
-TIP:oucc	oucc	啊哟
-TIP:sheezh	sheezh	天那
-TIP:da peyn iz unberabl	da peyn iz unberabl	痛的嗖不了
-TIP:uupz	uupz	呃呀
-TIP:taht hurrt	taht hurrt	豪痛
-TIP:owwww	owwww	嗷呜
-TIP:gud ting i hab helth insuranc!	gud ting i hab helth insuranc!	害好窝有宜疗抱险!
-TIP:ackk	ackk	呃啊
-TIP:shuuht	shuuht	哔嘴!
-TIP:breh	breh	兄第
-TIP:gahhh	gahhh	呀啊啊
-TIP:stapp	stapp	卒手!
-TIP:uh o	uh o	造了!
-TIP:oopzy deysie	oopzy deysie	哎呀呀
-TIP:ma byuhtiful rezlutiuhn!!!	ma byuhtiful rezlutiuhn!!!	窝妹丽滴的决心!!!
-TIP:welp	welp	号吧
-TIP:dawgg	dawgg	葛们
-TIP:wers ma hony potiun	wers ma hony potiun	窝滴冯蜜药水捏？
-TIP:yumi pain	yumi pain	枚味的痛库
-TIP:datz alota demeg	datz alota demeg	贼桑害可真高
-TIP:oof	oof	唉
-TIP:bro	bro	哥们
-TIP:eeek	eeek	呀
-TIP:hhmpff	hhmpff	哼
-TIP:yabbadabaduuu	yabbadabaduuu	呀吧哒吧嘟
-TIP:hahhhhhh	hahhhhhh	呼哈哈哈哈
-TIP:boim boim	boim boim	砰姆 砰姆
-TIP:bring in da berz	bring in da berz	吧熊都叫莱
-TIP:wump womp	wump womp	乌咚 乌咚
-TIP:itz voimin tieme	itz voimin tieme	voimin时尖到
-TIP:diz al u got?	diz al u got?	泥就贼点本司？
-TIP:ged oudda hirrr	ged oudda hirrr	滚粗去
-TIP:grrrrrrhhrrggrr grrrrrrhh	grrrrrrhhrrggrr grrrrrrhh	吼吼吼吼
-TIP:git voimd	git voimd	被voim了吧
-TIP:izzat blod	izzat blod	那似血吗
-TIP:finaly a wurthi voimpownent	finaly a wurthi voimpownent	纵于由个像样的voim对手拉
-TIP:teyk thiz	teyk thiz	洁招
-TIP:tis izuh roberri	tis izuh roberri	贼是枪劫
-TIP:gg bru	gg bru	打的豪凶弟
-TIP:am outuh hier	am outuh hier	窝撤乐
-TIP:ruhn runn run rrruun run	ruhn runn run rrruun run	抛跑抛抛跑
-TIP:glup	glup	咕嘟
-TIP:gg	gg	寄
-TIP:huuuhhlllpppp miiiiiii	huuuhhlllpppp miiiiiii	救救窝哦哦哦
-TIP:i ned bakkup!	i ned bakkup!	窝徐要兹援!
-TIP:i heyt runnin	i heyt runnin	窝套厌逃泡
-TIP:run 4 yur vooimmmm!!!1!1!!	run 4 yur vooimmmm!!!1!1!!	块跑，未了泥的 VOoIMmmm!!!1!1!!
-TIP:wehrs valtsu wen i nid emmm	wehrs valtsu wen i nid emmm	窝徐要的食候 Valtsu 仔哪
-TIP:il b leyt for dinnr	il b leyt for dinnr	宛饭要妹的吃了
-TIP:pllzz don huhrt mehhh	pllzz don huhrt mehhh	求泥别丧害窝
-TIP:naaaaaaa	naaaaaaa	不——
-TIP:ru zingl	ru zingl	泥单森吗
-TIP:wil u mery mih	wil u mery mih	泥缘意嫁给窝吗
-TIP:i luhv yuu	i luhv yuu	窝爱泥
-TIP:i lav juh tu	i lav juh tu	窝叶爱泥
-TIP:blibilibibb	blibilibibb	哔哩哔哔
-TIP:bblulubulububbulub	bblulubulububbulub	咕噜咕噜
-TIP:teehee	teehee	嘻嘻
-TIP:can i has	can i has	窝科以要
-TIP:pls gib me	pls gib me	晴给窝
-TIP:do u hav	do u hav	泥有
-TIP:plz drop mi a	plz drop mi a	情丢给窝依个
-TIP:i ned a	i ned a	窝徐要仪个
-TIP:kan i hav	kan i hav	窝能要
-TIP:got sum	got sum	由妹有
-TIP:flop	flop	啪嗒
-TIP:wawa	wawa	哇哇
-TIP:ba	ba	吧
-TIP:wdwaiajij	wdwaiajij	呜哇咿呀
-TIP:ohoh	ohoh	哦哦
-TIP:addaddddda panpdppndads	addaddddda panpdppndads	啊哒哒哒哒 啪嗒啪嗒
-MUSIC:now playing:melodic noise	now playing melodic noise	正在播放 melodic noise (噪声旋律)
-MUSIC:now playing:melodic noise	now playing melodic noise by {*}	正在播放 melodic noise (噪声旋律) by {*}
-MUSIC:now playing:meditate	now playing meditate	正在播放 meditate (冥想)
-MUSIC:now playing:meditate	now playing meditate by {*}	正在播放 meditate (冥想) by {*}
-MUSIC:now playing:carousel	now playing carousel	正在播放 carousel (旋转木马)
-MUSIC:now playing:carousel	now playing carousel by {*}	正在播放 carousel (旋转木马) by {*}
-MUSIC:now playing:icecream	now playing icecream	正在播放 icecream (冰淇淋)
-MUSIC:now playing:icecream	now playing icecream by {*}	正在播放 icecream (冰淇淋) by {*}
-MUSIC:now playing:amble	now playing amble	正在播放 amble (漫步)
-MUSIC:now playing:amble	now playing amble by {*}	正在播放 amble (漫步) by {*}
-MUSIC:now playing:drift	now playing drift	正在播放 drift (漂流)
-MUSIC:now playing:drift	now playing drift by {*}	正在播放 drift (漂流) by {*}
-MUSIC:now playing:lost	now playing lost	正在播放 lost (迷失)
-MUSIC:now playing:lost	now playing lost by {*}	正在播放 lost (迷失) by {*}
-MUSIC:now playing:oranger	now playing oranger	正在播放 oranger (橘园)
-MUSIC:now playing:oranger	now playing oranger by {*}	正在播放 oranger (橘园) by {*}
-MUSIC:now playing:pinecone	now playing pinecone	正在播放 pinecone (松果)
-MUSIC:now playing:pinecone	now playing pinecone by {*}	正在播放 pinecone (松果) by {*}
-MUSIC:now playing:snowfall	now playing snowfall	正在播放 snowfall (落雪)
-MUSIC:now playing:snowfall	now playing snowfall by {*}	正在播放 snowfall (落雪) by {*}
-MUSIC:now playing:still	now playing still	正在播放 still (静止)
-MUSIC:now playing:still	now playing still by {*}	正在播放 still (静止) by {*}
-MUSIC:now playing:convivium	now playing convivium	正在播放 convivium (筵席)
-MUSIC:now playing:convivium	now playing convivium by {*}	正在播放 convivium (筵席) by {*}
-MUSIC:now playing:geo	now playing geo	正在播放 geo (大地)
-MUSIC:now playing:geo	now playing geo by {*}	正在播放 geo (大地) by {*}
-MUSIC:now playing:lullaby	now playing lullaby	正在播放 lullaby (摇篮曲)
-MUSIC:now playing:lullaby	now playing lullaby by {*}	正在播放 lullaby (摇篮曲) by {*}
-MUSIC:now playing:icecream has melted	now playing icecream has melted	正在播放 icecream has melted (冰淇淋融化了)
-MUSIC:now playing:icecream has melted	now playing icecream has melted by {*}	正在播放 icecream has melted (冰淇淋融化了) by {*}
-MUSIC:now playing:hypno	now playing hypno	正在播放 hypno (催眠)
-MUSIC:now playing:hypno	now playing hypno by {*}	正在播放 hypno (催眠) by {*}
-MUSIC:now playing:bird	now playing bird	正在播放 bird (鸟)
-MUSIC:now playing:bird	now playing bird by {*}	正在播放 bird (鸟) by {*}
-MUSIC:now playing:bowed	now playing bowed	正在播放 bowed (弓弦)
-MUSIC:now playing:bowed	now playing bowed by {*}	正在播放 bowed (弓弦) by {*}
-MUSIC:now playing:hi	now playing hi	正在播放 hi (嗨)
-MUSIC:now playing:hi	now playing hi by {*}	正在播放 hi (嗨) by {*}
-MUSIC:now playing:old bird	now playing old bird	正在播放 old bird (老鸟)
-MUSIC:now playing:old bird	now playing old bird by {*}	正在播放 old bird (老鸟) by {*}
-MUSIC:now playing:owl	now playing owl	正在播放 owl (猫头鹰)
-MUSIC:now playing:owl	now playing owl by {*}	正在播放 owl (猫头鹰) by {*}
-MUSIC:now playing:wanting more	now playing wanting more	正在播放 wanting more (欲求更多)
-MUSIC:now playing:wanting more	now playing wanting more by {*}	正在播放 wanting more (欲求更多) by {*}
 X:TextureText|launch	launch	发射
-TIP:launch	launch	发射
-HUD:draw	draw	绘制
-HUD:wall thickness off	wall thickness off	关闭墙体厚度
-HUD:snap	snap	吸附
-HUD:world edit	world edit	世界编辑
-HUD:start setting grid	start setting grid	开始设置网格
-HUD:complete drawing	complete drawing	完成绘制
-HUD:set grid	set grid	设置网格
-HUD:copy size	copy size	复制尺寸
-HUD:toggle grid	toggle grid	切换网格
-HUD:more	more	更多
-HUD:edit world settings	edit world settings	编辑世界设置
-W:Window:tabs|n:color:Button|text_name	color	颜色
-TIP:world editor	world editor	世界编辑器
-W:Window:set color|n:stop picking color:Button|text_name	stop picking color	停止取色
-W:Window:delete...|header_text	delete...	删除...
-TIP:jawn tree 7x	jawn tree\n7x	嚼恩树\n7x
-W:Window:graphics settings|n:disable reflections:BoolButton|text_name	disable reflections\nand waves	禁用反射\n与水面
-TIP:console	console	控制台
-W:Window:tabs|n:remove:Button|text_name	remove\ngrid	移除\n网格
-W:Window:tabs|n:set:Button|text_name	set\ngrid	设置\n网格
-TIP:open universe folder	open universe folder	打开宇宙文件夹
-HUD:complete	complete	完成
-HUD:slope	slope	斜坡
-HUD:force height	force height	强制高度
-HUD:stop	stop	停止
-HUD:latest point to finish wall	latest point to finish wall	最后一点完成墙体
-HUD:reload universe	reload universe	重新加载宇宙
-HUD:printer	printer	打印机
-HUD:reset edits in entire universe	reset edits in entire universe	重置整个宇宙的编辑
-TIP:reload universe	reload universe	重新加载宇宙
-TIP:printer	printer	打印机
-TIP:reset edits in entire universe	reset edits in entire universe	重置整个宇宙的编辑
-W:Window:error report|header_text	error report	错误报告
-W:Window:backups|header_text	backups	备份
-W:Window:|n:resolution width:StringButton|text_name	resolution width	分辨率宽度
-W:Window:|n:resolution height:StringButton|text_name	resolution height	分辨率高度
-W:Window:|n:fov:SliderButton|text_name	fov	视场角(fov)
-W:Window:|n:distance:AdjusterButton|text_name	distance	距离
-W:Window:|n:height:AdjusterButton|text_name	height	高度
-W:Window:|n:angle:AdjusterButton|text_name	angle	角度
-W:Window:|n:sides:SliderButton|text_name	sides	边数
-W:Window:|n:shadows:SliderButton|text_name	shadows	阴影
-W:Window:|n:pivot x:AdjusterButton|text_name	pivot x	轴心 X
-W:Window:|n:pivot y:AdjusterButton|text_name	pivot y	轴心 Y
-W:Window:|n:load settings:Button|text_name	load settings	加载设置
-W:Window:|n:load models:Button|text_name	load models	加载模型
-W:Window:|n:exit printer:Button|text_name	exit printer	退出打印机
-W:Window:|n:exit printer:Button|text_name	are you sure?	你确定吗？
-W:Window:|n:slice spritesheet:Button|text_name	slice spritesheet	切分精灵表
-W:Window:|n:pivot z:AdjusterButton|text_name	pivot z	轴心 Z
-W:Window:|n:rotation x:AdjusterButton|text_name	rotation x	旋转 X
-W:Window:|n:rotation y:AdjusterButton|text_name	rotation y	旋转 Y
-W:Window:|n:rotation z:AdjusterButton|text_name	rotation z	旋转 Z
-W:Window:controls|n:reset controls:Button|text_name	are you sure?	你确定吗？
-MUSIC:now playing:cherry tree pt 1	now playing cherry tree pt 1	正在播放 cherry tree pt 1 (樱桃树 其1)
-MUSIC:now playing:cherry tree pt 1	now playing cherry tree pt 1 by {*}	正在播放 cherry tree pt 1 (樱桃树 其1) by {*}
-MUSIC:now playing:cherry tree pt 2	now playing cherry tree pt 2	正在播放 cherry tree pt 2 (樱桃树 其2)
-MUSIC:now playing:cherry tree pt 2	now playing cherry tree pt 2 by {*}	正在播放 cherry tree pt 2 (樱桃树 其2) by {*}
-MUSIC:now playing:5	now playing 5	正在播放 5
-MUSIC:now playing:5	now playing 5 by {*}	正在播放 5 by {*}
-W:Window:world details|n:play:Button|text_name	play	开始游戏
-W:Window:world details|n:edit:Button|text_name	edit	编辑
-W:Window:world details|n:export:Button|text_name	export	导出
-W:Window:world details|n:delete:Button|text_name	delete	删除
-W:Window:world details|n:delete:Button|text_name	are you sure?	你确定吗？
-W:Window:world details|n:cheats enabled:TextButton|text_name	cheats enabled	已开启作弊
-W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played: {0} hours ago	上次游玩：{0} 小时前
-W:Window:world details|n:Last played: # hours ago:TextButton|text_name	Last played:  {0} hours ago	上次游玩：{0} 小时前
-W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played: yesterday	上次游玩：昨天
-W:Window:world details|n:Last played: yesterday:TextButton|text_name	Last played:  yesterday	上次游玩：昨天
-W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played: {0} minutes	总游玩时间：{0} 分钟
-W:Window:world details|n:Total Played: # minutes:TextButton|text_name	Total Played:  {0} minutes	总游玩时间：{0} 分钟
-W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played: {0} hours	总游玩时间：{0} 小时
-W:Window:world details|n:Total Played: # hours:TextButton|text_name	Total Played:  {0} hours	总游玩时间：{0} 小时
-W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played: {0} days ago	上次游玩：{0} 天前
-W:Window:world details|n:Last played: # days ago:TextButton|text_name	Last played:  {0} days ago	上次游玩：{0} 天前
-W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played: {0} minutes ago	上次游玩：{0} 分钟前
-W:Window:world details|n:Last played: # minutes ago:TextButton|text_name	Last played:  {0} minutes ago	上次游玩：{0} 分钟前
-W:Window:world details|n:Last played: just now:TextButton|text_name	Last played: just now	上次游玩：刚刚
-W:Window:world details|n:creative world:TextButton|text_name	creative world	创造世界
-W:Window:world details|n:sandbox world:TextButton|text_name	sandbox world	沙盒世界
-W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played: less than a minute ago	上次游玩：不到一分钟前
-W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played: {0} seconds	总游玩时间：{0} 秒
-W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played: {0} days	总游玩时间：{0} 天
-W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played: {0} seconds ago	上次游玩：{0} 秒前
-W:Window:world details|n:Last played: less than a minute ago:TextButton|text_name	Last played:  less than a minute ago	上次游玩：不到一分钟前
-W:Window:world details|n:Total Played: # seconds:TextButton|text_name	Total Played:  {0} seconds	总游玩时间：{0} 秒
-W:Window:world details|n:Total Played: # days:TextButton|text_name	Total Played:  {0} days	总游玩时间：{0} 天
-W:Window:world details|n:Last played: # seconds ago:TextButton|text_name	Last played:  {0} seconds ago	上次游玩：{0} 秒前
-ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}?	窝科以要{*}
-ANIMAL:characters/bear/bear:beg_messages:0	can i has {*}	窝科以要{*}
-ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}?	请给窝{*}
-ANIMAL:characters/bear/bear:beg_messages:1	pls gib me {*}	请给窝{*}
-ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}?	泥有{*}
-ANIMAL:characters/bear/bear:beg_messages:2	do u hav {*}	泥有{*}
-ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}?	情丢给窝依个{*}
-ANIMAL:characters/bear/bear:beg_messages:3	plz drop mi a {*}	情丢给窝依个{*}
-ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}?	窝徐要仪个{*}
-ANIMAL:characters/bear/bear:beg_messages:4	i ned a {*}	窝徐要仪个{*}
-ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}?	窝能要{*}
-ANIMAL:characters/bear/bear:beg_messages:5	kan i hav {*}	窝能要{*}
-ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}?	由妹有{*}
-ANIMAL:characters/bear/bear:beg_messages:6	got sum {*}	由妹有{*}
-W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played: {0} second	总游玩时间：{0} 秒
-W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played: {0} second ago	上次游玩：{0} 秒前
-W:Window:world details|n:Total Played: # second:TextButton|text_name	Total Played:  {0} second	总游玩时间：{0} 秒
-W:Window:world details|n:Last played: # second ago:TextButton|text_name	Last played:  {0} second ago	上次游玩：{0} 秒前
-W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played: {0} minute	总游玩时间：{0} 分钟
-W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played: {0} minute ago	上次游玩：{0} 分钟前
-W:Window:world details|n:Total Played: # minute:TextButton|text_name	Total Played:  {0} minute	总游玩时间：{0} 分钟
-W:Window:world details|n:Last played: # minute ago:TextButton|text_name	Last played:  {0} minute ago	上次游玩：{0} 分钟前
-W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played: {0} hour	总游玩时间：{0} 小时
-W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played: {0} hour ago	上次游玩：{0} 小时前
-W:Window:world details|n:Total Played: # hour:TextButton|text_name	Total Played:  {0} hour	总游玩时间：{0} 小时
-W:Window:world details|n:Last played: # hour ago:TextButton|text_name	Last played:  {0} hour ago	上次游玩：{0} 小时前
-W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played: {0} day	总游玩时间：{0} 天
-W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played: {0} day ago	上次游玩：{0} 天前
-W:Window:world details|n:Total Played: # day:TextButton|text_name	Total Played:  {0} day	总游玩时间：{0} 天
-W:Window:world details|n:Last played: # day ago:TextButton|text_name	Last played:  {0} day ago	上次游玩：{0} 天前
-W:Window:cancel|n:cancel:Button|text_name	cancel	取消
-W:Window:your new world...|n:S:CategoryButton|text_value	S	小
-W:Window:your new world...|n:S:BoolButton|text_value	S	小
-W:Window:your new world...|n:S:Button|text_value	S	小
-W:Window:your new world...|n:M:CategoryButton|text_value	M	中
-W:Window:your new world...|n:M:BoolButton|text_value	M	中
-W:Window:your new world...|n:M:Button|text_value	M	中
-W:Window:your new world...|n:L:CategoryButton|text_value	L	大
-W:Window:your new world...|n:L:BoolButton|text_value	L	大
-W:Window:your new world...|n:L:Button|text_value	L	大
-W:Window:your new world...|n:XL:CategoryButton|text_value	XL	特大
-W:Window:your new world...|n:XL:BoolButton|text_value	XL	特大
-W:Window:your new world...|n:XL:Button|text_value	XL	特大
-W:Window:your new world...|n:XXL:CategoryButton|text_value	XXL	太大啦!
-W:Window:your new world...|n:XXL:BoolButton|text_value	XXL	太大啦!
-W:Window:your new world...|n:XXL:Button|text_value	XXL	太大啦!
 X:TextureText|generating the world..	generating the world..	正在生成世界...
 X:TextureText|generating the world...	generating the world...	正在生成世界...
-W:Window:are you sure?|header_text	are you sure?	你确定吗？
-DEATH:void	you fell into the void.	你坠入了虚空
-DEATH:suffocate	you drowned.	你进水了
-DEATH:card	you were killed by {*}.	你被 {*} 杀死了
-DEATH:card	you fell to your death.	你摔死了
-DEATH:card	you fell to their death.	你因他们摔死了
-DEATH:card	you exploded.	你爆炸了
-DEATH:card	you squished by a slab.	你被板块压扁了
-DEATH:card	you hit a wall too hard.	你撞墙太狠了
-DEATH:card	you died from a falling {*}	你被掉落的 {*} 砸死了
-DEATH:card	you died.	你死了
-DEATH:card	you fell into the void.	你坠入了虚空
-DEATH:card	you drowned.	你进水了
-DEATH:card	you exploded by {*}.	你被 {*} 炸死了
-ITEM:adult ghost pine	adult ghost pine	成年幽灵松
-ITEM:adult pine	adult pine	成年松树
-ITEM:ash	ash	灰烬
-ITEM:ash bucket	ash bucket	烟灰桶
-ITEM:baby bear	baby bear	小熊
-ITEM:baby jawn tree	baby jawn tree	嚼恩树苗
-ITEM:baby milo bear	baby milo bear	小米洛熊
-ITEM:baby pine	baby pine	松树苗
-ITEM:baby porri bear	baby porri bear	小波里熊
-ITEM:balloon	balloon	气球
-ITEM:barrel	barrel	木桶
-ITEM:bear	bear	熊
-ITEM:bear x	bear x	熊 X
-ITEM:bear y	bear y	熊 Y
-ITEM:bee	bee	蜜蜂
-ITEM:bee nest	bee nest	蜂巢
-ITEM:berry juice	berry juice	浆果汁
-ITEM:birch	birch	白桦
-ITEM:block shooter	block shooter	方块发射器
-ITEM:blue checker	blue checker	蓝色棋盘格
-ITEM:blueberry	blueberry	蓝莓
-ITEM:blueberry bush	blueberry bush	蓝莓灌木
-ITEM:blur	blur	模糊
-ITEM:blurry mirror x	blurry mirror x	模糊镜像X
-ITEM:blurry mirror y	blurry mirror y	模糊镜像Y
-ITEM:bomb	bomb	炸弹
-ITEM:bone	bone	骨头
-ITEM:boombox	boombox	音响
-ITEM:boulder	boulder	巨石
-ITEM:brick	brick	砖块
-ITEM:brick tile	brick tile	砖瓦
-ITEM:brown checker	brown checker	棕色棋盘格
-ITEM:bubble	bubble	泡泡
-ITEM:burger	burger	汉堡
-ITEM:bush	bush	灌木
-ITEM:cabin	cabin	小屋
-ITEM:camel statue	camel statue	骆驼雕像
-ITEM:card hand	card hand	卡片手
-ITEM:cave plant	cave plant	洞穴植物
-ITEM:chaingun	chaingun	链炮
-ITEM:chess checker	chess checker	象棋棋盘格
-ITEM:chisel	chisel	凿子
-ITEM:circuit	circuit	电路
-ITEM:cobble	cobble	鹅卵石
-ITEM:coin	coin	硬币
-ITEM:concrete	concrete	混凝土
-ITEM:control pad	control pad	控制板
-ITEM:cows	cows	奶牛
-ITEM:diamond scissors	diamond scissors	钻石剪刀
-ITEM:dirt	dirt	泥土
-ITEM:drill	drill	钻头
-ITEM:error checker	error checker	错误棋盘格
-ITEM:fan	fan	风扇
-ITEM:fern	fern	蕨类
-ITEM:fishing rod	fishing rod	鱼竿
-ITEM:flashlight	flashlight	手电筒
-ITEM:flowers in vase	flowers in vase	花瓶
-ITEM:forever	forever	永恒
-ITEM:fur	fur	毛皮
-ITEM:ghost pine	ghost pine	幽灵松
-ITEM:glass	glass	玻璃
-ITEM:glue gun	glue gun	胶枪
-ITEM:goober	goober	咕宝
-ITEM:gray window	gray window	灰色窗户
-ITEM:hay	hay	干草
-ITEM:hay pile	hay pile	干草堆
-ITEM:haze	haze	霾
-ITEM:haze skin	haze skin	霾皮
-ITEM:healer	healer	治疗
-ITEM:honey	honey	蜂蜜
-ITEM:honey ball	honey ball	蜂蜜球
-ITEM:honey potion	honey potion	蜂蜜药水
-ITEM:hot pickaxe	hot pickaxe	炽热镐
-ITEM:hot shotgun	hot shotgun	炽热霰弹枪
-ITEM:ice	ice	冰
-ITEM:invert	invert	反色
-ITEM:invert spruce	invert spruce	倒置云杉
-ITEM:inverted window	inverted window	反色窗户
-ITEM:jawn	jawn	嚼恩
-ITEM:jawn axe	jawn axe	嚼斧
-ITEM:jawn tree	jawn tree	嚼恩树
-ITEM:jesus on the cross	jesus on the cross	十字架上的耶稣
-ITEM:jumper	jumper	跳枪
-ITEM:kitchen	kitchen	厨房
-ITEM:lamp	lamp	台灯
-ITEM:lava	lava	熔岩
-ITEM:logs	logs	原木
-ITEM:love	love	爱心
-ITEM:magnet	magnet	磁铁
-ITEM:magpie	magpie	喜鹊
-ITEM:meet voima	meet voima	遇见 voima
-ITEM:metal	metal	金属
-ITEM:metal spike	metal spike	金属尖刺
-ITEM:metallic skeleton	metallic skeleton	金属骷髅
-ITEM:mirror adult pine	mirror adult pine	镜像成年松
-ITEM:mirror winter birch	mirror winter birch	镜像冬桦
-ITEM:mirror x	mirror x	镜像X
-ITEM:mirror y	mirror y	镜像Y
-ITEM:moss	moss	苔藓
-ITEM:mossy log	mossy log	苔藓原木
-ITEM:mossy stone	mossy stone	苔藓石
-ITEM:movie	movie	电影
-ITEM:museum bear	museum bear	博物馆熊
-ITEM:mushroom big	mushroom big	大蘑菇
-ITEM:mushroom small	mushroom small	小蘑菇
-ITEM:music box	music box	八音盒
-ITEM:paint brush	paint brush	画笔
-ITEM:pickup	pickup	拾取
-ITEM:pine bark	pine bark	松树皮
-ITEM:pinecone	pinecone	松果
-ITEM:pink checker	pink checker	粉色棋盘格
-ITEM:plank	plank	木板
-ITEM:portal	portal	传送门
-ITEM:reach	reach	触碰
-ITEM:respawn statue	respawn statue	重生雕像
-ITEM:reunion	reunion	重逢
-ITEM:reverse shotgun	reverse shotgun	反向霰弹枪
-ITEM:rock	rock	岩石
-ITEM:rocks	rocks	碎石
-ITEM:sand	sand	沙子
-ITEM:scissors	scissors	剪刀
-ITEM:sectors	sectors	《Sectors》
-ITEM:selector	selector	选择器
-ITEM:shotgun	shotgun	霰弹枪
-ITEM:skeleton bear	skeleton bear	骷髅熊
-ITEM:skull	skull	头骨
-ITEM:sky	sky	天空
-ITEM:slab hand	slab hand	板块手
-ITEM:smoke	smoke	烟雾
-ITEM:snow	snow	雪
-ITEM:snowball	snowball	雪球
-ITEM:snowball shooter	snowball shooter	雪球发射器
-ITEM:sponge	sponge	海绵
-ITEM:standoff	standoff	对峙
-ITEM:stone	stone	石头
-ITEM:stone dots	stone dots	点状石
-ITEM:strawberry	strawberry	草莓
-ITEM:street light	street light	路灯
-ITEM:teenager birch	teenager birch	白桦幼树
-ITEM:teenager birch trunk	teenager birch trunk	白桦幼树干
-ITEM:teenager spruce	teenager spruce	云杉幼树
-ITEM:the vision	the vision	愿景
-ITEM:the way	the way	道路
-ITEM:tooth	tooth	牙齿
-ITEM:torch	torch	火炬
-ITEM:trash	trash	垃圾
-ITEM:trash bag	trash bag	垃圾袋
-ITEM:universe edit	universe edit	宇宙编辑
-ITEM:void	void	虚空
-ITEM:voim voim	voim voim	voim voim
-ITEM:water	water	水
-ITEM:welf	welf	韦尔夫
-ITEM:white checker	white checker	白色棋盘格
-ITEM:winter adult spruce	winter adult spruce	冬季成年云杉
-ITEM:winter baby spruce	winter baby spruce	冬季云杉苗
-ITEM:winter birch	winter birch	冬桦
-ITEM:winter pc	winter pc	冬日电脑
-ITEM:winter rowan	winter rowan	冬季花楸
-ITEM:winter teenager spruce	winter teenager spruce	冬季云杉幼树
-ITEM:wood	wood	木头
-ITEM:wooden chest	wooden chest	木箱
-ITEM:wooden pickaxe	wooden pickaxe	木镐
-ITEM:wooden shotgun	wooden shotgun	木头霰弹枪
-ITEM:wooden turret	wooden turret	木头炮塔
-ITEM:world edit	world edit	世界编辑
-HUD:shorten	shorten	缩短
-HUD:extend	extend	延长
-HUD:cut	cut	切割
-HUD:paint	paint	涂色
-HUD:reset	reset	重置
-HUD:glue	glue	粘合
-HUD:unglue	unglue	解除粘合
-W:Window:populate tools|n:brush size:SliderButton|text_name	brush size	笔刷大小
-W:Window:populate tools|n:color:Button|text_name	color	颜色
-W:Window:populate tools|n:size:Button|text_name	size	大小
-W:Window:populate tools|n:set:Button|text_name	set\ngrid	设置\n网格
-W:Window:populate tools|n:remove:Button|text_name	remove\ngrid	移除\n网格
-W:Window:change card size|header_text	change card size	改变卡片大小
-W:Window:change card size|n:height:SliderButton|text_name	height	高度
-W:Window:change card size|n:variation:SliderButton|text_name	variation	变化
-HUD:pick a type	pick a type	选择类型
-HUD:delete	delete	删除
-HUD:to select	to select	选择
-W:Window:|n:printer:Button|text_name	printer	打印机
-W:Window:|n:import universe:Button|text_name	import universe	导入宇宙
-W:Window:Karhula|n:play:Button|text_name	play	开始
-W:Window:Karhula 2|n:play:Button|text_name	play	开始
-W:Window:Karhula|n:duplicate:Button|text_name	duplicate	复制
-W:Window:Karhula 2|n:duplicate:Button|text_name	duplicate	复制
-W:Window:Karhula|n:delete:Button|text_name	delete	删除
-W:Window:Karhula 2|n:delete:Button|text_name	delete	删除
-W:Window:Karhula 2|n:delete:Button|text_name	are you sure?	你确定吗？
-W:Window:credits|n:Karhula::TextButton|text_name	Karhula:	karhula (熊之地):
-W:Window:credits|n:bear by jorma rysky:TextButton|text_name	bear by jorma rysky	熊：Jorma Rysky
-W:Window:credits|n:goober by kassu:TextButton|text_name	goober by kassu	咕宝：Kassu
-W:Window:credits|n:jawn by jorma rysky and valtsu:TextButton|text_name	jawn by jorma rysky and valtsu	嚼恩：Jorma Rysky 和 Valtsu
-W:Window:credits|n:haze by jorma rysky and emma:TextButton|text_name	haze by jorma rysky and emma	霾：Jorma Rysky 和 Emma
-W:Window:credits|n:textures by valtsu and lololy:TextButton|text_name	textures by valtsu and lololy	纹理：Valtsu 和 Lololy
-W:Window:credits|n:drill and jawn axe by splav:TextButton|text_name	drill and jawn axe by splav	钻头与嚼斧：Splav
-W:Window:credits|n:special font letters by p#k#:TextButton|text_name	special font letters by p1k1	特殊字体字母：p1k1
-W:Window:credits|n:welf sounds by andy:TextButton|text_name	welf sounds by andy	韦尔夫音效：Andy
-W:Window:credits|n:wooden shotgun sound and cave sounds by arpuzik:TextButton|text_name	wooden shotgun sound and cave sounds by arpuzik	木头霰弹枪音效与洞穴音效：Arpuzik
-W:Window:credits|n:thanks:Button|text_name	thanks	感谢
-W:Window:credits|header_text	credits	制作人员
-W:Window:credits|n:bee sounds by benboncan on freesound.org:TextButton|text_name	bee sounds by benboncan on freesound.org	蜜蜂音效：benboncan（freesound.org）
-W:Window:credits|n:glass sounds by trp on freesound.org:TextButton|text_name	glass sounds by trp on freesound.org	玻璃音效：trp（freesound.org）
-W:Window:credits|n:VOIMA::TextButton|text_name	VOIMA:	VOIMA:
-W:Window:credits|n:Designed and coded by Valtsu:TextButton|text_name	Designed and coded by Valtsu	设计与编程：Valtsu
-W:Window:credits|n:Co-designed by Jorma Rysky:TextButton|text_name	Co-designed by Jorma Rysky	联合设计：Jorma Rysky
-W:Window:credits|n:Multiplayer coded by valtsu and disk:TextButton|text_name	Multiplayer coded by valtsu and disk	多人游戏编程：valtsu 和 disk
-W:Window:credits|n:All glory to God, Amen:TextButton|text_name	All glory to God, Amen	一切荣耀归于上帝，阿们
-W:Window:credits|n:Open-Source Code by Third Parties::TextButton|text_name	Open-Source Code by Third Parties:	第三方开源代码：
-W:Window:credits|n:OBJ file importer by Dummiesman:TextButton|text_name	OBJ file importer by Dummiesman	OBJ 文件导入器：Dummiesman
-W:Window:credits|n:StandaloneFileBrowser by Gökhan Gökçe:TextButton|text_name	StandaloneFileBrowser by Gökhan Gökçe	独立文件浏览器 (StandaloneFileBrowser)：Gökhan Gökçe
-W:Window:credits|n:Some of SSAO by Virtual Method Studios:TextButton|text_name	Some of SSAO by Virtual Method Studios	部分 SSAO：Virtual Method Studios
-W:Window:your worlds|header_text	your worlds	你的世界
+X:TextureText|inventory to open	inventory to open	[e] 打开
+X:TextureText|biome selector	biome selector	生物群系选择
+X:TextureText|dirt forest	dirt forest	泥土森林
+X:TextureText|error	error	错误
+X:TextureText|farlands	farlands	边境之地
+X:TextureText|farlands2	farlands2	边境之地2
+X:TextureText|forest	forest	森林
+X:TextureText|ocean	ocean	海洋
+X:TextureText|pine forest	pine forest	松树林
+X:TextureText|plains	plains	平原
+X:TextureText|sand forest	sand forest	沙林
+X:TextureText|spruce forest	spruce forest	云杉林
+X:TextureText|winter	winter	冬天
+X:TextureText|11/11 biomes selected	11/11 biomes selected	已选择 11/11 个生物群系
+X:TextureText|0/11 biomes selected	0/11 biomes selected	已选择 0/11 个生物群系
+X:TextureText|1/11 biomes selected	1/11 biomes selected	已选择 1/11 个生物群系
+X:TextureText|2/11 biomes selected	2/11 biomes selected	已选择 2/11 个生物群系
+X:TextureText|3/11 biomes selected	3/11 biomes selected	已选择 3/11 个生物群系
+X:TextureText|4/11 biomes selected	4/11 biomes selected	已选择 4/11 个生物群系
+X:TextureText|5/11 biomes selected	5/11 biomes selected	已选择 5/11 个生物群系
+X:TextureText|6/11 biomes selected	6/11 biomes selected	已选择 6/11 个生物群系
+X:TextureText|7/11 biomes selected	7/11 biomes selected	已选择 7/11 个生物群系
+X:TextureText|8/11 biomes selected	8/11 biomes selected	已选择 8/11 个生物群系
+X:TextureText|9/11 biomes selected	9/11 biomes selected	已选择 9/11 个生物群系
+X:TextureText|10/11 biomes selected	10/11 biomes selected	已选择 10/11 个生物群系
+X:TextureText|silence	silence	寂静
+X:TextureText|gen preview	gen preview	生成预览
+X:TextureText|S	S	小
+X:TextureText|M	M	中
+X:TextureText|L	L	大
+X:TextureText|XL	XL	超大
+X:TextureText|XXL	XXL	太大啦
+X:TextureText|birch forest	birch forest	白桦林
+X:TextureText|misc	misc	杂项
+TIP:misc	misc	杂项
+X:TextureText|{0} recipes still locked	{0} recipes still locked	还有 {0} 个配方未解锁
+TIP:{0} recipes still locked	{0} recipes still locked	还有 {0} 个配方未解锁
+TIP:explorer	explorer	文件管理器
+W:Window:mods|header_text	mods	模组
+W:Window:mods|n:back to menu:Button|text_name	back to menu	返回菜单
+W:Window:mods|n:import mods:Button|text_name	import mods	导入模组
+W:Window:mods|n:apply changes:Button|text_name	apply changes	应用更改
+W:Window:mods|n:no mods in this universe yet:TextButton|text_name	no mods in this universe yet	这个宇宙还没有模组

@@ -180,6 +180,38 @@ bool FontPatch::InstallEarly(uintptr_t base, const std::string& fontDir) {
     return true;
 }
 
+bool FontPatch::InstallDynamic(uintptr_t base, void* ctor, void* loadChar, void* toCharArray, const std::string& fontDir) {
+    if (installed_) return true;
+    g_fontDirWide = Utf8ToWide(fontDir);
+    g_diag = CreateFileW((g_fontDirWide + L"\\patch_diag.log").c_str(), GENERIC_WRITE,
+                         FILE_SHARE_READ | FILE_SHARE_WRITE, nullptr, CREATE_ALWAYS, 0, nullptr);
+    g_arrayNew = reinterpret_cast<ArrayNewFn>(GetProcAddress(reinterpret_cast<HMODULE>(base), "il2cpp_array_new"));
+    g_gcHandleNew = reinterpret_cast<GCHandleNewFn>(GetProcAddress(reinterpret_cast<HMODULE>(base), "il2cpp_gchandle_new"));
+    MH_STATUS st = MH_Initialize();
+    if (st != MH_OK && st != MH_ERROR_ALREADY_INITIALIZED) return false;
+    if (toCharArray) {
+        g_origToCharArray = reinterpret_cast<ToCharArrayFn>(toCharArray);
+        if (MH_CreateHook(toCharArray, reinterpret_cast<void*>(&HookToCharArray), reinterpret_cast<void**>(&g_origToCharArray)) != MH_OK ||
+            MH_EnableHook(toCharArray) != MH_OK) {
+            g_mismatch = true;
+            return false;
+        }
+    }
+    if (loadChar) {
+        if (MH_CreateHook(loadChar, reinterpret_cast<void*>(&HookLoadChar), reinterpret_cast<void**>(&g_origLoadChar)) != MH_OK ||
+            MH_EnableHook(loadChar) != MH_OK) {
+            g_mismatch = true;
+            return false;
+        }
+    }
+    if (ctor) {
+        if (MH_CreateHook(ctor, reinterpret_cast<void*>(&HookFontCtor), reinterpret_cast<void**>(&g_origFontCtor)) == MH_OK)
+            MH_EnableHook(ctor);
+    }
+    installed_ = true;
+    return true;
+}
+
 void FontPatch::BeginPage(const std::vector<uint16_t>& chars) {
     g_pageChars = chars;
     g_pageMode = true;
@@ -193,6 +225,7 @@ void FontPatch::EndPage() {
 bool FontPatch::PageMode() const { return g_pageMode; }
 std::string FontPatch::OriginalFontPath() const { return g_originalFontPath; }
 int FontPatch::OriginalFontOffset() const { return g_originalFontOffset; }
+void FontPatch::SetOriginalFontOffset(int offset) { g_originalFontOffset = offset; }
 void FontPatch::SetFallbackFontPath(const std::string& path) {
     if (g_originalFontPath.empty()) g_originalFontPath = path;
 }

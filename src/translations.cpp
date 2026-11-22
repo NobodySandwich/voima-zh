@@ -106,6 +106,17 @@ std::vector<int> TranslationDb::PagesForPrefix(const std::string& prefix) const 
     return out;
 }
 
+std::vector<std::string> TranslationDb::PrewarmTexts() const {
+    std::vector<std::string> out;
+    for (const auto& e : entries_) {
+        if (e.translation.empty()) continue;
+        if (e.key.rfind("HUD:", 0) == 0 || e.key.rfind("KEYBIND:", 0) == 0) {
+            out.push_back(e.translation);
+        }
+    }
+    return out;
+}
+
 bool TranslationDb::Load(const std::string& path) {
     std::string data;
     if (!ReadFileUtf8(Utf8ToWide(path), data)) {

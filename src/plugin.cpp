@@ -1248,20 +1248,507 @@ void ProcessPageQueue() {
     if (g_pageQueue.empty()) g_bootOverlayDone = true;
 }
 
+void DumpFmIdentity() {
+    void* menu = StaticPtr(FindField(FindClass("Lord"), "menu"));
+    Il2CppClass* mc = FindClass("Menu");
+    Logger::Instance().Log("fmidentity", "menu=" + std::to_string(reinterpret_cast<uintptr_t>(menu)));
+    const char* names[] = {
+        "w_world_details","w_files","w_file_manager","w_explorer","w_file_explorer",
+        "w_mods","w_universe_editor","w_universe","w_worlds","w_settings","w_promo",
+        "w_tabs","w_card_types","w_slab_types","w_sounds","w_biomes","w_new_world","w_play"
+    };
+    for (const char* name : names) {
+        FieldInfo* f = FindField(mc, name);
+        if (!f) continue;
+        void* p = nullptr;
+        ReadObjectPtr(menu, FieldOffset(mc, name), &p);
+        Logger::Instance().Log("fmidentity", std::string("field ") + name + "=" + std::to_string(reinterpret_cast<uintptr_t>(p)));
+    }
+    for (void* w : g_model.Windows()) {
+        std::string h = g_model.WindowHeader(w);
+        Logger::Instance().Log("fmidentity", "window='" + EscapeForLog(h) + "' ptr=" + std::to_string(reinterpret_cast<uintptr_t>(w)));
+        for (void* b : g_model.Buttons(w)) {
+            Logger::Instance().Log("fmidentity", "  button='" + EscapeForLog(g_model.ButtonName(b)) + "' class=" + g_model.ButtonClass(b));
+        }
+    }
+}
+
+std::set<void*> g_fileManagerWindows;
+std::set<void*> g_worldSizeTexts;
+uintptr_t g_gameAssemblyBase = 0;
+struct TextSnapshot { std::string source; float x = 0, y = 0, z = 0, effect = 0, font = 0; bool valid = false; };
+std::map<void*, TextSnapshot> g_textSnapshots;
+std::set<void*> g_renderedTexts;
+std::set<void*> g_explorerTexts;
+void* g_musicText = nullptr;
+void* g_dockWindow = nullptr;
+std::set<void*> g_hudTexts;
+std::atomic<bool> g_explorerTextRebuilt{false};
+std::atomic<bool> g_explorerActive{false};
+void* g_explorerRoot = nullptr;
+uint64_t g_explorerCloseAt = 0;
+
+using TextCtorFn = void (*)(void*, bool, int, int, float, float, float, float, void*);
+using DockFn = void (*)(void*, void*);
+using WindowCtorFn = void (*)(void*, Il2CppString*, bool, float, float, float, float, float);
+void ClearExplorerState();
+using CloseUniverseFn = void (*)(void*);
+CloseUniverseFn g_origCloseUniverse = nullptr;
+void HookCloseUniverseEdit(void* self) {
+    ClearExplorerState();
+    Logger::Instance().Log("fmdebug", "CloseUniverseEdit clears explorer");
+    if (g_origCloseUniverse) g_origCloseUniverse(self);
+}
+DockFn g_origWindowDock = nullptr;
+WindowCtorFn g_origWindowCtor = nullptr;
+void HookWindowCtor(void* self, Il2CppString* header, bool translate, float x, float y, float w, float h, float scale) {
+    if (g_origWindowCtor) g_origWindowCtor(self, header, translate, x, y, w, h, scale);
+    if (self && g_explorerActive.load()) {
+        g_fileManagerWindows.insert(self);
+        Logger::Instance().Log("fmdebug", "new window ptr=" + std::to_string(reinterpret_cast<uintptr_t>(self)) + " header='" + EscapeForLog(g_model.WindowHeader(self)) + "'");
+    }
+}
+void HookWindowDock(void* self, void* ex) {
+    if (ex) {
+        g_fileManagerWindows.insert(ex);
+        Logger::Instance().Log("fmdebug", "docked window=" + std::to_string(reinterpret_cast<uintptr_t>(ex)) + " header='" + EscapeForLog(g_model.WindowHeader(ex)) + "'");
+    }
+    if (g_origWindowDock) g_origWindowDock(self, ex);
+}
+TextCtorFn g_origTextCtor = nullptr;
+void HookTextCtor(void* self, bool translate, int ax, int ay, float fs, float ls, float cx, float cy, void* font) {
+    if (g_origTextCtor) g_origTextCtor(self, translate, ax, ay, fs, ls, cx, cy, font);
+    if (self && g_explorerActive.load()) g_explorerTexts.insert(self);
+}
+using FmOpenFn = void (*)(void*);
+using FmCloseFn = void (*)(void*);
+struct Vec3f { float x, y, z; };
+struct ColorF { float r, g, b, a; };
+using RenderTooltipFn = void (*)(bool, Vec3f, Il2CppString*, void*, bool, ColorF, bool);
+using RenderTooltipHFn = void (*)(bool, Vec3f, float, Il2CppString*, void*, ColorF);
+using AskTooltipFn = void (*)(bool, Vec3f, Il2CppString*, void*, bool, ColorF, bool, bool);
+using DrawTooltipFn = void (*)(void*, float, bool);
+using DrawTooltipHFn = void (*)(void*, float);
+using FmSetCloseFn = void (*)(void*, bool);
+FmOpenFn g_origWindowFiles = nullptr;
+FmOpenFn g_origWindowBiomes = nullptr;
+FmOpenFn g_origWindowSounds = nullptr;
+FmOpenFn g_origWindowTypes = nullptr;
+FmCloseFn g_origWindowClose = nullptr;
+FmSetCloseFn g_origWindowSetClose = nullptr;
+RenderTooltipFn g_origRenderTooltip = nullptr;
+RenderTooltipHFn g_origRenderTooltipH = nullptr;
+AskTooltipFn g_origAskTooltip = nullptr;
+DrawTooltipFn g_origDrawVerticalTooltip = nullptr;
+DrawTooltipHFn g_origDrawHorizontalTooltip = nullptr;
+bool IsHudTooltipWord(Il2CppString* word);
+
+void PatchTooltipText(void* tip) {
+    if (!tip || !g_explorerActive.load()) return;
+    Il2CppString* word = *reinterpret_cast<Il2CppString**>(reinterpret_cast<char*>(tip) + 0x10);
+    if (!word) return;
+    std::string w = ReadManagedString(word);
+    std::string out;
+    if (IsHudTooltipWord(word)) {
+        std::string mk, ms;
+        if (g_db.Lookup({"TIP:" + w}, w, out, mk, ms) && !out.empty()) {
+            Il2CppString* ns = NewManagedString(out);
+            if (ns) *reinterpret_cast<Il2CppString**>(reinterpret_cast<char*>(tip) + 0x18) = ns;
+        }
+    } else {
+        *reinterpret_cast<Il2CppString**>(reinterpret_cast<char*>(tip) + 0x18) = word;
+    }
+    *reinterpret_cast<bool*>(reinterpret_cast<char*>(tip) + 0x48) = false;
+}
+
+void HookDrawVerticalTooltip(void* tip, float s, bool aqua) {
+    PatchTooltipText(tip);
+    if (g_origDrawVerticalTooltip) g_origDrawVerticalTooltip(tip, s, aqua);
+}
+void HookDrawHorizontalTooltip(void* tip, float s) {
+    PatchTooltipText(tip);
+    if (g_origDrawHorizontalTooltip) g_origDrawHorizontalTooltip(tip, s);
+}
+
+bool IsHudTooltipWord(Il2CppString* word) {
+    if (!word) return false;
+    std::string w = LowerAscii(ReadManagedString(word));
+    return w == "console" || w == "printer" || w == "gen preview" || w == "exit universe editor";
+}
+
+void HookRenderTooltip(bool translate, Vec3f pos, Il2CppString* word, void* cam, bool up, ColorF color, bool aqua) {
+    if (g_explorerActive.load()) translate = IsHudTooltipWord(word);
+    if (g_origRenderTooltip) g_origRenderTooltip(translate, pos, word, cam, up, color, aqua);
+}
+void HookRenderTooltipH(bool translate, Vec3f pos, float backX, Il2CppString* word, void* cam, ColorF color) {
+    if (g_explorerActive.load()) translate = IsHudTooltipWord(word);
+    if (g_origRenderTooltipH) g_origRenderTooltipH(translate, pos, backX, word, cam, color);
+}
+void HookAskTooltip(bool translate, Vec3f pos, Il2CppString* word, void* cam, bool up, ColorF color, bool horizontal, bool aqua) {
+    if (g_explorerActive.load()) translate = IsHudTooltipWord(word);
+    if (g_origAskTooltip) g_origAskTooltip(translate, pos, word, cam, up, color, horizontal, aqua);
+}
+
+void ClearExplorerState() {
+    if (g_explorerActive.load() || g_explorerRoot)
+        Logger::Instance().Log("fmdebug", "clear active root=" + std::to_string(reinterpret_cast<uintptr_t>(g_explorerRoot)));
+    g_explorerActive.store(false);
+    g_explorerRoot = nullptr;
+    g_fileManagerWindows.clear();
+    g_renderedTexts.clear();
+    g_explorerTexts.clear();
+    g_explorerTextRebuilt.store(false);
+}
+
+void HookWindowClose(void* self) {
+    Logger::Instance().Log("fmdebug", "Window.Close self=" + std::to_string(reinterpret_cast<uintptr_t>(self)) + " root=" + std::to_string(reinterpret_cast<uintptr_t>(g_explorerRoot)) + " active=" + std::to_string(g_explorerActive.load()));
+    if (self) g_fileManagerWindows.erase(self);
+    if (self && self == g_explorerRoot) { g_explorerRoot = nullptr; g_explorerCloseAt = GetTickCount64(); }
+    if (g_origWindowClose) g_origWindowClose(self);
+}
+
+void HookWindowSetClose(void* self, bool value) {
+    if (value) Logger::Instance().Log("fmdebug", "Window.set_close self=" + std::to_string(reinterpret_cast<uintptr_t>(self)) + " root=" + std::to_string(reinterpret_cast<uintptr_t>(g_explorerRoot)));
+    if (value && self && self == g_explorerRoot) {
+        g_fileManagerWindows.erase(self);
+        g_explorerRoot = nullptr;
+    }
+    if (g_origWindowSetClose) g_origWindowSetClose(self, value);
+}
+
+void CaptureMenuWindow(void* menu, const char* name, size_t offset) {
+    if (!menu) return;
+    void* p = *reinterpret_cast<void**>(reinterpret_cast<char*>(menu) + offset);
+    uintptr_t pv = reinterpret_cast<uintptr_t>(p);
+    if (pv <= 0x10000 || pv >= 0x00007FFFFFFFFFFFull || (pv % 8) != 0) {
+        Logger::Instance().Log("fmhook", std::string(name) + " invalid ptr=" + std::to_string(pv));
+        return;
+    }
+    MEMORY_BASIC_INFORMATION mbi{};
+    if (!VirtualQuery(p, &mbi, sizeof(mbi)) || mbi.State != MEM_COMMIT || (mbi.Protect & PAGE_GUARD)) return;
+    Il2CppClass* pc = g_api.object_get_class(p);
+    const char* cn = pc ? g_api.class_get_name(pc) : nullptr;
+    Logger::Instance().Log("fmhook", std::string(name) + " ptr=" + std::to_string(pv) + " class=" + (cn ? cn : "?"));
+    if (cn && std::string(cn).find("Window") != std::string::npos) {
+        g_fileManagerWindows.insert(p);
+        Logger::Instance().Log("fmhook", std::string(name) + " header='" + EscapeForLog(g_model.WindowHeader(p)) + "'");
+    }
+}
+
+void HookWindowFiles(void* self) {
+    g_explorerActive.store(true);
+    g_explorerCloseAt = 0;
+    g_renderedTexts.clear();
+    g_explorerTextRebuilt.store(false);
+    if (g_origWindowFiles) g_origWindowFiles(self);
+    CaptureMenuWindow(self, "w_files", 0x2B0);
+    void* root = *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + 0x2B0);
+    if (root) g_explorerRoot = root;
+    Logger::Instance().Log("fmdebug", "Window_Files root=" + std::to_string(reinterpret_cast<uintptr_t>(g_explorerRoot)) + " active=" + std::to_string(g_explorerActive.load()));
+}
+void HookWindowBiomes(void* self) {
+    g_explorerActive.store(true);
+    if (g_origWindowBiomes) g_origWindowBiomes(self);
+    CaptureMenuWindow(self, "w_biomes", 0x290);
+}
+void HookWindowSounds(void* self) {
+    g_explorerActive.store(true);
+    if (g_origWindowSounds) g_origWindowSounds(self);
+    CaptureMenuWindow(self, "w_sounds", 0x2C0);
+}
+void HookWindowTypes(void* self) {
+    g_explorerActive.store(true);
+    if (g_origWindowTypes) g_origWindowTypes(self);
+    CaptureMenuWindow(self, "w_types", 0x210);
+    void* root = *reinterpret_cast<void**>(reinterpret_cast<char*>(self) + 0x210);
+    if (root) g_explorerRoot = root;
+}
+
+void InstallFileManagerHooks() {
+    struct HookDef { const char* name; void* hook; void** orig; uintptr_t rva; };
+    HookDef defs[] = {
+        {"Window_Files", reinterpret_cast<void*>(&HookWindowFiles), reinterpret_cast<void**>(&g_origWindowFiles), 0x5F9290},
+        {"Window_Biomes", reinterpret_cast<void*>(&HookWindowBiomes), reinterpret_cast<void**>(&g_origWindowBiomes), 0x5F6AF0},
+        {"Window_Sounds", reinterpret_cast<void*>(&HookWindowSounds), reinterpret_cast<void**>(&g_origWindowSounds), 0x5F95E0},
+        {"Window_Types", reinterpret_cast<void*>(&HookWindowTypes), reinterpret_cast<void**>(&g_origWindowTypes), 0x5F9810},
+    };
+    for (auto& d : defs) {
+        void* p = FindMethodPtr("Menu", d.name, 0, nullptr);
+        if (!p) {
+            p = reinterpret_cast<void*>(g_gameAssemblyBase + d.rva);
+            Logger::Instance().Log("fmhook", std::string("fallback RVA ") + d.name + "=" + std::to_string(reinterpret_cast<uintptr_t>(p)));
+        }
+        if (!p) { Logger::Instance().Log("fmhook", std::string("missing ") + d.name); continue; }
+        MH_STATUS st = MH_CreateHook(p, d.hook, d.orig);
+        if (st == MH_OK && MH_EnableHook(p) == MH_OK)
+            Logger::Instance().Log("fmhook", std::string("hooked ") + d.name);
+        else
+            Logger::Instance().Log("fmhook", std::string("failed ") + d.name + " st=" + std::to_string((int)st));
+    }
+    void* close = FindMethodPtr("Window", "Close", 0, nullptr);
+    if (close) {
+        MH_STATUS st = MH_CreateHook(close, reinterpret_cast<void*>(&HookWindowClose), reinterpret_cast<void**>(&g_origWindowClose));
+        if (st == MH_OK && MH_EnableHook(close) == MH_OK) Logger::Instance().Log("fmhook", "hooked Window.Close");
+    } else Logger::Instance().Log("fmhook", "missing Window.Close");
+    void* setClose = FindMethodPtr("Window", "set_close", 1, nullptr);
+    if (setClose) {
+        MH_STATUS st = MH_CreateHook(setClose, reinterpret_cast<void*>(&HookWindowSetClose), reinterpret_cast<void**>(&g_origWindowSetClose));
+        if (st == MH_OK && MH_EnableHook(setClose) == MH_OK) Logger::Instance().Log("fmhook", "hooked Window.set_close");
+    } else Logger::Instance().Log("fmhook", "missing Window.set_close");
+    void* tc = FindMethodPtr("TextureText", ".ctor", 8, nullptr);
+    if (tc) {
+        MH_STATUS st = MH_CreateHook(tc, reinterpret_cast<void*>(&HookTextCtor), reinterpret_cast<void**>(&g_origTextCtor));
+        if (st == MH_OK && MH_EnableHook(tc) == MH_OK) Logger::Instance().Log("fmhook", "hooked TextureText..ctor");
+    }
+    void* rt = FindMethodPtr("Window", "RenderTooltip", 7, nullptr);
+    if (!rt) rt = reinterpret_cast<void*>(g_gameAssemblyBase + 0x3BF1F0);
+    if (rt) {
+        MH_STATUS st = MH_CreateHook(rt, reinterpret_cast<void*>(&HookRenderTooltip), reinterpret_cast<void**>(&g_origRenderTooltip));
+        if (st == MH_OK && MH_EnableHook(rt) == MH_OK) Logger::Instance().Log("fmhook", "hooked RenderTooltip");
+    }
+    void* rth = FindMethodPtr("Window", "RenderTooltipHorizontal", 6, nullptr);
+    if (!rth) rth = reinterpret_cast<void*>(g_gameAssemblyBase + 0x3BF0A0);
+    if (rth) {
+        MH_STATUS st = MH_CreateHook(rth, reinterpret_cast<void*>(&HookRenderTooltipH), reinterpret_cast<void**>(&g_origRenderTooltipH));
+        if (st == MH_OK && MH_EnableHook(rth) == MH_OK) Logger::Instance().Log("fmhook", "hooked RenderTooltipHorizontal");
+    }
+    void* at = FindMethodPtr("Window", "AskTooltip", 8, nullptr);
+    if (!at) at = reinterpret_cast<void*>(g_gameAssemblyBase + 0x3B5830);
+    if (at) {
+        MH_STATUS st = MH_CreateHook(at, reinterpret_cast<void*>(&HookAskTooltip), reinterpret_cast<void**>(&g_origAskTooltip));
+        if (st == MH_OK && MH_EnableHook(at) == MH_OK) Logger::Instance().Log("fmhook", "hooked AskTooltip");
+    }
+    void* wc = FindMethodPtr("Window", ".ctor", 7, "String");
+    if (wc) {
+        MH_STATUS st = MH_CreateHook(wc, reinterpret_cast<void*>(&HookWindowCtor), reinterpret_cast<void**>(&g_origWindowCtor));
+        if (st == MH_OK && MH_EnableHook(wc) == MH_OK) Logger::Instance().Log("fmhook", "hooked Window..ctor");
+    }
+    void* dock = FindMethodPtr("Menu", "Window_Dock", 1, "Window");
+    if (!dock) dock = reinterpret_cast<void*>(g_gameAssemblyBase + 0x5F7D70);
+    if (dock) {
+        MH_STATUS st = MH_CreateHook(dock, reinterpret_cast<void*>(&HookWindowDock), reinterpret_cast<void**>(&g_origWindowDock));
+        if (st == MH_OK && MH_EnableHook(dock) == MH_OK) Logger::Instance().Log("fmhook", "hooked Window_Dock");
+    }
+    void* cu = FindMethodPtr("Menu", "CloseUniverseEdit", 0, nullptr);
+    if (!cu) cu = reinterpret_cast<void*>(g_gameAssemblyBase + 0x42C540);
+    if (cu) {
+        MH_STATUS st = MH_CreateHook(cu, reinterpret_cast<void*>(&HookCloseUniverseEdit), reinterpret_cast<void**>(&g_origCloseUniverse));
+        if (st == MH_OK && MH_EnableHook(cu) == MH_OK) Logger::Instance().Log("fmhook", "hooked CloseUniverseEdit");
+    }
+}
+
+void InitFileManagerWindows() {
+    void* menu = StaticPtr(FindField(FindClass("Lord"), "menu"));
+    if (!menu) { Logger::Instance().Log("fmidentity", "menu=null"); return; }
+    Il2CppClass* mc = g_api.object_get_class(menu);
+    Logger::Instance().Log("fmidentity", "menu=" + std::to_string(reinterpret_cast<uintptr_t>(menu)) + " class=" + (mc && g_api.class_get_name(mc) ? g_api.class_get_name(mc) : "?"));
+    struct Field { const char* name; size_t offset; };
+    static const Field fields[] = {
+        {"w_types",0x210},{"w_biomes",0x290},{"w_files",0x2B0},{"w_sounds",0x2C0},
+        {"w_dock",0x2D8},{"w_changes",0x320},{"w_tabs",0x330}
+    };
+    for (const auto& f : fields) {
+        void* p = *reinterpret_cast<void**>(reinterpret_cast<char*>(menu) + f.offset);
+        Logger::Instance().Log("fmidentity", std::string("field ") + f.name + "=" + std::to_string(reinterpret_cast<uintptr_t>(p)));
+        uintptr_t pv = reinterpret_cast<uintptr_t>(p);
+        bool valid = pv > 0x10000 && pv < 0x00007FFFFFFFFFFFull && (pv % 8) == 0;
+        if (valid) {
+            MEMORY_BASIC_INFORMATION mbi{};
+            valid = VirtualQuery(p, &mbi, sizeof(mbi)) && mbi.State == MEM_COMMIT && !(mbi.Protect & PAGE_GUARD);
+        }
+        if (valid) {
+            Il2CppClass* pc = g_api.object_get_class(p);
+            const char* pcn = pc ? g_api.class_get_name(pc) : nullptr;
+            valid = pcn && std::string(pcn).find("Window") != std::string::npos;
+            Logger::Instance().Log("fmidentity", std::string("field ") + f.name + " class=" + (pcn ? pcn : "?"));
+            if (pcn && std::string(pcn).find("Window") != std::string::npos)
+                Logger::Instance().Log("fmidentity", std::string("field ") + f.name + " header='" + EscapeForLog(g_model.WindowHeader(p)) + "'");
+            else if (pcn && std::string(pcn).find("Button") != std::string::npos)
+                Logger::Instance().Log("fmidentity", std::string("field ") + f.name + " button='" + EscapeForLog(g_model.ButtonName(p)) + "'");
+        }
+        if (valid) g_fileManagerWindows.insert(p);
+    }
+    for (size_t off = 0x280; off <= 0x340; off += 8) {
+        void* p = *reinterpret_cast<void**>(reinterpret_cast<char*>(menu) + off);
+        uintptr_t pv = reinterpret_cast<uintptr_t>(p);
+        if (pv <= 0x10000 || pv >= 0x00007FFFFFFFFFFFull || (pv % 8) != 0) continue;
+        MEMORY_BASIC_INFORMATION mbi{};
+        if (!VirtualQuery(p, &mbi, sizeof(mbi)) || mbi.State != MEM_COMMIT || (mbi.Protect & PAGE_GUARD)) continue;
+        Il2CppClass* pc = g_api.object_get_class(p);
+        const char* pcn = pc ? g_api.class_get_name(pc) : nullptr;
+        std::string extra;
+        if (pcn && std::string(pcn).find("Window") != std::string::npos) extra = " header='" + EscapeForLog(g_model.WindowHeader(p)) + "'";
+        else if (pcn && std::string(pcn).find("Button") != std::string::npos) extra = " button='" + EscapeForLog(g_model.ButtonName(p)) + "'";
+        Logger::Instance().Log("fmidentity", "slot " + std::to_string(off) + " ptr=" + std::to_string(pv) + " class=" + (pcn ? pcn : "?") + extra);
+    }
+    Logger::Instance().Log("fmidentity", "recorded windows=" + std::to_string(g_fileManagerWindows.size()));
+}
+
+bool IsFileManagerContentLabel(void* self, const std::string& input) {
+    if (input == "explorer") return false;
+    std::string hudTooltip = LowerAscii(Trim(input));
+    if (hudTooltip == "console" || hudTooltip == "printer" || hudTooltip == "gen preview" || hudTooltip == "exit universe editor") return false;
+    if (self && self == g_musicText) return false;
+    if (self && g_hudTexts.count(self)) return false;
+    if (!g_explorerActive.load()) return false;
+    ObjectKeys keys = g_model.Describe(self, input);
+    if (keys.window && keys.window == g_dockWindow) return false;
+    if (keys.window && g_fileManagerWindows.count(keys.window) == 0) return false;
+    return true;
+}
+
 void PrewarmHudPages() {
     static bool done = false;
     if (done) return;
     done = true;
     std::string hudPrewarm = "缩短 延长 切割", pmk, pms;
     g_db.Lookup({"PREWARM:hud"}, "prewarm hud", hudPrewarm, pmk, pms);
+    std::string hudAll;
+    for (const auto& text : g_db.PrewarmTexts()) {
+        hudAll += text;
+        hudAll.push_back(' ');
+    }
+    if (!hudAll.empty()) {
+        int page = g_db.EnsurePageForText(hudAll, 200);
+        if (page >= 0 && !g_fontPages.IsPageReady(page)) g_fontPages.EnsurePage(page);
+    }
+    for (const auto& text : g_db.PrewarmTexts()) {
+        int page = g_db.EnsurePageForText(text, 200);
+        if (page >= 0 && !g_fontPages.IsPageReady(page)) g_fontPages.EnsurePage(page);
+    }
     const char* samples[] = {"space 切割", "推动 发射", "[space] 切割", hudPrewarm.c_str(), "[e] 打开", "[e] to open", "inventory 打开"};
     for (const char* s : samples) {
         int page = g_db.EnsurePageForText(s, 200);
-        if (page >= 0 && !g_fontPages.IsPageReady(page)) g_pageQueue.push_back(page);
+        if (page >= 0 && !g_fontPages.IsPageReady(page)) {
+            // HUD appears right after loading. Build its page during the menu
+            // instead of paying the multi-hundred-ms cost in the first frame.
+            g_fontPages.EnsurePage(page);
+            if (!g_fontPages.IsPageReady(page)) g_pageQueue.push_back(page);
+        }
     }
 }
 
+void* HudSoul();
+
+void RebuildVisibleExplorerTexts() {
+    if (!g_explorerActive.load()) {
+        g_renderedTexts.clear();
+        g_explorerTextRebuilt.store(false);
+        return;
+    }
+    if (g_explorerTextRebuilt.load() || g_renderedTexts.empty()) return;
+    g_explorerTextRebuilt.store(true);
+    for (void* self : g_renderedTexts) {
+        auto it = g_textSnapshots.find(self);
+        if (it == g_textSnapshots.end() || !it->second.valid) continue;
+        Il2CppString* ns = NewManagedString(it->second.source);
+        if (!ns || !g_origBuild) continue;
+        g_origBuild(self, ns, it->second.x, it->second.y, it->second.z, it->second.effect, it->second.font);
+        Logger::Instance().Log("fmdebug", "rebuilt texture=" + std::to_string(reinterpret_cast<uintptr_t>(self)) + " src='" + EscapeForLog(it->second.source) + "'");
+    }
+}
+
+void AddHudButtonTexts(void* b) {
+    if (!b) return;
+    Il2CppClass* bc = FindClass("Button");
+    if (!bc) return;
+    void* t = nullptr;
+    ReadObjectPtr(b, FieldOffset(bc, "text_name"), &t);
+    if (t) g_hudTexts.insert(t);
+    t = nullptr;
+    ReadObjectPtr(b, FieldOffset(bc, "text_value"), &t);
+    if (t) g_hudTexts.insert(t);
+}
+
+void RefreshHudTextObjects(void* menu) {
+    if (!menu) return;
+    void* buttons = nullptr;
+    ReadObjectPtr(menu, 0x2E0, &buttons);
+    int n = buttons ? ReadObjectInt(buttons, 0x18) : 0;
+    for (int i = 0; i < n && i < 64; ++i) {
+        void* b = nullptr;
+        ReadObjectPtr(buttons, 0x20 + i * 8, &b);
+        AddHudButtonTexts(b);
+    }
+    if (g_dockWindow) {
+        void* list = nullptr;
+        ReadObjectPtr(g_dockWindow, FieldOffset(FindClass("Window"), "buttons"), &list);
+        ForEachManagedList(list, [&](void* b, int) { AddHudButtonTexts(b); });
+    }
+}
+
+void RefreshWorldSizeTexts(void* menu) {
+    if (!menu) return;
+    void* arr = nullptr;
+    ReadObjectPtr(menu, 0x358, &arr);
+    int n = arr ? ReadObjectInt(arr, 0x18) : 0;
+    Il2CppClass* bc = FindClass("Button");
+    if (!bc) return;
+    for (int i = 0; i < n && i < 16; ++i) {
+        void* b = nullptr;
+        ReadObjectPtr(arr, 0x20 + i * 8, &b);
+        if (!b) continue;
+        void* t = nullptr;
+        ReadObjectPtr(b, FieldOffset(bc, "text_name"), &t);
+        if (t) g_worldSizeTexts.insert(t);
+        t = nullptr;
+        ReadObjectPtr(b, FieldOffset(bc, "text_value"), &t);
+        if (t) g_worldSizeTexts.insert(t);
+    }
+    {
+        for (void* w : g_model.Windows()) {
+            void* list = nullptr;
+            ReadObjectPtr(w, FieldOffset(FindClass("Window"), "buttons"), &list);
+            ForEachManagedList(list, [&](void* b, int) {
+                if (!b) return;
+                if (g_model.ButtonClass(b).find("CategoryButton") == std::string::npos) return;
+                void* t = nullptr;
+                ReadObjectPtr(b, FieldOffset(bc, "text_name"), &t);
+                if (t) g_worldSizeTexts.insert(t);
+                t = nullptr;
+                ReadObjectPtr(b, FieldOffset(bc, "text_value"), &t);
+                if (t) g_worldSizeTexts.insert(t);
+            });
+        }
+    }
+}
+
+DWORD WINAPI BannerOverlayThread(LPVOID);
+
 void HookLordUpdate(void* self) {
+    if (void* soul = HudSoul()) {
+        void* mt = nullptr;
+        ReadObjectPtr(soul, 0x420, &mt);
+        if (mt) g_musicText = mt;
+    }
+    if (void* menu = StaticPtr(FindField(FindClass("Lord"), "menu"))) {
+        void* dock = nullptr;
+        ReadObjectPtr(menu, 0x2D8, &dock);
+        if (dock) { g_dockWindow = dock; if (g_explorerActive.load()) g_fileManagerWindows.insert(dock); }
+        if (g_explorerActive.load()) {
+            for (void* w : g_model.Windows()) {
+                Il2CppClass* wc = g_api.object_get_class(w);
+                const char* wcn = wc ? g_api.class_get_name(wc) : nullptr;
+                if (g_model.WindowHeader(w) == "explorer dock" || (wcn && std::string(wcn) == "TextureWindow")) g_fileManagerWindows.insert(w);
+            }
+        }
+        RefreshWorldSizeTexts(menu);
+    }
+    if (g_explorerActive.load()) {
+        auto windows = g_model.Windows();
+        for (auto it = g_fileManagerWindows.begin(); it != g_fileManagerWindows.end();) {
+            bool found = false;
+            for (void* w : windows) if (w == *it) { found = true; break; }
+            if (!found) it = g_fileManagerWindows.erase(it); else ++it;
+        }
+        bool present = false;
+        for (void* w : windows) if (g_fileManagerWindows.count(w)) { present = true; break; }
+        if (!present && (!g_explorerCloseAt || GetTickCount64() - g_explorerCloseAt > 1500)) {
+            g_explorerCloseAt = 0;
+            ClearExplorerState();
+            Logger::Instance().Log("fmhook", "update cleared explorer");
+        }
+    }
     if (g_ready.load()) {
         static bool allPagesQueued = false;
         if (!allPagesQueued) {
@@ -1278,6 +1765,17 @@ void HookLordUpdate(void* self) {
         }
         ProcessPageQueue();
         ProcessPendingHud();
+        {
+            static bool fmInit = false;
+            static int fmTries = 0;
+            if (!fmInit) {
+                void* menu = StaticPtr(FindField(FindClass("Lord"), "menu"));
+                if (menu && (fmTries++ % 60 == 0)) {
+                    InitFileManagerWindows();
+                    if (!g_fileManagerWindows.empty()) fmInit = true;
+                }
+            }
+        }
         PrewarmHudPages();
         static FieldInfo* worldField = nullptr;
         static size_t gen = SIZE_MAX, load = SIZE_MAX;
@@ -1495,6 +1993,7 @@ void HookSetVectorArrayImpl(void* self, int id, void* arr, int count) {
 
 std::atomic<bool> g_bannerOverlayStarted{false};
 std::atomic<uint64_t> g_bannerOverlayLastSeen{0};
+void* g_bannerObject = nullptr;
 
 DWORD WINAPI BannerOverlayThread(LPVOID) {
     Gdiplus::GdiplusStartupInput input;
@@ -1540,6 +2039,8 @@ DWORD WINAPI BannerOverlayThread(LPVOID) {
 }
 
 void HookRender(void* self, void* camera, bool flag) {
+    if (self && self == g_bannerObject) g_bannerOverlayLastSeen.store(GetTickCount64());
+    if (self && g_explorerActive.load()) g_renderedTexts.insert(self);
     g_inConfirmRender = (self == g_confirmSelf);
     if (self && g_ready.load()) {
         std::string s = g_model.TextureText(self);
@@ -2020,9 +2521,34 @@ void HookBuildRotated(void* self, Il2CppString* text, float x, float y, float z,
 }
 
 bool TryTranslateGenerationText(const std::string& input, std::string& out);
+
+bool GenerationSizeLabel(const std::string& input, std::string& out) {
+    if (!g_generationContext.load()) return false;
+    if (input == "S") out = "小";
+    else if (input == "M") out = "中";
+    else if (input == "L") out = "大";
+    else if (input == "XL") out = "超大";
+    else if (input == "XXL") out = "太大啦";
+    else return false;
+    return true;
+}
+
 void HookUiTextSet(void* self, Il2CppString* value) {
     if (value && g_ready.load()) {
         std::string s = ReadManagedString(value);
+        if (IsFileManagerContentLabel(self, s)) {
+            if (g_origUiSetText) g_origUiSetText(self, value);
+            return;
+        }
+        std::string sizeLabel;
+        if (GenerationSizeLabel(s, sizeLabel) && g_worldSizeTexts.count(self)) {
+            Il2CppString* ns = NewManagedString(sizeLabel);
+            if (ns) {
+                if (g_api.gchandle_new) g_api.gchandle_new(reinterpret_cast<Il2CppObject*>(ns), false);
+                if (g_origUiSetText) g_origUiSetText(self, ns);
+                return;
+            }
+        }
         std::string gen;
         if (TryTranslateGenerationText(s, gen)) {
             Logger::Instance().Log("gen", "ui text out=" + EscapeForLog(gen));
@@ -2540,6 +3066,7 @@ void HookBuild(void* self, Il2CppString* text, float x, float y, float z, float 
     if (!g_ready.load()) {
         std::string earlyInput = ReadManagedString(text);
         if (LowerAscii(earlyInput).find("voima is still buggy") != std::string::npos) {
+            g_bannerObject = self;
             ObjectKeys earlyKeys = g_model.Describe(self, earlyInput);
             std::string earlyTr, earlyMk, earlyMs; int earlyPage = -1;
             if (g_db.Lookup(earlyKeys.keys, earlyInput, earlyTr, earlyMk, earlyMs, &earlyPage) && !earlyTr.empty()) {
@@ -2566,6 +3093,22 @@ void HookBuild(void* self, Il2CppString* text, float x, float y, float z, float 
     }
     inHook = true;
     const std::string input = ReadManagedString(text);
+    if (LowerAscii(input).find("voima is still buggy") != std::string::npos) {
+        ObjectKeys bk = g_model.Describe(self, input);
+        std::string bt, bmk, bms; int bp = -1;
+        if (g_db.Lookup(bk.keys, input, bt, bmk, bms, &bp) && !bt.empty()) {
+            bp = g_db.EnsurePageForText(bt, 200);
+            if (bp >= 0 && g_fontPages.EnsurePage(bp) >= 0) {
+                Il2CppString* bns = NewManagedString(bt);
+                if (bns) {
+                    ApplyPageFont(self, bp);
+                    inHook = false;
+                    if (g_origBuild) g_origBuild(self, bns, x, y, z, effect, fontSize);
+                    return;
+                }
+            }
+        }
+    }
     if (LowerAscii(input).find("generating the world") != std::string::npos || LowerAscii(input).find("rendering the world") != std::string::npos)
         g_generationContext = true;
     if (LowerAscii(input).find("to open") != std::string::npos || input.find("打开") != std::string::npos)
@@ -2574,6 +3117,20 @@ void HookBuild(void* self, Il2CppString* text, float x, float y, float z, float 
         inHook = false;
         ApplyPageFont(self, -1);
                 if (g_origBuild) g_origBuild(self, text, x, y, z, effect, fontSize);
+        return;
+    }
+    {
+        auto& snap = g_textSnapshots[self];
+        if (!snap.valid) {
+            snap.source = input;
+            snap.x = x; snap.y = y; snap.z = z; snap.effect = effect; snap.font = fontSize;
+            snap.valid = true;
+        }
+    }
+    if (IsFileManagerContentLabel(self, input)) {
+        inHook = false;
+        ApplyPageFont(self, -1);
+        if (g_origBuild) g_origBuild(self, text, x, y, z, effect, fontSize);
         return;
     }
     const std::string lowerInput = LowerAscii(input);
@@ -2598,6 +3155,24 @@ void HookBuild(void* self, Il2CppString* text, float x, float y, float z, float 
             Logger::Instance().Log("pagequeue", "enqueued at menu count=" + std::to_string(g_pageQueue.size()));
         }
         if (g_pageQueue.empty()) g_bootOverlayDone = true;
+    }
+    {
+        std::string sizeLabel;
+        if (GenerationSizeLabel(input, sizeLabel) && g_worldSizeTexts.count(self)) {
+            int page = g_db.EnsurePageForText(sizeLabel, 200);
+            if (page >= 0 && g_fontPages.EnsurePage(page) >= 0) {
+                Il2CppString* ns = NewManagedString(sizeLabel);
+                if (ns) {
+                    if (g_api.gchandle_new) g_api.gchandle_new(reinterpret_cast<Il2CppObject*>(ns), false);
+                    ForceFontWithUniverse(self, g_fontPages.FontForPage(page));
+                    inHook = false;
+                    Logger::Instance().Log("gen", "size build out=" + EscapeForLog(sizeLabel));
+                    if (g_origBuild) g_origBuild(self, ns, x, y, z, effect, fontSize);
+                    ForceFontWithUniverse(self, g_fontPages.FontForPage(page));
+                    return;
+                }
+            }
+        }
     }
     {
         std::string gen;
@@ -2638,8 +3213,18 @@ void HookBuild(void* self, Il2CppString* text, float x, float y, float z, float 
     if (LooksLikeHudHint(input)) {
         std::string local = TranslateHudKeyHint(input);
         if (local != input) {
+            uint64_t hudT0 = GetTickCount64();
             int page = g_db.EnsurePageForText(local, 200);
+            uint64_t hudT1 = GetTickCount64();
             if (page >= 0 && !g_fontPages.IsPageReady(page)) page = g_fontPages.EnsurePage(page);
+            uint64_t hudT2 = GetTickCount64();
+            static int hudTimingLogs = 0;
+            if (hudTimingLogs < 12) {
+                ++hudTimingLogs;
+                Logger::Instance().Log("hudtiming", "input='" + EscapeForLog(input) + "' local='" + EscapeForLog(local) +
+                    "' page=" + std::to_string(page) + " ensure_db_ms=" + std::to_string(hudT1 - hudT0) +
+                    " ensure_font_ms=" + std::to_string(hudT2 - hudT1));
+            }
             if (page < 0) {
                 g_pendingHud.push_back(self);
                 inHook = false;
@@ -2852,33 +3437,21 @@ void Startup() {
     }
     if (!ga) { Logger::Instance().Log("fatal", "GameAssembly.dll did not load"); return; }
     uintptr_t base = reinterpret_cast<uintptr_t>(ga);
+    g_gameAssemblyBase = base;
     Logger::Instance().Log("start", "GameAssembly base=" + std::to_string(base));
     if (!g_api.Load()) {
         Logger::Instance().Log("fatal", std::string("IL2CPP exports missing: ") + (g_api.missingExport ? g_api.missingExport : "?"));
         return;
     }
     g_stringNew = reinterpret_cast<StringNewFn>(GetProcAddress(ga, "il2cpp_string_new_utf16"));
-
-    if (!g_fontPatch.InstallEarly(base, g_fontDir)) {
-        Logger::Instance().Log("font", "early font patch failed (bad version?)");
-    } else {
-        Logger::Instance().Log("font", "early font patch installed");
+    {
+        MH_STATUS init = MH_Initialize();
+        Logger::Instance().Log("hook", "MinHook init st=" + std::to_string((int)init));
     }
 
-    // Install the text hook immediately; it passes through until g_ready.
-    InstallBuildHookAt(reinterpret_cast<void*>(base + 0x42BBD0), true);
-
-    void* sbPtr = reinterpret_cast<void*>(base + 0x42B910);
-    const unsigned char* sb = reinterpret_cast<const unsigned char*>(sbPtr);
-    bool sbPrologue = (sb[0] == 0x55 && sb[1] == 0x53 && sb[2] == 0x56) ||
-                       (sb[0] == 0x40 && sb[1] == 0x55 && sb[2] == 0x53 && sb[3] == 0x56);
-    if (sbPrologue) {
-        MH_STATUS st = MH_CreateHook(sbPtr, reinterpret_cast<void*>(&HookBuildSB), reinterpret_cast<void**>(&g_origBuildSB));
-        if (st == MH_OK && MH_EnableHook(sbPtr) == MH_OK) {
-            g_buildSBHooked = true;
-            Logger::Instance().Log("hook", "TextureText.Build(StringBuilder) hooked early");
-        }
-    }
+    // 2.2x3 has shifted GameAssembly offsets. Use runtime method resolution
+    // below instead of the 2.2x2 hard-coded early addresses.
+    Logger::Instance().Log("font", "early native font patch skipped for 2.2x3");
 
     // Give the loader a short head start, then poll for the IL2CPP domain.
     Sleep(500);
@@ -2899,6 +3472,42 @@ void Startup() {
     }
     if (!modelReady) { Logger::Instance().Log("fatal", "GameModel.Init failed"); return; }
     Logger::Instance().Log("start", "GameModel ready");
+    InstallFileManagerHooks();
+
+    {
+        void* defaultFont = StaticPtr(FindField(g_model.lordClass(), "default_font"));
+        if (defaultFont) {
+            size_t offField = FieldOffset(g_model.textureFontClass(), "offset");
+            if (offField != SIZE_MAX) {
+                int off = ReadObjectInt(defaultFont, offField);
+                if (off != 0) {
+                    g_fontPatch.SetOriginalFontOffset(off);
+                    Logger::Instance().Log("font", "default_font offset=" + std::to_string(off));
+                }
+            }
+        }
+        void* ctor = FindMethodPtr("TextureFont", ".ctor", 2, "System.String");
+        void* loadChar = FindMethodPtr("TextureFont", "LoadCharImage", 4, nullptr);
+        void* toCharArray = nullptr;
+        Il2CppClass* stringClass = FindClassInNamespace("System", "String");
+        if (stringClass) {
+            void* it = nullptr;
+            while (MethodInfo* m = g_api.class_get_methods(stringClass, &it)) {
+                const char* n = g_api.method_get_name(m);
+                if (n && std::strcmp(n, "ToCharArray") == 0 && g_api.method_get_param_count(m) == 0) {
+                    toCharArray = *reinterpret_cast<void**>(m);
+                    break;
+                }
+            }
+        }
+        Logger::Instance().Log("font", "dynamic font methods ctor=" + std::to_string((uintptr_t)ctor) +
+                                            " load=" + std::to_string((uintptr_t)loadChar) +
+                                            " tca=" + std::to_string((uintptr_t)toCharArray));
+        if (ctor && loadChar && toCharArray) {
+            bool ok = g_fontPatch.InstallDynamic(base, ctor, loadChar, toCharArray, g_fontDir);
+            Logger::Instance().Log("font", std::string("dynamic font patch ") + (ok ? "installed" : "failed"));
+        }
+    }
 
     if (!g_buildHooked.load()) {
         void* p = FindMethodPtr("TextureText", "Build", 6, "System.String");
@@ -2917,21 +3526,25 @@ void Startup() {
     }
 
     {
-        void* rp = reinterpret_cast<char*>(base) + 0x42B240;
-        MH_STATUS st = MH_CreateHook(rp, reinterpret_cast<void*>(&HookBuildRotated), reinterpret_cast<void**>(&g_origBuildRotated));
-        if (st == MH_OK && MH_EnableHook(rp) == MH_OK)
-            Logger::Instance().Log("hook", "TextureText.BuildRotated hooked");
-        else
-            Logger::Instance().Log("hook", "TextureText.BuildRotated hook failed st=" + std::to_string((int)st));
+        void* rp = FindMethodPtr("TextureText", "BuildRotated", 6, nullptr);
+        if (rp) {
+            MH_STATUS st = MH_CreateHook(rp, reinterpret_cast<void*>(&HookBuildRotated), reinterpret_cast<void**>(&g_origBuildRotated));
+            if (st == MH_OK && MH_EnableHook(rp) == MH_OK)
+                Logger::Instance().Log("hook", "TextureText.BuildRotated hooked dynamically");
+            else
+                Logger::Instance().Log("hook", "TextureText.BuildRotated dynamic hook failed st=" + std::to_string((int)st));
+        }
     }
 
     {
-        void* lp = reinterpret_cast<char*>(base) + 0x5716A0;
-        MH_STATUS st = MH_CreateHook(lp, reinterpret_cast<void*>(&HookLoadCardType), reinterpret_cast<void**>(&g_origLoadCardType));
-        if (st == MH_OK && MH_EnableHook(lp) == MH_OK)
-            Logger::Instance().Log("hook", "Universe.LoadCardType store hooked");
-        else
-            Logger::Instance().Log("hook", "Universe.LoadCardType store hook failed st=" + std::to_string((int)st));
+        void* lp = FindMethodPtr("Universe", "LoadCardType", 2, nullptr);
+        if (lp) {
+            MH_STATUS st = MH_CreateHook(lp, reinterpret_cast<void*>(&HookLoadCardType), reinterpret_cast<void**>(&g_origLoadCardType));
+            if (st == MH_OK && MH_EnableHook(lp) == MH_OK)
+                Logger::Instance().Log("hook", "Universe.LoadCardType hooked dynamically");
+            else
+                Logger::Instance().Log("hook", "Universe.LoadCardType dynamic hook failed st=" + std::to_string((int)st));
+        }
     }
 
     std::string dbPath = g_modDir + "\\translations.tsv";

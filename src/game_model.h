@@ -4,6 +4,7 @@
 #include <vector>
 
 struct ObjectKeys {
+    void* window = nullptr;
     std::string primary;
     std::vector<std::string> keys;
     std::string detail;

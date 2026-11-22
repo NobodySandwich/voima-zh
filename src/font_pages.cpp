@@ -79,6 +79,13 @@ void* FontPages::CreatePageFont(int page) {
     }
 
     Logger::Instance().Log("fontpage", "creating page " + std::to_string(page) + " chars=" + std::to_string(chars.size()));
+    uint64_t pageT0 = GetTickCount64();
+    {
+        int liveOffset = patch_->OriginalFontOffset();
+        if (liveOffset) fontOffset_ = liveOffset;
+        std::string livePath = patch_->OriginalFontPath();
+        if (!livePath.empty()) fontPath_ = livePath;
+    }
     patch_->BeginPage(chars);
     Il2CppString* path = NewString(fontPath_);
     Il2CppObject* font = g_api.object_new(model_->textureFontClass());
@@ -115,7 +122,7 @@ void* FontPages::CreatePageFont(int page) {
     handles_[page] = fontHandle;
     fonts_[page] = font;
     ++created_;
-    Logger::Instance().Log("fontpage", "page " + std::to_string(page) + " ready");
+    Logger::Instance().Log("fontpage", "page " + std::to_string(page) + " ready ms=" + std::to_string(GetTickCount64() - pageT0));
     return font;
 }
 

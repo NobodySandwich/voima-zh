@@ -353,6 +353,7 @@ ObjectKeys GameModel::Describe(void* self, const std::string& input) const {
         if (tn == self) which = "text_name";
         else if (tv == self) which = "text_value";
         if (!which) return;
+        out.window = w;
 
         std::string header;
         void* h = nullptr;
@@ -502,6 +503,7 @@ ObjectKeys GameModel::Describe(void* self, const std::string& input) const {
         void* ht = nullptr;
         ReadObjectPtr(w, winHeaderText_, &ht);
         if (ht == self) {
+            out.window = w;
             void* h = nullptr;
             ReadObjectPtr(w, winHeader_, &h);
             std::string header = NormalizeHeader(ReadManagedString(reinterpret_cast<Il2CppString*>(h)));
@@ -671,7 +673,25 @@ ObjectKeys GameModel::Describe(void* self, const std::string& input) const {
 
     if (!out.owned) {
         std::string cls = ClassName(self);
-        setPrimary("X:" + cls + "|" + FirstLine(Trim(input)));
+        std::string first = FirstLine(Trim(input));
+        std::string xkey = "X:" + cls + "|" + first;
+        setPrimary(xkey);
+        {
+            std::string numericKey = "X:" + cls + "|";
+            int placeholders = 0;
+            for (size_t i = 0; i < first.size();) {
+                unsigned char c = (unsigned char)first[i];
+                if (std::isdigit(c)) {
+                    size_t j = i + 1;
+                    while (j < first.size() && std::isdigit((unsigned char)first[j])) ++j;
+                    numericKey += "{" + std::to_string(placeholders++) + "}";
+                    i = j;
+                } else {
+                    numericKey.push_back(first[i++]);
+                }
+            }
+            if (placeholders > 0 && numericKey != xkey) add(numericKey);
+        }
         if (ReadObjectInt(self, ttKeybindChecks_) != 0) {
             add("KEYBIND:" + KeybindText(input));
             add("KEYBIND:" + LowerAscii(FirstLine(input)));
